@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-07-26T16:13:43Z",
+  "current_revision": 1,
+  "kind": "theorem",
+  "lifecycle": "active",
+  "module": "FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.expectedCoverage_le_weightedDual",
+  "name": "expectedCoverage_le_weightedDual",
+  "node_path": "Main.PairwiseBound",
+  "public": false,
+  "revision_ids": [
+    1
+  ],
+  "summary": "Weighted pointwise dual majorization for every pairwise-feasible weight.",
+  "updated_at": "2026-07-26T16:13:43Z"
+}

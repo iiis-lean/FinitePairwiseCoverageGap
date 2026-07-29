@@ -1,0 +1,27 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-26T12:57:59Z",
+  "created_at": "2026-07-26T12:53:52Z",
+  "execution_completed_at": "2026-07-26T12:57:59Z",
+  "execution_reason": "DeclGraphRoundFlow finished with completed.",
+  "execution_result_kind": "success",
+  "node_path": "Main.Foundations",
+  "objective": "Complete the remaining b_0018 data layer by declaring coverage exactly as the real coercion of the cardinality of the selected element-feature union, now that Element, Feature, and elementFeatures are accepted. This creates the required provider for expectedCoverage and both structural theorem interfaces.",
+  "plan_closeout_acknowledged_at": "2026-07-26T12:57:59Z",
+  "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
+  "result_kind": "success",
+  "result_reason": "DeclGraphRoundFlow finished with completed.",
+  "revision_refs": [
+    {
+      "change_id": "coverage@rev:2",
+      "decl_name": "coverage",
+      "revision": 2
+    }
+  ],
+  "round_id": "round_4c27d2d9b872485ba4dbf498c3b25094",
+  "round_index": 4,
+  "started_at": "2026-07-26T12:54:50Z",
+  "status": "committed",
+  "strategy_id": "strategy_eeee9e64e4b940b7b1cc4bb6ae4e7056",
+  "summary": "The strategy completed the full b_0018 data layer: coverage reached declared state with an accepted formal statement and is proof-policy satisfied. All six foundational data declarations are now ready, with no blockers, state-only gaps, helper needs, or graph-hygiene issues. The b_0017 predicates and the two proved b_0013 structural theorems remain. Next action: declare independent expectedCoverage and MarginalFeasible from their accepted Weight, coverage, and marginal providers."
+}

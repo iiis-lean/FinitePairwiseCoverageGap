@@ -1,0 +1,85 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [
+      "Element"
+    ],
+    "base_revision": 1,
+    "kind": "update",
+    "objective": "Rebuild the previously unexecuted b_0018 declaration from formal_target.lean line 7 using accepted Element: preserve exactly Weight := Finset Element → ℝ, with arbitrary real values and no feasibility restriction. It supplies expectedCoverage and every b_0017 feasibility/optimization predicate.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": "planned",
+    "summary": "Completed successfully through Statement NL and Statement Formal. Public abbrev Weight with Lean name Weight now exactly preserves `Finset Element → ℝ`; it reached declared state and is proof-policy satisfied as a non-theorem. Its accepted dependency on Element supplies the unrestricted real-weight domain for expectedCoverage and every b_0017 predicate.",
+    "target_state": "declared"
+  },
+  "lean_decl_name": "Weight",
+  "proof": null,
+  "revision": 2,
+  "state": "declared",
+  "statement": {
+    "deps": [
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "Element",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": false,
+        "contains_axiom": false,
+        "contains_sorry": false,
+        "diagnostics": {
+          "diagnostics": [],
+          "passed": true,
+          "raw_excerpt": "",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/Weight.lean",
+          "schema_version": 2,
+          "summary": "Command completed successfully"
+        },
+        "message": "Lean check passed.",
+        "policy": "statement_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": false,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [],
+          "opaque_count": 0,
+          "sorry_count": 0,
+          "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `Weight`\n\nDefine `Weight` as the type `Finset Element → ℝ` of arbitrary real-valued functions on every finite\nsubset of `Element`, with no nonnegativity, normalization, or feasibility restriction.\n\n## Sources\n\n- Source `formal_target.lean`, line 7\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n-/\nabbrev Weight := Finset Element → ℝ\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 7,
+          "end_locator": null,
+          "kind": "source",
+          "note": "Exact source definition of unrestricted real-valued subset weights.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "formal_target.lean",
+          "start_line": 7,
+          "start_locator": null
+        }
+      ],
+      "text": "Define `Weight` as the type `Finset Element → ℝ` of arbitrary real-valued functions on every finite subset of `Element`, with no nonnegativity, normalization, or feasibility restriction."
+    }
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T12:53:14Z"
+}

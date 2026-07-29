@@ -1,0 +1,60 @@
+{
+  "created_from_mode": "scan",
+  "entry_path": "README.md",
+  "files": [
+    {
+      "line_count": 41,
+      "path": "README.md",
+      "readable_text": true,
+      "sha256": "3d93250b877683a40a450706b0d5b1f72488935e0a9dffdd517c9fa12da84390",
+      "size_bytes": 1897
+    },
+    {
+      "line_count": 21,
+      "path": "article/main.tex",
+      "readable_text": true,
+      "sha256": "b97ee334bf4c7be932abac5e3a7a1abcc8b0138691e50d04b80d18ca51563042",
+      "size_bytes": 457
+    },
+    {
+      "line_count": 81,
+      "path": "article/references.bib",
+      "readable_text": true,
+      "sha256": "3f41a648c15512e85960d5d8aa89e3609d3c33b3b7378a37417628a8ffb975f9",
+      "size_bytes": 2661
+    },
+    {
+      "line_count": 14,
+      "path": "article/sections/00_frontmatter.tex",
+      "readable_text": true,
+      "sha256": "40a4e3f2450635469a737db2a65062d0d6dfa6eadf9a4d4c82fbbd78c4bb487f",
+      "size_bytes": 513
+    },
+    {
+      "line_count": 57,
+      "path": "article/sections/01_definitions_and_conjecture.tex",
+      "readable_text": true,
+      "sha256": "51603d03aee36c4e47683a2d475c226e826f8501efa80e59795435a88605fa85",
+      "size_bytes": 1868
+    },
+    {
+      "line_count": 131,
+      "path": "article/sections/02_counterexample.tex",
+      "readable_text": true,
+      "sha256": "a9e0f618e03b652fb3eb51fde2c5a2455ebcd112675d14b1d3bc056802379790",
+      "size_bytes": 3691
+    },
+    {
+      "line_count": 66,
+      "path": "formal_target.lean",
+      "readable_text": true,
+      "sha256": "52b26382ea41a146be1a6e7745992d83c6b1542496a0b791558ad5f82d109404",
+      "size_bytes": 2417
+    }
+  ],
+  "generated_at": "2026-07-26T12:10:50Z",
+  "overview": null,
+  "relpath": ".lean_constellation/source",
+  "schema_version": 2,
+  "summary": "Scanned 7 source files."
+}

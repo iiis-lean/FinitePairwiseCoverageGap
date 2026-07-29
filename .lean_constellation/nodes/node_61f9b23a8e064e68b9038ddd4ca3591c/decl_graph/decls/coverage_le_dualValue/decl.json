@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-07-26T14:30:04Z",
+  "current_revision": 2,
+  "kind": "theorem",
+  "lifecycle": "active",
+  "module": "FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.coverage_le_dualValue",
+  "name": "coverage_le_dualValue",
+  "node_path": "Main.PairwiseBound",
+  "public": false,
+  "revision_ids": [
+    1,
+    2
+  ],
+  "summary": "The exact dual certificate pointwise majorizes coverage.",
+  "updated_at": "2026-07-26T14:49:19Z"
+}

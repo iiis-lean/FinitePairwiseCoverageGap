@@ -1,0 +1,612 @@
+{
+  "declarations": {
+    "Fin.prod_univ_ofNat": {
+      "kind": null,
+      "module": "Mathlib.Data.Fin.Tuple.Reflection",
+      "name": "Fin.prod_univ_ofNat",
+      "note": "Verified while repairing the finite exhaustive feasibility proof.",
+      "signature": null,
+      "snippet": null,
+      "summary": "Finite-product simplifier that expands products over `Fin 5`, enabling exact normalization of independentWeight."
+    },
+    "Fin.prod_univ_succ": {
+      "kind": null,
+      "module": "Mathlib.Algebra.BigOperators.Fin",
+      "name": "Fin.prod_univ_succ",
+      "note": "formal proof inspection",
+      "signature": "is the product of `f 0` times the remaining product -/",
+      "snippet": "/-- A product of a function `f : Fin (n + 1) → M` over all `Fin (n + 1)`\nis the product of `f 0` times the remaining product -/\n@[to_additive /-- A sum of a function `f : Fin (n + 1) → M` over all `Fin (n + 1)` is the sum of\n`f 0` plus the remaining sum -/]\ntheorem prod_univ_succ (f : Fin (n + 1) → M) :\n    ∏ i, f i = f 0 * ∏ i : Fin n, f i.succ :=\n  prod_univ_succAbove f 0",
+      "summary": "Directly used by independentWeight_pairwiseFeasible."
+    },
+    "Fin.sum_univ_succ": {
+      "kind": null,
+      "module": "Mathlib.Algebra.BigOperators.Fin",
+      "name": "Fin.sum_univ_succ",
+      "note": "formal proof inspection",
+      "signature": "`f 0` plus the remaining sum -/]",
+      "snippet": "@[to_additive /-- A sum of a function `f : Fin (n + 1) → M` over all `Fin (n + 1)` is the sum of\n`f 0` plus the remaining sum -/]\ntheorem prod_univ_succ (f : Fin (n + 1) → M) :\n    ∏ i, f i = f 0 * ∏ i : Fin n, f i.succ :=",
+      "summary": "Expands the final finite Fin 5 coefficient sums in weightedDual_eq_479_160."
+    },
+    "Finset.biUnion_subset_biUnion_of_subset_left": {
+      "kind": "lemma",
+      "module": "Mathlib.Data.Finset.Union",
+      "name": "Finset.biUnion_subset_biUnion_of_subset_left",
+      "note": "Inspected declaration.",
+      "signature": "lemma biUnion_subset_biUnion_of_subset_left (t : α → Finset β) (h : s₁ ⊆ s₂) :",
+      "snippet": "@[gcongr]\nlemma biUnion_subset_biUnion_of_subset_left (t : α → Finset β) (h : s₁ ⊆ s₂) :\n    s₁.biUnion t ⊆ s₂.biUnion t := by grind",
+      "summary": "Maps S ⊆ T to S.biUnion f ⊆ T.biUnion f, supporting coverage monotonicity."
+    },
+    "Finset.card_inter_add_card_union": {
+      "kind": "theorem",
+      "module": "Mathlib.Data.Finset.Card",
+      "name": "Finset.card_inter_add_card_union",
+      "note": "Verified by direct Mathlib declaration inspection for Main.Foundations coverage proofs.",
+      "signature": "theorem card_inter_add_card_union (s t : Finset α) :",
+      "snippet": "theorem card_inter_add_card_union (s t : Finset α) :\n    #(s ∩ t) + #(s ∪ t) = #s + #t := by grind",
+      "summary": "Finite inclusion-exclusion identity for union and intersection cardinalities."
+    },
+    "Finset.card_mono": {
+      "kind": "theorem",
+      "module": "Mathlib.Data.Finset.Card",
+      "name": "Finset.card_mono",
+      "note": "Inspected declaration.",
+      "signature": "theorem card_mono : Monotone (@Finset.card α)",
+      "snippet": "@[mono]\ntheorem card_mono : Monotone (@card α) := by apply card_le_card",
+      "summary": "Converts a Finset inclusion into the card bound needed for coverage."
+    },
+    "Finset.card_univ": {
+      "kind": "theorem",
+      "module": "Mathlib.Data.Fintype.Card",
+      "name": "Finset.card_univ",
+      "note": "Inspected declaration.",
+      "signature": "theorem Finset.card_univ [Fintype α] : #(univ : Finset α) = Fintype.card α",
+      "snippet": "@[simp, grind =]\ntheorem Finset.card_univ [Fintype α] : #(univ : Finset α) = Fintype.card α := rfl",
+      "summary": "Reduces the card of the feature universe to Fintype.card, closing the constant-4 coverage bound."
+    },
+    "Finset.ext_iff": {
+      "kind": "theorem",
+      "module": "Mathlib.Data.Finset.Defs",
+      "name": "Finset.ext_iff",
+      "note": "Direct inspection of Finset.ext_iff",
+      "signature": "theorem Finset.ext_iff {s₁ s₂ : Finset α} : s₁ = s₂ ↔ ∀ a, a ∈ s₁ ↔ a ∈ s₂",
+      "snippet": "Used to reduce equality tests between the concrete finite subsets in the exhaustive `coverage_le_dualValue` certificate.",
+      "summary": "Extensional characterization of finite-set equality; supports simplification of finite enumerator cases."
+    },
+    "Finset.mem_filter": {
+      "kind": "theorem",
+      "module": "Mathlib.Data.Finset.Filter",
+      "name": "Finset.mem_filter",
+      "note": "Inspected exact declaration.",
+      "signature": "a ∈ s.filter p ↔ a ∈ s ∧ p a",
+      "snippet": "@[simp, grind =]\ntheorem mem_filter {s : Finset α} {a : α} : a ∈ s.filter p ↔ a ∈ s ∧ p a :=\n  Multiset.mem_filter",
+      "summary": "Simplifies membership in filtered finite subset families used by marginal and pair-moment sums."
+    },
+    "Finset.mem_powerset": {
+      "kind": "theorem",
+      "module": "Mathlib.Data.Finset.Powerset",
+      "name": "Finset.mem_powerset",
+      "note": "Inspected semantic candidate mc_5249f15ed048810f.",
+      "signature": "s ∈ t.powerset ↔ s ⊆ t",
+      "snippet": "@[simp, grind =]\ntheorem mem_powerset {s t : Finset α} : s ∈ powerset t ↔ s ⊆ t := by\n  cases s\n  simp [powerset, mem_mk, mem_pmap, mk.injEq, exists_prop, exists_eq_right,\n    ← val_le_iff]",
+      "summary": "Characterizes powerset membership in exhaustive-subset arguments."
+    },
+    "Finset.mem_sdiff": {
+      "kind": "theorem",
+      "module": "Mathlib.Data.Finset.SDiff",
+      "name": "Finset.mem_sdiff",
+      "note": "formal proof inspection",
+      "signature": "theorem mem_sdiff : a ∈ s \\ t ↔ a ∈ s ∧ a ∉ t",
+      "snippet": "@[simp, grind =]\ntheorem mem_sdiff : a ∈ s \\ t ↔ a ∈ s ∧ a ∉ t :=\n  mem_sub_of_nodup s.2",
+      "summary": "Directly used by independentWeight_pairwiseFeasible."
+    },
+    "Finset.mul_sum": {
+      "kind": "lemma",
+      "module": "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "name": "Finset.mul_sum",
+      "note": "Inspected declaration navigation.",
+      "signature": "lemma mul_sum (s : Finset ι) (f : ι → R) (a : R) :",
+      "snippet": "lemma mul_sum (s : Finset ι) (f : ι → R) (a : R) :\n    a * ∑ i ∈ s, f i = ∑ i ∈ s, a * f i := map_sum (AddMonoidHom.mulLeft a) _ s",
+      "summary": "Moves a left scalar through a finite sum during linear weak-duality algebra."
+    },
+    "Finset.powerset": {
+      "kind": "def",
+      "module": "Mathlib.Data.Finset.Powerset",
+      "name": "Finset.powerset",
+      "note": "Inspected semantic candidate mc_c6cb84556332fda2.",
+      "signature": "Finset.powerset (s : Finset α) : Finset (Finset α)",
+      "snippet": "/-- When `s` is a finset, `s.powerset` is the finset of all subsets of `s` (seen as finsets). -/\ndef powerset (s : Finset α) : Finset (Finset α) :=\n  ⟨(s.1.powerset.pmap Finset.mk) fun _t h => nodup_of_le (mem_powerset.1 h) s.nodup,\n    s.nodup.powerset.pmap fun _a _ha _b _hb => congr_arg Finset.val⟩",
+      "summary": "Finite container of all Finset subsets, used to enumerate all 32 subsets of `Fin 5`."
+    },
+    "Finset.powerset_univ": {
+      "kind": "theorem",
+      "module": "Mathlib.Data.Fintype.Powerset",
+      "name": "Finset.powerset_univ",
+      "note": "Inspected declaration navigation.",
+      "signature": "coe_injective <| by simp [-coe_eq_univ]",
+      "snippet": "@[simp] lemma powerset_univ : (univ : Finset α).powerset = univ :=\n  coe_injective <| by simp [-coe_eq_univ]",
+      "summary": "Simplifies `(Finset.univ).powerset` to `Finset.univ` on a finite subset type."
+    },
+    "Finset.prod_add": {
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "name": "Finset.prod_add",
+      "note": "Direct declaration inspection.",
+      "signature": "`f` over a subset `t` times the product of `g` over the complement of `t` -/",
+      "snippet": "/-- The product of `f a + g a` over all of `s` is the sum over the powerset of `s` of the product of\n`f` over a subset `t` times the product of `g` over the complement of `t` -/\ntheorem prod_add (f g : ι → R) (s : Finset ι) :\n    ∏ i ∈ s, (f i + g i) = ∑ t ∈ s.powerset, (∏ i ∈ t, f i) * ∏ i ∈ s \\ t, g i := by\n  classical\n  calc\n    ∏ i ∈ s, (f i + g i) =\n        ∏ i ∈ s, ∑ p ∈ ({True, False} : Finset Prop), if p then f i else g i := by simp\n    _ = ∑ p ∈ (s.pi fun _ => {True, False} : Finset (∀ a ∈ s, Prop)),\n          ∏ a ∈ s.attach, if p a.1 a.2 then f a.1 else g a.1 := prod_sum _ _ _\n    _ = ∑ t ∈ s.powerset, (∏ a ∈ t, f a) * ∏ a ∈ s \\ t, g a :=\n      sum_bij'\n        (fun f _ ↦ {a ∈ s | ∃ h : a ∈ s, f a h})\n        (fun t _ a _ => a ∈ t)\n        (by simp)\n        (by simp [Classical.em])\n        (by simp_rw [mem_filter, funext_iff, eq_iff_iff, mem_pi, mem_insert]; tauto)\n        (by simp_rw [Finset.ext_iff, mem_filter, mem_powerset]; tauto)\n        (fun a _ ↦ by\n          simp only [prod_ite, filter_attach', prod_map, Function.Embedding.coeFn_mk,\n            Subtype.map_coe, id_eq, prod_attach]\n          congr 2 with x\n          simp only [mem_filter, mem_sdiff, not_and, not_exists, and_congr_right_iff]\n          tauto)",
+      "summary": "Expands the product of pointwise sums as a powerset sum of subset and complement products, yielding mass and moment identities for independentWeight."
+    },
+    "Finset.prod_congr": {
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "name": "Finset.prod_congr",
+      "note": "formal proof inspection",
+      "signature": "theorem prod_congr (h : s₁ = s₂) : (∀ x ∈ s₂, f x = g x) → s₁.prod f = s₂.prod g",
+      "snippet": "@[to_additive (attr := congr)]\ntheorem prod_congr (h : s₁ = s₂) : (∀ x ∈ s₂, f x = g x) → s₁.prod f = s₂.prod g := by\n  rw [h]; exact fold_congr",
+      "summary": "Directly used by independentWeight_pairwiseFeasible."
+    },
+    "Finset.prod_eq_zero": {
+      "kind": "lemma",
+      "module": "Mathlib.Algebra.BigOperators.GroupWithZero.Finset",
+      "name": "Finset.prod_eq_zero",
+      "note": "formal proof inspection",
+      "signature": "lemma prod_eq_zero (hi : i ∈ s) (h : f i = 0) : ∏ j ∈ s, f j = 0",
+      "snippet": "lemma prod_eq_zero (hi : i ∈ s) (h : f i = 0) : ∏ j ∈ s, f j = 0 := by\n  classical rw [← prod_erase_mul _ _ hi, h, mul_zero]",
+      "summary": "Directly used by independentWeight_pairwiseFeasible."
+    },
+    "Finset.prod_ite": {
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+      "name": "Finset.prod_ite",
+      "note": "Inspected semantic candidate mc_4dd55cdbcaafc25f.",
+      "signature": "theorem prod_ite {s : Finset ι} {p : ι → Prop} [DecidablePred p] (f g : ι → M) :",
+      "snippet": "@[to_additive]\ntheorem prod_ite {s : Finset ι} {p : ι → Prop} [DecidablePred p] (f g : ι → M) :\n    ∏ x ∈ s, (if p x then f x else g x) = (∏ x ∈ s with p x, f x) * ∏ x ∈ s with ¬p x, g x := by\n  simp [prod_apply_ite _ _ fun x => x]",
+      "summary": "Splits the independentWeight product by membership in a subset into selected and complementary factors."
+    },
+    "Finset.prod_nonneg": {
+      "kind": "lemma",
+      "module": "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
+      "name": "Finset.prod_nonneg",
+      "note": "Direct inspection of Finset.prod_nonneg",
+      "signature": "lemma Finset.prod_nonneg (h0 : ∀ i ∈ s, 0 ≤ f i) : 0 ≤ ∏ i ∈ s, f i",
+      "snippet": "Establishes nonnegativity of each independentWeight product from its nonnegative factors.",
+      "summary": "Finite-product nonnegativity for the pointwise feasibility field."
+    },
+    "Finset.subset_univ": {
+      "kind": "theorem",
+      "module": "Mathlib.Data.Fintype.Defs",
+      "name": "Finset.subset_univ",
+      "note": "Inspected declaration.",
+      "signature": "theorem subset_univ (s : Finset α) : s ⊆ univ",
+      "snippet": "@[simp]\ntheorem subset_univ (s : Finset α) : s ⊆ univ := fun a _ => mem_univ a",
+      "summary": "Directly bounds any covered-feature Finset by the finite universe."
+    },
+    "Finset.sum_add_distrib": {
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "name": "Finset.sum_add_distrib",
+      "note": null,
+      "signature": "theorem prod_mul_distrib : ∏ x ∈ s, f x * g x = (∏ x ∈ s, f x) * ∏ x ∈ s, g x",
+      "snippet": "@[to_additive]\ntheorem prod_mul_distrib : ∏ x ∈ s, f x * g x = (∏ x ∈ s, f x) * ∏ x ∈ s, g x :=",
+      "summary": null
+    },
+    "Finset.sum_comm": {
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Sigma",
+      "name": "Finset.sum_comm",
+      "note": "Inspected declaration navigation.",
+      "signature": "theorem prod_comm {s : Finset γ} {t : Finset α} {f : γ → α → β} :",
+      "snippet": "@[to_additive]\ntheorem prod_comm {s : Finset γ} {t : Finset α} {f : γ → α → β} :\n    (∏ x ∈ s, ∏ y ∈ t, f x y) = ∏ y ∈ t, ∏ x ∈ s, f x y :=",
+      "summary": "Exchanges nested finite sums to collect singleton and pair moments."
+    },
+    "Finset.sum_congr": {
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "name": "Finset.sum_congr",
+      "note": "Inspected declaration navigation.",
+      "signature": "theorem prod_congr (h : s₁ = s₂) : (∀ x ∈ s₂, f x = g x) → s₁.prod f = s₂.prod g",
+      "snippet": "@[to_additive (attr := congr)]\ntheorem prod_congr (h : s₁ = s₂) : (∀ x ∈ s₂, f x = g x) → s₁.prod f = s₂.prod g := by",
+      "summary": "Rewrites a finite sum pointwise while preserving its index finset."
+    },
+    "Finset.sum_filter": {
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "name": "Finset.sum_filter",
+      "note": "Inspected declaration.",
+      "signature": "theorem prod_filter (p : ι → Prop) [DecidablePred p] (f : ι → M) :",
+      "snippet": "@[to_additive]\ntheorem prod_filter (p : ι → Prop) [DecidablePred p] (f : ι → M) :\n    ∏ a ∈ s with p a, f a = ∏ a ∈ s, if p a then f a else 1 :=",
+      "summary": "Rewrites a filtered finite sum into an if-expression; a fallback for marginal sum calculations."
+    },
+    "Finset.sum_ite_eq'": {
+      "kind": null,
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+      "name": "Finset.sum_ite_eq'",
+      "note": null,
+      "signature": "test on the index and whose alternative is `0` has value either the term at that index or `0`.",
+      "snippet": "@[to_additive (attr := simp) /-- A sum taken over a conditional whose condition is an equality\ntest on the index and whose alternative is `0` has value either the term at that index or `0`.\n\nThe difference with `Finset.sum_ite_eq` is that the arguments to `Eq` are swapped. -/]\ntheorem prod_ite_eq' [DecidableEq ι] (s : Finset ι) (a : ι) (b : ι → M) :",
+      "summary": null
+    },
+    "Finset.sum_le_sum": {
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "name": "Finset.sum_le_sum",
+      "note": "Verified for expectedCoverage_le_weightedDual.",
+      "signature": "theorem prod_le_prod' [MulLeftMono N] (h : ∀ i ∈ s, f i ≤ g i) : ∏ i ∈ s, f i ≤ ∏ i ∈ s, g i",
+      "snippet": "@[to_additive (attr := gcongr) sum_le_sum]\ntheorem prod_le_prod' [MulLeftMono N] (h : ∀ i ∈ s, f i ≤ g i) : ∏ i ∈ s, f i ≤ ∏ i ∈ s, g i :=",
+      "summary": "Lifts the termwise nonnegative-multiplier inequality from coverage_le_dualValue to the full finite expected-coverage sum."
+    },
+    "Finset.sum_mul": {
+      "kind": "lemma",
+      "module": "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "name": "Finset.sum_mul",
+      "note": "Inspected declaration navigation.",
+      "signature": "lemma sum_mul (s : Finset ι) (f : ι → R) (a : R) :",
+      "snippet": "lemma sum_mul (s : Finset ι) (f : ι → R) (a : R) :\n    (∑ i ∈ s, f i) * a = ∑ i ∈ s, f i * a := map_sum (AddMonoidHom.mulRight a) _ s",
+      "summary": "Moves a right scalar through a finite sum during linear weak-duality algebra."
+    },
+    "Finset.sum_nonneg": {
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "name": "Finset.sum_nonneg",
+      "note": "Inspected declaration navigation.",
+      "signature": "theorem one_le_prod' [MulLeftMono N] (h : ∀ i ∈ s, 1 ≤ f i) : 1 ≤ ∏ i ∈ s, f i",
+      "snippet": "@[to_additive sum_nonneg]\ntheorem one_le_prod' [MulLeftMono N] (h : ∀ i ∈ s, 1 ≤ f i) : 1 ≤ ∏ i ∈ s, f i :=",
+      "summary": "Derives the nonnegative weighted slack sum from pointwise slack and feasible-weight nonnegativity."
+    },
+    "Finset.sum_pair": {
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "name": "Finset.sum_pair",
+      "note": "Inspected semantic candidate mc_ae4ccfba764ac638.",
+      "signature": "theorem prod_pair [DecidableEq ι] {a b : ι} (h : a ≠ b) :",
+      "snippet": "@[to_additive]\ntheorem prod_pair [DecidableEq ι] {a b : ι} (h : a ≠ b) :\n    (∏ x ∈ ({a, b} : Finset ι), f x) = f a * f b := by",
+      "summary": "Evaluates two-element sums when coefficient terms are split by a pair."
+    },
+    "Finset.sum_singleton": {
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "name": "Finset.sum_singleton",
+      "note": "Inspected semantic candidate mc_de85ae17eed3b575.",
+      "signature": "theorem prod_singleton (f : ι → M) (a : ι) : ∏ x ∈ singleton a, f x = f a",
+      "snippet": "@[to_additive (attr := simp)]\ntheorem prod_singleton (f : ι → M) (a : ι) : ∏ x ∈ singleton a, f x = f a :=",
+      "summary": "Evaluates singleton sums in the first-moment part of the weak-duality rearrangement."
+    },
+    "Finset.union_biUnion": {
+      "kind": "lemma",
+      "module": "Mathlib.Data.Finset.Union",
+      "name": "Finset.union_biUnion",
+      "note": "Verified by direct Mathlib declaration inspection for Main.Foundations coverage proofs.",
+      "signature": "lemma union_biUnion [DecidableEq α] : (s₁ ∪ s₂).biUnion t = s₁.biUnion t ∪ s₂.biUnion t",
+      "snippet": "lemma union_biUnion [DecidableEq α] : (s₁ ∪ s₂).biUnion t = s₁.biUnion t ∪ s₂.biUnion t := by\n  grind",
+      "summary": "Rewrites the feature union covered by a union of selected elements."
+    },
+    "Fintype.sum_ite_mem": {
+      "kind": "lemma",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+      "name": "Fintype.sum_ite_mem",
+      "note": "Inspected declaration navigation.",
+      "signature": "lemma prod_ite_mem (s : Finset ι) (f : ι → M) : ∏ i, (if i ∈ s then f i else 1) = ∏ i ∈ s, f i",
+      "snippet": "@[to_additive]\nlemma prod_ite_mem (s : Finset ι) (f : ι → M) : ∏ i, (if i ∈ s then f i else 1) = ∏ i ∈ s, f i := by",
+      "summary": "Rewrites a universal finite sum with membership indicators as a sum over the selected finset."
+    },
+    "Lean.Elab.Tactic.finCases": {
+      "kind": null,
+      "module": "Mathlib.Tactic.FinCases",
+      "name": "Lean.Elab.Tactic.finCases",
+      "note": "Verified for the coverage_le_dualValue certificate route.",
+      "signature": "`fin_cases h` performs case analysis on a hypothesis of the form",
+      "snippet": "/--\n`fin_cases h` performs case analysis on a hypothesis of the form\n`h : A`, where `[Fintype A]` is available, or\n`h : a ∈ A`, where `A : Finset X`, `A : Multiset X` or `A : List X`.\n\nAs an example, in\n```\nexample (f : ℕ → Prop) (p : Fin 3) (h0 : f 0) (h1 : f 1) (h2 : f 2) : f p.val := by\n  fin_cases p; simp\n  all_goals assumption\n```\nafter `fin_cases p; simp`, there are three goals, `f 0`, `f 1`, and `f 2`.\n-/\nsyntax (name := finCases) \"fin_cases \" (\"*\" <|> term,+) (\" with \" term,+)? : tactic",
+      "summary": "The `fin_cases` elaborator performs exhaustive case analysis for a Fintype value or finite-container membership; here it will eliminate `S : Finset (Fin 5)` into the 32 concrete subset goals."
+    },
+    "Mathlib.Meta.NormNum.evalFinsetSum": {
+      "kind": null,
+      "module": "Mathlib.Tactic.NormNum.BigOperators",
+      "name": "Mathlib.Meta.NormNum.evalFinsetSum",
+      "note": null,
+      "signature": "If your finset is not supported, you can add it to the match in `Finset.proveEmptyOrCons`.",
+      "snippet": "/-- `norm_num` plugin for evaluating sums of finsets.\n\nIf your finset is not supported, you can add it to the match in `Finset.proveEmptyOrCons`.\n-/\n@[norm_num @Finset.sum _ _ _ _ _]\npartial def evalFinsetSum : NormNumExt where eval {u β} e := do\n  let .app (.app (.app (.app (.app (.const ``Finset.sum [v, _]) α) β') _) s) f ←\n    whnfR e | failure\n  guard <| ← withNewMCtxDepth <| isDefEq β β'\n  have α : Q(Type v) := α\n  have s : Q(Finset $α) := s\n  have f : Q($α → $β) := f\n  let instCS : Q(CommSemiring $β) ← synthInstanceQ q(CommSemiring $β) <|>\n    throwError \"not a commutative semiring: {β}\"\n  let pf : Q(IsNat (Finset.sum ∅ $f) (nat_lit 0)) := q(@Finset.sum_empty $β $α $instCS $f)\n  let res_empty := Result.isNat _ _ q($pf)\n\n  evalFinsetBigop q(Finset.sum) f res_empty (fun {a s' h} res_fa res_sum_s' ↦ do\n      let fa : Q($β) := Expr.app f a\n      let res ← res_fa.add res_sum_s'\n      let eq : Q(Finset.sum (Finset.cons $a $s' $h) $f = $fa + Finset.sum $s' $f) :=\n        q(Finset.sum_cons $h)\n      pure <| res.eq_trans eq)\n    s",
+      "summary": null
+    },
+    "Mathlib.Tactic.FieldSimp.field": {
+      "kind": null,
+      "module": "Mathlib.Tactic.Field",
+      "name": "Mathlib.Tactic.FieldSimp.field",
+      "note": null,
+      "signature": "`field` solves equality goals in (semi-)fields. The goal must be an equality which is *universal*,",
+      "snippet": "/--\n`field` solves equality goals in (semi-)fields. The goal must be an equality which is *universal*,\nin the sense that it is true in any field in which the appropriate denominators don't vanish.\n(That is, it is a consequence purely of the field axioms.)\n\nThe `field` tactic is built from the tactics `field_simp` (which clears the denominators) and `ring`\n(which proves equality goals universally true in commutative (semi-)rings). If `field` fails to\nprove your goal, you may still be able to prove your goal by running the `field_simp` and `ring_nf`\nnormalizations in some order.\n\nThe tactic will try discharge proofs of nonzeroness of denominators, and skip steps if discharging\nfails. These denominators are made out of denominators appearing in the input expression, by\nrepeatedly taking products or divisors. The default discharger can be non-universal, i.e. can be\nspecific to the field at hand (order properties, explicit `≠ 0` hypotheses, `CharZero` if that is\nknown, etc). See `Mathlib.Tactic.FieldSimp.discharge` for full details of the default discharger\nalgorithm.\n\n* `field (disch := tac)` uses the tactic sequence `tac` to discharge nonzeroness proofs.\n* `field [t₁, ..., tₙ]` provides terms `t₁`, ..., `tₙ` to the discharger for nonzeroness proofs.\n\nExamples:\n```\nexample {x y : ℚ} (hx : x + y ≠ 0) : x / (x + y) + y / (x + y) = 1 := by field\nexample {a b : ℝ} (ha : a ≠ 0) : a / (a * b) - 1 / b = 0 := by field\n\n-- The user can also provide additional terms to help with nonzerones\n...[truncated]",
+      "summary": null
+    },
+    "Mathlib.Tactic.RingNF.ring": {
+      "kind": null,
+      "module": "Mathlib.Tactic.Ring.RingNF",
+      "name": "Mathlib.Tactic.RingNF.ring",
+      "note": null,
+      "signature": "macro (name",
+      "snippet": "macro (name := ring) \"ring\" : tactic =>\n  `(tactic| first | ring1 | try_this ring_nf\n  \"\\n\\nThe `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n  \\nNote that `ring` works primarily in *commutative* rings. \\\n  If you have a noncommutative ring, abelian group or module, consider using \\\n  `noncomm_ring`, `abel` or `module` instead.\")",
+      "summary": null
+    },
+    "Mathlib.Tactic.normNum": {
+      "kind": null,
+      "module": "Mathlib.Tactic.NormNum.Core",
+      "name": "Mathlib.Tactic.normNum",
+      "note": "Verified by semantic navigation during review repair; invoked directly in coverage_le_dualValue.",
+      "signature": "`norm_num` normalizes numerical expressions in the goal. By default, it supports the operations",
+      "snippet": "/--\n`norm_num` normalizes numerical expressions in the goal. By default, it supports the operations\n`+` `-` `*` `/` `⁻¹` `^` and `%` over types with (at least) an `AddMonoidWithOne` instance, such as\n`ℕ`, `ℤ`, `ℚ`, `ℝ`, `ℂ`. In addition to evaluating numerical expressions, `norm_num` will use `simp`\nto simplify the goal. If the goal has the form `A = B`, `A ≠ B`, `A < B` or `A ≤ B`, where `A` and\n`B` are numerical expressions, `norm_num` will try to close it. It also has a relatively simple\nprimality prover (available if you import `Mathlib.Tactic.NormNum.Prime`).\n\nThis tactic is extensible. Extensions can allow `norm_num` to evaluate more kinds of expressions, or\nto prove more kinds of propositions (such as, primality of natural numbers). See the `@[norm_num]`\nattribute for further information on extending `norm_num`.\n\n* `norm_num at l` normalizes at location(s) `l`.\n* `norm_num [h1, ...]` adds the arguments `h1, ...` to the `simp` set in addition to the default\n  `simp` set. All options for `simp` arguments are supported, in particular `←`, `↑` and `↓`.\n* `norm_num only` does not use the default `simp` set for simplification. `norm_num only [h1, ...]`\n  uses only the arguments `h1, ...` in addition to the routines tagged `@[norm_num]`.\n  `norm_num only` still performs post-processing steps, like `simp only`, use `norm_num1` if you\n  exclusively want to normalize numerical expressions.\n* `norm_num (config := cfg)` uses `cfg` as configuration for `simp` calls (see the `simp` \n...[truncated]",
+      "summary": "The `norm_num` tactic closes the exact rational inequalities in the exhaustive dual-certificate cases."
+    },
+    "Nat.cast_le": {
+      "kind": "theorem",
+      "module": "Mathlib.Data.Nat.Cast.Order.Basic",
+      "name": "Nat.cast_le",
+      "note": "Inspected declaration.",
+      "signature": "theorem cast_le : (m : α) ≤ n ↔ m ≤ n",
+      "snippet": "@[simp, norm_cast]\ntheorem cast_le : (m : α) ≤ n ↔ m ≤ n :=\n  strictMono_cast.le_iff_le",
+      "summary": "Simplifies/coerces natural card inequalities to ℝ."
+    },
+    "add_mul": {
+      "kind": null,
+      "module": "Mathlib.Algebra.Ring.Defs",
+      "name": "add_mul",
+      "note": null,
+      "signature": "alias add_mul",
+      "snippet": "alias add_mul := right_distrib",
+      "summary": null
+    },
+    "mul_le_mul_of_nonneg_left": {
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.Order.GroupWithZero.Defs",
+      "name": "mul_le_mul_of_nonneg_left",
+      "note": "Direct declaration inspection.",
+      "signature": "theorem mul_le_mul_of_nonneg_left [PosMulMono α] (hbc : b ≤ c) (ha : 0 ≤ a) : a * b ≤ a * c",
+      "snippet": "@[gcongr]\ntheorem mul_le_mul_of_nonneg_left [PosMulMono α] (hbc : b ≤ c) (ha : 0 ≤ a) : a * b ≤ a * c :=\n  PosMulMono.mul_le_mul_of_nonneg_left ha hbc",
+      "summary": "Multiplies coverage_le_dualValue by the nonnegative feasible weight θ S for each full-domain summand."
+    }
+  },
+  "modules": {
+    "Mathlib.Algebra.BigOperators.Fin": {
+      "important_decl_names": [
+        "Fin.prod_univ_succ",
+        "Fin.sum_univ_succ"
+      ],
+      "module": "Mathlib.Algebra.BigOperators.Fin",
+      "note": "formal proof inspection",
+      "summary": "Imports a directly used finite-product identity in independentWeight_pairwiseFeasible."
+    },
+    "Mathlib.Algebra.BigOperators.Group.Finset.Basic": {
+      "important_decl_names": [
+        "Finset.sum_filter",
+        "Finset.sum_congr",
+        "Finset.sum_singleton",
+        "Finset.sum_pair",
+        "Finset.prod_congr",
+        "Finset.sum_add_distrib"
+      ],
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "note": "Current Foundations imports and inspected Finset.sum_filter.",
+      "summary": "Finite sums and filtered-sum rewrites used by MarginalFeasible and expectedCoverage computations."
+    },
+    "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise": {
+      "important_decl_names": [
+        "Fintype.sum_ite_mem",
+        "Finset.prod_ite",
+        "Finset.sum_ite_eq'"
+      ],
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+      "note": "formal proof inspection",
+      "summary": "Imports a directly used finite-product identity in independentWeight_pairwiseFeasible."
+    },
+    "Mathlib.Algebra.BigOperators.Group.Finset.Sigma": {
+      "important_decl_names": [
+        "Finset.sum_comm"
+      ],
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Sigma",
+      "note": "Verified via Mathlib semantic navigation.",
+      "summary": "Finite double-sum commutation needed to exchange sums in weak-duality calculations."
+    },
+    "Mathlib.Algebra.BigOperators.GroupWithZero.Finset": {
+      "important_decl_names": [
+        "Finset.prod_eq_zero"
+      ],
+      "module": "Mathlib.Algebra.BigOperators.GroupWithZero.Finset",
+      "note": "formal proof inspection",
+      "summary": "Imports a directly used finite-product identity in independentWeight_pairwiseFeasible."
+    },
+    "Mathlib.Algebra.BigOperators.Ring.Finset": {
+      "important_decl_names": [
+        "Finset.sum_mul",
+        "Finset.mul_sum",
+        "Finset.prod_add"
+      ],
+      "module": "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "note": "formal proof inspection",
+      "summary": "Imports a directly used finite-product identity in independentWeight_pairwiseFeasible."
+    },
+    "Mathlib.Algebra.Order.BigOperators.Group.Finset": {
+      "important_decl_names": [
+        "Finset.sum_nonneg",
+        "Finset.sum_le_sum"
+      ],
+      "module": "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "note": "Verified via Mathlib semantic navigation.",
+      "summary": "Ordered finite-sum lemmas, especially nonnegativity of sums over real weights."
+    },
+    "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset": {
+      "important_decl_names": [
+        "Finset.prod_nonneg"
+      ],
+      "module": "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
+      "note": "Direct inspection of Finset.prod_nonneg",
+      "summary": "Provides finite-product nonnegativity for independent product weights."
+    },
+    "Mathlib.Algebra.Order.GroupWithZero.Defs": {
+      "important_decl_names": [
+        "mul_le_mul_of_nonneg_left"
+      ],
+      "module": "Mathlib.Algebra.Order.GroupWithZero.Defs",
+      "note": "Direct inspection of mul_le_mul_of_nonneg_left.",
+      "summary": "Provides order-preserving multiplication by a nonnegative real in the termwise weak-duality inequality."
+    },
+    "Mathlib.Algebra.Ring.Defs": {
+      "important_decl_names": [
+        "add_mul"
+      ],
+      "module": "Mathlib.Algebra.Ring.Defs",
+      "note": null,
+      "summary": null
+    },
+    "Mathlib.Data.Fin.Tuple.Reflection": {
+      "important_decl_names": [
+        "Fin.prod_univ_ofNat"
+      ],
+      "module": "Mathlib.Data.Fin.Tuple.Reflection",
+      "note": "Direct inspection of Fin.prod_univ_ofNat",
+      "summary": "Provides the finite-product simplifier used to expand independentWeight over `Fin 5`."
+    },
+    "Mathlib.Data.Finset.Card": {
+      "important_decl_names": [
+        "Finset.card_mono",
+        "Finset.card_inter_add_card_union"
+      ],
+      "module": "Mathlib.Data.Finset.Card",
+      "note": "Inspected Finset.card_mono.",
+      "summary": "Cardinality monotonicity for bounds on coverage defined by Finset cards."
+    },
+    "Mathlib.Data.Finset.Defs": {
+      "important_decl_names": [
+        "Finset.ext_iff"
+      ],
+      "module": "Mathlib.Data.Finset.Defs",
+      "note": "Direct inspection while verifying Finset.ext_iff",
+      "summary": "Defines finite-set extensionality used to simplify the concrete 32-subset certificate cases."
+    },
+    "Mathlib.Data.Finset.Filter": {
+      "important_decl_names": [
+        "Finset.mem_filter"
+      ],
+      "module": "Mathlib.Data.Finset.Filter",
+      "note": "Inspected `Finset.mem_filter`.",
+      "summary": "Provides `Finset.filter` membership simplification for marginal and pair-moment indexing."
+    },
+    "Mathlib.Data.Finset.Powerset": {
+      "important_decl_names": [
+        "Finset.powerset",
+        "Finset.mem_powerset"
+      ],
+      "module": "Mathlib.Data.Finset.Powerset",
+      "note": "Verified via Mathlib semantic navigation.",
+      "summary": "Finite powersets and subset membership for exhaustive enumeration of candidate subsets."
+    },
+    "Mathlib.Data.Finset.SDiff": {
+      "important_decl_names": [
+        "Finset.mem_sdiff"
+      ],
+      "module": "Mathlib.Data.Finset.SDiff",
+      "note": "formal proof inspection",
+      "summary": "Imports a directly used finite-product identity in independentWeight_pairwiseFeasible."
+    },
+    "Mathlib.Data.Finset.Union": {
+      "important_decl_names": [
+        "Finset.biUnion_subset_biUnion_of_subset_left",
+        "Finset.union_biUnion"
+      ],
+      "module": "Mathlib.Data.Finset.Union",
+      "note": "Inspected Finset.biUnion_subset_biUnion_of_subset_left.",
+      "summary": "biUnion subset lemma for transporting a subset of supports to covered features."
+    },
+    "Mathlib.Data.Fintype.Card": {
+      "important_decl_names": [
+        "Finset.card_univ"
+      ],
+      "module": "Mathlib.Data.Fintype.Card",
+      "note": "Inspected Finset.card_univ.",
+      "summary": "Supplies card_univ simplification for the Fin 4 feature universe."
+    },
+    "Mathlib.Data.Fintype.Defs": {
+      "important_decl_names": [
+        "Finset.subset_univ"
+      ],
+      "module": "Mathlib.Data.Fintype.Defs",
+      "note": null,
+      "summary": null
+    },
+    "Mathlib.Data.Fintype.Powerset": {
+      "important_decl_names": [
+        "Finset.powerset_univ"
+      ],
+      "module": "Mathlib.Data.Fintype.Powerset",
+      "note": "Inspected module; exposes finite Finset support.",
+      "summary": "Provides the finite-type support for Finset Element, enabling finite sums over all subsets."
+    },
+    "Mathlib.Data.Nat.Cast.Order.Basic": {
+      "important_decl_names": [
+        "Nat.cast_le"
+      ],
+      "module": "Mathlib.Data.Nat.Cast.Order.Basic",
+      "note": "Inspected Nat.cast_le.",
+      "summary": "Transfers natural cardinality inequalities to the real-valued coverage definition."
+    },
+    "Mathlib.Data.Real.Basic": {
+      "important_decl_names": [],
+      "module": "Mathlib.Data.Real.Basic",
+      "note": "LeanExplore semantic search and candidate inspection of `Real.instField`.",
+      "summary": "Provides the real-number type `ℝ` and field division needed by the unrestricted `Weight` and rational `marginal` declarations."
+    },
+    "Mathlib.Tactic.Field": {
+      "important_decl_names": [
+        "Mathlib.Tactic.FieldSimp.field"
+      ],
+      "module": "Mathlib.Tactic.Field",
+      "note": null,
+      "summary": null
+    },
+    "Mathlib.Tactic.FinCases": {
+      "important_decl_names": [
+        "Lean.Elab.Tactic.finCases"
+      ],
+      "module": "Mathlib.Tactic.FinCases",
+      "note": "Inspected module.",
+      "summary": "Provides finite case splitting for i : Fin 5 in marginal proofs."
+    },
+    "Mathlib.Tactic.NormNum": {
+      "important_decl_names": [],
+      "module": "Mathlib.Tactic.NormNum",
+      "note": "Verified import module and NormNum tactic documentation.",
+      "summary": "Exact normalization of rational numerical equalities and inequalities."
+    },
+    "Mathlib.Tactic.NormNum.BigOperators": {
+      "important_decl_names": [
+        "Mathlib.Meta.NormNum.evalFinsetSum"
+      ],
+      "module": "Mathlib.Tactic.NormNum.BigOperators",
+      "note": "Inspected module and evalFinsetSum extension.",
+      "summary": "Enables norm_num evaluation of explicit finite Finset sums together with rational real arithmetic."
+    },
+    "Mathlib.Tactic.NormNum.Core": {
+      "important_decl_names": [
+        "Mathlib.Tactic.normNum"
+      ],
+      "module": "Mathlib.Tactic.NormNum.Core",
+      "note": "Semantic inspection of Mathlib.Tactic.normNum",
+      "summary": "Defines the `norm_num` tactic invoked for exact rational inequalities in the dual certificate."
+    },
+    "Mathlib.Tactic.Positivity": {
+      "important_decl_names": [],
+      "module": "Mathlib.Tactic.Positivity",
+      "note": "Verified import module and Positivity tactic search.",
+      "summary": "Can discharge direct nonnegativity side conditions after explicit pointwise facts."
+    },
+    "Mathlib.Tactic.Ring": {
+      "important_decl_names": [],
+      "module": "Mathlib.Tactic.Ring",
+      "note": "Verified import module and Ring tactic search.",
+      "summary": "Normalizes polynomial identities after finite-sum rewriting."
+    },
+    "Mathlib.Tactic.Ring.RingNF": {
+      "important_decl_names": [
+        "Mathlib.Tactic.RingNF.ring"
+      ],
+      "module": "Mathlib.Tactic.Ring.RingNF",
+      "note": null,
+      "summary": null
+    }
+  }
+}

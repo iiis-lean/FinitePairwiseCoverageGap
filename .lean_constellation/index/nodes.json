@@ -1,0 +1,59 @@
+{
+  "active_path_to_node_id": {
+    "Main": "node_a537c514b7314f238396ee95f1031914",
+    "Main.Foundations": "node_0306ee8afbcf4cd0a0f3e1257f54ed7d",
+    "Main.GapTheorem": "node_1033de8cefb743ae83057dfa8f09766c",
+    "Main.PairwiseBound": "node_61f9b23a8e064e68b9038ddd4ca3591c",
+    "Main.UnrestrictedOptimum": "node_b98522425d024185ab7f23f7d3c30560"
+  },
+  "entries": [
+    {
+      "active": true,
+      "active_contract_version": 2,
+      "kind": "scope",
+      "lifecycle": "active",
+      "node_id": "node_a537c514b7314f238396ee95f1031914",
+      "open_contract_version": null,
+      "path": "Main"
+    },
+    {
+      "active": true,
+      "active_contract_version": 2,
+      "kind": "content",
+      "lifecycle": "active",
+      "node_id": "node_0306ee8afbcf4cd0a0f3e1257f54ed7d",
+      "open_contract_version": null,
+      "path": "Main.Foundations"
+    },
+    {
+      "active": true,
+      "active_contract_version": 3,
+      "kind": "content",
+      "lifecycle": "active",
+      "node_id": "node_1033de8cefb743ae83057dfa8f09766c",
+      "open_contract_version": null,
+      "path": "Main.GapTheorem"
+    },
+    {
+      "active": true,
+      "active_contract_version": 1,
+      "kind": "content",
+      "lifecycle": "active",
+      "node_id": "node_61f9b23a8e064e68b9038ddd4ca3591c",
+      "open_contract_version": null,
+      "path": "Main.PairwiseBound"
+    },
+    {
+      "active": true,
+      "active_contract_version": 1,
+      "kind": "content",
+      "lifecycle": "active",
+      "node_id": "node_b98522425d024185ab7f23f7d3c30560",
+      "open_contract_version": null,
+      "path": "Main.UnrestrictedOptimum"
+    }
+  ],
+  "rebuilt_at": "2026-07-29T19:41:20Z",
+  "schema_version": 1,
+  "summary": "Indexed 5 nodes; 5 active paths."
+}

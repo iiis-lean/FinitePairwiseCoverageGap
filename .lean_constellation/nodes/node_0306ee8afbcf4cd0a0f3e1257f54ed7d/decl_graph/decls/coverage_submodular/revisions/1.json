@@ -1,0 +1,248 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [
+      "Element",
+      "Feature",
+      "coverage",
+      "elementFeatures"
+    ],
+    "anticipated_statement_dep_names": [
+      "Element",
+      "coverage"
+    ],
+    "base_revision": null,
+    "kind": "create",
+    "objective": "From contract interface coverage_submodular and SourceIndex b_0013 / article lines 11–16, state and prove the standard consumer-facing inequality for arbitrary S T : Finset Element: `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T`. Consume accepted Element and coverage in the statement. Prove it using accepted elementFeatures/Feature and the verified route through `Finset.union_biUnion`, two biUnion inclusion lifts for S ∩ T, `Finset.card_mono`, `Finset.card_inter_add_card_union`, and Nat-to-Real casting/rearrangement. Preserve this conclusion direction and add no assumptions.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": null,
+    "summary": "Completed successfully through all four stages. Public theorem coverage_submodular with Lean name coverage_submodular proves for arbitrary Finset Element sets `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T`. Its statement and proof were accepted, it reached proved state, and its accepted current-node dependency closures satisfy graph_proved.",
+    "target_state": "proved"
+  },
+  "lean_decl_name": "coverage_submodular",
+  "proof": {
+    "deps": [
+      {
+        "kind": "mathlib_decl",
+        "reason": null,
+        "ref": {
+          "module": "Mathlib.Data.Finset.Card",
+          "name": "Finset.card_inter_add_card_union"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": null,
+        "ref": {
+          "module": "Mathlib.Data.Finset.Card",
+          "name": "Finset.card_mono"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": null,
+        "ref": {
+          "module": "Mathlib.Data.Finset.Union",
+          "name": "Finset.biUnion_subset_biUnion_of_subset_left"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": null,
+        "ref": {
+          "module": "Mathlib.Data.Finset.Union",
+          "name": "Finset.union_biUnion"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": null,
+        "ref": {
+          "module": "Mathlib.Data.Nat.Cast.Order.Basic",
+          "name": "Nat.cast_le"
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "Element",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "Feature",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "coverage",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "elementFeatures",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": false,
+        "contains_axiom": false,
+        "contains_sorry": false,
+        "diagnostics": {
+          "diagnostics": [],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_submodular', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Theorems/coverage_submodular.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 0 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "proof_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": false,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [],
+          "opaque_count": 0,
+          "sorry_count": 0,
+          "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures\nimport Mathlib.Data.Finset.Card\nimport Mathlib.Data.Finset.Union\nimport Mathlib.Data.Nat.Cast.Order.Basic\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_submodular`\n\nFor arbitrary `S T : Finset Element`, `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage\nT`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n\n## Proof outline\n\nUnfold `coverage` and put `A = S.biUnion elementFeatures`, `B = T.biUnion elementFeatures`, and `C =\n(S ∩ T).biUnion elementFeatures`. Rewrite the covered features of `S ∪ T` with\n`Finset.union_biUnion`, obtaining `A ∪ B`. Use `Finset.biUnion_subset_biUnion_of_subset_left\nelementFeatures Finset.inter_subset_left` and the analogous lift of `Finset.inter_subset_right` to\nshow `C ⊆ A` and `C ⊆ B`; combine them into `C ⊆ A ∩ B`. By `Finset.card_mono`, `C.card ≤ (A ∩\nB).card`. Add `(A ∪ B).card` to both sides, then rewrite the right-hand side using\n`Finset.card_inter_add_card_union A B` to get `(A ∪ B).card + C.card ≤ A.card + B.card` (commuting\naddends if required). Cast this natural inequality to `ℝ` using `Nat.cast_le` and normalize cast\naddition, yielding exactly `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T`. This\nuses `elementFeatures : Element → Finset Feature` throughout and adds no hypotheses.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Proof dependencies\n\n- `Finset.card_inter_add_card_union` from `Mathlib.Data.Finset.Card`\n- `Finset.card_mono` from `Mathlib.Data.Finset.Card`\n- `Finset.biUnion_subset_biUnion_of_subset_left` from `Mathlib.Data.Finset.Union`\n- `Finset.union_biUnion` from `Mathlib.Data.Finset.Union`\n- `Nat.cast_le` from `Mathlib.Data.Nat.Cast.Order.Basic`\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Feature` → `Feature` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n- `Main.Foundations::elementFeatures` → `elementFeatures` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures`\n-/\ntheorem coverage_submodular (S T : Finset Element) :\n    coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T := by\n  unfold coverage\n  rw [Finset.union_biUnion]\n  have hsub : (S ∩ T).biUnion elementFeatures ⊆\n      S.biUnion elementFeatures ∩ T.biUnion elementFeatures := by\n    intro x hx\n    exact Finset.mem_inter.mpr\n      ⟨Finset.biUnion_subset_biUnion_of_subset_left elementFeatures\n          Finset.inter_subset_left hx,\n        Finset.biUnion_subset_biUnion_of_subset_left elementFeatures\n          Finset.inter_subset_right hx⟩\n  have hcard := Finset.card_mono hsub\n  have hsum := Nat.add_le_add_left hcard\n    ((S.biUnion elementFeatures ∪ T.biUnion elementFeatures).card)\n  have hrewrite : (S.biUnion elementFeatures ∪ T.biUnion elementFeatures).card +\n      (S.biUnion elementFeatures ∩ T.biUnion elementFeatures).card =\n      (S.biUnion elementFeatures).card + (T.biUnion elementFeatures).card := by\n    simpa [Nat.add_comm] using Finset.card_inter_add_card_union\n      (S.biUnion elementFeatures) (T.biUnion elementFeatures)\n  have hnat : (S.biUnion elementFeatures ∪ T.biUnion elementFeatures).card +\n      ((S ∩ T).biUnion elementFeatures).card ≤\n      (S.biUnion elementFeatures).card + (T.biUnion elementFeatures).card := by\n    exact hsum.trans_eq hrewrite\n  exact_mod_cast hnat\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 16,
+          "end_locator": null,
+          "kind": "source",
+          "note": "The source identifies the explicit coverage function as submodular; the route realizes it with finite union/intersection cardinalities.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 11,
+          "start_locator": null
+        }
+      ],
+      "text": "Unfold `coverage` and put `A = S.biUnion elementFeatures`, `B = T.biUnion elementFeatures`, and `C = (S ∩ T).biUnion elementFeatures`. Rewrite the covered features of `S ∪ T` with `Finset.union_biUnion`, obtaining `A ∪ B`. Use `Finset.biUnion_subset_biUnion_of_subset_left elementFeatures Finset.inter_subset_left` and the analogous lift of `Finset.inter_subset_right` to show `C ⊆ A` and `C ⊆ B`; combine them into `C ⊆ A ∩ B`. By `Finset.card_mono`, `C.card ≤ (A ∩ B).card`. Add `(A ∪ B).card` to both sides, then rewrite the right-hand side using `Finset.card_inter_add_card_union A B` to get `(A ∪ B).card + C.card ≤ A.card + B.card` (commuting addends if required). Cast this natural inequality to `ℝ` using `Nat.cast_le` and normalize cast addition, yielding exactly `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T`. This uses `elementFeatures : Element → Finset Feature` throughout and adds no hypotheses."
+    }
+  },
+  "revision": 1,
+  "state": "proved",
+  "statement": {
+    "deps": [
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "Element",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "coverage",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": true,
+        "contains_axiom": false,
+        "contains_sorry": true,
+        "diagnostics": {
+          "diagnostics": [
+            {
+              "column": 9,
+              "line": 26,
+              "message": "declaration uses `sorry`",
+              "severity": "warning"
+            }
+          ],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_submodular', 'items': [{'severity': 'warning', 'pos': {'line': 26, 'column': 9}, 'endPos': {'line': 26, 'column': 28}, 'kind': None, 'data': 'declaration uses `sorry`', 'fileName': 'FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_submodular', 'content': '  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\\n-/\\ntheorem coverage_submodular (S T : Finset Element) :\\n    coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T := by\\n  sorry'}], 'total_items': 1, 'error_count': 0, 'warning_count': 1, 'info_count': 0, 'sorry_count': 1}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Theorems/coverage_submodular.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 1 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "statement_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": true,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [
+            {
+              "column": 3,
+              "excerpt": "sorry",
+              "kind": "sorry",
+              "line": 28
+            }
+          ],
+          "opaque_count": 0,
+          "sorry_count": 1,
+          "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_submodular`\n\nFor arbitrary `S T : Finset Element`, `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage\nT`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n-/\ntheorem coverage_submodular (S T : Finset Element) :\n    coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T := by\n  sorry\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 16,
+          "end_locator": null,
+          "kind": "source",
+          "note": "Source support for the coverage function's submodularity property.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 11,
+          "start_locator": null
+        }
+      ],
+      "text": "For arbitrary `S T : Finset Element`, `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T`."
+    }
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T13:33:22Z"
+}

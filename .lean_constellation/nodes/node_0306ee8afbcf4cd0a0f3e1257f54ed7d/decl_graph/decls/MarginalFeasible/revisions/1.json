@@ -1,0 +1,107 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [
+      "Element",
+      "Weight",
+      "marginal"
+    ],
+    "base_revision": null,
+    "kind": "create",
+    "objective": "From SourceIndex b_0017 and formal_target.lean lines 32–36, preserve exactly the conjunction for arbitrary θ : Weight: pointwise `0 ≤ θ s`, total sum over every `Finset Element` equal to 1, and for every i the membership-filtered sum equal to marginal i. Consume accepted Element, unrestricted Weight, and marginal with verified finite-sum support. This definition serves PairwiseFeasible and IsUnrestrictedOptimum without adding support, positivity, or probability-measure assumptions.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": null,
+    "summary": "Completed successfully through Statement NL and Statement Formal. Public definition MarginalFeasible with Lean name MarginalFeasible now preserves pointwise nonnegativity, total mass 1, and exact singleton-marginal equalities over arbitrary real Weight on every Finset Element. It reached declared state and is proof-policy satisfied with accepted Element, Weight, and marginal dependencies; it is ready for PairwiseFeasible and IsUnrestrictedOptimum.",
+    "target_state": "declared"
+  },
+  "lean_decl_name": "MarginalFeasible",
+  "proof": null,
+  "revision": 1,
+  "state": "declared",
+  "statement": {
+    "deps": [
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "Element",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "Weight",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "marginal",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": false,
+        "contains_axiom": false,
+        "contains_sorry": false,
+        "diagnostics": {
+          "diagnostics": [],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/MarginalFeasible.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 0 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "statement_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": false,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [],
+          "opaque_count": 0,
+          "sorry_count": 0,
+          "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `MarginalFeasible`\n\nDefine `MarginalFeasible (θ : Weight)` as the conjunction that, for every `s : Finset Element`, `0 ≤\nθ s`; the total finite sum `∑ s : Finset Element, θ s` equals `1`; and, for every `i : Element`, the\nmembership-filtered finite sum of `θ s` over subsets `s` containing `i` equals `marginal i`. The\ndefinition adds no support, positivity beyond pointwise nonnegativity, or probability-measure\nassumptions.\n\n## Sources\n\n- Source `formal_target.lean`, lines 32–36\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::marginal` → `marginal` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal`\n-/\ndef MarginalFeasible (θ : Weight) : Prop :=\n  (∀ s : Finset Element, 0 ≤ θ s) ∧\n    (∑ s : Finset Element, θ s) = 1 ∧\n      ∀ i : Element, ∑ s : Finset Element with i ∈ s, θ s = marginal i\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 36,
+          "end_locator": null,
+          "kind": "source",
+          "note": "Exact conjunction of pointwise nonnegativity, normalization, and prescribed membership-filtered singleton marginals.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "formal_target.lean",
+          "start_line": 32,
+          "start_locator": null
+        }
+      ],
+      "text": "Define `MarginalFeasible (θ : Weight)` as the conjunction that, for every `s : Finset Element`, `0 ≤ θ s`; the total finite sum `∑ s : Finset Element, θ s` equals `1`; and, for every `i : Element`, the membership-filtered finite sum of `θ s` over subsets `s` containing `i` equals `marginal i`. The definition adds no support, positivity beyond pointwise nonnegativity, or probability-measure assumptions."
+    }
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T13:06:05Z"
+}

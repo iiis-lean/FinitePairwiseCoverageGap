@@ -1,0 +1,24 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [],
+    "base_revision": null,
+    "kind": "create",
+    "objective": "Define the real coefficient λ₀ = 1/2 exactly as fixed by SourceIndex b_0014 / source lines 58–68. It consumes only ℝ arithmetic and feeds dualValue, the finite majorization theorem, and the later exact 479/160 expectation calculation.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": null,
+    "summary": "DeclGraphRoundFlow failed for change dualConstant@rev:1.",
+    "target_state": "declared"
+  },
+  "lean_decl_name": null,
+  "proof": null,
+  "revision": 1,
+  "state": "planned",
+  "statement": {
+    "deps": [],
+    "formal": null,
+    "nl": null
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T14:31:54Z"
+}

@@ -1,0 +1,32 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-26T13:31:53Z",
+  "created_at": "2026-07-26T13:19:32Z",
+  "execution_completed_at": "2026-07-26T13:31:53Z",
+  "execution_reason": "DeclGraphRoundFlow finished with completed.",
+  "execution_result_kind": "success",
+  "node_path": "Main.Foundations",
+  "objective": "Complete graph_proved Main.Foundations by creating and proving the two public b_0013 structural interfaces over the accepted explicit coverage function: inclusion monotonicity and the standard union/intersection submodular inequality. Use the verified Finset biUnion/cardinality and Nat-to-Real Mathlib routes; introduce a tracked helper only if the proof flow exposes an independently meaningful necessity.",
+  "plan_closeout_acknowledged_at": "2026-07-26T13:31:53Z",
+  "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
+  "result_kind": "success",
+  "result_reason": "DeclGraphRoundFlow finished with completed.",
+  "revision_refs": [
+    {
+      "change_id": "coverage_monotone@rev:1",
+      "decl_name": "coverage_monotone",
+      "revision": 1
+    },
+    {
+      "change_id": "coverage_submodular@rev:1",
+      "decl_name": "coverage_submodular",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_ce23b4d93f554ad6a047bb1a3171eb50",
+  "round_index": 8,
+  "started_at": "2026-07-26T13:20:44Z",
+  "status": "committed",
+  "strategy_id": "strategy_eeee9e64e4b940b7b1cc4bb6ae4e7056",
+  "summary": "The strategy achieved its final mathematical stage: coverage_monotone and coverage_submodular completed Statement NL, Statement Formal, Proof NL, and Proof Formal; both reached proved state and are proof-policy satisfied. All 13 contract-required public declarations are now ready, with no blockers, state-only gaps, extra helper branches, retry-version names, or other graph-hygiene issues. Next action: terminal interface binding and content completion audit."
+}

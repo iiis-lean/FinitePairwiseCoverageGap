@@ -1,0 +1,21 @@
+{
+  "closed_at": "2026-07-26T13:35:56Z",
+  "closed_reason": "Mathematical strategy achieved; terminal interface-category mismatch requires Coordinator/tooling resolution outside declaration-round authority.",
+  "created_at": "2026-07-26T12:31:42Z",
+  "created_round_ids": [
+    "round_d823d9a4859347089f5be99ff2bd14a6",
+    "round_d3db5b699b814e1ba18aaa0b935e8b44",
+    "round_66c57263cc454f4992121f0bc517d9fe",
+    "round_4c27d2d9b872485ba4dbf498c3b25094",
+    "round_9d1c1ae1994a4cc3bb7dfe364048269c",
+    "round_0fc80f51e95f4c1a84583564600b66c6",
+    "round_cc77283a781a4568b5d69edf3fe88e50",
+    "round_ce23b4d93f554ad6a047bb1a3171eb50"
+  ],
+  "node_path": "Main.Foundations",
+  "objective": "Build Main.Foundations bottom-up from the exact source data to a proof-policy-satisfied public graph: first declare Element, Feature, Weight, elementFeatures, coverage, and marginal from SourceIndex b_0018; next declare the b_0017 expected-value and feasibility/optimization predicates over arbitrary real weights; then prove the b_0013 coverage_monotone and coverage_submodular interfaces using the verified Finset biUnion/cardinality and Nat-to-Real Mathlib route.",
+  "rationale": "The repository completion mode is graph_proved and there are no visible-node dependencies. Source blocks b_0018 and b_0017 give stable exact definitions, while Mathlib recon verified the full structural proof route. Keep the expected 13 public interfaces plus only independently meaningful finite helpers if implementation exposes a genuine need; preserve exact Fin 5/Fin 4 indexing, feature sets, rational marginals, universal real-valued Weight, exact moment equalities, and theorem conclusion directions.",
+  "status": "closed",
+  "strategy_id": "strategy_eeee9e64e4b940b7b1cc4bb6ae4e7056",
+  "summary": "Completed the full source-faithful graph_proved mathematical route: 11 non-theorem interfaces are declared and proof-policy satisfied, and coverage_monotone plus coverage_submodular are proved. Terminal completion is blocked only because the contract’s Element, Feature, and Weight interfaces cannot bind to their exact source-faithful `abbrev` declarations; the binding service rejects catalog kind `abbrev`."
+}

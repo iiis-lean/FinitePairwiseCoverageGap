@@ -1,0 +1,258 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [
+      "unrestrictedWitness"
+    ],
+    "base_revision": 1,
+    "kind": "update",
+    "objective": "Advance the accepted SourceIndex b_0012 theorem expectedCoverage unrestrictedWitness = 4 from proof_planned to proved by retrying only Proof Formal. Preserve revision 1's exact real-valued formal statement and proof plan. The accepted unrestrictedWitness remains the sole current-node statement dependency and the checked Foundations coverage definitions remain sufficient; no new source or Lean helper is known to be required. Repair only the prior declaration-file capture-integrity failure so the theorem becomes proved-policy satisfied for the eventual IsUnrestrictedOptimum 4 proof.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": "proof_planned",
+    "summary": "Updated unrestrictedWitness_value from accepted revision 1 at proof_planned to revision 2 at proved by rerunning only Proof Formal. The accepted statement expectedCoverage unrestrictedWitness = 4 and proof plan were preserved, the formal proof passed, and the declaration now satisfies the required proved proof policy. The prior capture-integrity failure is resolved with no new dependency or helper.",
+    "target_state": "proved"
+  },
+  "lean_decl_name": "unrestrictedWitness_value",
+  "proof": {
+    "deps": [
+      {
+        "kind": "mathlib_decl",
+        "reason": "The formal proof explicitly distributes expectedCoverage’s complete finite sum across the three support-indicator summands.",
+        "ref": {
+          "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+          "name": "Finset.sum_add_distrib"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "Evaluates the three indicator-supported expected-coverage contributions over all finite subsets.",
+        "ref": {
+          "module": "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+          "name": "Finset.sum_ite_eq'"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "The formal proof explicitly distributes coverage multiplication over the three witness-support summands.",
+        "ref": {
+          "module": "Mathlib.Algebra.Ring.Defs",
+          "name": "add_mul"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "Clears fixed nonzero denominators in the exact rational expected-coverage equality.",
+        "ref": {
+          "module": "Mathlib.Tactic.Field",
+          "name": "Mathlib.Tactic.FieldSimp.field"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "The route explicitly normalizes the complete finite expected-coverage sum over Finset Element.",
+        "ref": {
+          "module": "Mathlib.Tactic.NormNum.BigOperators",
+          "name": "Mathlib.Meta.NormNum.evalFinsetSum"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "Exact rational real arithmetic normalizes the three weighted coverage contributions to 4.",
+        "ref": {
+          "module": "Mathlib.Tactic.NormNum.Core",
+          "name": "Mathlib.Tactic.normNum"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "Closes the exact real rational expected-coverage identity after support-sum reduction.",
+        "ref": {
+          "module": "Mathlib.Tactic.Ring.RingNF",
+          "name": "Mathlib.Tactic.RingNF.ring"
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "The route evaluates coverage of each of the three support sets.",
+        "ref": {
+          "name": "coverage",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "The route unfolds feature assignments to compute each support set's coverage.",
+        "ref": {
+          "name": "elementFeatures",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "The route unfolds the expected-coverage finite sum.",
+        "ref": {
+          "name": "expectedCoverage",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "The route evaluates the exact three-support witness.",
+        "ref": {
+          "name": "unrestrictedWitness",
+          "node": "Main.UnrestrictedOptimum",
+          "repo": null,
+          "revision": 1
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": false,
+        "contains_axiom": false,
+        "contains_sorry": false,
+        "diagnostics": {
+          "diagnostics": [],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_value', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/unrestrictedWitness_value.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 0 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "proof_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": false,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [],
+          "opaque_count": 0,
+          "sorry_count": 0,
+          "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness\nimport Mathlib.Algebra.BigOperators.Group.Finset.Basic\nimport Mathlib.Algebra.BigOperators.Group.Finset.Piecewise\nimport Mathlib.Algebra.Ring.Defs\nimport Mathlib.Tactic.Field\nimport Mathlib.Tactic.NormNum.BigOperators\nimport Mathlib.Tactic.NormNum.Core\nimport Mathlib.Tactic.Ring.RingNF\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `unrestrictedWitness_value`\n\nTheorem `unrestrictedWitness_value` states the exact real-valued equality `expectedCoverage\nunrestrictedWitness = 4`.  It records that the three support sets of the accepted witness each cover\nall four features and that their weights yield expected coverage `4`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 37–39\n\n## Statement dependencies\n\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n- `Main.UnrestrictedOptimum::unrestrictedWitness` → `unrestrictedWitness` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness`\n\n## Proof outline\n\nUnfold `expectedCoverage`, `unrestrictedWitness`, `coverage`, and `elementFeatures`.  Evaluate the\nfinite sum over all `Finset Element`: the witness vanishes except at `{0,2}`, `{1}`, and `{3,4}`.\nFor each of those three sets, compute the `biUnion` of the assigned feature sets and its\ncardinality; each is the full four-feature set, hence has coverage `4`.  The expected-coverage sum\ntherefore becomes\n`(3/10) * 4 + (7/20) * 4 + (7/20) * 4`.\nUse finite big-operator normalization and exact rational real arithmetic to reduce this expression\nto `4`.  This establishes the exact accepted equality without asserting anything about sets outside\nthe witness support.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 37–39\n\n## Proof dependencies\n\n- `Finset.sum_add_distrib` from `Mathlib.Algebra.BigOperators.Group.Finset.Basic`\n- `Finset.sum_ite_eq'` from `Mathlib.Algebra.BigOperators.Group.Finset.Piecewise`\n- `add_mul` from `Mathlib.Algebra.Ring.Defs`\n- `Mathlib.Tactic.FieldSimp.field` from `Mathlib.Tactic.Field`\n- `Mathlib.Meta.NormNum.evalFinsetSum` from `Mathlib.Tactic.NormNum.BigOperators`\n- `Mathlib.Tactic.normNum` from `Mathlib.Tactic.NormNum.Core`\n- `Mathlib.Tactic.RingNF.ring` from `Mathlib.Tactic.Ring.RingNF`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n- `Main.Foundations::elementFeatures` → `elementFeatures` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures`\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n- `Main.UnrestrictedOptimum::unrestrictedWitness` → `unrestrictedWitness` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness`\n-/\ntheorem unrestrictedWitness_value : expectedCoverage unrestrictedWitness = 4 := by\n  classical\n  have h₀₁ : ({0, 2} : Finset Element) ≠ {1} := by decide\n  have h₀₂ : ({0, 2} : Finset Element) ≠ {3, 4} := by decide\n  have h₁₂ : ({1} : Finset Element) ≠ {3, 4} := by decide\n  have h₁₀ : ({1} : Finset Element) ≠ {0, 2} := Ne.symm h₀₁\n  have h₂₀ : ({3, 4} : Finset Element) ≠ {0, 2} := Ne.symm h₀₂\n  have h₂₁ : ({3, 4} : Finset Element) ≠ {1} := Ne.symm h₁₂\n  have hw (x : Finset Element) :\n      unrestrictedWitness x =\n        (if x = {0, 2} then (3 / 10 : ℝ) else 0) +\n          (if x = {1} then (7 / 20 : ℝ) else 0) +\n            (if x = {3, 4} then (7 / 20 : ℝ) else 0) := by\n    by_cases h₀ : x = {0, 2}\n    · subst x\n      simp [unrestrictedWitness, h₀₁, h₀₂]\n    by_cases h₁ : x = {1}\n    · subst x\n      simp [unrestrictedWitness, h₁₀, h₁₂]\n    by_cases h₂ : x = {3, 4}\n    · subst x\n      simp [unrestrictedWitness, h₂₀, h₂₁]\n    simp [unrestrictedWitness, h₀, h₁, h₂]\n  simp only [expectedCoverage]\n  simp_rw [hw, add_mul]\n  rw [Finset.sum_add_distrib, Finset.sum_add_distrib]\n  have hcard₄ : ({2, 0, 1, 3} : Finset Feature).card = 4 := by decide\n  have hcard₂ : ({2, 3} : Finset Feature).card = 2 := by decide\n  simp [Finset.sum_ite_eq', coverage, elementFeatures, Fin.ext_iff, hcard₄, hcard₂]\n  field\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 39,
+          "end_locator": null,
+          "kind": "source",
+          "note": "These lines state that all three support sets cover the four features and compute the witness value as 4.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 37,
+          "start_locator": null
+        }
+      ],
+      "text": "Unfold `expectedCoverage`, `unrestrictedWitness`, `coverage`, and `elementFeatures`.  Evaluate the finite sum over all `Finset Element`: the witness vanishes except at `{0,2}`, `{1}`, and `{3,4}`.  For each of those three sets, compute the `biUnion` of the assigned feature sets and its cardinality; each is the full four-feature set, hence has coverage `4`.  The expected-coverage sum therefore becomes\n`(3/10) * 4 + (7/20) * 4 + (7/20) * 4`.\nUse finite big-operator normalization and exact rational real arithmetic to reduce this expression to `4`.  This establishes the exact accepted equality without asserting anything about sets outside the witness support."
+    }
+  },
+  "revision": 2,
+  "state": "proved",
+  "statement": {
+    "deps": [
+      {
+        "kind": "repo_decl",
+        "reason": "This public definition is the left-hand side of the theorem's exact equality.",
+        "ref": {
+          "name": "expectedCoverage",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "The exact expected-coverage equality is asserted for the accepted complete-domain witness.",
+        "ref": {
+          "name": "unrestrictedWitness",
+          "node": "Main.UnrestrictedOptimum",
+          "repo": null,
+          "revision": 1
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": true,
+        "contains_axiom": false,
+        "contains_sorry": true,
+        "diagnostics": {
+          "diagnostics": [
+            {
+              "column": 9,
+              "line": 26,
+              "message": "declaration uses `sorry`",
+              "severity": "warning"
+            }
+          ],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_value', 'items': [{'severity': 'warning', 'pos': {'line': 26, 'column': 9}, 'endPos': {'line': 26, 'column': 34}, 'kind': None, 'data': 'declaration uses `sorry`', 'fileName': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_value', 'content': '  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness`\\n-/\\ntheorem unrestrictedWitness_value : expectedCoverage unrestrictedWitness = 4 := by\\n  sorry'}], 'total_items': 1, 'error_count': 0, 'warning_count': 1, 'info_count': 0, 'sorry_count': 1}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/unrestrictedWitness_value.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 1 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "statement_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": true,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [
+            {
+              "column": 3,
+              "excerpt": "sorry",
+              "kind": "sorry",
+              "line": 27
+            }
+          ],
+          "opaque_count": 0,
+          "sorry_count": 1,
+          "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `unrestrictedWitness_value`\n\nTheorem `unrestrictedWitness_value` states the exact real-valued equality `expectedCoverage\nunrestrictedWitness = 4`.  It records that the three support sets of the accepted witness each cover\nall four features and that their weights yield expected coverage `4`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 37–39\n\n## Statement dependencies\n\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n- `Main.UnrestrictedOptimum::unrestrictedWitness` → `unrestrictedWitness` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness`\n-/\ntheorem unrestrictedWitness_value : expectedCoverage unrestrictedWitness = 4 := by\n  sorry\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 39,
+          "end_locator": null,
+          "kind": "source",
+          "note": "The source states that all three support sets cover all four features and that the expected value is 4.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 37,
+          "start_locator": null
+        }
+      ],
+      "text": "Theorem `unrestrictedWitness_value` states the exact real-valued equality `expectedCoverage unrestrictedWitness = 4`.  It records that the three support sets of the accepted witness each cover all four features and that their weights yield expected coverage `4`."
+    }
+  },
+  "status": "committed",
+  "updated_at": "2026-07-29T15:34:07Z"
+}

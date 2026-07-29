@@ -1,0 +1,25 @@
+{
+  "decl_names": [
+    "coverage_le_four",
+    "unrestrictedWitness",
+    "unrestrictedWitness_feasible",
+    "unrestrictedWitness_value",
+    "unrestricted_optimum_four"
+  ],
+  "node_id": "node_b98522425d024185ab7f23f7d3c30560",
+  "node_path": "Main.UnrestrictedOptimum",
+  "round_ids": [
+    "round_15f14d739a89448ab3ba59403e8847c4",
+    "round_1c6721d767c34b6fb82ff2c34eb95121",
+    "round_5013cbd4ca7443b9b35b0f103464dcbd",
+    "round_b60ca0da24684ecbb09d4e07ad022c0b",
+    "round_ca02c7bb44734e22998e022fc9934093",
+    "round_f0e49cae9f8247b7bd97a762ab4770de"
+  ],
+  "schema_version": 1,
+  "strategy_ids": [
+    "strategy_279b788bd56a42eb8181f2bf2c760a52"
+  ],
+  "summary": "DeclGraph index rebuilt for Main.UnrestrictedOptimum: 5 decls, 6 rounds, 1 strategies.",
+  "updated_at": "2026-07-29T16:07:49Z"
+}

@@ -1,0 +1,148 @@
+{
+  "boundary": "Own the strict arithmetic inequality and the final theorem FinitePairwiseCoverageGap.finite_pairwise_coverage_gap, importing the three lower public interfaces. Exclude reimplementation of foundational, primal, or dual certificate work. Expected scale: roughly 2–5 important declarations spanning SourceIndex b_0015 and b_0019.",
+  "committed_at": "2026-07-29T19:08:33Z",
+  "constraints": "Preserve all five conjuncts and the exact universal predicates, constants, coercions, conclusion directions, and existing lower dependencies. The formal declaration must be placed in namespace `FinitePairwiseCoverageGap` (or equivalently capture that exact full Lean name); do not leave it at the root name `finite_pairwise_coverage_gap`, and do not introduce an alias or duplicate theorem.",
+  "context_refs": [],
+  "contract_kind": "content",
+  "created_at": "2026-07-29T18:46:35Z",
+  "decl_graph_head": {
+    "finite_pairwise_coverage_gap": 2,
+    "strict_ratio_comparison": 1
+  },
+  "deps": [
+    {
+      "added_by": "coordinator",
+      "dep_id": "dep_59db665ea844aab2",
+      "expected_decl_refs": [
+        {
+          "name": "Element",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        },
+        {
+          "name": "coverage",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        },
+        {
+          "name": "IsUnrestrictedOptimum",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        },
+        {
+          "name": "IsPairwiseUpperBound",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        },
+        {
+          "name": "coverage_monotone",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        },
+        {
+          "name": "coverage_submodular",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        }
+      ],
+      "reason": "The protected theorem statement and first two conjuncts require the exact Element, coverage, optimization predicates, and proved monotonicity/submodularity declarations from the ready foundations boundary.",
+      "target": {
+        "node": "Main.Foundations",
+        "repo": null
+      }
+    },
+    {
+      "added_by": "coordinator",
+      "dep_id": "dep_a04c23cb028f9876",
+      "expected_decl_refs": [
+        {
+          "name": "unrestricted_optimum_four",
+          "node": "Main.UnrestrictedOptimum",
+          "repo": null,
+          "revision": 2
+        }
+      ],
+      "reason": "The protected theorem's third conjunct is discharged by the proved exact public theorem unrestricted_optimum_four : IsUnrestrictedOptimum 4.",
+      "target": {
+        "node": "Main.UnrestrictedOptimum",
+        "repo": null
+      }
+    },
+    {
+      "added_by": "coordinator",
+      "dep_id": "dep_2da153a81c09e82b",
+      "expected_decl_refs": [
+        {
+          "name": "pairwise_upper_bound_479_160",
+          "node": "Main.PairwiseBound",
+          "repo": null,
+          "revision": 1
+        }
+      ],
+      "reason": "The protected theorem's fourth conjunct is discharged by the proved exact public theorem pairwise_upper_bound_479_160 : IsPairwiseUpperBound (479 / 160).",
+      "target": {
+        "node": "Main.PairwiseBound",
+        "repo": null
+      }
+    }
+  ],
+  "exports": [],
+  "goal": "Assemble the proved structural, primal, and dual results into the immutable public finite pairwise coverage gap theorem and prove the strict rational comparison.",
+  "interfaces": [
+    {
+      "bound_decl": {
+        "name": "finite_pairwise_coverage_gap",
+        "node": "Main.GapTheorem",
+        "repo": null,
+        "revision": 2
+      },
+      "expected_statement_lean_code": null,
+      "kind": "theorem",
+      "name": "finite_pairwise_coverage_gap",
+      "note": "Consumer anchor: protected Main interface `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap`. Preserve the exact formal_target.lean:57–63 header and compose coverage_monotone, coverage_submodular, unrestricted_optimum_four, pairwise_upper_bound_479_160, and strict_ratio_comparison. Crucially, the compiler-captured full Lean declaration name must be exactly `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap` (for example by declaring inside `namespace FinitePairwiseCoverageGap`); the stable flat Decl.name remains `finite_pairwise_coverage_gap`. Do not create a wrapper alias, strengthen assumptions, weaken conclusions, or alter any conjunct.",
+      "source_refs": [],
+      "summary": "Exact protected five-conjunct theorem whose captured Lean declaration identity is `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap`."
+    }
+  ],
+  "mathlib_decls": [],
+  "mathlib_modules": [],
+  "objective": "Repair only the final theorem's captured Lean identity while preserving its already accepted exact five-conjunct statement and proof: create the next revision so `Decl.name` remains flat `finite_pairwise_coverage_gap` but `lean_decl_name` compiler-confirms exactly `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap`, then prove and bind the existing interface under graph_proved.",
+  "owned_refs": [
+    {
+      "added_by": "coordinator",
+      "reason": "SourceIndex b_0015: strict ratio calculation and mathematical counterexample conclusion.",
+      "ref": {
+        "kind": "source",
+        "ref": {
+          "end_line": 131,
+          "path": "article/sections/02_counterexample.tex",
+          "start_line": 126
+        }
+      },
+      "ref_id": "mat_a4c2dae0d0dc5f1a"
+    },
+    {
+      "added_by": "coordinator",
+      "reason": "SourceIndex b_0019: exact immutable public theorem header and required five conjuncts.",
+      "ref": {
+        "kind": "source",
+        "ref": {
+          "end_line": 64,
+          "path": "formal_target.lean",
+          "start_line": 55
+        }
+      },
+      "ref_id": "mat_9585c0c93c1782db"
+    }
+  ],
+  "status": "committed",
+  "success_criteria": "The protected theorem is compiler-confirmed with the exact prepared header and a proof whose dependency closure is proved.",
+  "summary": "Accepted ready contract v2. Revision 2 preserves the exact proved five-conjunct theorem and compiler-confirms the required full Lean identity `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap`; it remains the flat Constellation declaration `finite_pairwise_coverage_gap`, introduces no alias or duplicate, and has complete graph-proved and public Statement closures. The root interface can now bind exactly.",
+  "version": 2
+}

@@ -1,0 +1,33 @@
+{
+  "decl_names": [
+    "coverage_le_dualValue",
+    "dualConstant",
+    "dualPairCoeff",
+    "dualSingletonCoeff",
+    "dualValue",
+    "expectedCoverage_le_weightedDual",
+    "independentWeight",
+    "independentWeight_pairwiseFeasible",
+    "pairwise_upper_bound_479_160",
+    "weightedDual_eq_479_160"
+  ],
+  "node_id": "node_61f9b23a8e064e68b9038ddd4ca3591c",
+  "node_path": "Main.PairwiseBound",
+  "round_ids": [
+    "round_1d7945004ef44a34b5c391fb417042fe",
+    "round_46adb7547b714952ab498fb611f43544",
+    "round_470256ec849e4ca1954ec33977dc75a0",
+    "round_654e9b030e5c4fe1aab33f397cb69115",
+    "round_66dd7394b36b43a283b346190fa83f1a",
+    "round_89382fc73e724416912c2f7107375b83",
+    "round_b6947c9da0e94cbfa6eb4c0c1d69ec57",
+    "round_d1923e8e2a144cfc985070b8fc28d6b9",
+    "round_e32304b6306b4fc9b88ee9a268c419cd"
+  ],
+  "schema_version": 1,
+  "strategy_ids": [
+    "strategy_fddb4422361e4cd698dba5e52c62472e"
+  ],
+  "summary": "DeclGraph index rebuilt for Main.PairwiseBound: 10 decls, 9 rounds, 1 strategies.",
+  "updated_at": "2026-07-27T10:43:11Z"
+}

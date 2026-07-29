@@ -1,0 +1,27 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-29T15:47:45Z",
+  "created_at": "2026-07-29T15:34:30Z",
+  "execution_completed_at": "2026-07-29T15:45:57Z",
+  "execution_reason": null,
+  "execution_result_kind": "success",
+  "node_path": "Main.UnrestrictedOptimum",
+  "objective": "Prove the source-visible universal bound that every finite subset of Element has coverage at most 4, completing the upper-bound prerequisite for the final unrestricted optimum theorem.",
+  "plan_closeout_acknowledged_at": "2026-07-29T15:47:45Z",
+  "plan_closeout_acknowledged_by": "a_a2d50c8badaf485395c6fd44278811c5",
+  "result_kind": "success",
+  "result_reason": "The public universal coverage bound reached proved state and required proof-policy satisfaction with no blockers.",
+  "revision_refs": [
+    {
+      "change_id": "coverage_le_four@rev:1",
+      "decl_name": "coverage_le_four",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_f0e49cae9f8247b7bd97a762ab4770de",
+  "round_index": 4,
+  "started_at": "2026-07-29T15:35:45Z",
+  "status": "committed",
+  "strategy_id": "strategy_279b788bd56a42eb8181f2bf2c760a52",
+  "summary": "Round 4 successfully completed the universal upper-bound stage of the bottom-up strategy. coverage_le_four reached proved state and required proved-policy satisfaction as a public theorem. Together with proved unrestrictedWitness_feasible and unrestrictedWitness_value and the satisfied unrestrictedWitness definition, all source-visible lower prerequisites for the final public IsUnrestrictedOptimum 4 theorem are now known and accepted. No blockers, missing helpers, state-only intermediates, superseded artifacts, or cleanup targets remain. The next step is a single parent theorem round, not further preparation."
+}

@@ -1,0 +1,32 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-26T13:04:50Z",
+  "created_at": "2026-07-26T12:59:40Z",
+  "execution_completed_at": "2026-07-26T13:04:50Z",
+  "execution_reason": "DeclGraphRoundFlow finished with completed.",
+  "execution_result_kind": "success",
+  "node_path": "Main.Foundations",
+  "objective": "Start the b_0017 feasibility layer with two independent public definitions over accepted b_0018 providers: expectedCoverage as the finite weighted sum over every Finset Element, and MarginalFeasible as arbitrary-real nonnegativity, normalization, and exact singleton-marginal equalities. These declarations will provide the lower layer for PairwiseFeasible and the optimization predicates.",
+  "plan_closeout_acknowledged_at": "2026-07-26T13:04:50Z",
+  "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
+  "result_kind": "success",
+  "result_reason": "DeclGraphRoundFlow finished with completed.",
+  "revision_refs": [
+    {
+      "change_id": "expectedCoverage@rev:1",
+      "decl_name": "expectedCoverage",
+      "revision": 1
+    },
+    {
+      "change_id": "MarginalFeasible@rev:1",
+      "decl_name": "MarginalFeasible",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_9d1c1ae1994a4cc3bb7dfe364048269c",
+  "round_index": 5,
+  "started_at": "2026-07-26T13:00:37Z",
+  "status": "committed",
+  "strategy_id": "strategy_eeee9e64e4b940b7b1cc4bb6ae4e7056",
+  "summary": "The strategy successfully established the first b_0017 layer: expectedCoverage and MarginalFeasible reached declared state with accepted source-faithful formal statements and satisfied proof-policy closures. No blockers, state-only gaps, helper requirements, or graph-hygiene issues appeared. PairwiseFeasible, IsUnrestrictedOptimum, and IsPairwiseUpperBound remain, along with the two proved structural theorems. Next action: declare PairwiseFeasible and IsUnrestrictedOptimum, whose lower providers are now accepted."
+}

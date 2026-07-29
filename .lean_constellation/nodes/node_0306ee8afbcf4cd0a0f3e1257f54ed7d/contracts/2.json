@@ -1,0 +1,289 @@
+{
+  "boundary": "Own Element, Feature, Weight, elementFeatures, coverage, marginal, expectedCoverage, MarginalFeasible, PairwiseFeasible, IsUnrestrictedOptimum, and IsPairwiseUpperBound, together with coverage monotonicity and submodularity. Exclude the particular unrestricted witness, dual coefficients/certificate, weak-duality bound, and final conjunction. Expected scale: roughly 10–15 important declarations spanning SourceIndex b_0013, b_0017, and b_0018, plus finite helper lemmas.",
+  "committed_at": "2026-07-26T14:08:43Z",
+  "constraints": "Preserve formal_target.lean exactly in semantics and declaration form: Element, Feature, and Weight remain the existing public `abbrev` graph prerequisites; they are intentionally not standalone contract interfaces because the interface-binding catalog does not accept `abbrev`. Preserve the universal real-valued Weight domain and exact marginal and pair-moment equalities.",
+  "context_refs": [],
+  "contract_kind": "content",
+  "created_at": "2026-07-26T14:00:28Z",
+  "decl_graph_head": {
+    "Element": 2,
+    "Feature": 2,
+    "IsPairwiseUpperBound": 1,
+    "IsUnrestrictedOptimum": 1,
+    "MarginalFeasible": 1,
+    "PairwiseFeasible": 1,
+    "Weight": 2,
+    "coverage": 2,
+    "coverage_monotone": 1,
+    "coverage_submodular": 1,
+    "elementFeatures": 2,
+    "expectedCoverage": 1,
+    "marginal": 2
+  },
+  "deps": [],
+  "exports": [],
+  "goal": "Formalize the finite five-element coverage instance and the complete real-valued distribution predicates, and prove the structural coverage properties needed by every later certificate.",
+  "interfaces": [
+    {
+      "bound_decl": {
+        "name": "elementFeatures",
+        "node": "Main.Foundations",
+        "repo": null,
+        "revision": 2
+      },
+      "expected_statement_lean_code": null,
+      "kind": "definition",
+      "name": "elementFeatures",
+      "note": "Preserve formal_target.lean lines 9–15 exactly in meaning.",
+      "source_refs": [],
+      "summary": "Exact feature set assigned to each of the five elements."
+    },
+    {
+      "bound_decl": {
+        "name": "coverage",
+        "node": "Main.Foundations",
+        "repo": null,
+        "revision": 2
+      },
+      "expected_statement_lean_code": null,
+      "kind": "definition",
+      "name": "coverage",
+      "note": "`coverage (s : Finset Element) : ℝ` equals the card of `s.biUnion elementFeatures` coerced to ℝ.",
+      "source_refs": [],
+      "summary": "Real-valued cardinality of the union of features covered by a selected finite set."
+    },
+    {
+      "bound_decl": {
+        "name": "marginal",
+        "node": "Main.Foundations",
+        "repo": null,
+        "revision": 2
+      },
+      "expected_statement_lean_code": null,
+      "kind": "definition",
+      "name": "marginal",
+      "note": "Preserve the exact `Fin 5 → ℝ` marginal values.",
+      "source_refs": [],
+      "summary": "Prescribed rational marginal vector (3/10, 7/20, 3/10, 7/20, 7/20)."
+    },
+    {
+      "bound_decl": {
+        "name": "expectedCoverage",
+        "node": "Main.Foundations",
+        "repo": null,
+        "revision": 1
+      },
+      "expected_statement_lean_code": null,
+      "kind": "definition",
+      "name": "expectedCoverage",
+      "note": "`expectedCoverage (θ : Weight) : ℝ := ∑ s, θ s * coverage s`.",
+      "source_refs": [],
+      "summary": "Expected coverage for arbitrary real weights over all subsets."
+    },
+    {
+      "bound_decl": {
+        "name": "MarginalFeasible",
+        "node": "Main.Foundations",
+        "repo": null,
+        "revision": 1
+      },
+      "expected_statement_lean_code": null,
+      "kind": "definition",
+      "name": "MarginalFeasible",
+      "note": "Keep θ : Weight arbitrary real-valued and express nonnegativity as a predicate.",
+      "source_refs": [],
+      "summary": "Nonnegative normalized weights with the exact prescribed singleton marginals."
+    },
+    {
+      "bound_decl": {
+        "name": "PairwiseFeasible",
+        "node": "Main.Foundations",
+        "repo": null,
+        "revision": 1
+      },
+      "expected_statement_lean_code": null,
+      "kind": "definition",
+      "name": "PairwiseFeasible",
+      "note": "Preserve exact equality to `marginal i * marginal j` and all universal indices.",
+      "source_refs": [],
+      "summary": "Marginal feasibility plus exact prescribed pair moments for every ordered pair i < j."
+    },
+    {
+      "bound_decl": {
+        "name": "IsUnrestrictedOptimum",
+        "node": "Main.Foundations",
+        "repo": null,
+        "revision": 1
+      },
+      "expected_statement_lean_code": null,
+      "kind": "definition",
+      "name": "IsUnrestrictedOptimum",
+      "note": "Preserve the existential witness and universal bound conjuncts.",
+      "source_refs": [],
+      "summary": "Attainment plus universal upper bound over all marginal-feasible real weights."
+    },
+    {
+      "bound_decl": {
+        "name": "IsPairwiseUpperBound",
+        "node": "Main.Foundations",
+        "repo": null,
+        "revision": 1
+      },
+      "expected_statement_lean_code": null,
+      "kind": "definition",
+      "name": "IsPairwiseUpperBound",
+      "note": "Preserve both nonemptiness and the universal bound over arbitrary Weight.",
+      "source_refs": [],
+      "summary": "Nonempty pairwise-feasible domain plus universal expected-coverage upper bound."
+    },
+    {
+      "bound_decl": {
+        "name": "coverage_monotone",
+        "node": "Main.Foundations",
+        "repo": null,
+        "revision": 1
+      },
+      "expected_statement_lean_code": null,
+      "kind": "theorem",
+      "name": "coverage_monotone",
+      "note": "Conclusion shape: `∀ ⦃s t : Finset Element⦄, s ⊆ t → coverage s ≤ coverage t`; this is the first conjunct consumed by `finite_pairwise_coverage_gap`.",
+      "source_refs": [],
+      "summary": "The explicit coverage function is monotone under Finset inclusion."
+    },
+    {
+      "bound_decl": {
+        "name": "coverage_submodular",
+        "node": "Main.Foundations",
+        "repo": null,
+        "revision": 1
+      },
+      "expected_statement_lean_code": null,
+      "kind": "theorem",
+      "name": "coverage_submodular",
+      "note": "Conclusion shape: `∀ s t : Finset Element, coverage (s ∪ t) + coverage (s ∩ t) ≤ coverage s + coverage t`; preserve direction exactly for the second conjunct.",
+      "source_refs": [],
+      "summary": "The explicit coverage function satisfies the union/intersection submodular inequality."
+    }
+  ],
+  "mathlib_decls": [
+    {
+      "added_by": "worker",
+      "kind": "lemma",
+      "module": "Mathlib.Data.Finset.Union",
+      "name": "Finset.biUnion_subset_biUnion_of_subset_left",
+      "reason": "Directly lifts selected-set inclusion to covered-feature inclusion for coverage_monotone."
+    },
+    {
+      "added_by": "worker",
+      "kind": "lemma",
+      "module": "Mathlib.Data.Finset.Union",
+      "name": "Finset.union_biUnion",
+      "reason": "Rewrites the covered features of S ∪ T for coverage_submodular."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Data.Finset.Card",
+      "name": "Finset.card_mono",
+      "reason": "Converts covered-feature inclusion into cardinality inequalities."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Data.Finset.Card",
+      "name": "Finset.card_inter_add_card_union",
+      "reason": "Supplies the finite union/intersection cardinality identity for the submodular inequality."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Data.Nat.Cast.Order.Basic",
+      "name": "Nat.cast_le",
+      "reason": "Bridges natural cardinality inequalities to real-valued coverage."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "name": "Finset.sum_filter",
+      "reason": "Supports filtered finite sums in marginal and pair-moment conditions."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Data.Finset.Filter",
+      "name": "Finset.mem_filter",
+      "reason": "Simplifies filtered membership used by those finite-sum predicates."
+    }
+  ],
+  "mathlib_modules": [
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Data.Finset.Union",
+      "reason": "Defines the feature-union construction and the inclusion/union rewrites used in both structural coverage proofs."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Data.Finset.Card",
+      "reason": "Provides cardinality monotonicity and finite union–intersection inclusion-exclusion."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Data.Nat.Cast.Order.Basic",
+      "reason": "Supports the Nat-to-Real order conversion in real-valued coverage inequalities."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Data.Fintype.Powerset",
+      "reason": "Provides `Fintype (Finset Element)` so expectedCoverage and feasibility predicates can sum over all subsets."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "reason": "Provides finite sum/filter support for expected coverage and moment constraints."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Data.Finset.Filter",
+      "reason": "Provides simplification of filtered subset-family membership in marginal and pairwise predicates."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Data.Real.Basic",
+      "reason": "Provides `ℝ` and field division used directly by the current Weight and marginal statements."
+    }
+  ],
+  "objective": "Finalize the already implemented graph-proved foundational boundary under the repaired interface route: retain all 13 source-faithful public declarations and complete against the ten bindable public interfaces, with the three exact abbreviations remaining public declaration prerequisites.",
+  "owned_refs": [
+    {
+      "added_by": "coordinator",
+      "reason": "SourceIndex b_0018 and b_0017: exact finite data, coverage function, arbitrary real Weight domain, feasibility predicates, and optimization predicates owned by this node.",
+      "ref": {
+        "kind": "source",
+        "ref": {
+          "end_line": 53,
+          "path": "formal_target.lean",
+          "start_line": 5
+        }
+      },
+      "ref_id": "mat_1c84394b413877fb"
+    },
+    {
+      "added_by": "coordinator",
+      "reason": "SourceIndex b_0013: mathematical five-element coverage instance, marginals, and stated monotonicity/submodularity.",
+      "ref": {
+        "kind": "source",
+        "ref": {
+          "end_line": 20,
+          "path": "article/sections/02_counterexample.tex",
+          "start_line": 3
+        }
+      },
+      "ref_id": "mat_2d11afa68a7886bf"
+    }
+  ],
+  "status": "committed",
+  "success_criteria": "All source-specified data and predicates compile; coverage monotonicity and submodularity are proved and exposed; no feasibility quantifier is restricted beyond arbitrary real weights on all finite subsets.",
+  "summary": "Accepted ready contract v2. All 13 source-faithful public declarations are ready; ten supported interfaces are bound; coverage_monotone and coverage_submodular are proved. Direct signature inspection confirms that IsUnrestrictedOptimum preserves attainment and the universal arbitrary-real marginal-feasible bound, while IsPairwiseUpperBound preserves nonemptiness and the universal arbitrary-real pairwise-feasible bound, so the foundations boundary is suitable for both downstream certificate nodes with no unresolved prerequisite.",
+  "version": 2
+}

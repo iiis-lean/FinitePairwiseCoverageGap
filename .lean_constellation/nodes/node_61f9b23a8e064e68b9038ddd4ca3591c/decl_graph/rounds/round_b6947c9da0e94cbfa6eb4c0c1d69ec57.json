@@ -1,0 +1,27 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-26T15:59:16Z",
+  "created_at": "2026-07-26T15:30:01Z",
+  "execution_completed_at": "2026-07-26T15:59:16Z",
+  "execution_reason": "DeclGraphRoundFlow finished with blocked.",
+  "execution_result_kind": "blocked",
+  "node_path": "Main.PairwiseBound",
+  "objective": "Create and prove the contract-required feasibility certificate PairwiseFeasible independentWeight, establishing an explicit nonempty pairwise-feasible domain before the universal upper-bound calculation.",
+  "plan_closeout_acknowledged_at": "2026-07-26T15:59:16Z",
+  "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
+  "result_kind": "blocked",
+  "result_reason": "DeclGraphRoundFlow finished with blocked.",
+  "revision_refs": [
+    {
+      "change_id": "independentWeight_pairwiseFeasible@rev:1",
+      "decl_name": "independentWeight_pairwiseFeasible",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_b6947c9da0e94cbfa6eb4c0c1d69ec57",
+  "round_index": 6,
+  "started_at": "2026-07-26T15:31:14Z",
+  "status": "committed",
+  "strategy_id": "strategy_fddb4422361e4cd698dba5e52c62472e",
+  "summary": "The strategy made partial progress: independentWeight_pairwiseFeasible reached proof_planned with passed formal statement and a Lean-passing captured proof, but target-state satisfaction failed because Proof NL and Proof Formal were semantically misaligned. No declaration/provider, source, Mathlib, or scope blocker exists. The known retry condition is to rerun from declared so Proof NL records the actual product-factorization, powerset prod_add first/second-moment argument, factorwise nonnegativity, and finite index simplification; Proof Formal can then recapture the safe checked proof. Do not retry only from proof_planned, because that would preserve the mismatched Proof NL."
+}

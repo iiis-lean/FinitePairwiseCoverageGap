@@ -1,0 +1,27 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-26T15:28:15Z",
+  "created_at": "2026-07-26T15:22:25Z",
+  "execution_completed_at": "2026-07-26T15:28:15Z",
+  "execution_reason": "DeclGraphRoundFlow finished with completed.",
+  "execution_result_kind": "success",
+  "node_path": "Main.PairwiseBound",
+  "objective": "Declare the canonical independent-product Weight built from the fixed marginal vector. This supplies the concrete witness needed for the contract’s pairwise-feasible nonemptiness requirement; feasibility will be proved in the following dependency-ordered round.",
+  "plan_closeout_acknowledged_at": "2026-07-26T15:28:15Z",
+  "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
+  "result_kind": "success",
+  "result_reason": "DeclGraphRoundFlow finished with completed.",
+  "revision_refs": [
+    {
+      "change_id": "independentWeight@rev:1",
+      "decl_name": "independentWeight",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_654e9b030e5c4fe1aab33f397cb69115",
+  "round_index": 5,
+  "started_at": "2026-07-26T15:23:37Z",
+  "status": "committed",
+  "strategy_id": "strategy_fddb4422361e4cd698dba5e52c62472e",
+  "summary": "The strategy progressed through the nonemptiness foundation: independentWeight is declared and proof-policy satisfied. No blocker is present. The next dependency-ordered round should create and prove independentWeight_pairwiseFeasible using the accepted definition and the ready Foundations PairwiseFeasible/marginal interfaces, with exact finite enumeration of nonnegativity, total mass, first moments, and all ordered pair moments."
+}

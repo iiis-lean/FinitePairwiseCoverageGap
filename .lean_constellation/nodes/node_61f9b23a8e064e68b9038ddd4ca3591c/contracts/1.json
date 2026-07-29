@@ -1,0 +1,376 @@
+{
+  "boundary": "Own the dual coefficient functions, the complete 32-subset pointwise majorization proof, pairwise-feasible nonemptiness, the moment-sum weak-duality calculation, and the theorem IsPairwiseUpperBound (479/160). Exclude foundational definitions, the unrestricted optimum witness, and final conjunction. Expected scale: roughly 10–15 important declarations plus finite computational helpers spanning SourceIndex b_0014, b_0016, and the upper-bound part of b_0015.",
+  "committed_at": "2026-07-29T14:24:52Z",
+  "constraints": "Do not replace universal weak duality with a 15-atom or nonnegative-subset equality shortcut; preserve the full real-valued feasible domain and exact rational 479/160.",
+  "context_refs": [],
+  "contract_kind": "content",
+  "created_at": "2026-07-26T12:14:53Z",
+  "decl_graph_head": {
+    "coverage_le_dualValue": 2,
+    "dualConstant": 2,
+    "dualPairCoeff": 2,
+    "dualSingletonCoeff": 2,
+    "dualValue": 2,
+    "expectedCoverage_le_weightedDual": 1,
+    "independentWeight": 1,
+    "independentWeight_pairwiseFeasible": 2,
+    "pairwise_upper_bound_479_160": 1,
+    "weightedDual_eq_479_160": 1
+  },
+  "deps": [
+    {
+      "added_by": "coordinator",
+      "dep_id": "dep_59db665ea844aab2",
+      "expected_decl_refs": [
+        {
+          "name": "Element",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        },
+        {
+          "name": "Weight",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        },
+        {
+          "name": "elementFeatures",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        },
+        {
+          "name": "coverage",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        },
+        {
+          "name": "marginal",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        },
+        {
+          "name": "expectedCoverage",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        },
+        {
+          "name": "MarginalFeasible",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        },
+        {
+          "name": "PairwiseFeasible",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        },
+        {
+          "name": "IsPairwiseUpperBound",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        }
+      ],
+      "reason": "The product/nonemptiness witness, 32-row dual majorization, and weak-duality expectation calculation use the exact finite coverage data, arbitrary-real marginal and pairwise feasibility predicates, expected coverage, and IsPairwiseUpperBound consumer predicate established by the ready foundations boundary.",
+      "target": {
+        "node": "Main.Foundations",
+        "repo": null
+      }
+    }
+  ],
+  "exports": [],
+  "goal": "Formalize the exact rational dual certificate and prove the universal pairwise-feasible expected-coverage upper bound, including nonemptiness of the pairwise-feasible domain.",
+  "interfaces": [
+    {
+      "bound_decl": {
+        "name": "pairwise_upper_bound_479_160",
+        "node": "Main.PairwiseBound",
+        "repo": null,
+        "revision": 1
+      },
+      "expected_statement_lean_code": null,
+      "kind": "theorem",
+      "name": "pairwise_upper_bound_479_160",
+      "note": "Conclusion must be `IsPairwiseUpperBound (479 / 160)` over Main.Foundations.Weight, proved by the complete 32-row certificate and weak duality; consumed as the fourth conjunct of `finite_pairwise_coverage_gap`.",
+      "source_refs": [],
+      "summary": "The pairwise-feasible domain is nonempty and every feasible distribution has expected coverage at most 479/160."
+    }
+  ],
+  "mathlib_decls": [
+    {
+      "added_by": "worker",
+      "kind": "def",
+      "module": "Mathlib.Data.Finset.Powerset",
+      "name": "Finset.powerset",
+      "reason": "Finite enumeration of all subsets."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Data.Finset.Powerset",
+      "name": "Finset.mem_powerset",
+      "reason": "Subset characterization for the enumerator."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Data.Fintype.Powerset",
+      "name": "Finset.powerset_univ",
+      "reason": "Relates all finsets on `Fin 5` to the powerset enumeration."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "name": "Finset.sum_nonneg",
+      "reason": "Nonnegative weighted slack sum."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "name": "Finset.sum_congr",
+      "reason": "Rewrites the weak-duality summand pointwise."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "name": "Finset.sum_singleton",
+      "reason": "First-moment singleton contributions."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "name": "Finset.sum_pair",
+      "reason": "Two-element contributions when needed."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "name": "Finset.sum_filter",
+      "reason": "Membership-filtered moment sums."
+    },
+    {
+      "added_by": "worker",
+      "kind": "lemma",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+      "name": "Fintype.sum_ite_mem",
+      "reason": "Universal `ite` sums become restricted sums."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Sigma",
+      "name": "Finset.sum_comm",
+      "reason": "Exchange nested finite sums to collect moments."
+    },
+    {
+      "added_by": "worker",
+      "kind": "lemma",
+      "module": "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "name": "Finset.sum_mul",
+      "reason": "Right scalar distribution over a finite sum."
+    },
+    {
+      "added_by": "worker",
+      "kind": "lemma",
+      "module": "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "name": "Finset.mul_sum",
+      "reason": "Left scalar distribution over a finite sum."
+    },
+    {
+      "added_by": "worker",
+      "kind": null,
+      "module": "Mathlib.Tactic.FinCases",
+      "name": "Lean.Elab.Tactic.finCases",
+      "reason": "Concrete exhaustive case-elimination tactic for the 32-subset proof of coverage_le_dualValue."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Data.Finset.Defs",
+      "name": "Finset.ext_iff",
+      "reason": "Simplifies equality tests among the 32 concrete `Finset (Fin 5)` cases in `coverage_le_dualValue`."
+    },
+    {
+      "added_by": "worker",
+      "kind": null,
+      "module": "Mathlib.Tactic.NormNum.Core",
+      "name": "Mathlib.Tactic.normNum",
+      "reason": "Direct tactic dependency for the exact rational checks in `coverage_le_dualValue`."
+    },
+    {
+      "added_by": "worker",
+      "kind": null,
+      "module": "Mathlib.Data.Fin.Tuple.Reflection",
+      "name": "Fin.prod_univ_ofNat",
+      "reason": "Expands the finite products in independentWeight so exact rational normalization can prove all feasibility fields."
+    },
+    {
+      "added_by": "worker",
+      "kind": "lemma",
+      "module": "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
+      "name": "Finset.prod_nonneg",
+      "reason": "Proves each independentWeight product nonnegative from its finite nonnegative factors."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+      "name": "Finset.prod_ite",
+      "reason": "Factor independentWeight into products over a chosen subset and its complement."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "name": "Finset.prod_add",
+      "reason": "Turn products of marginal/complement sums into powerset sums for mass and moment calculations."
+    },
+    {
+      "added_by": "worker",
+      "kind": null,
+      "module": "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "name": "Finset.sum_le_sum",
+      "reason": "Combines the full-domain termwise weighted pointwise inequalities into expectedCoverage_le_weightedDual."
+    },
+    {
+      "added_by": "worker",
+      "kind": "theorem",
+      "module": "Mathlib.Algebra.Order.GroupWithZero.Defs",
+      "name": "mul_le_mul_of_nonneg_left",
+      "reason": "Multiplies coverage_le_dualValue by each nonnegative feasible weight θ S."
+    },
+    {
+      "added_by": "worker",
+      "kind": null,
+      "module": "Mathlib.Algebra.BigOperators.Fin",
+      "name": "Fin.sum_univ_succ",
+      "reason": "Expands the final finite Fin 5 coefficient sums in weightedDual_eq_479_160."
+    }
+  ],
+  "mathlib_modules": [
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Data.Fintype.Powerset",
+      "reason": "Enumerate all `Finset (Fin 5)` subsets through the finite universe."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "reason": "Finite-sum nonnegativity for the weighted pointwise dual slack."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "reason": "Pointwise finite-sum rewrites and singleton/pair evaluation."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Sigma",
+      "reason": "Commute the nested finite sums in the moment calculation."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "reason": "Distribute coefficient multiplication through finite sums."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+      "reason": "Convert membership `ite` terms to selected finite sums."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Tactic.NormNum",
+      "reason": "Close exact rational coefficient equalities and inequalities."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Tactic.Ring",
+      "reason": "Normalize residual polynomial identities after sum rewrites."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Tactic.Positivity",
+      "reason": "Handle direct nonnegative multiplicative side conditions when syntactically visible."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Data.Finset.Powerset",
+      "reason": "Provides the indexed `Finset.powerset` and `Finset.mem_powerset` APIs used for exhaustive subset enumeration."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Tactic.FinCases",
+      "reason": "Imports the verified `fin_cases` tactic needed to split `S : Finset (Fin 5)` into the 32 concrete certificate cases."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Data.Finset.Defs",
+      "reason": "Imports Finset.ext_iff, used to simplify equality tests in the exhaustive 32-subset certificate."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Tactic.NormNum.Core",
+      "reason": "Defines the `norm_num` tactic invoked to close the certificate’s exact rational inequalities."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Data.Fin.Tuple.Reflection",
+      "reason": "Provides Fin.prod_univ_ofNat for expanding independentWeight over the finite `Fin 5` domain."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
+      "reason": "Provides Finset.prod_nonneg for pointwise nonnegativity of independentWeight."
+    },
+    {
+      "added_by": "worker",
+      "module": "Mathlib.Algebra.Order.GroupWithZero.Defs",
+      "reason": "Imports the verified termwise nonnegative multiplication inequality for expectedCoverage_le_weightedDual."
+    }
+  ],
+  "objective": "Prove the paper-faithful universal pairwise upper bound over arbitrary real-valued feasible weights using the full exact dual certificate.",
+  "owned_refs": [
+    {
+      "added_by": "coordinator",
+      "reason": "SourceIndex b_0014 and b_0016: exact dual coefficients and complete 32-row pointwise certificate.",
+      "ref": {
+        "kind": "source",
+        "ref": {
+          "end_line": 108,
+          "path": "article/sections/02_counterexample.tex",
+          "start_line": 44
+        }
+      },
+      "ref_id": "mat_b3eabdd16cd00287"
+    },
+    {
+      "added_by": "coordinator",
+      "reason": "SourceIndex b_0015: weak-duality expectation calculation giving the universal bound 479/160.",
+      "ref": {
+        "kind": "source",
+        "ref": {
+          "end_line": 125,
+          "path": "article/sections/02_counterexample.tex",
+          "start_line": 110
+        }
+      },
+      "ref_id": "mat_489055f89680e789"
+    }
+  ],
+  "status": "committed",
+  "success_criteria": "Expose a proved theorem IsPairwiseUpperBound (479/160); verify all 32 pointwise constraints; construct at least one PairwiseFeasible weight; derive the bound for every feasible weight solely from nonnegativity, total mass, and exact first/second moments.",
+  "summary": "Accepted ready contract v1. Ten graph-proved declarations implement the exact rational dual certificate, all 32 pointwise constraints, a pairwise-feasible witness, full-domain weak duality, and the 479/160 evaluation. The bound public theorem is proved with exact signature `IsPairwiseUpperBound (479 / 160)`, matching the fourth conjunct required by Main.GapTheorem with no added assumptions or domain restriction.",
+  "version": 1
+}

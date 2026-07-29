@@ -1,0 +1,45 @@
+{
+  "allow_interface_supplement": true,
+  "goal": "Produce a proved native Lean repository whose immutable public boundary exports FinitePairwiseCoverageGap.finite_pairwise_coverage_gap. The result must retain monotonicity, submodularity, unrestricted optimum 4, nonempty pairwise-feasible distributions, the universal pairwise upper bound 479/160, and the strict ratio comparison, over the complete real-valued feasible domain.",
+  "interface_inputs": [
+    {
+      "bound_decl": null,
+      "expected_statement_lean_code": "theorem finite_pairwise_coverage_gap :\n    (∀ ⦃s t : Finset Element⦄, s ⊆ t → coverage s ≤ coverage t) ∧\n    (∀ s t : Finset Element,\n      coverage (s ∪ t) + coverage (s ∩ t) ≤ coverage s + coverage t) ∧\n    IsUnrestrictedOptimum 4 ∧\n    IsPairwiseUpperBound (479 / 160) ∧\n    (4 : ℝ) / (479 / 160) > 4 / 3 := by\n  sorry",
+      "kind": "theorem",
+      "name": "FinitePairwiseCoverageGap.finite_pairwise_coverage_gap",
+      "note": "The public theorem must keep the universal real distribution quantifiers. Do not replace the paper-faithful upper bound by the survey-only 15-atom equality extension.",
+      "source_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": null,
+            "path": "formal_target.lean",
+            "start_line": null
+          }
+        },
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": null,
+            "path": "article/sections/01_definitions_and_conjecture.tex",
+            "start_line": null
+          }
+        },
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": null,
+            "path": "article/sections/02_counterexample.tex",
+            "start_line": null
+          }
+        }
+      ],
+      "summary": "A five-element monotone submodular coverage function has unrestricted value 4 while every pairwise-independent feasible distribution has value at most 479/160, giving a ratio above 4/3."
+    }
+  ],
+  "notes": "Use the complete 32-row exact dual certificate from the SourceCorpus. Weak duality and all finite probability algebra belong in this native repository; no external provider repository is planned.",
+  "requirement_refs": [],
+  "source_corpus_mode": "existing",
+  "source_corpus_relpath": ".lean_constellation/source",
+  "source_description": "Faithful mathematical extraction of Ramachandra and Natarajan's finite coverage counterexample, including all exact primal and dual certificates and a single Lean target."
+}

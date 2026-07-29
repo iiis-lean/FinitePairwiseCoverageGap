@@ -1,0 +1,32 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-26T16:35:50Z",
+  "created_at": "2026-07-26T16:13:26Z",
+  "execution_completed_at": "2026-07-26T16:35:50Z",
+  "execution_reason": "DeclGraphRoundFlow finished with completed.",
+  "execution_result_kind": "success",
+  "node_path": "Main.PairwiseBound",
+  "objective": "Prove the two independent b_0015 weak-duality foundations for arbitrary PairwiseFeasible real-valued weights: weighted pointwise majorization of expectedCoverage, and exact evaluation of the full weighted dualValue sum as 479/160 from prescribed mass and moments.",
+  "plan_closeout_acknowledged_at": "2026-07-26T16:35:50Z",
+  "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
+  "result_kind": "success",
+  "result_reason": "DeclGraphRoundFlow finished with completed.",
+  "revision_refs": [
+    {
+      "change_id": "expectedCoverage_le_weightedDual@rev:1",
+      "decl_name": "expectedCoverage_le_weightedDual",
+      "revision": 1
+    },
+    {
+      "change_id": "weightedDual_eq_479_160@rev:1",
+      "decl_name": "weightedDual_eq_479_160",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_89382fc73e724416912c2f7107375b83",
+  "round_index": 8,
+  "started_at": "2026-07-26T16:14:52Z",
+  "status": "committed",
+  "strategy_id": "strategy_fddb4422361e4cd698dba5e52c62472e",
+  "summary": "The strategy completed the universal weak-duality foundations: both expectedCoverage_le_weightedDual and weightedDual_eq_479_160 are proved and proof-policy satisfied. No blockers, state-only gaps, or additional helpers are visible. Together with the proved independentWeight_pairwiseFeasible witness, they give the complete dependency closure for the required public theorem pairwise_upper_bound_479_160 : IsPairwiseUpperBound (479/160). The next round should create and prove that single public interface declaration."
+}

@@ -1,0 +1,83 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [],
+    "base_revision": 1,
+    "kind": "update",
+    "objective": "Advance the failed planning-only revision to a declared ordered-pair coefficient function with the ten exact rational values from SourceIndex b_0014 / lines 64–67. This independent provider feeds dualValue and second-moment evaluation.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": "planned",
+    "summary": "Completed: the exact ordered-pair coefficient function containing all ten b_0014 rational values reached declared state with accepted natural-language and compiler-passed formal definition. As a non-theorem definition it is proof-policy satisfied and ready for dualValue and second-moment evaluation.",
+    "target_state": "declared"
+  },
+  "lean_decl_name": "dualPairCoeff",
+  "proof": null,
+  "revision": 2,
+  "state": "declared",
+  "statement": {
+    "deps": [
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "Element",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": false,
+        "contains_axiom": false,
+        "contains_sorry": false,
+        "diagnostics": {
+          "diagnostics": [],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualPairCoeff', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Defs/dualPairCoeff.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 0 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "statement_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": false,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [],
+          "opaque_count": 0,
+          "sorry_count": 0,
+          "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `dualPairCoeff`\n\n`dualPairCoeff : Element → Element → ℝ` is the ordered-pair part of the dual certificate.  For the\nincreasing zero-based pairs `(0,1)`, `(1,2)`, `(1,3)`, `(1,4)`, `(0,2)`, `(3,4)`, `(0,3)`, `(0,4)`,\n`(2,3)`, and `(2,4)`, its values are respectively `-1`, `-1`, `-3 / 2`, `-3 / 2`, `1 / 2`, `1 / 2`,\n`-1 / 2`, `-1 / 2`, `-1 / 2`, and `-1 / 2`.  It is defined to be `0` on every other ordered pair,\nincluding reversed pairs and diagonal pairs.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 64–67\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n-/\nnoncomputable def dualPairCoeff (i j : Element) : ℝ :=\n  if i = 0 ∧ j = 1 then -1\n  else if i = 1 ∧ j = 2 then -1\n  else if i = 1 ∧ j = 3 then -3 / 2\n  else if i = 1 ∧ j = 4 then -3 / 2\n  else if i = 0 ∧ j = 2 then 1 / 2\n  else if i = 3 ∧ j = 4 then 1 / 2\n  else if i = 0 ∧ j = 3 then -1 / 2\n  else if i = 0 ∧ j = 4 then -1 / 2\n  else if i = 2 ∧ j = 3 then -1 / 2\n  else if i = 2 ∧ j = 4 then -1 / 2\n  else 0\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 67,
+          "end_locator": null,
+          "kind": "source",
+          "note": "Source lists the ten coefficients λᵢⱼ for 1 ≤ i < j ≤ 5; these are translated to zero-based `Element = Fin 5` pairs.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 64,
+          "start_locator": null
+        }
+      ],
+      "text": "`dualPairCoeff : Element → Element → ℝ` is the ordered-pair part of the dual certificate.  For the increasing zero-based pairs `(0,1)`, `(1,2)`, `(1,3)`, `(1,4)`, `(0,2)`, `(3,4)`, `(0,3)`, `(0,4)`, `(2,3)`, and `(2,4)`, its values are respectively `-1`, `-1`, `-3 / 2`, `-3 / 2`, `1 / 2`, `1 / 2`, `-1 / 2`, `-1 / 2`, `-1 / 2`, and `-1 / 2`.  It is defined to be `0` on every other ordered pair, including reversed pairs and diagonal pairs."
+    }
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T14:41:53Z"
+}

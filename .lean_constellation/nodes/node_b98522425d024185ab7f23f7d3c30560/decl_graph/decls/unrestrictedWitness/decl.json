@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-07-29T14:46:28Z",
+  "current_revision": 1,
+  "kind": "definition",
+  "lifecycle": "active",
+  "module": "FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness",
+  "name": "unrestrictedWitness",
+  "node_path": "Main.UnrestrictedOptimum",
+  "public": true,
+  "revision_ids": [
+    1
+  ],
+  "summary": "The exact complete-domain three-support weight witnessing unrestricted value four.",
+  "updated_at": "2026-07-29T14:46:28Z"
+}

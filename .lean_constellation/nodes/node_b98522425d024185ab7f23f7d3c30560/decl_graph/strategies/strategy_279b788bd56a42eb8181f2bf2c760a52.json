@@ -1,0 +1,19 @@
+{
+  "closed_at": "2026-07-29T16:08:35Z",
+  "closed_reason": "The exact three-support witness, its proved feasibility and value facts, the proved public universal coverage bound, and the proved public IsUnrestrictedOptimum 4 interface theorem are all committed and policy-satisfied; the interface is bound and public Statement closure is complete.",
+  "created_at": "2026-07-29T14:46:03Z",
+  "created_round_ids": [
+    "round_ca02c7bb44734e22998e022fc9934093",
+    "round_15f14d739a89448ab3ba59403e8847c4",
+    "round_5013cbd4ca7443b9b35b0f103464dcbd",
+    "round_f0e49cae9f8247b7bd97a762ab4770de",
+    "round_1c6721d767c34b6fb82ff2c34eb95121",
+    "round_b60ca0da24684ecbb09d4e07ad022c0b"
+  ],
+  "node_path": "Main.UnrestrictedOptimum",
+  "objective": "Build the SourceIndex b_0012 three-point unrestricted-optimum certificate bottom-up: define the exact complete-domain witness on supports {0,2}, {1}, and {3,4} with weights 3/10, 7/20, 7/20; prove its mass, marginal feasibility, and expected value 4; prove the universal coverage bound; then prove the public interface theorem IsUnrestrictedOptimum 4.",
+  "rationale": "The repository requires graph_proved completion. Main.Foundations supplies the exact Weight, MarginalFeasible, expectedCoverage, coverage, and IsUnrestrictedOptimum API, and focused Mathlib hints support all finite computations. The first state-only foundation is the stable public witness definition; later small rounds will prove reusable certificate facts and the final public theorem. This follows article/sections/02_counterexample.tex lines 22–42 / SourceIndex b_0012, stays within the expected 5–10 important declarations, and preserves the consumer conclusion IsUnrestrictedOptimum 4 without extra assumptions.",
+  "status": "closed",
+  "strategy_id": "strategy_279b788bd56a42eb8181f2bf2c760a52",
+  "summary": "Completed the SourceIndex b_0012 bottom-up unrestricted-optimum certificate route with five active declarations and the exact proved public interface."
+}

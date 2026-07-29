@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-07-29T17:13:55Z",
+  "current_revision": 1,
+  "kind": "theorem",
+  "lifecycle": "active",
+  "module": "FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.strict_ratio_comparison",
+  "name": "strict_ratio_comparison",
+  "node_path": "Main.GapTheorem",
+  "public": false,
+  "revision_ids": [
+    1
+  ],
+  "summary": "The explicit ratio 4 / (479 / 160) is strictly greater than 4 / 3.",
+  "updated_at": "2026-07-29T17:13:55Z"
+}

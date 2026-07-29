@@ -1,0 +1,24 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [],
+    "base_revision": null,
+    "kind": "create",
+    "objective": "From SourceIndex b_0018 and formal_target.lean line 6, preserve the exact abbreviation Feature := Fin 4. This is the feature universe consumed by elementFeatures and hence coverage and its structural theorems.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": null,
+    "summary": "DeclGraphRoundFlow failed for change Feature@rev:1.",
+    "target_state": "declared"
+  },
+  "lean_decl_name": null,
+  "proof": null,
+  "revision": 1,
+  "state": "planned",
+  "statement": {
+    "deps": [],
+    "formal": null,
+    "nl": null
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T12:35:32Z"
+}

@@ -1,0 +1,31 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [
+      "dualConstant",
+      "dualPairCoeff",
+      "dualSingletonCoeff",
+      "dualValue"
+    ],
+    "anticipated_statement_dep_names": [
+      "dualValue"
+    ],
+    "base_revision": null,
+    "kind": "create",
+    "objective": "Prove ∀ S : Finset Element, coverage S ≤ dualValue S, with no restriction to a support family. This is the complete 2^5 = 32 constraint check recorded by SourceIndex b_0016 / source lines 70–108 and must use the exact b_0014 coefficients. Consume Foundations.coverage and dualValue (unfolding the coefficient definitions as needed), use exhaustive Finset (Fin 5) reasoning and exact rational normalization from the verified Mathlib toolkit, and feed the weighted-slack weak-duality theorem for arbitrary PairwiseFeasible real-valued weights.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": null,
+    "summary": "DeclGraphRoundFlow failed for change coverage_le_dualValue@rev:1.",
+    "target_state": "proved"
+  },
+  "lean_decl_name": null,
+  "proof": null,
+  "revision": 1,
+  "state": "planned",
+  "statement": {
+    "deps": [],
+    "formal": null,
+    "nl": null
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T14:31:54Z"
+}

@@ -1,0 +1,27 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-29T16:01:53Z",
+  "created_at": "2026-07-29T15:48:17Z",
+  "execution_completed_at": "2026-07-29T15:59:54Z",
+  "execution_reason": "Decl-owned Lean file was modified after the latest capture.",
+  "execution_result_kind": "failed",
+  "node_path": "Main.UnrestrictedOptimum",
+  "objective": "Prove the contract interface theorem unrestricted_optimum_four with exact conclusion IsUnrestrictedOptimum 4 from the accepted attaining witness package and universal coverage bound.",
+  "plan_closeout_acknowledged_at": "2026-07-29T16:01:53Z",
+  "plan_closeout_acknowledged_by": "a_a2d50c8badaf485395c6fd44278811c5",
+  "result_kind": "failed",
+  "result_reason": "The parent theorem's proof formal artifact passed, but capture integrity failed after the declaration-owned file changed; revision 1 remains proof_planned and requires a proof-only stable recapture.",
+  "revision_refs": [
+    {
+      "change_id": "unrestricted_optimum_four@rev:1",
+      "decl_name": "unrestricted_optimum_four",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_1c6721d767c34b6fb82ff2c34eb95121",
+  "round_index": 5,
+  "started_at": "2026-07-29T15:49:29Z",
+  "status": "committed",
+  "strategy_id": "strategy_279b788bd56a42eb8181f2bf2c760a52",
+  "summary": "Round 5 made partial final-stage progress: unrestricted_optimum_four reached proof_planned with passed formal statement, accepted proof plan, and proof-formal artifact marked passed, but did not reach static proved or proved-policy satisfaction because its declaration-owned file changed after the latest capture. The exact public interface statement IsUnrestrictedOptimum 4 is accepted. Its full dependency closure was checked and has no missing declarations; all source-visible parents unrestrictedWitness, unrestrictedWitness_feasible, unrestrictedWitness_value, and coverage_le_four satisfy their required policies. No new helper, preparation, scope expansion, interface change, or cleanup is needed. The strategy remains viable; the sole next condition is a narrow Proof Formal recapture from proof_planned with the statement and proof plan unchanged."
+}

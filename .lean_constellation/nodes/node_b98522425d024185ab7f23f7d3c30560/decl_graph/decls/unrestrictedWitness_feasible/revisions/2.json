@@ -1,0 +1,256 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [
+      "unrestrictedWitness"
+    ],
+    "base_revision": 1,
+    "kind": "update",
+    "objective": "Advance the accepted SourceIndex b_0012 theorem MarginalFeasible unrestrictedWitness from proof_planned to proved by retrying only Proof Formal. Preserve revision 1's formal statement and proof plan exactly, including the complete nonnegativity, mass-one, and all-Element marginal obligations. The accepted unrestrictedWitness remains the sole current-node statement dependency; no new source or Lean helper is known to be required. Repair only the prior declaration-file capture-integrity failure so the theorem becomes proved-policy satisfied for the eventual IsUnrestrictedOptimum 4 proof.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": "proof_planned",
+    "summary": "Updated unrestrictedWitness_feasible from accepted revision 1 at proof_planned to revision 2 at proved by rerunning only Proof Formal. The accepted statement MarginalFeasible unrestrictedWitness and proof plan were preserved, the formal proof passed, and the declaration now satisfies the required proved proof policy. The prior capture-integrity failure is resolved with no new dependency or helper.",
+    "target_state": "proved"
+  },
+  "lean_decl_name": "unrestrictedWitness_feasible",
+  "proof": {
+    "deps": [
+      {
+        "kind": "mathlib_decl",
+        "reason": "The formal proof explicitly distributes the complete finite sum across the three support-indicator summands.",
+        "ref": {
+          "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+          "name": "Finset.sum_add_distrib"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "The route rewrites each membership-filtered marginal sum before finite case evaluation.",
+        "ref": {
+          "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+          "name": "Finset.sum_filter"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "Reduces each explicit point-support indicator sum over the complete finite domain.",
+        "ref": {
+          "module": "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+          "name": "Finset.sum_ite_eq'"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "Clears fixed nonzero denominators in the exact rational feasibility equalities.",
+        "ref": {
+          "module": "Mathlib.Tactic.Field",
+          "name": "Mathlib.Tactic.FieldSimp.field"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "The route explicitly performs exhaustive finite case analysis for i : Fin 5 and finite subset cases.",
+        "ref": {
+          "module": "Mathlib.Tactic.FinCases",
+          "name": "Lean.Elab.Tactic.finCases"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "The route evaluates the complete finite mass and membership-filtered marginal sums before rational normalization.",
+        "ref": {
+          "module": "Mathlib.Tactic.NormNum.BigOperators",
+          "name": "Mathlib.Meta.NormNum.evalFinsetSum"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "Exact rational normalization closes the finite nonnegativity, mass, and marginal cases.",
+        "ref": {
+          "module": "Mathlib.Tactic.NormNum.Core",
+          "name": "Mathlib.Tactic.normNum"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "Closes the exact real rational identities after support-sum reduction.",
+        "ref": {
+          "module": "Mathlib.Tactic.Ring.RingNF",
+          "name": "Mathlib.Tactic.RingNF.ring"
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "The route unfolds this accepted complete-domain feasibility predicate into its three required conjuncts.",
+        "ref": {
+          "name": "MarginalFeasible",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "Each exhaustive element case unfolds the prescribed marginal on the right-hand side.",
+        "ref": {
+          "name": "marginal",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "The route unfolds the exact three-support witness whose feasibility is proved.",
+        "ref": {
+          "name": "unrestrictedWitness",
+          "node": "Main.UnrestrictedOptimum",
+          "repo": null,
+          "revision": 1
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": false,
+        "contains_axiom": false,
+        "contains_sorry": false,
+        "diagnostics": {
+          "diagnostics": [],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_feasible', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/unrestrictedWitness_feasible.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 0 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "proof_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": false,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [],
+          "opaque_count": 0,
+          "sorry_count": 0,
+          "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness\nimport Mathlib.Algebra.BigOperators.Group.Finset.Basic\nimport Mathlib.Algebra.BigOperators.Group.Finset.Piecewise\nimport Mathlib.Tactic.Field\nimport Mathlib.Tactic.FinCases\nimport Mathlib.Tactic.NormNum.BigOperators\nimport Mathlib.Tactic.NormNum.Core\nimport Mathlib.Tactic.Ring.RingNF\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `unrestrictedWitness_feasible`\n\nTheorem `unrestrictedWitness_feasible` states `MarginalFeasible unrestrictedWitness`.  Thus the\ncomplete-domain witness is nonnegative on every `S : Finset Element`, its total mass over all finite\nsubsets is `1`, and for every `i : Element` the sum of its weights on subsets containing `i` equals\nthe prescribed marginal `marginal i`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 34–38\n\n## Statement dependencies\n\n- `Main.Foundations::MarginalFeasible` → `MarginalFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible`\n- `Main.UnrestrictedOptimum::unrestrictedWitness` → `unrestrictedWitness` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness`\n\n## Proof outline\n\nUnfold `MarginalFeasible` and `unrestrictedWitness`, and construct its three conjuncts.\n\n1. For `∀ s : Finset Element, 0 ≤ unrestrictedWitness s`, split the nested equality tests in the\nwitness definition.  Each branch is either `0`, `3 / 10`, or `7 / 20`; exact rational normalization\nproves nonnegativity.\n2. For the total-mass equality, expand the finite sum over `Finset Element`.  The witness is zero\naway from `{0,2}`, `{1}`, and `{3,4}`; normalize the resulting three rational summands to `3/10 +\n7/20 + 7/20 = 1`.\n3. Introduce an arbitrary `i : Element` and use exhaustive `Fin 5` case analysis.  In each of the\nfive cases, rewrite the filtered sum using `Finset.sum_filter`, unfold the witness and `marginal`,\ndiscard the zero terms, and normalize the remaining rational terms.  This proves the prescribed\nequality for every element, so no support point or domain case is omitted.\n\nThe source certificate is exactly the three-support-set distribution with weights `3/10, 7/20,\n7/20`; the computation proves all three conjuncts of the accepted complete-domain predicate.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 34–38\n\n## Proof dependencies\n\n- `Finset.sum_add_distrib` from `Mathlib.Algebra.BigOperators.Group.Finset.Basic`\n- `Finset.sum_filter` from `Mathlib.Algebra.BigOperators.Group.Finset.Basic`\n- `Finset.sum_ite_eq'` from `Mathlib.Algebra.BigOperators.Group.Finset.Piecewise`\n- `Mathlib.Tactic.FieldSimp.field` from `Mathlib.Tactic.Field`\n- `Lean.Elab.Tactic.finCases` from `Mathlib.Tactic.FinCases`\n- `Mathlib.Meta.NormNum.evalFinsetSum` from `Mathlib.Tactic.NormNum.BigOperators`\n- `Mathlib.Tactic.normNum` from `Mathlib.Tactic.NormNum.Core`\n- `Mathlib.Tactic.RingNF.ring` from `Mathlib.Tactic.Ring.RingNF`\n- `Main.Foundations::MarginalFeasible` → `MarginalFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible`\n- `Main.Foundations::marginal` → `marginal` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal`\n- `Main.UnrestrictedOptimum::unrestrictedWitness` → `unrestrictedWitness` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness`\n-/\ntheorem unrestrictedWitness_feasible : MarginalFeasible unrestrictedWitness := by\n  classical\n  have h₀₁ : ({0, 2} : Finset Element) ≠ {1} := by decide\n  have h₀₂ : ({0, 2} : Finset Element) ≠ {3, 4} := by decide\n  have h₁₂ : ({1} : Finset Element) ≠ {3, 4} := by decide\n  have h₁₀ : ({1} : Finset Element) ≠ {0, 2} := Ne.symm h₀₁\n  have h₂₀ : ({3, 4} : Finset Element) ≠ {0, 2} := Ne.symm h₀₂\n  have h₂₁ : ({3, 4} : Finset Element) ≠ {1} := Ne.symm h₁₂\n  have hw (x : Finset Element) :\n      unrestrictedWitness x =\n        (if x = {0, 2} then (3 / 10 : ℝ) else 0) +\n          (if x = {1} then (7 / 20 : ℝ) else 0) +\n            (if x = {3, 4} then (7 / 20 : ℝ) else 0) := by\n    by_cases h₀ : x = {0, 2}\n    · subst x\n      simp [unrestrictedWitness, h₀₁, h₀₂]\n    by_cases h₁ : x = {1}\n    · subst x\n      simp [unrestrictedWitness, h₁₀, h₁₂]\n    by_cases h₂ : x = {3, 4}\n    · subst x\n      simp [unrestrictedWitness, h₂₀, h₂₁]\n    simp [unrestrictedWitness, h₀, h₁, h₂]\n  constructor\n  · intro s\n    rw [hw]\n    have h₃₁₀ : (0 : ℝ) ≤ 3 / 10 := div_nonneg (by norm_num) (by norm_num)\n    have h₇₂₀ : (0 : ℝ) ≤ 7 / 20 := div_nonneg (by norm_num) (by norm_num)\n    exact add_nonneg\n      (add_nonneg (by split <;> simp [h₃₁₀]) (by split <;> simp [h₇₂₀]))\n      (by split <;> simp [h₇₂₀])\n  constructor\n  · simp_rw [hw]\n    rw [Finset.sum_add_distrib, Finset.sum_add_distrib]\n    simp [Finset.sum_ite_eq']\n    field\n  · intro i\n    fin_cases i <;> simp_rw [hw] <;>\n      rw [Finset.sum_add_distrib, Finset.sum_add_distrib] <;>\n      simp [Finset.sum_ite_eq', marginal, Fin.ext_iff]\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 38,
+          "end_locator": null,
+          "kind": "source",
+          "note": "These lines give the three support weights and verify their total mass and all prescribed marginals, which is the route for the complete feasibility predicate.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 34,
+          "start_locator": null
+        }
+      ],
+      "text": "Unfold `MarginalFeasible` and `unrestrictedWitness`, and construct its three conjuncts.\n\n1. For `∀ s : Finset Element, 0 ≤ unrestrictedWitness s`, split the nested equality tests in the witness definition.  Each branch is either `0`, `3 / 10`, or `7 / 20`; exact rational normalization proves nonnegativity.\n2. For the total-mass equality, expand the finite sum over `Finset Element`.  The witness is zero away from `{0,2}`, `{1}`, and `{3,4}`; normalize the resulting three rational summands to `3/10 + 7/20 + 7/20 = 1`.\n3. Introduce an arbitrary `i : Element` and use exhaustive `Fin 5` case analysis.  In each of the five cases, rewrite the filtered sum using `Finset.sum_filter`, unfold the witness and `marginal`, discard the zero terms, and normalize the remaining rational terms.  This proves the prescribed equality for every element, so no support point or domain case is omitted.\n\nThe source certificate is exactly the three-support-set distribution with weights `3/10, 7/20, 7/20`; the computation proves all three conjuncts of the accepted complete-domain predicate."
+    }
+  },
+  "revision": 2,
+  "state": "proved",
+  "statement": {
+    "deps": [
+      {
+        "kind": "repo_decl",
+        "reason": "This public predicate expresses exactly the nonnegativity, normalization, and prescribed-marginal conditions asserted by the theorem.",
+        "ref": {
+          "name": "MarginalFeasible",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "The theorem's feasibility assertion is about the accepted complete-domain witness.",
+        "ref": {
+          "name": "unrestrictedWitness",
+          "node": "Main.UnrestrictedOptimum",
+          "repo": null,
+          "revision": 1
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": true,
+        "contains_axiom": false,
+        "contains_sorry": true,
+        "diagnostics": {
+          "diagnostics": [
+            {
+              "column": 9,
+              "line": 27,
+              "message": "declaration uses `sorry`",
+              "severity": "warning"
+            }
+          ],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_feasible', 'items': [{'severity': 'warning', 'pos': {'line': 27, 'column': 9}, 'endPos': {'line': 27, 'column': 37}, 'kind': None, 'data': 'declaration uses `sorry`', 'fileName': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_feasible', 'content': '  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness`\\n-/\\ntheorem unrestrictedWitness_feasible : MarginalFeasible unrestrictedWitness := by\\n  sorry'}], 'total_items': 1, 'error_count': 0, 'warning_count': 1, 'info_count': 0, 'sorry_count': 1}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/unrestrictedWitness_feasible.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 1 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "statement_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": true,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [
+            {
+              "column": 3,
+              "excerpt": "sorry",
+              "kind": "sorry",
+              "line": 28
+            }
+          ],
+          "opaque_count": 0,
+          "sorry_count": 1,
+          "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `unrestrictedWitness_feasible`\n\nTheorem `unrestrictedWitness_feasible` states `MarginalFeasible unrestrictedWitness`.  Thus the\ncomplete-domain witness is nonnegative on every `S : Finset Element`, its total mass over all finite\nsubsets is `1`, and for every `i : Element` the sum of its weights on subsets containing `i` equals\nthe prescribed marginal `marginal i`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 34–38\n\n## Statement dependencies\n\n- `Main.Foundations::MarginalFeasible` → `MarginalFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible`\n- `Main.UnrestrictedOptimum::unrestrictedWitness` → `unrestrictedWitness` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness`\n-/\ntheorem unrestrictedWitness_feasible : MarginalFeasible unrestrictedWitness := by\n  sorry\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 38,
+          "end_locator": null,
+          "kind": "source",
+          "note": "The source assigns zero to all other sets and states that the witness weights sum to one and have the prescribed marginals.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 34,
+          "start_locator": null
+        }
+      ],
+      "text": "Theorem `unrestrictedWitness_feasible` states `MarginalFeasible unrestrictedWitness`.  Thus the complete-domain witness is nonnegative on every `S : Finset Element`, its total mass over all finite subsets is `1`, and for every `i : Element` the sum of its weights on subsets containing `i` equals the prescribed marginal `marginal i`."
+    }
+  },
+  "status": "committed",
+  "updated_at": "2026-07-29T15:34:07Z"
+}

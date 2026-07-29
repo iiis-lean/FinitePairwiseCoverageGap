@@ -1,0 +1,212 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [],
+    "base_revision": null,
+    "kind": "create",
+    "objective": "Prove the exact universal real inequality ∀ s : Finset Element, coverage s ≤ 4 from SourceIndex b_0012 / article/sections/02_counterexample.tex lines 38–41. Consume the public Main.Foundations coverage API and, as appropriate, its proved coverage_monotone theorem by comparing s with Finset.univ and evaluating coverage univ, or the verified Mathlib card/biUnion bounds. Add no feasibility assumption and preserve the quantification over every finite subset. This independently reusable public theorem supplies the upper-bound proof dependency for the eventual public IsUnrestrictedOptimum 4 declaration.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": null,
+    "summary": "Created the public theorem coverage_le_four and accepted revision 1 at proved state. Its passed formal statement quantifies over every Finset Element with no feasibility assumption and concludes the exact real inequality coverage s ≤ 4; its formal proof passed. The declaration is proved-policy satisfied and supplies the universal upper-bound dependency for IsUnrestrictedOptimum 4.",
+    "target_state": "proved"
+  },
+  "lean_decl_name": "coverage_le_four",
+  "proof": {
+    "deps": [
+      {
+        "kind": "mathlib_decl",
+        "reason": "Converts containment of the feature union into the required natural-cardinality upper bound.",
+        "ref": {
+          "module": "Mathlib.Data.Finset.Card",
+          "name": "Finset.card_mono"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "Evaluates the cardinality of the finite Feature universe.",
+        "ref": {
+          "module": "Mathlib.Data.Fintype.Card",
+          "name": "Finset.card_univ"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "Supplies the universal containment of the feature union in the finite feature universe.",
+        "ref": {
+          "module": "Mathlib.Data.Fintype.Defs",
+          "name": "Finset.subset_univ"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "Transfers the natural-cardinality inequality to the real-valued coverage inequality.",
+        "ref": {
+          "module": "Mathlib.Data.Nat.Cast.Order.Basic",
+          "name": "Nat.cast_le"
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "The route uses the accepted identification Feature = Fin 4 to normalize the universe cardinality to 4.",
+        "ref": {
+          "name": "Feature",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "The route unfolds the public coverage API into the feature-union cardinality to be bounded.",
+        "ref": {
+          "name": "coverage",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": false,
+        "contains_axiom": false,
+        "contains_sorry": false,
+        "diagnostics": {
+          "diagnostics": [],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/coverage_le_four.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 0 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "proof_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": false,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [],
+          "opaque_count": 0,
+          "sorry_count": 0,
+          "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\nimport Mathlib.Data.Finset.Card\nimport Mathlib.Data.Fintype.Card\nimport Mathlib.Data.Fintype.Defs\nimport Mathlib.Data.Nat.Cast.Order.Basic\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_le_four`\n\nTheorem `coverage_le_four` states the universal real inequality `∀ s : Finset Element, coverage s ≤\n4`.  It has no feasibility or distribution assumption: every finite subset of the five-element\nground type has coverage at most `4`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 38–41\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n\n## Proof outline\n\nIntroduce an arbitrary `s : Finset Element`; no feasibility or distribution hypothesis is\nintroduced.  Unfold `coverage`, so the goal is a real-cardinality bound for `s.biUnion\nelementFeatures`.\n\nApply `Finset.card_mono` to the universal inclusion `Finset.subset_univ (s.biUnion\nelementFeatures)`.  This bounds the feature union by `(Finset.univ : Finset Feature)`.  Coerce the\nresulting natural-number inequality to `ℝ` using `Nat.cast_le`.  Finally use `Finset.card_univ` and\nthe accepted definition `Feature = Fin 4` to normalize the cardinality of the feature universe to\n`4`.\n\nThus `coverage s ≤ 4` holds for the original arbitrary finite subset.  The proof is a direct\nuniversal cardinality argument (rather than a feasibility argument), matching the source claim that\nno coverage value can exceed four.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 38–41\n\n## Proof dependencies\n\n- `Finset.card_mono` from `Mathlib.Data.Finset.Card`\n- `Finset.card_univ` from `Mathlib.Data.Fintype.Card`\n- `Finset.subset_univ` from `Mathlib.Data.Fintype.Defs`\n- `Nat.cast_le` from `Mathlib.Data.Nat.Cast.Order.Basic`\n- `Main.Foundations::Feature` → `Feature` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n-/\ntheorem coverage_le_four : ∀ s : Finset Element, coverage s ≤ 4 := by\n  intro s\n  unfold coverage\n  have h := Finset.card_mono (Finset.subset_univ (s.biUnion elementFeatures))\n  norm_num [Finset.card_univ] at h ⊢\n  exact_mod_cast h\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 41,
+          "end_locator": null,
+          "kind": "source",
+          "note": "These lines assert the universal bound f(S) ≤ 4 and use it to bound the unrestricted optimum; they support the direct cardinality route.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 38,
+          "start_locator": null
+        }
+      ],
+      "text": "Introduce an arbitrary `s : Finset Element`; no feasibility or distribution hypothesis is introduced.  Unfold `coverage`, so the goal is a real-cardinality bound for `s.biUnion elementFeatures`.\n\nApply `Finset.card_mono` to the universal inclusion `Finset.subset_univ (s.biUnion elementFeatures)`.  This bounds the feature union by `(Finset.univ : Finset Feature)`.  Coerce the resulting natural-number inequality to `ℝ` using `Nat.cast_le`.  Finally use `Finset.card_univ` and the accepted definition `Feature = Fin 4` to normalize the cardinality of the feature universe to `4`.\n\nThus `coverage s ≤ 4` holds for the original arbitrary finite subset.  The proof is a direct universal cardinality argument (rather than a feasibility argument), matching the source claim that no coverage value can exceed four."
+    }
+  },
+  "revision": 1,
+  "state": "proved",
+  "statement": {
+    "deps": [
+      {
+        "kind": "repo_decl",
+        "reason": "The theorem quantifies over finite subsets of the public ground type Element.",
+        "ref": {
+          "name": "Element",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "The public coverage definition is the left-hand side of the universal inequality.",
+        "ref": {
+          "name": "coverage",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": true,
+        "contains_axiom": false,
+        "contains_sorry": true,
+        "diagnostics": {
+          "diagnostics": [
+            {
+              "column": 9,
+              "line": 25,
+              "message": "declaration uses `sorry`",
+              "severity": "warning"
+            }
+          ],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four', 'items': [{'severity': 'warning', 'pos': {'line': 25, 'column': 9}, 'endPos': {'line': 25, 'column': 25}, 'kind': None, 'data': 'declaration uses `sorry`', 'fileName': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four', 'content': '  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\\n-/\\ntheorem coverage_le_four : ∀ s : Finset Element, coverage s ≤ 4 := by\\n  sorry'}], 'total_items': 1, 'error_count': 0, 'warning_count': 1, 'info_count': 0, 'sorry_count': 1}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/coverage_le_four.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 1 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "statement_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": true,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [
+            {
+              "column": 3,
+              "excerpt": "sorry",
+              "kind": "sorry",
+              "line": 26
+            }
+          ],
+          "opaque_count": 0,
+          "sorry_count": 1,
+          "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_le_four`\n\nTheorem `coverage_le_four` states the universal real inequality `∀ s : Finset Element, coverage s ≤\n4`.  It has no feasibility or distribution assumption: every finite subset of the five-element\nground type has coverage at most `4`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 38–41\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n-/\ntheorem coverage_le_four : ∀ s : Finset Element, coverage s ≤ 4 := by\n  sorry\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 41,
+          "end_locator": null,
+          "kind": "source",
+          "note": "The source states that f(S) is at most 4 for every S ⊆ N, supplying the universal coverage bound.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 38,
+          "start_locator": null
+        }
+      ],
+      "text": "Theorem `coverage_le_four` states the universal real inequality `∀ s : Finset Element, coverage s ≤ 4`.  It has no feasibility or distribution assumption: every finite subset of the five-element ground type has coverage at most `4`."
+    }
+  },
+  "status": "committed",
+  "updated_at": "2026-07-29T15:47:44Z"
+}

@@ -1,0 +1,32 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-26T12:41:43Z",
+  "created_at": "2026-07-26T12:33:12Z",
+  "execution_completed_at": "2026-07-26T12:41:43Z",
+  "execution_reason": "DeclGraphRoundFlow finished with completed.",
+  "execution_result_kind": "success",
+  "node_path": "Main.Foundations",
+  "objective": "Declare only the independent base abbreviations Element := Fin 5 and Feature := Fin 4 from SourceIndex b_0018, establishing providers for later dependency-ready rounds.",
+  "plan_closeout_acknowledged_at": "2026-07-26T12:41:43Z",
+  "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
+  "result_kind": "success",
+  "result_reason": "DeclGraphRoundFlow finished with completed.",
+  "revision_refs": [
+    {
+      "change_id": "Element@rev:2",
+      "decl_name": "Element",
+      "revision": 2
+    },
+    {
+      "change_id": "Feature@rev:2",
+      "decl_name": "Feature",
+      "revision": 2
+    }
+  ],
+  "round_id": "round_d3db5b699b814e1ba18aaa0b935e8b44",
+  "round_index": 2,
+  "started_at": "2026-07-26T12:37:13Z",
+  "status": "committed",
+  "strategy_id": "strategy_eeee9e64e4b940b7b1cc4bb6ae4e7056",
+  "summary": "The bottom-up strategy made its first accepted progress: Element and Feature completed Statement NL and Statement Formal, reached declared state, and are dynamically proof-policy satisfied because their non-theorem proof layers are not required. No blockers or state-only closure gaps remain for these declarations. Weight, elementFeatures, marginal, coverage, all b_0017 predicates, and the two proved b_0013 theorems remain. The next step is another small dependency-ready declaration round under the same strategy."
+}

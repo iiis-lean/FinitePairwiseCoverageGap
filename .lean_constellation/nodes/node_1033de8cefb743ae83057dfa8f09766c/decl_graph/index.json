@@ -1,0 +1,23 @@
+{
+  "decl_names": [
+    "finite_pairwise_coverage_gap",
+    "strict_ratio_comparison"
+  ],
+  "node_id": "node_1033de8cefb743ae83057dfa8f09766c",
+  "node_path": "Main.GapTheorem",
+  "round_ids": [
+    "round_338811fc016c4d1cb5de662808df0e67",
+    "round_39b5a09b3b2146b79f326ec8dbdaf8a7",
+    "round_9f9ca6ae74724fbeb1f204b37c47fca4",
+    "round_ae05295245794ed9a7b240ac45dc6cc1",
+    "round_f80280d85ff84e7c8eebddfe1189d7fe"
+  ],
+  "schema_version": 1,
+  "strategy_ids": [
+    "strategy_1cf3c175ea9942bf8c1f7644ec976941",
+    "strategy_2636bb4023a14dd789404674cf0b570f",
+    "strategy_5a06b4a2743c4954aa94a8db4d08dbe0"
+  ],
+  "summary": "DeclGraph index rebuilt for Main.GapTheorem: 2 decls, 5 rounds, 3 strategies.",
+  "updated_at": "2026-07-29T19:34:22Z"
+}

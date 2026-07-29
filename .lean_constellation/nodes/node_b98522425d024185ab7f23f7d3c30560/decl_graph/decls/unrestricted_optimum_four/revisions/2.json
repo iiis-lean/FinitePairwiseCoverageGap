@@ -1,0 +1,257 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [
+      "coverage_le_four",
+      "unrestrictedWitness",
+      "unrestrictedWitness_feasible",
+      "unrestrictedWitness_value"
+    ],
+    "anticipated_statement_dep_names": [],
+    "base_revision": 1,
+    "kind": "update",
+    "objective": "Advance the accepted public SourceIndex b_0012 interface theorem unrestricted_optimum_four from proof_planned to proved by retrying only Proof Formal. Preserve revision 1's exact statement IsUnrestrictedOptimum 4 and its accepted proof plan, including both attainment by unrestrictedWitness and the universal expectedCoverage upper bound. The checked current-node closure unrestrictedWitness, unrestrictedWitness_feasible, unrestrictedWitness_value, and coverage_le_four is complete and policy-satisfied, with no missing declarations. Repair only the prior declaration-file capture-integrity failure so the contract interface becomes proved-policy satisfied.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": "proof_planned",
+    "summary": "Updated the public interface theorem unrestricted_optimum_four from accepted revision 1 at proof_planned to revision 2 at proved by rerunning only Proof Formal. The exact statement IsUnrestrictedOptimum 4 and accepted proof plan were preserved, the formal proof passed, and the theorem now satisfies the required proved proof policy. The prior capture-integrity failure is resolved without statement, visibility, or dependency changes.",
+    "target_state": "proved"
+  },
+  "lean_decl_name": "unrestricted_optimum_four",
+  "proof": {
+    "deps": [
+      {
+        "kind": "mathlib_decl",
+        "reason": "Rewrites the constant-right-factor finite sum using the feasibility mass equation.",
+        "ref": {
+          "module": "Mathlib.Algebra.BigOperators.Ring.Finset",
+          "name": "Finset.sum_mul"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "Lifts the termwise weighted coverage inequalities to the expected-coverage sum.",
+        "ref": {
+          "module": "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+          "name": "Finset.sum_le_sum"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "Multiplies the pointwise coverage bound by each nonnegative feasible weight.",
+        "ref": {
+          "module": "Mathlib.Algebra.Order.GroupWithZero.Defs",
+          "name": "mul_le_mul_of_nonneg_left"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": "The formal proof explicitly uses norm_num to normalize the final real identity after substituting the mass-one equation.",
+        "ref": {
+          "module": "Mathlib.Tactic.NormNum.Core",
+          "name": "Mathlib.Tactic.normNum"
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "The route unfolds exactly this public two-conjunct consumer definition.",
+        "ref": {
+          "name": "IsUnrestrictedOptimum",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "The route unpacks its all-set nonnegativity and mass-one conjuncts for an arbitrary feasible weight.",
+        "ref": {
+          "name": "MarginalFeasible",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "The route unfolds the expected-coverage finite sum in the universal inequality.",
+        "ref": {
+          "name": "expectedCoverage",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "This proved universal pointwise bound is multiplied by each feasible weight in the upper-bound conjunct.",
+        "ref": {
+          "name": "coverage_le_four",
+          "node": "Main.UnrestrictedOptimum",
+          "repo": null,
+          "revision": 1
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "This accepted witness supplies the attaining distribution in the existential conjunct.",
+        "ref": {
+          "name": "unrestrictedWitness",
+          "node": "Main.UnrestrictedOptimum",
+          "repo": null,
+          "revision": 1
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "This proved theorem establishes marginal feasibility of the chosen attaining witness.",
+        "ref": {
+          "name": "unrestrictedWitness_feasible",
+          "node": "Main.UnrestrictedOptimum",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": "This proved theorem establishes exact expected coverage 4 for the attaining witness.",
+        "ref": {
+          "name": "unrestrictedWitness_value",
+          "node": "Main.UnrestrictedOptimum",
+          "repo": null,
+          "revision": 2
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": false,
+        "contains_axiom": false,
+        "contains_sorry": false,
+        "diagnostics": {
+          "diagnostics": [],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestricted_optimum_four', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/unrestricted_optimum_four.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 0 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "proof_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": false,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [],
+          "opaque_count": 0,
+          "sorry_count": 0,
+          "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_feasible\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_value\nimport Mathlib.Algebra.BigOperators.Ring.Finset\nimport Mathlib.Algebra.Order.BigOperators.Group.Finset\nimport Mathlib.Algebra.Order.GroupWithZero.Defs\nimport Mathlib.Tactic.NormNum.Core\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `unrestricted_optimum_four`\n\nTheorem `unrestricted_optimum_four` states exactly `IsUnrestrictedOptimum 4`.  It asserts both that\nsome `θ : Weight` is marginal-feasible and has `expectedCoverage θ = 4`, and that every `θ : Weight`\nsatisfying `MarginalFeasible θ` has `expectedCoverage θ ≤ 4`; no additional assumptions are imposed.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 37–42\n\n## Statement dependencies\n\n- `Main.Foundations::IsUnrestrictedOptimum` → `IsUnrestrictedOptimum` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\n\n## Proof outline\n\nUnfold `IsUnrestrictedOptimum` and construct its two required conjuncts without adding assumptions.\n\nFor attainment, choose `unrestrictedWitness`.  The already proved theorem\n`unrestrictedWitness_feasible` supplies `MarginalFeasible unrestrictedWitness`, and the already\nproved theorem `unrestrictedWitness_value` supplies `expectedCoverage unrestrictedWitness = 4`.\n\nFor the universal conjunct, introduce arbitrary `θ : Weight` and `hθ : MarginalFeasible θ`.  Unpack\n`hθ` into the all-set nonnegativity fact `h_nonneg : ∀ s, 0 ≤ θ s`, the total-mass equation `h_mass\n: (∑ s, θ s) = 1`, and the remaining marginal component (which is not needed for this upper bound).\nUnfold `expectedCoverage`.  For every `s : Finset Element`, apply the proved universal bound\n`coverage_le_four s : coverage s ≤ 4` and multiply it on the left by the nonnegative factor `θ s`\nvia `mul_le_mul_of_nonneg_left`.  Lift these termwise inequalities with `Finset.sum_le_sum`.\n\nThe resulting right-hand finite sum is `∑ s, θ s * 4`.  Rewrite it as `(∑ s, θ s) * 4` using\n`Finset.sum_mul`, substitute `h_mass`, and normalize to `4`.  This proves `expectedCoverage θ ≤ 4`\nfor the original arbitrary marginal-feasible weight, preserving the exact quantifier and conclusion\ndirection.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 37–42\n\n## Proof dependencies\n\n- `Finset.sum_mul` from `Mathlib.Algebra.BigOperators.Ring.Finset`\n- `Finset.sum_le_sum` from `Mathlib.Algebra.Order.BigOperators.Group.Finset`\n- `mul_le_mul_of_nonneg_left` from `Mathlib.Algebra.Order.GroupWithZero.Defs`\n- `Mathlib.Tactic.normNum` from `Mathlib.Tactic.NormNum.Core`\n- `Main.Foundations::IsUnrestrictedOptimum` → `IsUnrestrictedOptimum` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\n- `Main.Foundations::MarginalFeasible` → `MarginalFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible`\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n- `Main.UnrestrictedOptimum::coverage_le_four` → `coverage_le_four` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four`\n- `Main.UnrestrictedOptimum::unrestrictedWitness` → `unrestrictedWitness` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness`\n- `Main.UnrestrictedOptimum::unrestrictedWitness_feasible` → `unrestrictedWitness_feasible` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_feasible`\n- `Main.UnrestrictedOptimum::unrestrictedWitness_value` → `unrestrictedWitness_value` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_value`\n-/\ntheorem unrestricted_optimum_four : IsUnrestrictedOptimum 4 := by\n  unfold IsUnrestrictedOptimum\n  constructor\n  · exact ⟨unrestrictedWitness, unrestrictedWitness_feasible, unrestrictedWitness_value⟩\n  · intro θ hθ\n    rcases hθ with ⟨h_nonneg, h_mass, _⟩\n    unfold expectedCoverage\n    calc\n      ∑ s : Finset Element, θ s * coverage s ≤ ∑ s : Finset Element, θ s * 4 :=\n        Finset.sum_le_sum fun s _ ↦\n          mul_le_mul_of_nonneg_left (coverage_le_four s) (h_nonneg s)\n      _ = (∑ s : Finset Element, θ s) * 4 := by rw [Finset.sum_mul]\n      _ = 4 := by rw [h_mass]; norm_num\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 42,
+          "end_locator": null,
+          "kind": "source",
+          "note": "These lines establish the witness value and combine it with the universal coverage bound to conclude the unrestricted optimum is exactly 4.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 37,
+          "start_locator": null
+        }
+      ],
+      "text": "Unfold `IsUnrestrictedOptimum` and construct its two required conjuncts without adding assumptions.\n\nFor attainment, choose `unrestrictedWitness`.  The already proved theorem `unrestrictedWitness_feasible` supplies `MarginalFeasible unrestrictedWitness`, and the already proved theorem `unrestrictedWitness_value` supplies `expectedCoverage unrestrictedWitness = 4`.\n\nFor the universal conjunct, introduce arbitrary `θ : Weight` and `hθ : MarginalFeasible θ`.  Unpack `hθ` into the all-set nonnegativity fact `h_nonneg : ∀ s, 0 ≤ θ s`, the total-mass equation `h_mass : (∑ s, θ s) = 1`, and the remaining marginal component (which is not needed for this upper bound).  Unfold `expectedCoverage`.  For every `s : Finset Element`, apply the proved universal bound `coverage_le_four s : coverage s ≤ 4` and multiply it on the left by the nonnegative factor `θ s` via `mul_le_mul_of_nonneg_left`.  Lift these termwise inequalities with `Finset.sum_le_sum`.\n\nThe resulting right-hand finite sum is `∑ s, θ s * 4`.  Rewrite it as `(∑ s, θ s) * 4` using `Finset.sum_mul`, substitute `h_mass`, and normalize to `4`.  This proves `expectedCoverage θ ≤ 4` for the original arbitrary marginal-feasible weight, preserving the exact quantifier and conclusion direction."
+    }
+  },
+  "revision": 2,
+  "state": "proved",
+  "statement": {
+    "deps": [
+      {
+        "kind": "repo_decl",
+        "reason": "This public definition is exactly the theorem's required consumer-facing conclusion.",
+        "ref": {
+          "name": "IsUnrestrictedOptimum",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": true,
+        "contains_axiom": false,
+        "contains_sorry": true,
+        "diagnostics": {
+          "diagnostics": [
+            {
+              "column": 9,
+              "line": 23,
+              "message": "declaration uses `sorry`",
+              "severity": "warning"
+            }
+          ],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestricted_optimum_four', 'items': [{'severity': 'warning', 'pos': {'line': 23, 'column': 9}, 'endPos': {'line': 23, 'column': 34}, 'kind': None, 'data': 'declaration uses `sorry`', 'fileName': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestricted_optimum_four', 'content': '  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\\n-/\\ntheorem unrestricted_optimum_four : IsUnrestrictedOptimum 4 := by\\n  sorry'}], 'total_items': 1, 'error_count': 0, 'warning_count': 1, 'info_count': 0, 'sorry_count': 1}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/unrestricted_optimum_four.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 1 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "statement_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": true,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [
+            {
+              "column": 3,
+              "excerpt": "sorry",
+              "kind": "sorry",
+              "line": 24
+            }
+          ],
+          "opaque_count": 0,
+          "sorry_count": 1,
+          "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `unrestricted_optimum_four`\n\nTheorem `unrestricted_optimum_four` states exactly `IsUnrestrictedOptimum 4`.  It asserts both that\nsome `θ : Weight` is marginal-feasible and has `expectedCoverage θ = 4`, and that every `θ : Weight`\nsatisfying `MarginalFeasible θ` has `expectedCoverage θ ≤ 4`; no additional assumptions are imposed.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 37–42\n\n## Statement dependencies\n\n- `Main.Foundations::IsUnrestrictedOptimum` → `IsUnrestrictedOptimum` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\n-/\ntheorem unrestricted_optimum_four : IsUnrestrictedOptimum 4 := by\n  sorry\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 42,
+          "end_locator": null,
+          "kind": "source",
+          "note": "The source establishes feasibility and value 4 for the witness, combines this with the universal bound, and concludes the unrestricted optimum is 4.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 37,
+          "start_locator": null
+        }
+      ],
+      "text": "Theorem `unrestricted_optimum_four` states exactly `IsUnrestrictedOptimum 4`.  It asserts both that some `θ : Weight` is marginal-feasible and has `expectedCoverage θ = 4`, and that every `θ : Weight` satisfying `MarginalFeasible θ` has `expectedCoverage θ ≤ 4`; no additional assumptions are imposed."
+    }
+  },
+  "status": "committed",
+  "updated_at": "2026-07-29T16:07:49Z"
+}

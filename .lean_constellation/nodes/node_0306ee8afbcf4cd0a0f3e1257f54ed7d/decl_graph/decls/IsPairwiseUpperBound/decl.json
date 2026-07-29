@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-07-26T13:13:02Z",
+  "current_revision": 1,
+  "kind": "definition",
+  "lifecycle": "active",
+  "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound",
+  "name": "IsPairwiseUpperBound",
+  "node_path": "Main.Foundations",
+  "public": true,
+  "revision_ids": [
+    1
+  ],
+  "summary": "Nonempty pairwise-feasible domain with a universal expected-coverage upper bound.",
+  "updated_at": "2026-07-26T13:13:02Z"
+}

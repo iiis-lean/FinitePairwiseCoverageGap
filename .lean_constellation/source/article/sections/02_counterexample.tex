@@ -1,0 +1,131 @@
+\section{A counterexample}
+
+Let $N=\{1,2,3,4,5\}$ and let the universe of features be
+$\{A,B,C,D\}$.  Associate to the five elements the feature sets
+\[
+\begin{aligned}
+ E_1&=\{A,B\}, & E_2&=\{A,B,C,D\}, & E_3&=\{C,D\},\\
+ E_4&=\{A,C\}, & E_5&=\{B,D\}.&&
+\end{aligned}
+\]
+For $S\subseteq N$, define
+\[
+  f(S)=\left|\bigcup_{i\in S}E_i\right|.
+\]
+This coverage function is nonnegative, monotone, and submodular
+\cite{bach2013}.  Fix the marginal vector
+\[
+  (x_1,x_2,x_3,x_4,x_5)
+  =\left(\frac3{10},\frac7{20},\frac3{10},\frac7{20},\frac7{20}\right).
+\]
+
+\subsection{The unrestricted optimum}
+
+Consider the following three-point distribution.
+\begin{table}[h]
+\centering
+\caption{Primal feasible and optimal distribution for $f^+(\boldsymbol{x})$.}
+\label{tab:primal}
+\begin{tabular}{cc}
+$S$ & $\theta(S)$\\ \hline
+$\{1,3\}$ & $3/10$\\
+$\{2\}$ & $7/20$\\
+$\{4,5\}$ & $7/20$\\
+all other sets & $0$
+\end{tabular}
+\end{table}
+Its weights sum to one and have the prescribed marginals.  Each of its three
+support sets covers all four features, so its expected value is $4$.  Since
+$f(S)\leq4$ for every $S\subseteq N$, this proves
+\[
+  f^+(\boldsymbol{x})=4.
+\]
+
+\subsection{A pairwise-independent dual certificate}
+
+The dual of \eqref{eq:pairwise} is
+\[
+\begin{aligned}
+ f^{++}(\boldsymbol{x})=\min\quad
+ &\sum_{i<j}\lambda_{ij}x_i x_j+
+   \sum_i\lambda_i x_i+\lambda_0\\
+ \text{subject to}\quad
+ &\sum_{\substack{i<j\\i,j\in S}}\lambda_{ij}
+   +\sum_{i\in S}\lambda_i+\lambda_0\geq f(S)
+   \qquad(S\subseteq N).
+\end{aligned}
+\]
+Write the left side of the constraint indexed by $S$ as $\lambda(S)$.  Take
+\[
+\begin{gathered}
+ \lambda_0=\frac12,\qquad
+ \lambda_1=\lambda_3=\lambda_4=\lambda_5=\frac32,\qquad
+ \lambda_2=\frac72,\\
+ \lambda_{12}=\lambda_{23}=-1,\qquad
+ \lambda_{24}=\lambda_{25}=-\frac32,\qquad
+ \lambda_{13}=\lambda_{45}=\frac12,\\
+ \lambda_{14}=\lambda_{15}=\lambda_{34}=\lambda_{35}=-\frac12.
+\end{gathered}
+\]
+The following table verifies every one of the $2^5=32$ dual constraints.
+\begin{longtable}{ccc}
+\caption{Dual feasible solution for $f^{++}(\boldsymbol{x})$.}
+\label{tab:dual}
+\\
+$S$ & $\lambda(S)$ & $f(S)$\\ \hline
+$\emptyset$ & $1/2$ & $0$\\
+$\{1\}$ & $2$ & $2$\\
+$\{2\}$ & $4$ & $4$\\
+$\{3\}$ & $2$ & $2$\\
+$\{4\}$ & $2$ & $2$\\
+$\{5\}$ & $2$ & $2$\\
+$\{1,2\}$ & $9/2$ & $4$\\
+$\{1,3\}$ & $4$ & $4$\\
+$\{1,4\}$ & $3$ & $3$\\
+$\{1,5\}$ & $3$ & $3$\\
+$\{2,3\}$ & $9/2$ & $4$\\
+$\{2,4\}$ & $4$ & $4$\\
+$\{2,5\}$ & $4$ & $4$\\
+$\{3,4\}$ & $3$ & $3$\\
+$\{3,5\}$ & $3$ & $3$\\
+$\{4,5\}$ & $4$ & $4$\\
+$\{1,2,3\}$ & $11/2$ & $4$\\
+$\{1,2,4\}$ & $4$ & $4$\\
+$\{1,2,5\}$ & $4$ & $4$\\
+$\{1,3,4\}$ & $9/2$ & $4$\\
+$\{1,3,5\}$ & $9/2$ & $4$\\
+$\{1,4,5\}$ & $9/2$ & $4$\\
+$\{2,3,4\}$ & $4$ & $4$\\
+$\{2,3,5\}$ & $4$ & $4$\\
+$\{2,4,5\}$ & $9/2$ & $4$\\
+$\{3,4,5\}$ & $9/2$ & $4$\\
+$\{1,2,3,4\}$ & $9/2$ & $4$\\
+$\{1,2,3,5\}$ & $9/2$ & $4$\\
+$\{1,2,4,5\}$ & $4$ & $4$\\
+$\{1,3,4,5\}$ & $11/2$ & $4$\\
+$\{2,3,4,5\}$ & $4$ & $4$\\
+$\{1,2,3,4,5\}$ & $4$ & $4$\\
+\end{longtable}
+
+For any pairwise-independent feasible distribution, taking expectations of
+the pointwise inequality $f(S)\leq\lambda(S)$ and using its prescribed first
+and second moments gives
+\[
+\begin{aligned}
+\E[\lambda(S)]={}&-(x_1x_2+x_2x_3)
+-\frac32(x_2x_4+x_2x_5)+\frac12(x_1x_3+x_4x_5)\\
+&-\frac12(x_1x_4+x_1x_5+x_3x_4+x_3x_5)\\
+&+\frac32(x_1+x_3+x_4+x_5)+\frac72x_2+\frac12
+=\frac{479}{160}.
+\end{aligned}
+\]
+Thus weak duality yields
+\[
+  f^{++}(\boldsymbol{x})\leq\frac{479}{160}.
+\]
+Combining this with the unrestricted optimum gives
+\[
+ \frac{f^+(\boldsymbol{x})}{f^{++}(\boldsymbol{x})}
+ \geq\frac{4}{479/160}=\frac{640}{479}>\frac43.
+\]
+Therefore the proposed $4/3$ upper bound fails for this instance.

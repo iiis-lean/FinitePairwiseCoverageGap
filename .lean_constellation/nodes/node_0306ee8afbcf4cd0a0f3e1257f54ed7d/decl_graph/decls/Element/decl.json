@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-07-26T12:32:15Z",
+  "current_revision": 2,
+  "kind": "abbrev",
+  "lifecycle": "active",
+  "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.Element",
+  "name": "Element",
+  "node_path": "Main.Foundations",
+  "public": true,
+  "revision_ids": [
+    1,
+    2
+  ],
+  "summary": "Five-element ground type.",
+  "updated_at": "2026-07-26T12:36:01Z"
+}

@@ -1,0 +1,35 @@
+{
+  "decl_names": [
+    "Element",
+    "Feature",
+    "IsPairwiseUpperBound",
+    "IsUnrestrictedOptimum",
+    "MarginalFeasible",
+    "PairwiseFeasible",
+    "Weight",
+    "coverage",
+    "coverage_monotone",
+    "coverage_submodular",
+    "elementFeatures",
+    "expectedCoverage",
+    "marginal"
+  ],
+  "node_id": "node_0306ee8afbcf4cd0a0f3e1257f54ed7d",
+  "node_path": "Main.Foundations",
+  "round_ids": [
+    "round_0fc80f51e95f4c1a84583564600b66c6",
+    "round_4c27d2d9b872485ba4dbf498c3b25094",
+    "round_66c57263cc454f4992121f0bc517d9fe",
+    "round_9d1c1ae1994a4cc3bb7dfe364048269c",
+    "round_cc77283a781a4568b5d69edf3fe88e50",
+    "round_ce23b4d93f554ad6a047bb1a3171eb50",
+    "round_d3db5b699b814e1ba18aaa0b935e8b44",
+    "round_d823d9a4859347089f5be99ff2bd14a6"
+  ],
+  "schema_version": 1,
+  "strategy_ids": [
+    "strategy_eeee9e64e4b940b7b1cc4bb6ae4e7056"
+  ],
+  "summary": "DeclGraph index rebuilt for Main.Foundations: 13 decls, 8 rounds, 1 strategies.",
+  "updated_at": "2026-07-27T10:43:11Z"
+}

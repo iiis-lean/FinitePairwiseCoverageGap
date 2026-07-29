@@ -1,0 +1,33 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-29T18:32:43Z",
+  "created_at": "2026-07-29T17:28:05Z",
+  "discard_reason": null,
+  "discarded_at": null,
+  "discarded_by": null,
+  "discarded_created_decl_names": [],
+  "discarded_restored_decl_revisions": {},
+  "discarded_revision_refs": [],
+  "execution_completed_at": "2026-07-29T17:43:32Z",
+  "execution_reason": null,
+  "execution_result_kind": "success",
+  "node_path": "Main.GapTheorem",
+  "objective": "Create and prove the exact public protected finite_pairwise_coverage_gap theorem from SourceIndex b_0019 by composing the verified lower-node provider theorems with committed proved helper strict_ratio_comparison.",
+  "plan_closeout_acknowledged_at": "2026-07-29T18:32:43Z",
+  "plan_closeout_acknowledged_by": "a_d17630eeb687490ea50c2d3e73408f76",
+  "result_kind": "success",
+  "result_reason": "All four stages completed successfully; the exact public protected finite_pairwise_coverage_gap theorem is proved and proof-policy satisfied with its verified dependency closure.",
+  "revision_refs": [
+    {
+      "change_id": "finite_pairwise_coverage_gap@rev:1",
+      "decl_name": "finite_pairwise_coverage_gap",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_ae05295245794ed9a7b240ac45dc6cc1",
+  "round_index": 3,
+  "started_at": "2026-07-29T17:29:41Z",
+  "status": "committed",
+  "strategy_id": "strategy_2636bb4023a14dd789404674cf0b570f",
+  "summary": "The strategy achieved its intended public output: finite_pairwise_coverage_gap reached proved state, is public, and is proof-policy satisfied under graph_proved with the exact protected five-conjunct statement. The previously proved private strict_ratio_comparison supplied the local arithmetic step, while all four lower-node theorem inputs were accepted from the verified provider closure. No declarations remain to be built, no state-only intermediates remain, and no blockers, failures, or graph-cleanup targets are known. After terminal commit, the next step is public-boundary/interface binding and the content completion gate."
+}

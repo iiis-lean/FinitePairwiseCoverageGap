@@ -1,0 +1,20 @@
+{
+  "completion_mode": "graph_proved",
+  "created_at": "2026-07-29T19:49:22Z",
+  "dependency_change": null,
+  "dependency_lock_digest": "700c581c20a511adc3fbc00687220cf76f3445e81786b5a2c0214d443921314c",
+  "node_contract_versions": {
+    "node_0306ee8afbcf4cd0a0f3e1257f54ed7d": 2,
+    "node_1033de8cefb743ae83057dfa8f09766c": 3,
+    "node_61f9b23a8e064e68b9038ddd4ca3591c": 1,
+    "node_a537c514b7314f238396ee95f1031914": 2,
+    "node_b98522425d024185ab7f23f7d3c30560": 1
+  },
+  "parent_release_id": null,
+  "release_id": "release_a10eaec4358641bea524acdf0c33717e",
+  "release_kind": "semantic",
+  "schema_version": 2,
+  "semantic_manifest_digest": "b66f33c411ca6cc9c2da0fac4c7a52e9b74520721b2031d85489baff57a28d9b",
+  "summary": "Submit FinitePairwiseCoverageGap as a graph-proved release candidate: all four content boundaries and Main v2 are committed, the complete public Statement closure is exported, and the protected theorem `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap` preserves the exact source header, full real-valued feasible domain, unrestricted optimum 4, pairwise bound 479/160, and strict ratio comparison. The candidate gate passed all blocking checks.",
+  "validation_profile": "semantic_full"
+}

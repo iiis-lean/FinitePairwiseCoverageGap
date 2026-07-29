@@ -1,0 +1,1137 @@
+{
+  "active_file_scope": [],
+  "blocks": {
+    "b_0001": {
+      "active": true,
+      "block_id": "b_0001",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:01Z",
+      "kind": "context",
+      "lifecycle_status": "completed",
+      "link_ids": [],
+      "parent_id": "root",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 10,
+              "path": "README.md",
+              "start_line": 3
+            }
+          },
+          "ref_id": "ref_0001",
+          "role": "provenance"
+        },
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 41,
+              "path": "README.md",
+              "start_line": 32
+            }
+          },
+          "ref_id": "ref_0002",
+          "role": "scope_limit"
+        }
+      ],
+      "subtype": "provenance",
+      "summary": "Identifies the frozen 2026 source extraction, the included mathematical materials, and the limitation that only a pairwise-independent upper bound—not equality of that optimum—is supplied.",
+      "title": "Corpus scope and source limitation",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0002": {
+      "active": true,
+      "block_id": "b_0002",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:01Z",
+      "kind": "context",
+      "lifecycle_status": "completed",
+      "link_ids": [
+        "link_0001",
+        "link_0002",
+        "link_0003",
+        "link_0006"
+      ],
+      "parent_id": "root",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 19,
+              "path": "article/main.tex",
+              "start_line": 11
+            }
+          },
+          "ref_id": "ref_0003",
+          "role": "assembly"
+        }
+      ],
+      "subtype": "document_structure",
+      "summary": "LaTeX entrypoint assembling the front matter, general definitions/conjecture, counterexample, and bibliography.",
+      "title": "Article assembly",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0003": {
+      "active": true,
+      "block_id": "b_0003",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:01Z",
+      "kind": "context",
+      "lifecycle_status": "completed",
+      "link_ids": [],
+      "parent_id": "root",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 14,
+              "path": "article/sections/00_frontmatter.tex",
+              "start_line": 1
+            }
+          },
+          "ref_id": "ref_0004",
+          "role": "frontmatter"
+        }
+      ],
+      "subtype": "frontmatter",
+      "summary": "Title, authors, date, and abstract describing a counterexample to the 2025 pairwise-independent correlation-gap conjecture.",
+      "title": "Publication identification",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0004": {
+      "active": true,
+      "block_id": "b_0004",
+      "child_ids": [
+        "b_0008",
+        "b_0009",
+        "b_0010",
+        "b_0011"
+      ],
+      "created_at": "2026-07-21T19:36:01Z",
+      "kind": "section",
+      "lifecycle_status": "completed",
+      "link_ids": [],
+      "parent_id": "root",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 57,
+              "path": "article/sections/01_definitions_and_conjecture.tex",
+              "start_line": 1
+            }
+          },
+          "ref_id": "ref_0005",
+          "role": "section"
+        }
+      ],
+      "subtype": "theory",
+      "summary": "General definitions of monotone submodularity, unrestricted and pairwise-moment optimization, feasibility, and the proposed 4/3 bound.",
+      "title": "Definitions and proposed bound",
+      "updated_at": "2026-07-21T19:37:32Z"
+    },
+    "b_0005": {
+      "active": true,
+      "block_id": "b_0005",
+      "child_ids": [
+        "b_0012",
+        "b_0013",
+        "b_0014",
+        "b_0015",
+        "b_0016"
+      ],
+      "created_at": "2026-07-21T19:36:01Z",
+      "kind": "section",
+      "lifecycle_status": "completed",
+      "link_ids": [],
+      "parent_id": "root",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 131,
+              "path": "article/sections/02_counterexample.tex",
+              "start_line": 1
+            }
+          },
+          "ref_id": "ref_0006",
+          "role": "section"
+        }
+      ],
+      "subtype": "counterexample",
+      "summary": "Finite coverage instance, unrestricted witness, exact pairwise dual certificate, and resulting strict violation of the proposed bound.",
+      "title": "Five-element coverage counterexample",
+      "updated_at": "2026-07-21T19:37:32Z"
+    },
+    "b_0006": {
+      "active": true,
+      "block_id": "b_0006",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:01Z",
+      "kind": "context",
+      "lifecycle_status": "completed",
+      "link_ids": [
+        "link_0004",
+        "link_0005"
+      ],
+      "parent_id": "root",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 81,
+              "path": "article/references.bib",
+              "start_line": 1
+            }
+          },
+          "ref_id": "ref_0008",
+          "role": "bibliography"
+        }
+      ],
+      "subtype": "bibliography",
+      "summary": "Bibliography including the 2025 conjecture source and the reference supporting coverage-function submodularity.",
+      "title": "Bibliographic context",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0007": {
+      "active": true,
+      "block_id": "b_0007",
+      "child_ids": [
+        "b_0017",
+        "b_0018",
+        "b_0019"
+      ],
+      "created_at": "2026-07-21T19:36:01Z",
+      "kind": "section",
+      "lifecycle_status": "completed",
+      "link_ids": [],
+      "parent_id": "root",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 66,
+              "path": "formal_target.lean",
+              "start_line": 1
+            }
+          },
+          "ref_id": "ref_0007",
+          "role": "specification"
+        }
+      ],
+      "subtype": "lean_specification",
+      "summary": "Lean declarations for the finite instance, real-valued weights on all subsets, feasibility/optimization predicates, and one combined theorem statement.",
+      "title": "Lean formalization target",
+      "updated_at": "2026-07-21T19:37:32Z"
+    },
+    "b_0008": {
+      "active": true,
+      "block_id": "b_0008",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:21Z",
+      "kind": "definition",
+      "lifecycle_status": "completed",
+      "link_ids": [],
+      "parent_id": "b_0004",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 12,
+              "path": "article/sections/01_definitions_and_conjecture.tex",
+              "start_line": 3
+            }
+          },
+          "ref_id": "ref_0009",
+          "role": "definition"
+        }
+      ],
+      "subtype": "set_function",
+      "summary": "Defines nonnegative set functions, the submodular inequality/equivalent diminishing-returns condition, and monotonicity.",
+      "title": "Monotone submodular set functions",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0009": {
+      "active": true,
+      "block_id": "b_0009",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:21Z",
+      "kind": "definition",
+      "lifecycle_status": "completed",
+      "link_ids": [],
+      "parent_id": "b_0004",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 26,
+              "path": "article/sections/01_definitions_and_conjecture.tex",
+              "start_line": 14
+            }
+          },
+          "ref_id": "ref_0010",
+          "role": "definition"
+        }
+      ],
+      "subtype": "optimization",
+      "summary": "Defines f⁺(x) as the maximum expected value over nonnegative distributions on all subsets with total mass one and prescribed one-element marginals.",
+      "title": "Unrestricted concave closure",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0010": {
+      "active": true,
+      "block_id": "b_0010",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:21Z",
+      "kind": "definition",
+      "lifecycle_status": "completed",
+      "link_ids": [
+        "link_0008"
+      ],
+      "parent_id": "b_0004",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 45,
+              "path": "article/sections/01_definitions_and_conjecture.tex",
+              "start_line": 28
+            }
+          },
+          "ref_id": "ref_0014",
+          "role": "definition"
+        }
+      ],
+      "subtype": "optimization",
+      "summary": "Defines f⁺⁺(x) by additionally fixing each two-element moment to xᵢxⱼ, and records product-distribution feasibility.",
+      "title": "Pairwise-moment extension and feasibility",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0011": {
+      "active": true,
+      "block_id": "b_0011",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:21Z",
+      "kind": "conjecture",
+      "lifecycle_status": "completed",
+      "link_ids": [
+        "link_0007",
+        "link_0009",
+        "link_0010"
+      ],
+      "parent_id": "b_0004",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 57,
+              "path": "article/sections/01_definitions_and_conjecture.tex",
+              "start_line": 47
+            }
+          },
+          "ref_id": "ref_0013",
+          "role": "statement"
+        }
+      ],
+      "subtype": "correlation_gap",
+      "summary": "For every nonnegative monotone submodular function and x in [0,1]^n, conjectures f⁺(x)/f⁺⁺(x) ≤ 4/3.",
+      "title": "Proposed 4/3 pairwise correlation-gap bound",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0012": {
+      "active": true,
+      "block_id": "b_0012",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:21Z",
+      "kind": "proof",
+      "lifecycle_status": "completed",
+      "link_ids": [
+        "link_0013"
+      ],
+      "parent_id": "b_0005",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 42,
+              "path": "article/sections/02_counterexample.tex",
+              "start_line": 22
+            }
+          },
+          "ref_id": "ref_0011",
+          "role": "proof"
+        }
+      ],
+      "subtype": "primal_witness",
+      "summary": "The distribution supported on {1,3}, {2}, and {4,5} with weights 3/10, 7/20, and 7/20 has the prescribed marginals and value 4; coverage never exceeds 4, proving f⁺(x)=4.",
+      "title": "Three-point unrestricted optimum certificate",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0013": {
+      "active": true,
+      "block_id": "b_0013",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:21Z",
+      "kind": "definition",
+      "lifecycle_status": "completed",
+      "link_ids": [
+        "link_0012"
+      ],
+      "parent_id": "b_0005",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 20,
+              "path": "article/sections/02_counterexample.tex",
+              "start_line": 3
+            }
+          },
+          "ref_id": "ref_0012",
+          "role": "definition"
+        }
+      ],
+      "subtype": "finite_coverage_instance",
+      "summary": "Specifies five feature sets over four features, the resulting coverage cardinality function, and marginals (3/10, 7/20, 3/10, 7/20, 7/20); the function is stated nonnegative, monotone, and submodular.",
+      "title": "Five-element coverage function and marginals",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0014": {
+      "active": true,
+      "block_id": "b_0014",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:21Z",
+      "kind": "definition",
+      "lifecycle_status": "completed",
+      "link_ids": [
+        "link_0018"
+      ],
+      "parent_id": "b_0005",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 70,
+              "path": "article/sections/02_counterexample.tex",
+              "start_line": 44
+            }
+          },
+          "ref_id": "ref_0015",
+          "role": "definition"
+        }
+      ],
+      "subtype": "dual_certificate",
+      "summary": "States the dual majorization program for f⁺⁺ and fixes λ₀, singleton coefficients, and pair coefficients as exact rationals.",
+      "title": "Pairwise dual and rational coefficients",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0015": {
+      "active": true,
+      "block_id": "b_0015",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:21Z",
+      "kind": "proof",
+      "lifecycle_status": "completed",
+      "link_ids": [
+        "link_0011",
+        "link_0014",
+        "link_0015",
+        "link_0016"
+      ],
+      "parent_id": "b_0005",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 131,
+              "path": "article/sections/02_counterexample.tex",
+              "start_line": 110
+            }
+          },
+          "ref_id": "ref_0018",
+          "role": "proof"
+        }
+      ],
+      "subtype": "weak_duality",
+      "summary": "Takes expectations of the pointwise certificate under any pairwise feasible distribution to obtain 479/160, then combines it with f⁺(x)=4 to get 640/479 > 4/3.",
+      "title": "Pairwise upper bound and correlation-gap violation",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0016": {
+      "active": true,
+      "block_id": "b_0016",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:21Z",
+      "kind": "proof",
+      "lifecycle_status": "completed",
+      "link_ids": [
+        "link_0020"
+      ],
+      "parent_id": "b_0005",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 108,
+              "path": "article/sections/02_counterexample.tex",
+              "start_line": 70
+            }
+          },
+          "ref_id": "ref_0016",
+          "role": "certificate"
+        }
+      ],
+      "subtype": "finite_certificate",
+      "summary": "Lists λ(S) and f(S) for every subset of the five-element ground set, verifying all 2⁵=32 pointwise dual constraints.",
+      "title": "Complete 32-row dual feasibility check",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0017": {
+      "active": true,
+      "block_id": "b_0017",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:21Z",
+      "kind": "definition",
+      "lifecycle_status": "completed",
+      "link_ids": [
+        "link_0019",
+        "link_0023"
+      ],
+      "parent_id": "b_0007",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 53,
+              "path": "formal_target.lean",
+              "start_line": 28
+            }
+          },
+          "ref_id": "ref_0020",
+          "role": "definition"
+        }
+      ],
+      "subtype": "lean_feasibility",
+      "summary": "Defines expected coverage, MarginalFeasible with arbitrary real nonnegative weights over all finite subsets, PairwiseFeasible with exact pair moments, IsUnrestrictedOptimum, and IsPairwiseUpperBound.",
+      "title": "Lean feasible-domain and optimization predicates",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0018": {
+      "active": true,
+      "block_id": "b_0018",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:21Z",
+      "kind": "definition",
+      "lifecycle_status": "completed",
+      "link_ids": [
+        "link_0017"
+      ],
+      "parent_id": "b_0007",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 26,
+              "path": "formal_target.lean",
+              "start_line": 5
+            }
+          },
+          "ref_id": "ref_0019",
+          "role": "definition"
+        }
+      ],
+      "subtype": "lean_data",
+      "summary": "Defines Element = Fin 5, Feature = Fin 4, real weights on Finset Element, the five feature sets, coverage, and the prescribed rational marginal function.",
+      "title": "Lean finite data and coverage",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "b_0019": {
+      "active": true,
+      "block_id": "b_0019",
+      "child_ids": [],
+      "created_at": "2026-07-21T19:36:21Z",
+      "kind": "theorem",
+      "lifecycle_status": "completed",
+      "link_ids": [
+        "link_0021",
+        "link_0022",
+        "link_0024"
+      ],
+      "parent_id": "b_0007",
+      "refs": [
+        {
+          "material_ref": {
+            "kind": "source",
+            "ref": {
+              "end_line": 64,
+              "path": "formal_target.lean",
+              "start_line": 55
+            }
+          },
+          "ref_id": "ref_0017",
+          "role": "statement"
+        }
+      ],
+      "subtype": "formal_target",
+      "summary": "Target theorem conjoins coverage monotonicity and submodularity, unrestricted optimum 4, pairwise-feasible nonemptiness plus universal upper bound 479/160, and the strict rational comparison. The supplied source has `by sorry`; the run objective requires its proved replacement.",
+      "title": "Combined finite coverage gap theorem",
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "root": {
+      "active": true,
+      "block_id": "root",
+      "child_ids": [
+        "b_0001",
+        "b_0002",
+        "b_0003",
+        "b_0004",
+        "b_0005",
+        "b_0006",
+        "b_0007"
+      ],
+      "created_at": "2026-07-21T19:34:25Z",
+      "kind": "root",
+      "lifecycle_status": "draft",
+      "link_ids": [],
+      "parent_id": null,
+      "refs": [],
+      "subtype": null,
+      "summary": "Root block for the source corpus.",
+      "title": "Source corpus",
+      "updated_at": "2026-07-21T19:36:01Z"
+    }
+  },
+  "committed_at": "2026-07-21T22:15:34Z",
+  "created_at": "2026-07-21T19:34:25Z",
+  "files": {
+    "README.md": {
+      "committed": true,
+      "indexing_status": "indexed",
+      "line_count": 41,
+      "path": "README.md",
+      "readable_text": true,
+      "source_sha256": "3d93250b877683a40a450706b0d5b1f72488935e0a9dffdd517c9fa12da84390",
+      "summary": "Corpus provenance, reading order, mathematical scope, and extraction limitation: the pairwise result is an upper bound, not an equality claim.",
+      "survey_status": "surveyed"
+    },
+    "article/main.tex": {
+      "committed": true,
+      "indexing_status": "indexed",
+      "line_count": 21,
+      "path": "article/main.tex",
+      "readable_text": true,
+      "source_sha256": "b97ee334bf4c7be932abac5e3a7a1abcc8b0138691e50d04b80d18ca51563042",
+      "summary": "LaTeX entrypoint that assembles frontmatter, definitions/conjecture, counterexample, and bibliography.",
+      "survey_status": "surveyed"
+    },
+    "article/references.bib": {
+      "committed": true,
+      "indexing_status": "indexed",
+      "line_count": 81,
+      "path": "article/references.bib",
+      "readable_text": true,
+      "source_sha256": "3f41a648c15512e85960d5d8aa89e3609d3c33b3b7378a37417628a8ffb975f9",
+      "summary": "Bibliography supporting the conjecture and coverage/submodularity context.",
+      "survey_status": "surveyed"
+    },
+    "article/sections/00_frontmatter.tex": {
+      "committed": true,
+      "indexing_status": "indexed",
+      "line_count": 14,
+      "path": "article/sections/00_frontmatter.tex",
+      "readable_text": true,
+      "source_sha256": "40a4e3f2450635469a737db2a65062d0d6dfa6eadf9a4d4c82fbbd78c4bb487f",
+      "summary": "Title, authorship, date, and abstract identifying the work as a counterexample to the 2025 conjecture.",
+      "survey_status": "surveyed"
+    },
+    "article/sections/01_definitions_and_conjecture.tex": {
+      "committed": true,
+      "indexing_status": "indexed",
+      "line_count": 57,
+      "path": "article/sections/01_definitions_and_conjecture.tex",
+      "readable_text": true,
+      "source_sha256": "51603d03aee36c4e47683a2d475c226e826f8501efa80e59795435a88605fa85",
+      "summary": "Defines monotone submodularity, unrestricted and pairwise-moment optimization values, product-distribution feasibility, and the proposed 4/3 conjecture.",
+      "survey_status": "surveyed"
+    },
+    "article/sections/02_counterexample.tex": {
+      "committed": true,
+      "indexing_status": "indexed",
+      "line_count": 131,
+      "path": "article/sections/02_counterexample.tex",
+      "readable_text": true,
+      "source_sha256": "a9e0f618e03b652fb3eb51fde2c5a2455ebcd112675d14b1d3bc056802379790",
+      "summary": "Defines the finite coverage instance, proves unrestricted value 4, and gives an exact dual certificate yielding the 479/160 pairwise upper bound and gap.",
+      "survey_status": "surveyed"
+    },
+    "formal_target.lean": {
+      "committed": true,
+      "indexing_status": "indexed",
+      "line_count": 66,
+      "path": "formal_target.lean",
+      "readable_text": true,
+      "source_sha256": "52b26382ea41a146be1a6e7745992d83c6b1542496a0b791558ad5f82d109404",
+      "summary": "Lean specification of the five-element coverage function, feasible domains, optimization predicates, and the combined gap theorem.",
+      "survey_status": "surveyed"
+    }
+  },
+  "links": {
+    "link_0001": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 19,
+            "path": "article/main.tex",
+            "start_line": 11
+          }
+        }
+      ],
+      "link_id": "link_0001",
+      "link_kind": "refers_to",
+      "source_block_id": "b_0002",
+      "target_block_id": "b_0003",
+      "target_hint": null
+    },
+    "link_0002": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 19,
+            "path": "article/main.tex",
+            "start_line": 11
+          }
+        }
+      ],
+      "link_id": "link_0002",
+      "link_kind": "refers_to",
+      "source_block_id": "b_0002",
+      "target_block_id": "b_0004",
+      "target_hint": null
+    },
+    "link_0003": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 19,
+            "path": "article/main.tex",
+            "start_line": 11
+          }
+        }
+      ],
+      "link_id": "link_0003",
+      "link_kind": "refers_to",
+      "source_block_id": "b_0002",
+      "target_block_id": "b_0005",
+      "target_hint": null
+    },
+    "link_0004": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 81,
+            "path": "article/references.bib",
+            "start_line": 1
+          }
+        }
+      ],
+      "link_id": "link_0004",
+      "link_kind": "supports",
+      "source_block_id": "b_0006",
+      "target_block_id": "b_0008",
+      "target_hint": null
+    },
+    "link_0005": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 81,
+            "path": "article/references.bib",
+            "start_line": 1
+          }
+        }
+      ],
+      "link_id": "link_0005",
+      "link_kind": "supports",
+      "source_block_id": "b_0006",
+      "target_block_id": "b_0011",
+      "target_hint": null
+    },
+    "link_0006": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 19,
+            "path": "article/main.tex",
+            "start_line": 11
+          }
+        }
+      ],
+      "link_id": "link_0006",
+      "link_kind": "refers_to",
+      "source_block_id": "b_0002",
+      "target_block_id": "b_0006",
+      "target_hint": null
+    },
+    "link_0007": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 57,
+            "path": "article/sections/01_definitions_and_conjecture.tex",
+            "start_line": 47
+          }
+        }
+      ],
+      "link_id": "link_0007",
+      "link_kind": "uses",
+      "source_block_id": "b_0011",
+      "target_block_id": "b_0008",
+      "target_hint": null
+    },
+    "link_0008": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 45,
+            "path": "article/sections/01_definitions_and_conjecture.tex",
+            "start_line": 28
+          }
+        }
+      ],
+      "link_id": "link_0008",
+      "link_kind": "uses",
+      "source_block_id": "b_0010",
+      "target_block_id": "b_0009",
+      "target_hint": null
+    },
+    "link_0009": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 57,
+            "path": "article/sections/01_definitions_and_conjecture.tex",
+            "start_line": 47
+          }
+        }
+      ],
+      "link_id": "link_0009",
+      "link_kind": "uses",
+      "source_block_id": "b_0011",
+      "target_block_id": "b_0010",
+      "target_hint": null
+    },
+    "link_0010": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 57,
+            "path": "article/sections/01_definitions_and_conjecture.tex",
+            "start_line": 47
+          }
+        }
+      ],
+      "link_id": "link_0010",
+      "link_kind": "uses",
+      "source_block_id": "b_0011",
+      "target_block_id": "b_0009",
+      "target_hint": null
+    },
+    "link_0011": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 131,
+            "path": "article/sections/02_counterexample.tex",
+            "start_line": 110
+          }
+        }
+      ],
+      "link_id": "link_0011",
+      "link_kind": "uses",
+      "source_block_id": "b_0015",
+      "target_block_id": "b_0012",
+      "target_hint": null
+    },
+    "link_0012": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 20,
+            "path": "article/sections/02_counterexample.tex",
+            "start_line": 3
+          }
+        }
+      ],
+      "link_id": "link_0012",
+      "link_kind": "supports",
+      "source_block_id": "b_0013",
+      "target_block_id": "b_0008",
+      "target_hint": null
+    },
+    "link_0013": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 42,
+            "path": "article/sections/02_counterexample.tex",
+            "start_line": 22
+          }
+        }
+      ],
+      "link_id": "link_0013",
+      "link_kind": "proves",
+      "source_block_id": "b_0012",
+      "target_block_id": "b_0009",
+      "target_hint": null
+    },
+    "link_0014": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 131,
+            "path": "article/sections/02_counterexample.tex",
+            "start_line": 110
+          }
+        }
+      ],
+      "link_id": "link_0014",
+      "link_kind": "uses",
+      "source_block_id": "b_0015",
+      "target_block_id": "b_0016",
+      "target_hint": null
+    },
+    "link_0015": {
+      "created_at": "2026-07-21T19:37:07Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 131,
+            "path": "article/sections/02_counterexample.tex",
+            "start_line": 110
+          }
+        }
+      ],
+      "link_id": "link_0015",
+      "link_kind": "uses",
+      "source_block_id": "b_0015",
+      "target_block_id": "b_0010",
+      "target_hint": null
+    },
+    "link_0016": {
+      "created_at": "2026-07-21T19:37:08Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 131,
+            "path": "article/sections/02_counterexample.tex",
+            "start_line": 110
+          }
+        }
+      ],
+      "link_id": "link_0016",
+      "link_kind": "supports",
+      "source_block_id": "b_0015",
+      "target_block_id": "b_0011",
+      "target_hint": null
+    },
+    "link_0017": {
+      "created_at": "2026-07-21T19:37:08Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 26,
+            "path": "formal_target.lean",
+            "start_line": 5
+          }
+        }
+      ],
+      "link_id": "link_0017",
+      "link_kind": "same_as",
+      "source_block_id": "b_0018",
+      "target_block_id": "b_0013",
+      "target_hint": null
+    },
+    "link_0018": {
+      "created_at": "2026-07-21T19:37:08Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 70,
+            "path": "article/sections/02_counterexample.tex",
+            "start_line": 44
+          }
+        }
+      ],
+      "link_id": "link_0018",
+      "link_kind": "uses",
+      "source_block_id": "b_0014",
+      "target_block_id": "b_0010",
+      "target_hint": null
+    },
+    "link_0019": {
+      "created_at": "2026-07-21T19:37:08Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 53,
+            "path": "formal_target.lean",
+            "start_line": 28
+          }
+        }
+      ],
+      "link_id": "link_0019",
+      "link_kind": "same_as",
+      "source_block_id": "b_0017",
+      "target_block_id": "b_0009",
+      "target_hint": null
+    },
+    "link_0020": {
+      "created_at": "2026-07-21T19:37:08Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 108,
+            "path": "article/sections/02_counterexample.tex",
+            "start_line": 70
+          }
+        }
+      ],
+      "link_id": "link_0020",
+      "link_kind": "proves",
+      "source_block_id": "b_0016",
+      "target_block_id": "b_0014",
+      "target_hint": null
+    },
+    "link_0021": {
+      "created_at": "2026-07-21T19:37:08Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 64,
+            "path": "formal_target.lean",
+            "start_line": 55
+          }
+        }
+      ],
+      "link_id": "link_0021",
+      "link_kind": "uses",
+      "source_block_id": "b_0019",
+      "target_block_id": "b_0017",
+      "target_hint": null
+    },
+    "link_0022": {
+      "created_at": "2026-07-21T19:37:08Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 64,
+            "path": "formal_target.lean",
+            "start_line": 55
+          }
+        }
+      ],
+      "link_id": "link_0022",
+      "link_kind": "uses",
+      "source_block_id": "b_0019",
+      "target_block_id": "b_0018",
+      "target_hint": null
+    },
+    "link_0023": {
+      "created_at": "2026-07-21T19:37:08Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 53,
+            "path": "formal_target.lean",
+            "start_line": 28
+          }
+        }
+      ],
+      "link_id": "link_0023",
+      "link_kind": "same_as",
+      "source_block_id": "b_0017",
+      "target_block_id": "b_0010",
+      "target_hint": null
+    },
+    "link_0024": {
+      "created_at": "2026-07-21T19:37:08Z",
+      "evidence_refs": [
+        {
+          "kind": "source",
+          "ref": {
+            "end_line": 64,
+            "path": "formal_target.lean",
+            "start_line": 55
+          }
+        }
+      ],
+      "link_id": "link_0024",
+      "link_kind": "supports",
+      "source_block_id": "b_0019",
+      "target_block_id": "b_0015",
+      "target_hint": null
+    }
+  },
+  "overview": "This corpus formalizes a finite counterexample to the proposed 4/3 pairwise-independent correlation-gap bound. It defines the unrestricted and pairwise-moment feasible domains for distributions over subsets, specializes to a five-element four-feature coverage function with rational marginals, gives a three-point unrestricted optimum witness of value 4, and supplies an exact 32-row rational dual certificate proving the pairwise feasible expected-coverage upper bound 479/160. The Lean target packages monotonicity, submodularity, the unrestricted optimum, pairwise feasibility/nonemptiness and upper bound, and the strict ratio comparison; as supplied in the source it contains a proof placeholder, while the run objective requires a proved native formalization.",
+  "root_block_id": "root",
+  "schema_version": 3,
+  "status": "committed",
+  "summary": "Committed scoped SourceIndex update.",
+  "updated_at": "2026-07-21T22:15:34Z"
+}

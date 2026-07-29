@@ -1,0 +1,27 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-26T15:20:06Z",
+  "created_at": "2026-07-26T14:49:09Z",
+  "execution_completed_at": "2026-07-26T15:20:06Z",
+  "execution_reason": "DeclGraphRoundFlow finished with completed.",
+  "execution_result_kind": "success",
+  "node_path": "Main.PairwiseBound",
+  "objective": "Advance coverage_le_dualValue to a proved theorem by formalizing the complete SourceIndex b_0016 32-subset check against the accepted exact dualValue definition. This closes the pointwise-certificate stage needed by universal weak duality.",
+  "plan_closeout_acknowledged_at": "2026-07-26T15:20:06Z",
+  "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
+  "result_kind": "success",
+  "result_reason": "DeclGraphRoundFlow finished with completed.",
+  "revision_refs": [
+    {
+      "change_id": "coverage_le_dualValue@rev:2",
+      "decl_name": "coverage_le_dualValue",
+      "revision": 2
+    }
+  ],
+  "round_id": "round_d1923e8e2a144cfc985070b8fc28d6b9",
+  "round_index": 4,
+  "started_at": "2026-07-26T14:50:25Z",
+  "status": "committed",
+  "strategy_id": "strategy_fddb4422361e4cd698dba5e52c62472e",
+  "summary": "The strategy completed the full pointwise-certificate segment: coverage_le_dualValue is proved and proof-policy satisfied, with no blocker or missing helper. The exact b_0014/b_0016 dual data and all 32 constraints are now closed. Remaining contract work is pairwise-feasible nonemptiness, universal moment-sum weak duality, exact 479/160 evaluation, and the public interface. The next bottom-up step is to declare an independent-product Weight witness before proving it PairwiseFeasible."
+}

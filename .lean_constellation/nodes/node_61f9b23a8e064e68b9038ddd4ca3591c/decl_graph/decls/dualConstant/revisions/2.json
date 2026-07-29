@@ -1,0 +1,72 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [],
+    "base_revision": 1,
+    "kind": "update",
+    "objective": "Advance the failed planning-only revision to a declared exact definition λ₀ = 1/2 from SourceIndex b_0014 / source lines 58–68. This independent provider feeds dualValue, finite majorization, and the 479/160 moment evaluation.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": "planned",
+    "summary": "Completed: the exact constant coefficient λ₀ = 1/2 from SourceIndex b_0014 reached declared state with accepted natural-language and compiler-passed formal definition. As a non-theorem definition it is proof-policy satisfied at declared state and is ready for dualValue and moment evaluation.",
+    "target_state": "declared"
+  },
+  "lean_decl_name": "dualConstant",
+  "proof": null,
+  "revision": 2,
+  "state": "declared",
+  "statement": {
+    "deps": [],
+    "formal": {
+      "check": {
+        "allow_sorry": false,
+        "contains_axiom": false,
+        "contains_sorry": false,
+        "diagnostics": {
+          "diagnostics": [],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualConstant', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Defs/dualConstant.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 0 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "statement_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": false,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [],
+          "opaque_count": 0,
+          "sorry_count": 0,
+          "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `dualConstant`\n\n`dualConstant` is the real dual constant λ₀, defined to be exactly `1 / 2`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, line 61\n-/\nnoncomputable def dualConstant : ℝ := 1 / 2\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 61,
+          "end_locator": null,
+          "kind": "source",
+          "note": "Source fixes the dual constant λ₀ = 1/2.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 61,
+          "start_locator": null
+        }
+      ],
+      "text": "`dualConstant` is the real dual constant λ₀, defined to be exactly `1 / 2`."
+    }
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T14:41:53Z"
+}

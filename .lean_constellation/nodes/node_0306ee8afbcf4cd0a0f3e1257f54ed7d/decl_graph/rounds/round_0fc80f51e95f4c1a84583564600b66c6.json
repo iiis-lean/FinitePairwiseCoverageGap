@@ -1,0 +1,32 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-26T13:11:03Z",
+  "created_at": "2026-07-26T13:06:31Z",
+  "execution_completed_at": "2026-07-26T13:11:03Z",
+  "execution_reason": "DeclGraphRoundFlow finished with completed.",
+  "execution_result_kind": "success",
+  "node_path": "Main.Foundations",
+  "objective": "Advance b_0017 with the two independent consumers now enabled by accepted expectedCoverage and MarginalFeasible: PairwiseFeasible with exact ordered-pair moments for i < j, and IsUnrestrictedOptimum with attainment plus a universal marginal-feasible upper bound. This leaves only IsPairwiseUpperBound in the predicate layer.",
+  "plan_closeout_acknowledged_at": "2026-07-26T13:11:03Z",
+  "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
+  "result_kind": "success",
+  "result_reason": "DeclGraphRoundFlow finished with completed.",
+  "revision_refs": [
+    {
+      "change_id": "PairwiseFeasible@rev:1",
+      "decl_name": "PairwiseFeasible",
+      "revision": 1
+    },
+    {
+      "change_id": "IsUnrestrictedOptimum@rev:1",
+      "decl_name": "IsUnrestrictedOptimum",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_0fc80f51e95f4c1a84583564600b66c6",
+  "round_index": 6,
+  "started_at": "2026-07-26T13:07:30Z",
+  "status": "committed",
+  "strategy_id": "strategy_eeee9e64e4b940b7b1cc4bb6ae4e7056",
+  "summary": "The b_0017 strategy layer advanced successfully: PairwiseFeasible and IsUnrestrictedOptimum reached declared state with accepted source-faithful formal statements and satisfied proof-policy closures. No blockers, state-only gaps, helper requirements, or hygiene issues appeared. IsPairwiseUpperBound is the only remaining b_0017 declaration; the two structural theorems remain to be proved. Next action: declare IsPairwiseUpperBound from accepted PairwiseFeasible and expectedCoverage."
+}

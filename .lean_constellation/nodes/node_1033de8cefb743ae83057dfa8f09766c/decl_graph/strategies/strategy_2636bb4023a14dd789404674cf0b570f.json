@@ -1,0 +1,16 @@
+{
+  "closed_at": "2026-07-29T18:33:29Z",
+  "closed_reason": "The bottom-up route is complete: strict_ratio_comparison and the exact public finite_pairwise_coverage_gap theorem are committed at proved state, proof-policy satisfied, and the required interface is bound.",
+  "created_at": "2026-07-29T17:12:27Z",
+  "created_round_ids": [
+    "round_39b5a09b3b2146b79f326ec8dbdaf8a7",
+    "round_9f9ca6ae74724fbeb1f204b37c47fca4",
+    "round_ae05295245794ed9a7b240ac45dc6cc1"
+  ],
+  "node_path": "Main.GapTheorem",
+  "objective": "Prove the Main.GapTheorem source route bottom-up by first closing the local strict comparison 4 / (479 / 160) > 4 / 3 from SourceIndex b_0015, then composing it with the exact proved foundational, unrestricted-optimum, and pairwise-bound interfaces into the protected public finite_pairwise_coverage_gap theorem of b_0019.",
+  "rationale": "The repository requires graph_proved completion. Dependency recon confirmed all lower formal statements and proofs are ready with exact matching signatures, so only a small local arithmetic lemma and the final public conjunction are needed. The arithmetic lemma is proof-only and private; the immutable interface theorem is public. Expected scope is two declarations, within the contract’s 2–5 declaration scale.",
+  "status": "closed",
+  "strategy_id": "strategy_2636bb4023a14dd789404674cf0b570f",
+  "summary": "Completed the graph_proved Main.GapTheorem strategy with one private proved arithmetic helper and the exact public proved five-conjunct interface theorem; dependency closure and public Statement closure are complete with no cleanup targets."
+}

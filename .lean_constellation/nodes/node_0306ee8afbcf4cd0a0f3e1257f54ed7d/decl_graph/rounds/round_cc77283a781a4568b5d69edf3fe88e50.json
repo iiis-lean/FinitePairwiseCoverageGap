@@ -1,0 +1,27 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-26T13:17:35Z",
+  "created_at": "2026-07-26T13:12:54Z",
+  "execution_completed_at": "2026-07-26T13:17:35Z",
+  "execution_reason": "DeclGraphRoundFlow finished with completed.",
+  "execution_result_kind": "success",
+  "node_path": "Main.Foundations",
+  "objective": "Complete b_0017 by declaring IsPairwiseUpperBound exactly as nonemptiness of the pairwise-feasible domain together with a universal expected-coverage upper bound, using accepted PairwiseFeasible and expectedCoverage. After this round, only the two proved b_0013 structural interfaces remain.",
+  "plan_closeout_acknowledged_at": "2026-07-26T13:17:35Z",
+  "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
+  "result_kind": "success",
+  "result_reason": "DeclGraphRoundFlow finished with completed.",
+  "revision_refs": [
+    {
+      "change_id": "IsPairwiseUpperBound@rev:1",
+      "decl_name": "IsPairwiseUpperBound",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_cc77283a781a4568b5d69edf3fe88e50",
+  "round_index": 7,
+  "started_at": "2026-07-26T13:14:32Z",
+  "status": "committed",
+  "strategy_id": "strategy_eeee9e64e4b940b7b1cc4bb6ae4e7056",
+  "summary": "The strategy completed the entire b_0017 definition layer: IsPairwiseUpperBound reached declared state with an accepted source-faithful statement and satisfied proof-policy closure. All eleven definition/abbreviation interfaces are now ready; no blockers, state-only gaps, helpers, or hygiene issues remain in that layer. Only coverage_monotone and coverage_submodular remain, and their accepted data closure plus verified Mathlib proof routes are available. Next action: one proved structural-theorem round."
+}

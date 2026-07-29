@@ -1,0 +1,26 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [
+      "Element"
+    ],
+    "base_revision": null,
+    "kind": "create",
+    "objective": "From SourceIndex b_0018 / b_0013 and formal_target.lean lines 21–26, preserve the exact values (3/10, 7/20, 3/10, 7/20, 7/20) on zero-based Fin 5, including real-valued rational division. It consumes Element and supplies the right-hand sides of MarginalFeasible and PairwiseFeasible.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": null,
+    "summary": "DeclGraphRoundFlow failed for change marginal@rev:1.",
+    "target_state": "declared"
+  },
+  "lean_decl_name": null,
+  "proof": null,
+  "revision": 1,
+  "state": "planned",
+  "statement": {
+    "deps": [],
+    "formal": null,
+    "nl": null
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T12:35:32Z"
+}

@@ -1,0 +1,4 @@
+{
+  "main_node": "Main",
+  "summary": "Submit FinitePairwiseCoverageGap as a graph-proved release candidate: all four content boundaries and Main v2 are committed, the complete public Statement closure is exported, and the protected theorem `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap` preserves the exact source header, full real-valued feasible domain, unrestricted optimum 4, pairwise bound 479/160, and strict ratio comparison. The candidate gate passed all blocking checks."
+}

@@ -1,0 +1,37 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-26T14:39:48Z",
+  "created_at": "2026-07-26T14:30:42Z",
+  "execution_completed_at": "2026-07-26T14:39:48Z",
+  "execution_reason": "DeclGraphRoundFlow finished with completed.",
+  "execution_result_kind": "success",
+  "node_path": "Main.PairwiseBound",
+  "objective": "Create the three independent exact rational coefficient definitions from SourceIndex b_0014: λ₀, singleton coefficients, and ordered-pair coefficients. Later rounds will define subset evaluation and prove b_0016 pointwise majorization after these providers are accepted.",
+  "plan_closeout_acknowledged_at": "2026-07-26T14:39:48Z",
+  "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
+  "result_kind": "success",
+  "result_reason": "DeclGraphRoundFlow finished with completed.",
+  "revision_refs": [
+    {
+      "change_id": "dualConstant@rev:2",
+      "decl_name": "dualConstant",
+      "revision": 2
+    },
+    {
+      "change_id": "dualSingletonCoeff@rev:2",
+      "decl_name": "dualSingletonCoeff",
+      "revision": 2
+    },
+    {
+      "change_id": "dualPairCoeff@rev:2",
+      "decl_name": "dualPairCoeff",
+      "revision": 2
+    }
+  ],
+  "round_id": "round_470256ec849e4ca1954ec33977dc75a0",
+  "round_index": 2,
+  "started_at": "2026-07-26T14:33:32Z",
+  "status": "committed",
+  "strategy_id": "strategy_fddb4422361e4cd698dba5e52c62472e",
+  "summary": "The bottom-up strategy made concrete progress: dualConstant, dualSingletonCoeff, and dualPairCoeff all reached declared state and satisfy the graph_proved policy for definitions. No proof stages were needed and no blocker remains. The previously planned dualValue and coverage_le_dualValue revisions are still at planned state from the planning-only failed round; the next dependency-ordered round should advance dualValue alone using the three accepted providers, after which the pointwise theorem can be proved."
+}

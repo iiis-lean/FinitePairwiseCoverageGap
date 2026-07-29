@@ -1,0 +1,32 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-29T15:26:52Z",
+  "created_at": "2026-07-29T14:57:13Z",
+  "execution_completed_at": "2026-07-29T15:23:44Z",
+  "execution_reason": "Decl-owned Lean file was modified after the latest capture.",
+  "execution_result_kind": "failed",
+  "node_path": "Main.UnrestrictedOptimum",
+  "objective": "Prove the accepted unrestrictedWitness has the complete prescribed marginal feasibility and expected coverage value 4, supplying the attaining half of the later IsUnrestrictedOptimum 4 theorem.",
+  "plan_closeout_acknowledged_at": "2026-07-29T15:26:52Z",
+  "plan_closeout_acknowledged_by": "a_a2d50c8badaf485395c6fd44278811c5",
+  "result_kind": "failed",
+  "result_reason": "Proof Formal capture integrity failed because declaration-owned files changed after capture; both theorem revisions remain proof_planned despite passed proof-formal artifacts and require a narrow stable recapture retry.",
+  "revision_refs": [
+    {
+      "change_id": "unrestrictedWitness_feasible@rev:1",
+      "decl_name": "unrestrictedWitness_feasible",
+      "revision": 1
+    },
+    {
+      "change_id": "unrestrictedWitness_value@rev:1",
+      "decl_name": "unrestrictedWitness_value",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_15f14d739a89448ab3ba59403e8847c4",
+  "round_index": 2,
+  "started_at": "2026-07-29T14:58:35Z",
+  "status": "committed",
+  "strategy_id": "strategy_279b788bd56a42eb8181f2bf2c760a52",
+  "summary": "Round 2 made partial bottom-up progress: unrestrictedWitness_feasible and unrestrictedWitness_value both reached proof_planned with passed formal statements, present proof plans, and proof-formal artifacts marked passed. Neither reached the required static proved target or proved-policy satisfaction because proof_formal capture failed after the declaration-owned Lean file was modified following its latest capture. No source-visible helper, external dependency, statement drift, unresolved consumer goal, or scope issue was reported; unrestrictedWitness remains the complete known lower dependency. Both declarations still need a proof-layer retry from proof_planned whose sole known condition is stable recapture of the existing declaration files. The strategy remains viable, and the next step should be a narrow update round for these two revisions rather than preparation or parent-proof work."
+}

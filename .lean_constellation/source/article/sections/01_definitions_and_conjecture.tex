@@ -1,0 +1,57 @@
+\section{Definitions and conjecture}
+
+Let $N$ be a ground set with $|N|=n$, and let
+$f:2^N\to\mathbb{R}_+$ be a nonnegative set function.  The function is
+submodular if
+\[
+  f(S)+f(T)\geq f(S\cap T)+f(S\cup T)
+\]
+for all $S,T\subseteq N$.  Equivalently, it has diminishing marginal returns:
+$f(S\cup\{i\})-f(S)\geq f(T\cup\{i\})-f(T)$ whenever
+$S\subseteq T$ and $i\in N\setminus T$.  It is monotone if
+$f(S)\leq f(T)$ whenever $S\subseteq T$.
+
+For $\boldsymbol{x}\in[0,1]^n$, the concave closure is the maximum expected
+value over all joint distributions having marginals $\boldsymbol{x}$:
+\begin{equation}
+\label{eq:unrestricted}
+f^+(\boldsymbol{x})=
+\max\left\{
+\sum_{S\subseteq N}\theta(S)f(S)\ \middle|\
+\begin{aligned}
+ &\sum_{S\ni i}\theta(S)=x_i &&(i\in N),\\
+ &\sum_{S\subseteq N}\theta(S)=1,\\
+ &\theta(S)\geq0 &&(S\subseteq N)
+\end{aligned}
+\right\}.
+\end{equation}
+The pairwise-independent extension additionally fixes every two-element
+moment:
+\begin{equation}
+\label{eq:pairwise}
+f^{++}(\boldsymbol{x})=
+\max\left\{
+\sum_{S\subseteq N}\theta(S)f(S)\ \middle|\
+\begin{aligned}
+ &\sum_{S\supseteq\{i,j\}}\theta(S)=x_i x_j &&(i<j),\\
+ &\sum_{S\ni i}\theta(S)=x_i &&(i\in N),\\
+ &\sum_{S\subseteq N}\theta(S)=1,\\
+ &\theta(S)\geq0 &&(S\subseteq N)
+\end{aligned}
+\right\}.
+\end{equation}
+The feasible set in \eqref{eq:pairwise} is nonempty: the product distribution
+$\theta(S)=\prod_{i\in S}x_i\prod_{i\notin S}(1-x_i)$ has the required first
+and second moments.
+
+The pairwise-independent correlation gap is
+$f^+(\boldsymbol{x})/f^{++}(\boldsymbol{x})$.  Ramachandra and Natarajan
+posed the following conjecture \cite{ramachandra2025}.
+
+\begin{conjecture}
+For every $n$, every nonnegative monotone submodular
+$f:2^N\to\mathbb{R}_+$, and every $\boldsymbol{x}\in[0,1]^n$,
+\[
+  \frac{f^+(\boldsymbol{x})}{f^{++}(\boldsymbol{x})}\leq\frac43.
+\]
+\end{conjecture}

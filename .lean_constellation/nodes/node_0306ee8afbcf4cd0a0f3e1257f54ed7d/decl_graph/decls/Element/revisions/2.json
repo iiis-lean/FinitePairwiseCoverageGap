@@ -1,0 +1,72 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [],
+    "base_revision": 1,
+    "kind": "update",
+    "objective": "Replan the independent b_0018 base declaration after the previous draft was abandoned before execution. Preserve formal_target.lean line 5 exactly as Element := Fin 5; it consumes no current-node declaration and supplies Weight, elementFeatures, marginal, all feasibility predicates, and both coverage theorems.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": "planned",
+    "summary": "Completed successfully. The abandoned planned revision was rebuilt through Statement NL and Statement Formal; compiler-confirmed public abbrev Element with Lean name Element now exactly preserves formal_target.lean line 5 (`Fin 5`) at declared state. As a non-theorem it is proof-policy satisfied under graph_proved and is ready for Weight, elementFeatures, marginal, feasibility predicates, and structural coverage consumers.",
+    "target_state": "declared"
+  },
+  "lean_decl_name": "Element",
+  "proof": null,
+  "revision": 2,
+  "state": "declared",
+  "statement": {
+    "deps": [],
+    "formal": {
+      "check": {
+        "allow_sorry": false,
+        "contains_axiom": false,
+        "contains_sorry": false,
+        "diagnostics": {
+          "diagnostics": [],
+          "passed": true,
+          "raw_excerpt": "",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/Element.lean",
+          "schema_version": 2,
+          "summary": "Command completed successfully"
+        },
+        "message": "Lean check passed.",
+        "policy": "statement_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": false,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [],
+          "opaque_count": 0,
+          "sorry_count": 0,
+          "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `Element`\n\nDefine `Element` as the five-element finite type `Fin 5`.\n\n## Sources\n\n- Source `formal_target.lean`, line 5\n-/\nabbrev Element := Fin 5\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 5,
+          "end_locator": null,
+          "kind": "source",
+          "note": "Exact source definition `Element := Fin 5`.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "formal_target.lean",
+          "start_line": 5,
+          "start_locator": null
+        }
+      ],
+      "text": "Define `Element` as the five-element finite type `Fin 5`."
+    }
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T12:43:01Z"
+}

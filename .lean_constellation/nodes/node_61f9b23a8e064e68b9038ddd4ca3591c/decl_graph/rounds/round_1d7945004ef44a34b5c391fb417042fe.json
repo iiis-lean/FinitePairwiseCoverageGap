@@ -1,0 +1,47 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-26T14:31:54Z",
+  "created_at": "2026-07-26T14:29:39Z",
+  "execution_completed_at": "2026-07-26T14:31:54Z",
+  "execution_reason": "Draft validation rejected same-round internal dependencies; superseded by dependency-ordered rounds.",
+  "execution_result_kind": "failed",
+  "node_path": "Main.PairwiseBound",
+  "objective": "Create and check the exact rational dual-certificate core from SourceIndex b_0014 and b_0016: coefficient functions, their evaluation on a subset, and the complete pointwise inequality coverage S ≤ dualValue S for every subset of the five-element ground set.",
+  "plan_closeout_acknowledged_at": "2026-07-26T14:31:54Z",
+  "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
+  "result_kind": "failed",
+  "result_reason": "Draft validation rejected same-round internal dependencies; superseded by dependency-ordered rounds.",
+  "revision_refs": [
+    {
+      "change_id": "dualConstant@rev:1",
+      "decl_name": "dualConstant",
+      "revision": 1
+    },
+    {
+      "change_id": "dualSingletonCoeff@rev:1",
+      "decl_name": "dualSingletonCoeff",
+      "revision": 1
+    },
+    {
+      "change_id": "dualPairCoeff@rev:1",
+      "decl_name": "dualPairCoeff",
+      "revision": 1
+    },
+    {
+      "change_id": "dualValue@rev:1",
+      "decl_name": "dualValue",
+      "revision": 1
+    },
+    {
+      "change_id": "coverage_le_dualValue@rev:1",
+      "decl_name": "coverage_le_dualValue",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_1d7945004ef44a34b5c391fb417042fe",
+  "round_index": 1,
+  "started_at": null,
+  "status": "committed",
+  "strategy_id": "strategy_fddb4422361e4cd698dba5e52c62472e",
+  "summary": "Planning-only draft rejected by deterministic validation because dualValue depended on coefficient definitions created in the same round and coverage_le_dualValue depended on all of them. No child flow ran and no Lean artifacts were produced. Replan bottom-up with coefficient providers first."
+}

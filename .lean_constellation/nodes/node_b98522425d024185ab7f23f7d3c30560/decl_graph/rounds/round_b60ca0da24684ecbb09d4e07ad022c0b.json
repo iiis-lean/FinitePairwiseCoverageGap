@@ -1,0 +1,27 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-29T16:07:52Z",
+  "created_at": "2026-07-29T16:02:18Z",
+  "execution_completed_at": "2026-07-29T16:06:24Z",
+  "execution_reason": null,
+  "execution_result_kind": "success",
+  "node_path": "Main.UnrestrictedOptimum",
+  "objective": "Retry only Proof Formal capture for unrestricted_optimum_four from its accepted proof_planned revision, preserving the exact IsUnrestrictedOptimum 4 statement and accepted proof plan.",
+  "plan_closeout_acknowledged_at": "2026-07-29T16:07:52Z",
+  "plan_closeout_acknowledged_by": "a_a2d50c8badaf485395c6fd44278811c5",
+  "result_kind": "success",
+  "result_reason": "The proof-only retry reached proved state and required proof-policy satisfaction for the exact public IsUnrestrictedOptimum 4 interface theorem.",
+  "revision_refs": [
+    {
+      "change_id": "unrestricted_optimum_four@rev:2",
+      "decl_name": "unrestricted_optimum_four",
+      "revision": 2
+    }
+  ],
+  "round_id": "round_b60ca0da24684ecbb09d4e07ad022c0b",
+  "round_index": 6,
+  "started_at": "2026-07-29T16:03:32Z",
+  "status": "committed",
+  "strategy_id": "strategy_279b788bd56a42eb8181f2bf2c760a52",
+  "summary": "Round 6 successfully completed the bottom-up strategy. unrestricted_optimum_four advanced from proof_planned to proved with its exact public IsUnrestrictedOptimum 4 statement and proof plan preserved, passed Proof Formal, and became proved-policy satisfied. All five active declarations now satisfy their required policies; the contract interface theorem and stable public witness/bound are present, while proof-only feasibility/value helpers remain private. No missing dependencies, blockers, state-only intermediates, superseded branches, retry-version names, or cleanup targets remain. The next step is public-boundary/interface binding and the content completion gate, not another declaration round."
+}

@@ -1,0 +1,83 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [],
+    "base_revision": 1,
+    "kind": "update",
+    "objective": "Advance the failed planning-only revision to a declared function Element → ℝ with coefficients (3/2, 7/2, 3/2, 3/2, 3/2) from SourceIndex b_0014 / lines 61–63. This independent provider feeds dualValue and first-moment evaluation.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": "planned",
+    "summary": "Completed: the exact singleton coefficient function on Element = Fin 5 from SourceIndex b_0014 reached declared state with accepted natural-language and compiler-passed formal definition. As a non-theorem definition it is proof-policy satisfied and ready for dualValue and first-moment evaluation.",
+    "target_state": "declared"
+  },
+  "lean_decl_name": "dualSingletonCoeff",
+  "proof": null,
+  "revision": 2,
+  "state": "declared",
+  "statement": {
+    "deps": [
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "Element",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": false,
+        "contains_axiom": false,
+        "contains_sorry": false,
+        "diagnostics": {
+          "diagnostics": [],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualSingletonCoeff', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Defs/dualSingletonCoeff.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 0 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "statement_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": false,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [],
+          "opaque_count": 0,
+          "sorry_count": 0,
+          "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `dualSingletonCoeff`\n\n`dualSingletonCoeff : Element → ℝ` is the singleton part of the dual certificate.  Under `Element =\nFin 5`, its values at elements `0`, `1`, `2`, `3`, and `4` are respectively `3 / 2`, `7 / 2`, `3 /\n2`, `3 / 2`, and `3 / 2`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 61–63\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n-/\nnoncomputable def dualSingletonCoeff (i : Element) : ℝ :=\n  if i = 0 then 3 / 2\n  else if i = 1 then 7 / 2\n  else if i = 2 then 3 / 2\n  else if i = 3 then 3 / 2\n  else 3 / 2\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 63,
+          "end_locator": null,
+          "kind": "source",
+          "note": "Source gives λ₁ = λ₃ = λ₄ = λ₅ = 3/2 and λ₂ = 7/2; these are translated to the zero-based `Element = Fin 5` indexing.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 61,
+          "start_locator": null
+        }
+      ],
+      "text": "`dualSingletonCoeff : Element → ℝ` is the singleton part of the dual certificate.  Under `Element = Fin 5`, its values at elements `0`, `1`, `2`, `3`, and `4` are respectively `3 / 2`, `7 / 2`, `3 / 2`, `3 / 2`, and `3 / 2`."
+    }
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T14:41:53Z"
+}

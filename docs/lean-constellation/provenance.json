@@ -1,0 +1,20 @@
+{
+  "build_command": "lake build",
+  "generated_at": "2026-07-29T19:49:22Z",
+  "lean_toolchain": "leanprover/lean4:v4.32.0",
+  "release_id": "release_a10eaec4358641bea524acdf0c33717e",
+  "repo_key": "FinitePairwiseCoverageGap",
+  "schema_version": 1,
+  "semantic_manifest_digest": "b66f33c411ca6cc9c2da0fac4c7a52e9b74520721b2031d85489baff57a28d9b",
+  "source_files": {
+    "README.md": "3d93250b877683a40a450706b0d5b1f72488935e0a9dffdd517c9fa12da84390",
+    "article/main.tex": "b97ee334bf4c7be932abac5e3a7a1abcc8b0138691e50d04b80d18ca51563042",
+    "article/references.bib": "3f41a648c15512e85960d5d8aa89e3609d3c33b3b7378a37417628a8ffb975f9",
+    "article/sections/00_frontmatter.tex": "40a4e3f2450635469a737db2a65062d0d6dfa6eadf9a4d4c82fbbd78c4bb487f",
+    "article/sections/01_definitions_and_conjecture.tex": "51603d03aee36c4e47683a2d475c226e826f8501efa80e59795435a88605fa85",
+    "article/sections/02_counterexample.tex": "a9e0f618e03b652fb3eb51fde2c5a2455ebcd112675d14b1d3bc056802379790",
+    "formal_target.lean": "52b26382ea41a146be1a6e7745992d83c6b1542496a0b791558ad5f82d109404"
+  },
+  "source_manifest_digest": "1d654c3cbc461209e088500a9e310e463497d66cea0b3c4ab74a1f8f00aeba5d",
+  "summary": "Portable Lean Constellation provenance."
+}

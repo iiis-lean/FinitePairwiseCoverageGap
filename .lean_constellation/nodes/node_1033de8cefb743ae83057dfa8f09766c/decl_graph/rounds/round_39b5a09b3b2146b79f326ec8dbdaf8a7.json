@@ -1,0 +1,41 @@
+{
+  "change_summaries": {},
+  "committed_at": null,
+  "created_at": "2026-07-29T17:12:36Z",
+  "discard_reason": "Draft validation rejected the round_internal_dependency: finite_pairwise_coverage_gap requires strict_ratio_comparison at proved state, but that helper was also only planned in this round. Replan as two dependency-ordered rounds, beginning with the helper alone.",
+  "discarded_at": "2026-07-29T17:13:28Z",
+  "discarded_by": "a_d17630eeb687490ea50c2d3e73408f76",
+  "discarded_created_decl_names": [
+    "finite_pairwise_coverage_gap",
+    "strict_ratio_comparison"
+  ],
+  "discarded_restored_decl_revisions": {},
+  "discarded_revision_refs": [
+    {
+      "change_id": "strict_ratio_comparison@rev:1",
+      "decl_name": "strict_ratio_comparison",
+      "revision": 1
+    },
+    {
+      "change_id": "finite_pairwise_coverage_gap@rev:1",
+      "decl_name": "finite_pairwise_coverage_gap",
+      "revision": 1
+    }
+  ],
+  "execution_completed_at": null,
+  "execution_reason": null,
+  "execution_result_kind": null,
+  "node_path": "Main.GapTheorem",
+  "objective": "Create and prove the two source-owned declarations for Main.GapTheorem: a private strict-rational comparison lemma from b_0015, followed by the exact public protected finite_pairwise_coverage_gap conjunction from b_0019 using the verified lower provider theorems.",
+  "plan_closeout_acknowledged_at": null,
+  "plan_closeout_acknowledged_by": null,
+  "result_kind": null,
+  "result_reason": null,
+  "revision_refs": [],
+  "round_id": "round_39b5a09b3b2146b79f326ec8dbdaf8a7",
+  "round_index": 1,
+  "started_at": null,
+  "status": "discarded",
+  "strategy_id": "strategy_2636bb4023a14dd789404674cf0b570f",
+  "summary": null
+}

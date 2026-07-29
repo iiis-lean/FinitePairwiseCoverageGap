@@ -1,0 +1,118 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [
+      "Element",
+      "MarginalFeasible",
+      "Weight",
+      "marginal"
+    ],
+    "base_revision": null,
+    "kind": "create",
+    "objective": "From SourceIndex b_0017 and formal_target.lean lines 38–43, preserve exactly `MarginalFeasible θ ∧ ∀ i j, i < j → ... = marginal i * marginal j`, where the left side sums θ s over every Finset Element satisfying both memberships. Consume accepted unrestricted Weight, MarginalFeasible, Element, and marginal with verified finite-sum support. Keep the ordered binders and i < j guard, exact equality, and arbitrary-real θ domain. This definition supplies IsPairwiseUpperBound.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": null,
+    "summary": "Completed successfully through Statement NL and Statement Formal. Public definition PairwiseFeasible with Lean name PairwiseFeasible now exactly combines MarginalFeasible with ordered i < j pair-moment equalities over every Finset Element, preserving arbitrary real Weight and marginal products. It reached declared state and is proof-policy satisfied; it is ready for IsPairwiseUpperBound.",
+    "target_state": "declared"
+  },
+  "lean_decl_name": "PairwiseFeasible",
+  "proof": null,
+  "revision": 1,
+  "state": "declared",
+  "statement": {
+    "deps": [
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "Element",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "MarginalFeasible",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 1
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "Weight",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "marginal",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": false,
+        "contains_axiom": false,
+        "contains_sorry": false,
+        "diagnostics": {
+          "diagnostics": [],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/PairwiseFeasible.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 0 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "statement_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": false,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [],
+          "opaque_count": 0,
+          "sorry_count": 0,
+          "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `PairwiseFeasible`\n\nDefine `PairwiseFeasible (θ : Weight)` as `MarginalFeasible θ` together with the condition that for\nevery ordered pair `i j : Element` with `i < j`, the finite sum of `θ s` over every `s : Finset\nElement` containing both `i` and `j` equals `marginal i * marginal j`. The domain of `θ` remains\narbitrary real-valued `Weight`.\n\n## Sources\n\n- Source `formal_target.lean`, lines 38–43\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::MarginalFeasible` → `MarginalFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::marginal` → `marginal` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal`\n-/\ndef PairwiseFeasible (θ : Weight) : Prop :=\n  MarginalFeasible θ ∧\n    ∀ i j : Element, i < j →\n      (∑ s : Finset Element with i ∈ s ∧ j ∈ s, θ s) =\n        marginal i * marginal j\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 43,
+          "end_locator": null,
+          "kind": "source",
+          "note": "Exact ordered-pair moment constraints extending MarginalFeasible.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "formal_target.lean",
+          "start_line": 38,
+          "start_locator": null
+        }
+      ],
+      "text": "Define `PairwiseFeasible (θ : Weight)` as `MarginalFeasible θ` together with the condition that for every ordered pair `i j : Element` with `i < j`, the finite sum of `θ s` over every `s : Finset Element` containing both `i` and `j` equals `marginal i * marginal j`. The domain of `θ` remains arbitrary real-valued `Weight`."
+    }
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T13:12:18Z"
+}

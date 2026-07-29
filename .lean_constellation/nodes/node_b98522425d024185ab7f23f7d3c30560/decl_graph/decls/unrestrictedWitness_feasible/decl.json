@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-07-29T14:57:23Z",
+  "current_revision": 2,
+  "kind": "theorem",
+  "lifecycle": "active",
+  "module": "FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_feasible",
+  "name": "unrestrictedWitness_feasible",
+  "node_path": "Main.UnrestrictedOptimum",
+  "public": false,
+  "revision_ids": [
+    1,
+    2
+  ],
+  "summary": "The exact three-support witness satisfies the complete marginal-feasibility predicate.",
+  "updated_at": "2026-07-29T15:27:31Z"
+}

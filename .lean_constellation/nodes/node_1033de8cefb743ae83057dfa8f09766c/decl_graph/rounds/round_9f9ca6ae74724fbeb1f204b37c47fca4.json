@@ -1,0 +1,33 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-29T17:27:40Z",
+  "created_at": "2026-07-29T17:13:49Z",
+  "discard_reason": null,
+  "discarded_at": null,
+  "discarded_by": null,
+  "discarded_created_decl_names": [],
+  "discarded_restored_decl_revisions": {},
+  "discarded_revision_refs": [],
+  "execution_completed_at": "2026-07-29T17:25:33Z",
+  "execution_reason": null,
+  "execution_result_kind": "success",
+  "node_path": "Main.GapTheorem",
+  "objective": "Create and prove the private strict-rational comparison lemma from SourceIndex b_0015 as the bottom-up prerequisite for the protected finite_pairwise_coverage_gap theorem.",
+  "plan_closeout_acknowledged_at": "2026-07-29T17:27:40Z",
+  "plan_closeout_acknowledged_by": "a_d17630eeb687490ea50c2d3e73408f76",
+  "result_kind": "success",
+  "result_reason": "All four stages completed successfully; strict_ratio_comparison is proved and proof-policy satisfied, providing the required local arithmetic dependency for the final interface round.",
+  "revision_refs": [
+    {
+      "change_id": "strict_ratio_comparison@rev:1",
+      "decl_name": "strict_ratio_comparison",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_9f9ca6ae74724fbeb1f204b37c47fca4",
+  "round_index": 2,
+  "started_at": "2026-07-29T17:16:32Z",
+  "status": "committed",
+  "strategy_id": "strategy_2636bb4023a14dd789404674cf0b570f",
+  "summary": "The bottom-up strategy made the intended progress: strict_ratio_comparison reached proved state and is proof-policy satisfied under graph_proved. No state-only work, blocker, failure, superseded artifact, or cleanup target remains from this round. The required public finite_pairwise_coverage_gap theorem is still absent; its known retry prerequisites are now all satisfied—the three verified lower-node provider proofs and this local proved arithmetic lemma—so the next step is a separate declaration round creating and proving that exact protected interface."
+}

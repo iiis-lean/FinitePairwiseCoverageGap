@@ -1,0 +1,26 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [
+      "Element"
+    ],
+    "base_revision": null,
+    "kind": "create",
+    "objective": "From SourceIndex b_0018 and formal_target.lean line 7, preserve Weight := Finset Element → ℝ with no probability or support restriction. It consumes Element and supplies the exact universal domain required by expectedCoverage, MarginalFeasible, PairwiseFeasible, IsUnrestrictedOptimum, and IsPairwiseUpperBound.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": null,
+    "summary": "DeclGraphRoundFlow failed for change Weight@rev:1.",
+    "target_state": "declared"
+  },
+  "lean_decl_name": null,
+  "proof": null,
+  "revision": 1,
+  "state": "planned",
+  "statement": {
+    "deps": [],
+    "formal": null,
+    "nl": null
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T12:35:32Z"
+}

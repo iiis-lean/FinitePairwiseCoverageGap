@@ -1,0 +1,52 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-26T12:35:32Z",
+  "created_at": "2026-07-26T12:31:48Z",
+  "execution_completed_at": "2026-07-26T12:35:32Z",
+  "execution_reason": "Abandoned before dispatch after deterministic draft validation rejected same-round dependency edges; no artifacts or accepted states were produced.",
+  "execution_result_kind": "failed",
+  "node_path": "Main.Foundations",
+  "objective": "Declare the exact foundational data layer from SourceIndex b_0018 / formal_target.lean lines 5–27: the two finite types, unrestricted real Weight space, five feature sets, real-valued union-cardinality coverage, and prescribed rational marginal vector. This round supplies the accepted lower statements required by all b_0017 predicates and the later b_0013 structural theorems.",
+  "plan_closeout_acknowledged_at": "2026-07-26T12:35:32Z",
+  "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
+  "result_kind": "failed",
+  "result_reason": "Abandoned before dispatch after deterministic draft validation rejected same-round dependency edges; no artifacts or accepted states were produced.",
+  "revision_refs": [
+    {
+      "change_id": "Element@rev:1",
+      "decl_name": "Element",
+      "revision": 1
+    },
+    {
+      "change_id": "Feature@rev:1",
+      "decl_name": "Feature",
+      "revision": 1
+    },
+    {
+      "change_id": "Weight@rev:1",
+      "decl_name": "Weight",
+      "revision": 1
+    },
+    {
+      "change_id": "elementFeatures@rev:1",
+      "decl_name": "elementFeatures",
+      "revision": 1
+    },
+    {
+      "change_id": "marginal@rev:1",
+      "decl_name": "marginal",
+      "revision": 1
+    },
+    {
+      "change_id": "coverage@rev:1",
+      "decl_name": "coverage",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_d823d9a4859347089f5be99ff2bd14a6",
+  "round_index": 1,
+  "started_at": null,
+  "status": "committed",
+  "strategy_id": "strategy_eeee9e64e4b940b7b1cc4bb6ae4e7056",
+  "summary": "Draft validation failed before dispatch because Weight, elementFeatures, marginal, and coverage anticipated statement dependencies that were only planned in the same round. No worker or reviewer stages ran and no artifacts were produced. Abandon this draft and replan the source-faithful graph in dependency-ready batches beginning with independent Element and Feature."
+}

@@ -1,0 +1,28 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [],
+    "anticipated_statement_dep_names": [
+      "dualConstant",
+      "dualPairCoeff",
+      "dualSingletonCoeff"
+    ],
+    "base_revision": null,
+    "kind": "create",
+    "objective": "For S : Finset Element, define λ(S) as dualConstant plus the sum of dualSingletonCoeff over i ∈ S and the sum of dualPairCoeff over exactly the ordered pairs i < j contained in S, preserving the dual constraint left-hand side from SourceIndex b_0014 / source lines 46–58. Consume dualConstant, dualSingletonCoeff, and dualPairCoeff; feed pointwise majorization and universal weak duality.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": null,
+    "summary": "DeclGraphRoundFlow failed for change dualValue@rev:1.",
+    "target_state": "declared"
+  },
+  "lean_decl_name": null,
+  "proof": null,
+  "revision": 1,
+  "state": "planned",
+  "statement": {
+    "deps": [],
+    "formal": null,
+    "nl": null
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T14:31:54Z"
+}

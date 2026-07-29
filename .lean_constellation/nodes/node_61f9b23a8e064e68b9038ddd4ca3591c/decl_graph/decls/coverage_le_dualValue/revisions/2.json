@@ -1,0 +1,317 @@
+{
+  "change": {
+    "anticipated_proof_dep_names": [
+      "dualConstant",
+      "dualPairCoeff",
+      "dualSingletonCoeff",
+      "dualValue"
+    ],
+    "anticipated_statement_dep_names": [
+      "dualValue"
+    ],
+    "base_revision": 1,
+    "kind": "update",
+    "objective": "Advance the planning-only revision to a proved theorem with consumer shape ∀ S : Finset Element, coverage S ≤ dualValue S, without restricting S to any support family or nonempty/nonnegative subfamily. Preserve the exact 32 constraints of SourceIndex b_0016 / source lines 70–108 and the b_0014 coefficient semantics. Consume the accepted dualValue statement and unfold the accepted coefficient definitions as proof dependencies; use Finset.univ.powerset/exhaustive Fin 5 reasoning and norm_num-style exact rational checking from the verified Mathlib hints. This theorem feeds a nonnegative weighted-slack argument for every real-valued PairwiseFeasible weight and therefore the required universal IsPairwiseUpperBound (479/160) result.",
+    "require_target_state_satisfied": true,
+    "reset_to_state": "planned",
+    "summary": "Completed: coverage_le_dualValue reached proved state with accepted statement, proof plan, and compiler-passed formal proof. It establishes ∀ S : Finset Element, coverage S ≤ dualValue S over all 32 subsets, preserving SourceIndex b_0016 without support restrictions. Its coefficient and dualValue dependency closure is accepted, so it is graph_proved-policy satisfied and ready for universal weighted weak duality.",
+    "target_state": "proved"
+  },
+  "lean_decl_name": "coverage_le_dualValue",
+  "proof": {
+    "deps": [
+      {
+        "kind": "mathlib_decl",
+        "reason": null,
+        "ref": {
+          "module": "Mathlib.Data.Finset.Defs",
+          "name": "Finset.ext_iff"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": null,
+        "ref": {
+          "module": "Mathlib.Data.Finset.Powerset",
+          "name": "Finset.mem_powerset"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": null,
+        "ref": {
+          "module": "Mathlib.Data.Finset.Powerset",
+          "name": "Finset.powerset"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": null,
+        "ref": {
+          "module": "Mathlib.Data.Fintype.Powerset",
+          "name": "Finset.powerset_univ"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": null,
+        "ref": {
+          "module": "Mathlib.Tactic.FinCases",
+          "name": "Lean.Elab.Tactic.finCases"
+        }
+      },
+      {
+        "kind": "mathlib_decl",
+        "reason": null,
+        "ref": {
+          "module": "Mathlib.Tactic.NormNum.Core",
+          "name": "Mathlib.Tactic.normNum"
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "Element",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "coverage",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "elementFeatures",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "dualConstant",
+          "node": "Main.PairwiseBound",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "dualPairCoeff",
+          "node": "Main.PairwiseBound",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "dualSingletonCoeff",
+          "node": "Main.PairwiseBound",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "dualValue",
+          "node": "Main.PairwiseBound",
+          "repo": null,
+          "revision": 2
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": false,
+        "contains_axiom": false,
+        "contains_sorry": false,
+        "diagnostics": {
+          "diagnostics": [],
+          "passed": true,
+          "raw_excerpt": "",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Theorems/coverage_le_dualValue.lean",
+          "schema_version": 2,
+          "summary": "Command completed successfully"
+        },
+        "message": "Lean check passed.",
+        "policy": "proof_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": false,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [],
+          "opaque_count": 0,
+          "sorry_count": 0,
+          "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualConstant\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualPairCoeff\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualSingletonCoeff\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualValue\nimport Mathlib.Data.Finset.Defs\nimport Mathlib.Data.Finset.Powerset\nimport Mathlib.Data.Fintype.Powerset\nimport Mathlib.Tactic.FinCases\nimport Mathlib.Tactic.NormNum.Core\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_le_dualValue`\n\nFor every `S : Finset Element`, `coverage S ≤ dualValue S`.  This universal pointwise inequality\napplies to the empty set and every other subset of `Element`, with no support, nonemptiness, sign,\nor feasibility assumption on `S`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 46–58\n- Source `article/sections/02_counterexample.tex`, lines 70–108\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n- `Main.PairwiseBound::dualValue` → `dualValue` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualValue`\n\n## Proof outline\n\nWork with the original arbitrary `S : Finset Element`; introduce no support, nonemptiness, sign, or\nfeasibility hypothesis.  The exhaustive domain is `(Finset.univ : Finset Element).powerset`:\ndischarge the final membership obligation with `Finset.mem_powerset.mpr (by simp)`, and rewrite that\ncontainer by `Finset.powerset_univ`.  Thus the route covers every finset on `Element = Fin 5`,\nmatching the 32 rows of SourceIndex block `b_0016`, rather than a restricted family.\n\nUse the verified `Mathlib.Tactic.FinCases` tactic as the actual finite case-elimination step.  The\nProof Formal skeleton is:\n```lean\n  classical\n  suffices h_all :\n      ∀ T ∈ (Finset.univ : Finset Element).powerset,\n        coverage T ≤ dualValue T by\n    exact h_all S (Finset.mem_powerset.mpr (by simp))\n  rw [Finset.powerset_univ]\n  intro T _\n  fin_cases T <;>\n    simp [coverage, elementFeatures, dualValue, dualConstant,\n      dualSingletonCoeff, dualPairCoeff] <;>\n    norm_num\n```\nHere `fin_cases T` is the concrete operation that generates the 32 goals for all finsets of `Fin 5`;\nafter it, the displayed `simp` list unfolds the coverage data and all accepted dual-coefficient\ndefinitions, evaluates finite membership and `i < j` tests, and reduces the singleton/ordered-pair\nsums.  `norm_num` checks each resulting exact rational inequality; use `ring_nf` on an individual\nresidual goal only if normalization leaves a polynomial rational expression.  The coefficient\ncomputations are those of `b_0014` / source lines 61–67, and the resulting empty, singleton, pair,\ntriple, four-element, and full-set inequalities are exactly source lines 70–108.  Therefore the\nconclusion is `coverage S ≤ dualValue S` for the original unrestricted `S`.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 44–70\n- Source `article/sections/02_counterexample.tex`, lines 70–108\n\n## Proof dependencies\n\n- `Finset.ext_iff` from `Mathlib.Data.Finset.Defs`\n- `Finset.mem_powerset` from `Mathlib.Data.Finset.Powerset`\n- `Finset.powerset` from `Mathlib.Data.Finset.Powerset`\n- `Finset.powerset_univ` from `Mathlib.Data.Fintype.Powerset`\n- `Lean.Elab.Tactic.finCases` from `Mathlib.Tactic.FinCases`\n- `Mathlib.Tactic.normNum` from `Mathlib.Tactic.NormNum.Core`\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n- `Main.Foundations::elementFeatures` → `elementFeatures` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures`\n- `Main.PairwiseBound::dualConstant` → `dualConstant` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualConstant`\n- `Main.PairwiseBound::dualPairCoeff` → `dualPairCoeff` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualPairCoeff`\n- `Main.PairwiseBound::dualSingletonCoeff` → `dualSingletonCoeff` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualSingletonCoeff`\n- `Main.PairwiseBound::dualValue` → `dualValue` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualValue`\n-/\ntheorem coverage_le_dualValue (S : Finset Element) : coverage S ≤ dualValue S := by\n  classical\n  suffices h_all :\n      ∀ T ∈ (Finset.univ : Finset Element).powerset,\n        coverage T ≤ dualValue T by\n    exact h_all S (Finset.mem_powerset.mpr (by simp))\n  rw [Finset.powerset_univ]\n  intro T _\n  let c : Finset Element → ℕ := fun U =>\n    if U = ∅ then 0\n    else if U = {0} then 2\n    else if U = {2} then 2\n    else if U = {3} then 2\n    else if U = {4} then 2\n    else if U = {0, 3} then 3\n    else if U = {0, 4} then 3\n    else if U = {2, 3} then 3\n    else if U = {2, 4} then 3\n    else 4\n  have h_card (U : Finset Element) : (U.biUnion elementFeatures).card = c U := by\n    fin_cases U <;> decide\n  change ((T.biUnion elementFeatures).card : ℝ) ≤ dualValue T\n  rw [h_card T]\n  fin_cases T <;>\n    simp [c, Finset.ext_iff, Fin.forall_fin_succ, dualValue, dualConstant,\n      dualSingletonCoeff, dualPairCoeff] <;>\n    norm_num\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 70,
+          "end_locator": null,
+          "kind": "source",
+          "note": "Defines the pointwise dual constraint and fixes the exact rational constant, singleton, and pair coefficients unfolded by the route.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 44,
+          "start_locator": null
+        },
+        {
+          "end_line": 108,
+          "end_locator": null,
+          "kind": "source",
+          "note": "Provides the complete 2^5 = 32-row finite certificate checked by exhaustive enumeration.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 70,
+          "start_locator": null
+        }
+      ],
+      "text": "Work with the original arbitrary `S : Finset Element`; introduce no support, nonemptiness, sign, or feasibility hypothesis.  The exhaustive domain is `(Finset.univ : Finset Element).powerset`: discharge the final membership obligation with `Finset.mem_powerset.mpr (by simp)`, and rewrite that container by `Finset.powerset_univ`.  Thus the route covers every finset on `Element = Fin 5`, matching the 32 rows of SourceIndex block `b_0016`, rather than a restricted family.\n\nUse the verified `Mathlib.Tactic.FinCases` tactic as the actual finite case-elimination step.  The Proof Formal skeleton is:\n```lean\n  classical\n  suffices h_all :\n      ∀ T ∈ (Finset.univ : Finset Element).powerset,\n        coverage T ≤ dualValue T by\n    exact h_all S (Finset.mem_powerset.mpr (by simp))\n  rw [Finset.powerset_univ]\n  intro T _\n  fin_cases T <;>\n    simp [coverage, elementFeatures, dualValue, dualConstant,\n      dualSingletonCoeff, dualPairCoeff] <;>\n    norm_num\n```\nHere `fin_cases T` is the concrete operation that generates the 32 goals for all finsets of `Fin 5`; after it, the displayed `simp` list unfolds the coverage data and all accepted dual-coefficient definitions, evaluates finite membership and `i < j` tests, and reduces the singleton/ordered-pair sums.  `norm_num` checks each resulting exact rational inequality; use `ring_nf` on an individual residual goal only if normalization leaves a polynomial rational expression.  The coefficient computations are those of `b_0014` / source lines 61–67, and the resulting empty, singleton, pair, triple, four-element, and full-set inequalities are exactly source lines 70–108.  Therefore the conclusion is `coverage S ≤ dualValue S` for the original unrestricted `S`."
+    }
+  },
+  "revision": 2,
+  "state": "proved",
+  "statement": {
+    "deps": [
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "Element",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "coverage",
+          "node": "Main.Foundations",
+          "repo": null,
+          "revision": 2
+        }
+      },
+      {
+        "kind": "repo_decl",
+        "reason": null,
+        "ref": {
+          "name": "dualValue",
+          "node": "Main.PairwiseBound",
+          "repo": null,
+          "revision": 2
+        }
+      }
+    ],
+    "formal": {
+      "check": {
+        "allow_sorry": true,
+        "contains_axiom": false,
+        "contains_sorry": true,
+        "diagnostics": {
+          "diagnostics": [
+            {
+              "column": 9,
+              "line": 29,
+              "message": "declaration uses `sorry`",
+              "severity": "warning"
+            }
+          ],
+          "passed": true,
+          "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.coverage_le_dualValue', 'items': [{'severity': 'warning', 'pos': {'line': 29, 'column': 9}, 'endPos': {'line': 29, 'column': 30}, 'kind': None, 'data': 'declaration uses `sorry`', 'fileName': 'FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.coverage_le_dualValue', 'content': '  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualValue`\\n-/\\ntheorem coverage_le_dualValue (S : Finset Element) : coverage S ≤ dualValue S := by\\n  sorry'}], 'total_items': 1, 'error_count': 0, 'warning_count': 1, 'info_count': 0, 'sorry_count': 1}",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Theorems/coverage_le_dualValue.lean",
+          "schema_version": 2,
+          "summary": "Diagnostics returned 1 items"
+        },
+        "message": "Lean check passed.",
+        "policy": "statement_formal",
+        "scan": {
+          "admit_count": 0,
+          "axiom_count": 0,
+          "contains_admit": false,
+          "contains_axiom": false,
+          "contains_opaque": false,
+          "contains_sorry": true,
+          "contains_unsafe": false,
+          "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+          "occurrences": [
+            {
+              "column": 3,
+              "excerpt": "sorry",
+              "kind": "sorry",
+              "line": 30
+            }
+          ],
+          "opaque_count": 0,
+          "sorry_count": 1,
+          "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
+          "unsafe_count": 0
+        },
+        "status": "passed"
+      },
+      "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualValue\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_le_dualValue`\n\nFor every `S : Finset Element`, `coverage S ≤ dualValue S`.  This universal pointwise inequality\napplies to the empty set and every other subset of `Element`, with no support, nonemptiness, sign,\nor feasibility assumption on `S`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 46–58\n- Source `article/sections/02_counterexample.tex`, lines 70–108\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n- `Main.PairwiseBound::dualValue` → `dualValue` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualValue`\n-/\ntheorem coverage_le_dualValue (S : Finset Element) : coverage S ≤ dualValue S := by\n  sorry\n"
+    },
+    "nl": {
+      "origin": [
+        {
+          "end_line": 58,
+          "end_locator": null,
+          "kind": "source",
+          "note": "Defines the dual constraint left-hand side λ(S) represented by `dualValue S`.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 46,
+          "start_locator": null
+        },
+        {
+          "end_line": 108,
+          "end_locator": null,
+          "kind": "source",
+          "note": "The 32-row table verifies λ(S) ≥ f(S) for every subset of the five-element ground set.",
+          "ref": null,
+          "resource_key": null,
+          "source_path": "article/sections/02_counterexample.tex",
+          "start_line": 70,
+          "start_locator": null
+        }
+      ],
+      "text": "For every `S : Finset Element`, `coverage S ≤ dualValue S`.  This universal pointwise inequality applies to the empty set and every other subset of `Element`, with no support, nonemptiness, sign, or feasibility assumption on `S`."
+    }
+  },
+  "status": "committed",
+  "updated_at": "2026-07-26T15:21:56Z"
+}

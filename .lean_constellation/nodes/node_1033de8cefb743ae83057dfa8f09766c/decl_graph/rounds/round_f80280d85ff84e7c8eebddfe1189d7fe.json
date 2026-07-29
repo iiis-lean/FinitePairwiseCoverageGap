@@ -1,0 +1,33 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-29T19:34:27Z",
+  "created_at": "2026-07-29T19:20:04Z",
+  "discard_reason": null,
+  "discarded_at": null,
+  "discarded_by": null,
+  "discarded_created_decl_names": [],
+  "discarded_restored_decl_revisions": {},
+  "discarded_revision_refs": [],
+  "execution_completed_at": "2026-07-29T19:32:34Z",
+  "execution_reason": null,
+  "execution_result_kind": "success",
+  "node_path": "Main.GapTheorem",
+  "objective": "Create revision 3 of finite_pairwise_coverage_gap by replacing only the managed formal header representation with the verbatim local formal_target.lean:57–63 theorem command inside namespace FinitePairwiseCoverageGap, then revalidate the unchanged proof through proved.",
+  "plan_closeout_acknowledged_at": "2026-07-29T19:34:27Z",
+  "plan_closeout_acknowledged_by": "a_d17630eeb687490ea50c2d3e73408f76",
+  "result_kind": "success",
+  "result_reason": "Revision 3 passed Statement Formal and both proof stages, preserves the exact theorem and dependencies, and captures the required full Lean identity from the requested namespace-local declaration route.",
+  "revision_refs": [
+    {
+      "change_id": "finite_pairwise_coverage_gap@rev:3",
+      "decl_name": "finite_pairwise_coverage_gap",
+      "revision": 3
+    }
+  ],
+  "round_id": "round_f80280d85ff84e7c8eebddfe1189d7fe",
+  "round_index": 5,
+  "started_at": "2026-07-29T19:21:16Z",
+  "status": "committed",
+  "strategy_id": "strategy_1cf3c175ea9942bf8c1f7644ec976941",
+  "summary": "The contract-version-3 strategy completed its targeted formal-header repair: finite_pairwise_coverage_gap revision 3 reached proved state, retains the exact protected mathematics and proof-policy-satisfied closure, and formal capture records `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap` from the requested local namespace-wrapped command. No additional declarations, preparations, state-only work, blockers, failures, or graph cleanup are known. After terminal commit, inspect the physical managed projection for the verbatim formal_target.lean:57–63 header, then rebind the interface, audit the public boundary, and run the completion gate."
+}

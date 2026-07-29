@@ -1,0 +1,27 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-29T14:56:34Z",
+  "created_at": "2026-07-29T14:46:15Z",
+  "execution_completed_at": "2026-07-29T14:53:48Z",
+  "execution_reason": null,
+  "execution_result_kind": "success",
+  "node_path": "Main.UnrestrictedOptimum",
+  "objective": "Create the stable public witness definition for the exact SourceIndex b_0012 distribution as the bottom foundation for later feasibility, value, universal-bound, and optimum proofs.",
+  "plan_closeout_acknowledged_at": "2026-07-29T14:56:34Z",
+  "plan_closeout_acknowledged_by": "a_a2d50c8badaf485395c6fd44278811c5",
+  "result_kind": "success",
+  "result_reason": "The sole planned public definition reached declared state, its formal statement passed, and required target satisfaction checks succeeded without blockers.",
+  "revision_refs": [
+    {
+      "change_id": "unrestrictedWitness@rev:1",
+      "decl_name": "unrestrictedWitness",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_ca02c7bb44734e22998e022fc9934093",
+  "round_index": 1,
+  "started_at": "2026-07-29T14:47:34Z",
+  "status": "committed",
+  "strategy_id": "strategy_279b788bd56a42eb8181f2bf2c760a52",
+  "summary": "Round 1 successfully advanced the bottom-up strategy by creating unrestrictedWitness at its declared target with passed formal statement and required declared-level proof-policy satisfaction. No blockers or cleanup targets arose. The witness definition is the accepted foundation; theorem-like work remains to prove marginal feasibility, expectedCoverage 4, the universal coverage ≤ 4 bound, and ultimately the public IsUnrestrictedOptimum 4 interface. The next step is another small declaration round under the same strategy."
+}

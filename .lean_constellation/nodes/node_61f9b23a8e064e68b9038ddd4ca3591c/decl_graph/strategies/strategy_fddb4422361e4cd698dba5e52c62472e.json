@@ -1,0 +1,22 @@
+{
+  "closed_at": "2026-07-26T17:04:45Z",
+  "closed_reason": "All contract-owned graph stages and the required public interface are proved; the interface is bound to the matching ready declaration.",
+  "created_at": "2026-07-26T14:29:20Z",
+  "created_round_ids": [
+    "round_1d7945004ef44a34b5c391fb417042fe",
+    "round_470256ec849e4ca1954ec33977dc75a0",
+    "round_46adb7547b714952ab498fb611f43544",
+    "round_d1923e8e2a144cfc985070b8fc28d6b9",
+    "round_654e9b030e5c4fe1aab33f397cb69115",
+    "round_b6947c9da0e94cbfa6eb4c0c1d69ec57",
+    "round_66dd7394b36b43a283b346190fa83f1a",
+    "round_89382fc73e724416912c2f7107375b83",
+    "round_e32304b6306b4fc9b88ee9a268c419cd"
+  ],
+  "node_path": "Main.PairwiseBound",
+  "objective": "Build the exact pairwise dual-certificate proof bottom-up: define the rational constant, singleton and pair coefficient data and their subset evaluation; prove the complete 32-subset pointwise majorization; construct and verify an independent-product pairwise-feasible witness; derive the universal weighted weak-duality inequality and exact 479/160 moment evaluation; then prove and bind the public IsPairwiseUpperBound interface.",
+  "rationale": "Completion mode is graph_proved, so reusable foundations and computational certificate lemmas must be proved before the final interface. SourceIndex b_0014 fixes the exact coefficients, b_0016 supplies the exhaustive finite certificate, and the upper-bound part of b_0015 supplies the expectation/moment route. Main.Foundations provides the full statement API, and verified Mathlib hints cover powerset enumeration, exact arithmetic, nonnegative sums, filtered moment sums, and sum commutation. The planned scale is roughly 10–15 tracked declarations, split into coherent bottom-up rounds; no external resource or out-of-boundary package is presently required.",
+  "status": "closed",
+  "strategy_id": "strategy_fddb4422361e4cd698dba5e52c62472e",
+  "summary": "Completed the bottom-up exact dual-certificate route with ten active declarations: exact coefficient data, full 32-subset majorization, independent pairwise-feasible witness, universal weighted weak duality and exact 479/160 moment evaluation, and the bound public theorem pairwise_upper_bound_479_160."
+}

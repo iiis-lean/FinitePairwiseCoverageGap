@@ -1,0 +1,27 @@
+{
+  "change_summaries": {},
+  "committed_at": "2026-07-26T16:58:17Z",
+  "created_at": "2026-07-26T16:47:29Z",
+  "execution_completed_at": "2026-07-26T16:58:17Z",
+  "execution_reason": "DeclGraphRoundFlow finished with completed.",
+  "execution_result_kind": "success",
+  "node_path": "Main.PairwiseBound",
+  "objective": "Create and prove the required public interface pairwise_upper_bound_479_160 : IsPairwiseUpperBound (479/160), combining the accepted pairwise-feasible witness with the accepted universal weak-duality lemmas.",
+  "plan_closeout_acknowledged_at": "2026-07-26T16:58:17Z",
+  "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
+  "result_kind": "success",
+  "result_reason": "DeclGraphRoundFlow finished with completed.",
+  "revision_refs": [
+    {
+      "change_id": "pairwise_upper_bound_479_160@rev:1",
+      "decl_name": "pairwise_upper_bound_479_160",
+      "revision": 1
+    }
+  ],
+  "round_id": "round_e32304b6306b4fc9b88ee9a268c419cd",
+  "round_index": 9,
+  "started_at": "2026-07-26T16:49:30Z",
+  "status": "committed",
+  "strategy_id": "strategy_fddb4422361e4cd698dba5e52c62472e",
+  "summary": "The strategy achieved its intended graph state: pairwise_upper_bound_479_160 is public, proved, and proof-policy satisfied. All source-owned stages are present: exact coefficient definitions, full 32-subset pointwise certificate, explicit pairwise-feasible witness, universal weighted majorization, exact 479/160 moment evaluation, and the final IsPairwiseUpperBound interface. The active graph has ten coherently named declarations, no retry-version names, no unused alternate branch, and no remaining state-only work. Next perform interface binding and the deterministic content completion check, then submit ready if it passes."
+}

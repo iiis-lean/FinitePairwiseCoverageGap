@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-07-26T12:59:49Z",
+  "current_revision": 1,
+  "kind": "definition",
+  "lifecycle": "active",
+  "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage",
+  "name": "expectedCoverage",
+  "node_path": "Main.Foundations",
+  "public": true,
+  "revision_ids": [
+    1
+  ],
+  "summary": "Expected coverage under arbitrary real weights over all element subsets.",
+  "updated_at": "2026-07-26T12:59:49Z"
+}
