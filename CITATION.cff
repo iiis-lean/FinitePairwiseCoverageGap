@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: >-
+  If you use this Lean formalization, please cite both this repository and the
+  original paper by Arjun Ramachandra and Karthik Natarajan.
+title: Finite Pairwise-Independent Coverage Gap
+type: software
+authors:
+  - name: IIIS Lean
+abstract: >-
+  An independent Lean 4 formalization of an explicit finite coverage-function
+  counterexample to a conjecture on the pairwise-independent correlation gap.
+repository-code: https://github.com/iiis-lean/FinitePairwiseCoverageGap
+url: https://github.com/iiis-lean/FinitePairwiseCoverageGap
+license: Apache-2.0
+version: release_a10eaec4358641bea524acdf0c33717e
+date-released: 2026-07-29
+keywords:
+  - Lean 4
+  - Mathlib
+  - formalization
+  - submodular functions
+  - probability
+  - optimization
+  - correlation gap
+references:
+  - type: article
+    authors:
+      - family-names: Ramachandra
+        given-names: Arjun
+      - family-names: Natarajan
+        given-names: Karthik
+    title: >-
+      Counterexample to a conjecture on the pairwise independent correlation
+      gap using AI
+    year: 2026
+    collection-title: arXiv preprint
+    identifiers:
+      - type: doi
+        value: 10.48550/arXiv.2606.19663
+    url: https://arxiv.org/abs/2606.19663

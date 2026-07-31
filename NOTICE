@@ -1,0 +1,14 @@
+FinitePairwiseCoverageGap
+Copyright 2026 IIIS Lean contributors
+
+The original mathematical results and proof formalized by this repository are
+due to Arjun Ramachandra and Karthik Natarajan and were published as:
+
+  Arjun Ramachandra and Karthik Natarajan,
+  "Counterexample to a conjecture on the pairwise independent correlation gap
+  using AI", arXiv:2606.19663v1 [math.OC], 2026.
+  https://arxiv.org/abs/2606.19663
+
+The article source retained under `.lean_constellation/source/article/` is
+distributed under Creative Commons Attribution 4.0. See
+`LICENSES/CC-BY-4.0.md`.

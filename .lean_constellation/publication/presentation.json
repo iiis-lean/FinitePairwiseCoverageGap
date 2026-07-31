@@ -1,10 +1,26 @@
 {
-  "about_markdown": null,
-  "badges": [],
-  "citation_markdown": null,
-  "description": null,
-  "licensing_markdown": null,
   "schema_version": 1,
-  "title": null,
-  "topics": []
+  "title": "Finite Pairwise-Independent Coverage Gap",
+  "description": "A Lean 4 formalization of an explicit finite coverage-function counterexample: the unrestricted optimum is 4, while every pairwise-independent feasible distribution has expected coverage at most 479/160.",
+  "topics": [
+    "lean4",
+    "mathlib",
+    "formalization",
+    "lean-constellation",
+    "submodular-functions",
+    "probability",
+    "optimization",
+    "correlation-gap"
+  ],
+  "badges": [
+    {
+      "label": "source",
+      "message": "arXiv 2606.19663",
+      "color": "b31b1b",
+      "link": "https://arxiv.org/abs/2606.19663"
+    }
+  ],
+  "about_markdown": "This repository contains an independent Lean 4 formalization of the explicit finite coverage-function counterexample and certificates from:\n\n> Arjun Ramachandra and Karthik Natarajan,\n> *Counterexample to a conjecture on the pairwise independent correlation gap using AI*,\n> arXiv:2606.19663v1 [math.OC], 2026.\n> <https://arxiv.org/abs/2606.19663>\n\nThe original mathematical results and proof are due to Arjun Ramachandra and Karthik Natarajan. The Lean formalization was produced by IIIS Lean using Lean Constellation. It is not presented as work by, or endorsed by, the original authors unless explicitly stated otherwise.\n\nThe article source retained under `.lean_constellation/source/article/` is derived from the arXiv TeX source for version 1. It was reorganized into a focused SourceCorpus containing the definitions, explicit instance, primal witness, and dual certificate needed for this formalization; this reorganization and the added Lean target do not claim authorship of the original mathematical content.",
+  "citation_markdown": "If you use the mathematical result, cite the original paper:\n\n```bibtex\n@article{RamachandraNatarajan2026PairwiseIndependentGap,\n  author        = {Arjun Ramachandra and Karthik Natarajan},\n  title         = {Counterexample to a conjecture on the pairwise independent correlation gap using {AI}},\n  journal       = {arXiv preprint},\n  year          = {2026},\n  eprint        = {2606.19663},\n  archivePrefix = {arXiv},\n  primaryClass  = {math.OC},\n  doi           = {10.48550/arXiv.2606.19663},\n  url           = {https://arxiv.org/abs/2606.19663}\n}\n```\n\nIf you use the Lean implementation, cite this repository in addition to the paper. Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff).",
+  "licensing_markdown": "- Lean source code, generated Lean Constellation metadata, and repository documentation outside the article SourceCorpus are licensed under the Apache License 2.0; see [`LICENSE`](LICENSE).\n- The reproduced and reorganized article source under `.lean_constellation/source/article/` remains attributed to Arjun Ramachandra and Karthik Natarajan and is distributed under Creative Commons Attribution 4.0; see [`LICENSES/CC-BY-4.0.md`](LICENSES/CC-BY-4.0.md).\n\nNo repository license changes the authorship or attribution of the original paper."
 }
