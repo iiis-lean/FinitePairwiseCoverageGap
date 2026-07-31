@@ -1,13 +1,6 @@
 {
   "entries": [
     {
-      "disposition": "exclude",
-      "path": ".git",
-      "reason": "runtime_or_git_state",
-      "sha256": null,
-      "size_bytes": 159
-    },
-    {
       "disposition": "include",
       "path": ".gitignore",
       "reason": "portable_project_or_business_truth",
@@ -950,7 +943,7 @@
       "path": ".lean_constellation/publication/manifest.json",
       "reason": "publication_manifest_self",
       "sha256": null,
-      "size_bytes": 142099
+      "size_bytes": 0
     },
     {
       "disposition": "include",
@@ -1562,11 +1555,23 @@
       "size_bytes": 25
     }
   ],
+  "excluded_directories": [
+    {
+      "path": ".git",
+      "reason": "runtime_or_git_state",
+      "recursive": true
+    },
+    {
+      "path": ".lake",
+      "reason": "runtime_or_git_state",
+      "recursive": true
+    }
+  ],
   "generated_at": "2026-07-29T19:49:22Z",
   "included_file_count": 221,
   "included_size_bytes": 1320092,
   "manifest_digest": "5f1e43f3262cb025b4292d600c33207a5f3d07dc9667d558f341d86d75a992e7",
   "repo_key": "FinitePairwiseCoverageGap",
-  "schema_version": 1,
+  "schema_version": 2,
   "summary": "Publication manifest includes 221 files (1320092 bytes)."
 }
