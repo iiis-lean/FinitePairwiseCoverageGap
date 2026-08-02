@@ -1,12 +1,12 @@
-[← Public API index](../PUBLIC_API.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
 
-# `Element`
+# `Feature`
 
-Five-element ground type.
+Four-feature universe type.
 
 - Kind: `abbrev`
 - Node: `Main.Foundations`
-- Module: `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`
+- Module: `FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature`
 - State: `declared`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
@@ -22,17 +22,17 @@ import FinitePairwiseCoverageGap.Main.Foundations.Prelude
 -- lean-constellation: declaration-source-begin
 
 /--
-# lean-constellation target: `Element`
+# lean-constellation target: `Feature`
 
-Define `Element` as the five-element finite type `Fin 5`.
+Define `Feature` as the four-element finite type `Fin 4`.
 
 ## Sources
 
-- Source `formal_target.lean`, line 5
+- Source `formal_target.lean`, line 6
 -/
-abbrev Element := Fin 5
+abbrev Feature := Fin 4
 ```
 
 ## Sources
 
-- `formal_target.lean:5-5`
+- `formal_target.lean:6-6`

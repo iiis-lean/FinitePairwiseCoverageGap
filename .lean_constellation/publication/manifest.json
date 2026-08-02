@@ -1376,15 +1376,22 @@
       "disposition": "include",
       "path": "README.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "dd552203f99d47d3b7e4a45e90622844433d1e5326997277a473c1686ff8e0fa",
-      "size_bytes": 4159
+      "sha256": "6ba9bbc5f973cd5974522e88608769e642a06a4f09be27e91bf7efcbae28ab32",
+      "size_bytes": 4305
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/PUBLIC_API.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "4b747ded9a019afdfb7882c250341c35f176d20a0803cca9e073e37ba931d445",
-      "size_bytes": 3984
+      "sha256": "3d17b91b410b009579e8b4fbf80673a30b8a4be30909f72e49d2cc677283b15d",
+      "size_bytes": 2078
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/PUBLIC_BOUNDARIES.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "d291945f091d5b9988d61e625c4343b117d8943effb979a732eca2a304423879",
+      "size_bytes": 3228
     },
     {
       "disposition": "include",
@@ -1395,6 +1402,146 @@
     },
     {
       "disposition": "include",
+      "path": "docs/lean-constellation/assets/public-api.svg",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "b029d2831b791acf6182289f68ad0fda5391043abd2573656e17c66ffcf502c2",
+      "size_bytes": 24978
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/assets/public-boundaries.svg",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "b1ff35beff6165743323469bff1cbd55b22cf2cf5e52a74568d0eb31b43c3b77",
+      "size_bytes": 39567
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-foundations-coverage-monotone.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "8f72ef723a0df6b0ef7eaaeb23836b5193a038105eeeec6677d15c90309f18e1",
+      "size_bytes": 3707
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-foundations-coverage-submodular.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "e4f53beb852021debb41f63c3a1bef313f6bd6613a192d84bfda26f870267997",
+      "size_bytes": 5427
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-foundations-coverage.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "e2f42027253a9a07277870c3575ae91eb138e4c915617e6435780b89b73dc0ca",
+      "size_bytes": 1631
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-foundations-element.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "6e2e1250941d96e138f34587716548b763b84fd0c98f8545f3cd46efc3f7f98d",
+      "size_bytes": 812
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-foundations-elementfeatures.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "881bf365782dac3d1c2f666de8c7ea161a2613dbbc51448435cef3a378ce45d5",
+      "size_bytes": 1618
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-foundations-expectedcoverage.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "56f87551172e1779101d6183cfccd11f07cadaa2c560ff53585019f110dbf780",
+      "size_bytes": 1858
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-foundations-feature.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "61a714b5e3cf31256dff30a6e44b8d516f3799cdea423aafb144e49f3b760e25",
+      "size_bytes": 814
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-foundations-ispairwiseupperbound.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "3c3a2e7c3e437e814fc59a560f58621fa60dcfb1f5b0c7efd409a5a6be39e46d",
+      "size_bytes": 2147
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-foundations-isunrestrictedoptimum.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "4a739b01788f32c96c878c00ed7ae4a1d0b1f5dadd89bc006a7aa21b57546950",
+      "size_bytes": 2143
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-foundations-marginal.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "78371f8a28898c069783317ce833b3c6dce6b996f3ecb5c1a31598710fa98aea",
+      "size_bytes": 1307
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-foundations-marginalfeasible.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "3bd4756ad69990e73035a57898c717542b306494047b051bcc414bc27a0daf5b",
+      "size_bytes": 2133
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-foundations-pairwisefeasible.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "e040c47ea9c893865c258a46991bd75c99786f7c71b91ab311b633adfff689f7",
+      "size_bytes": 2287
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-foundations-weight.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "50fd9bfeb23f1aab13d51e541d60019f686f3e09ddfbe9f408ba79f379bcb07d",
+      "size_bytes": 1263
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-gaptheorem-finite-pairwise-coverage-gap.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "4cba1f7605fbb2fd7f30e0b60d6e11cf7d8e384d9f8796d06b5bf5bc483f85d4",
+      "size_bytes": 5168
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-pairwisebound-pairwise-upper-bound-479-160.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "0191620beda40a66493608f6b87e57815edfcbb9450d5cf86d63615937d01693",
+      "size_bytes": 4751
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-unrestrictedoptimum-coverage-le-four.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "6721348914f1cd3353e3b934be046800c624eb1188260708e429f71a67dffcac",
+      "size_bytes": 3567
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-unrestrictedoptimum-unrestricted-optimum-four.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "edc61ac2428b820cc360dffa9066fe754bc10f13831ce345b31f2e89534d1ef9",
+      "size_bytes": 6170
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-unrestrictedoptimum-unrestrictedwitness.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "936348436766867da56721d37a1b99b6bc1631811596092ca21342157bc276ca",
+      "size_bytes": 1724
+    },
+    {
+      "disposition": "include",
       "path": "docs/lean-constellation/provenance.json",
       "reason": "portable_project_or_business_truth",
       "sha256": "5dce5145db3d850745a590e5bf3052af5ae0f6cd8aa0096d386fa13ad400d398",
@@ -1402,136 +1549,17 @@
     },
     {
       "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-foundations-coverage-monotone.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "093f08261b7538d1ea3635a446f1df1017d8f1c59fb3bbfa0b07d048d1f06e47",
-      "size_bytes": 3665
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-foundations-coverage-submodular.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "68e22ab8f972d9025fe450d5e92c6ab581aac65d64c0e0f978fe798d477f663b",
-      "size_bytes": 5385
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-foundations-coverage.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "27c466104e5a6cc92ce78f9e9b12b780a40442713c50f9a807725e324809dede",
-      "size_bytes": 1589
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-foundations-element.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "cb6b799d412e0c7d214babdfd566731b11a20e7f5af9ba0a836618534b1808ac",
-      "size_bytes": 770
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-foundations-elementfeatures.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "8c82b03b854b9a1a1f136bbdf4cf8da85d8c7be6a23004061de66c271de59707",
-      "size_bytes": 1576
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-foundations-expectedcoverage.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "f4f5eb621f0337fa586ca969d616e4562b3d32abe4fb060e279293d19de0ad64",
-      "size_bytes": 1816
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-foundations-feature.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "0e0f20e54045abc8bd6a8cccc76da27ba3f68b5ce37c50eb02beed4a2f71dce6",
-      "size_bytes": 772
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-foundations-ispairwiseupperbound.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "9361ad99d025434eb1c4b1e7f68a54e84274ff356f4a28d3eb0369a4234f106b",
-      "size_bytes": 2105
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-foundations-isunrestrictedoptimum.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "c6c42e2e339b8f09e91bb27aef1d20862c4a71397a120fe4ee0a739e55fc3e4d",
-      "size_bytes": 2101
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-foundations-marginal.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "8b89c35b33eb498cb0ae1bf19703efee1d643a767def066e32d0eefc04a2bc5b",
-      "size_bytes": 1265
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-foundations-marginalfeasible.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "39d8b73701434ead6e8e61668fd96f74253230ee63736715d35e3c4e24204ed4",
-      "size_bytes": 2091
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-foundations-pairwisefeasible.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "8bf5be61d6b7aded7a105b0fe34c258c9290342dc7b58bbc49ff8e08120dc11b",
-      "size_bytes": 2245
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-foundations-weight.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "81fc63de12e9f5291f80d300fc3ef64d56085e4f381859a172d61ccefa6b8537",
-      "size_bytes": 1221
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-gaptheorem-finite-pairwise-coverage-gap.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "c6f0b1ffd872a789e8d2138a970a4a8821f0a9fe7b45d60bc5c132bd72a4576e",
-      "size_bytes": 5126
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-pairwisebound-pairwise-upper-bound-479-160.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "e4e66433c4645992132d19e8d525696c11b11f9a34723bdb76662725593a6131",
-      "size_bytes": 4709
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-unrestrictedoptimum-coverage-le-four.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "87c215e46cfc3efa7ae1c1b23749f96cb679277ac3361ef7ec978af52ef1a471",
-      "size_bytes": 3525
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-unrestrictedoptimum-unrestricted-optimum-four.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "8ced5be3a5705b0fc6fdc69f332c5f191d2e546a1239dd3e37a55e5736cf94fd",
-      "size_bytes": 6128
-    },
-    {
-      "disposition": "include",
-      "path": "docs/lean-constellation/public-api/main-unrestrictedoptimum-unrestrictedwitness.md",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "c26a5ffa0ad672c988674a55dc574bbcf79b49162bc7a0e21f80972617512423",
-      "size_bytes": 1682
-    },
-    {
-      "disposition": "include",
       "path": "docs/lean-constellation/public-api.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "3039ffe227e0ece582f0f109aea4d891b85883d3a05311d30ef8e6ecb9f56e25",
-      "size_bytes": 51188
+      "sha256": "0208bd5360f2fa5a93fcc3227879abe61a7bb80d7fa29e3e06fe7ee6d3332a74",
+      "size_bytes": 25051
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/public-boundaries.json",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "2be8f0c488132bc9ad20e0ae66fc4e31a63d9b3d5e641522ff99246df383ebb2",
+      "size_bytes": 54314
     },
     {
       "disposition": "include",
@@ -1560,18 +1588,13 @@
       "path": ".git",
       "reason": "runtime_or_git_state",
       "recursive": true
-    },
-    {
-      "path": ".lake",
-      "reason": "runtime_or_git_state",
-      "recursive": true
     }
   ],
   "generated_at": "2026-07-29T19:49:22Z",
-  "included_file_count": 221,
-  "included_size_bytes": 1320092,
-  "manifest_digest": "5f1e43f3262cb025b4292d600c33207a5f3d07dc9667d558f341d86d75a992e7",
+  "included_file_count": 225,
+  "included_size_bytes": 1415038,
+  "manifest_digest": "adc0a16c6a218ac8fe56c3c5a43d452cec930b26cd11f78b8345da0dcd875ec9",
   "repo_key": "FinitePairwiseCoverageGap",
   "schema_version": 2,
-  "summary": "Publication manifest includes 221 files (1320092 bytes)."
+  "summary": "Publication manifest includes 225 files (1415038 bytes)."
 }

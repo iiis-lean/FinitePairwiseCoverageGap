@@ -1,0 +1,534 @@
+{
+  "completion_mode": "graph_proved",
+  "declarations": [
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `Element`\n\nDefine `Element` as the five-element finite type `Fin 5`.\n\n## Sources\n\n- Source `formal_target.lean`, line 5\n-/\nabbrev Element := Fin 5\n",
+        "kind": "abbrev",
+        "lean_full_name": "Element",
+        "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.Element",
+        "name": "Element",
+        "node_path": "Main.Foundations",
+        "proof_available": false,
+        "proof_dependencies": [],
+        "revision": 2,
+        "source_origins": [
+          "formal_target.lean:5-5"
+        ],
+        "state": "declared",
+        "statement_dependencies": [],
+        "status": "committed",
+        "summary": "Five-element ground type."
+      },
+      "exported_scope_paths": [
+        "Main"
+      ],
+      "main_export": true
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `Feature`\n\nDefine `Feature` as the four-element finite type `Fin 4`.\n\n## Sources\n\n- Source `formal_target.lean`, line 6\n-/\nabbrev Feature := Fin 4\n",
+        "kind": "abbrev",
+        "lean_full_name": "Feature",
+        "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature",
+        "name": "Feature",
+        "node_path": "Main.Foundations",
+        "proof_available": false,
+        "proof_dependencies": [],
+        "revision": 2,
+        "source_origins": [
+          "formal_target.lean:6-6"
+        ],
+        "state": "declared",
+        "statement_dependencies": [],
+        "status": "committed",
+        "summary": "Four-feature universe type."
+      },
+      "exported_scope_paths": [
+        "Main"
+      ],
+      "main_export": true
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `IsPairwiseUpperBound`\n\nDefine `IsPairwiseUpperBound (q : ℝ)` as the conjunction that there exists `θ : Weight` satisfying\n`PairwiseFeasible θ`, and that every arbitrary-real `θ : Weight` satisfying `PairwiseFeasible θ`\nobeys `expectedCoverage θ ≤ q`. This requires nonemptiness of the pairwise-feasible domain and a\nuniversal upper bound, but does not require attainment at `q`.\n\n## Sources\n\n- Source `formal_target.lean`, lines 50–53\n\n## Statement dependencies\n\n- `Main.Foundations::PairwiseFeasible` → `PairwiseFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n-/\ndef IsPairwiseUpperBound (q : ℝ) : Prop :=\n  (∃ θ : Weight, PairwiseFeasible θ) ∧\n    ∀ θ : Weight, PairwiseFeasible θ → expectedCoverage θ ≤ q\n",
+        "kind": "definition",
+        "lean_full_name": "IsPairwiseUpperBound",
+        "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound",
+        "name": "IsPairwiseUpperBound",
+        "node_path": "Main.Foundations",
+        "proof_available": false,
+        "proof_dependencies": [],
+        "revision": 1,
+        "source_origins": [
+          "formal_target.lean:50-53"
+        ],
+        "state": "declared",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.PairwiseFeasible",
+          "current repo:Main.Foundations.Weight",
+          "current repo:Main.Foundations.expectedCoverage"
+        ],
+        "status": "committed",
+        "summary": "Nonempty pairwise-feasible domain with a universal expected-coverage upper bound."
+      },
+      "exported_scope_paths": [
+        "Main"
+      ],
+      "main_export": true
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `IsUnrestrictedOptimum`\n\nDefine `IsUnrestrictedOptimum (q : ℝ)` as the conjunction that there exists `θ : Weight` with\n`MarginalFeasible θ` and `expectedCoverage θ = q`, and that every arbitrary-real `θ : Weight`\nsatisfying `MarginalFeasible θ` obeys `expectedCoverage θ ≤ q`. Thus the predicate requires\nattainment and the universal upper-bound conclusion.\n\n## Sources\n\n- Source `formal_target.lean`, lines 45–48\n\n## Statement dependencies\n\n- `Main.Foundations::MarginalFeasible` → `MarginalFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n-/\ndef IsUnrestrictedOptimum (q : ℝ) : Prop :=\n  (∃ θ : Weight, MarginalFeasible θ ∧ expectedCoverage θ = q) ∧\n    ∀ θ : Weight, MarginalFeasible θ → expectedCoverage θ ≤ q\n",
+        "kind": "definition",
+        "lean_full_name": "IsUnrestrictedOptimum",
+        "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum",
+        "name": "IsUnrestrictedOptimum",
+        "node_path": "Main.Foundations",
+        "proof_available": false,
+        "proof_dependencies": [],
+        "revision": 1,
+        "source_origins": [
+          "formal_target.lean:45-48"
+        ],
+        "state": "declared",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.MarginalFeasible",
+          "current repo:Main.Foundations.Weight",
+          "current repo:Main.Foundations.expectedCoverage"
+        ],
+        "status": "committed",
+        "summary": "Attainment and universal optimality over marginal-feasible weights."
+      },
+      "exported_scope_paths": [
+        "Main"
+      ],
+      "main_export": true
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `MarginalFeasible`\n\nDefine `MarginalFeasible (θ : Weight)` as the conjunction that, for every `s : Finset Element`, `0 ≤\nθ s`; the total finite sum `∑ s : Finset Element, θ s` equals `1`; and, for every `i : Element`, the\nmembership-filtered finite sum of `θ s` over subsets `s` containing `i` equals `marginal i`. The\ndefinition adds no support, positivity beyond pointwise nonnegativity, or probability-measure\nassumptions.\n\n## Sources\n\n- Source `formal_target.lean`, lines 32–36\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::marginal` → `marginal` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal`\n-/\ndef MarginalFeasible (θ : Weight) : Prop :=\n  (∀ s : Finset Element, 0 ≤ θ s) ∧\n    (∑ s : Finset Element, θ s) = 1 ∧\n      ∀ i : Element, ∑ s : Finset Element with i ∈ s, θ s = marginal i\n",
+        "kind": "definition",
+        "lean_full_name": "MarginalFeasible",
+        "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible",
+        "name": "MarginalFeasible",
+        "node_path": "Main.Foundations",
+        "proof_available": false,
+        "proof_dependencies": [],
+        "revision": 1,
+        "source_origins": [
+          "formal_target.lean:32-36"
+        ],
+        "state": "declared",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.Element",
+          "current repo:Main.Foundations.Weight",
+          "current repo:Main.Foundations.marginal"
+        ],
+        "status": "committed",
+        "summary": "Nonnegative normalized real weights with exact singleton marginals."
+      },
+      "exported_scope_paths": [
+        "Main"
+      ],
+      "main_export": true
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `PairwiseFeasible`\n\nDefine `PairwiseFeasible (θ : Weight)` as `MarginalFeasible θ` together with the condition that for\nevery ordered pair `i j : Element` with `i < j`, the finite sum of `θ s` over every `s : Finset\nElement` containing both `i` and `j` equals `marginal i * marginal j`. The domain of `θ` remains\narbitrary real-valued `Weight`.\n\n## Sources\n\n- Source `formal_target.lean`, lines 38–43\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::MarginalFeasible` → `MarginalFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::marginal` → `marginal` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal`\n-/\ndef PairwiseFeasible (θ : Weight) : Prop :=\n  MarginalFeasible θ ∧\n    ∀ i j : Element, i < j →\n      (∑ s : Finset Element with i ∈ s ∧ j ∈ s, θ s) =\n        marginal i * marginal j\n",
+        "kind": "definition",
+        "lean_full_name": "PairwiseFeasible",
+        "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible",
+        "name": "PairwiseFeasible",
+        "node_path": "Main.Foundations",
+        "proof_available": false,
+        "proof_dependencies": [],
+        "revision": 1,
+        "source_origins": [
+          "formal_target.lean:38-43"
+        ],
+        "state": "declared",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.Element",
+          "current repo:Main.Foundations.MarginalFeasible",
+          "current repo:Main.Foundations.Weight",
+          "current repo:Main.Foundations.marginal"
+        ],
+        "status": "committed",
+        "summary": "Marginal feasibility plus exact prescribed pair moments."
+      },
+      "exported_scope_paths": [
+        "Main"
+      ],
+      "main_export": true
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `Weight`\n\nDefine `Weight` as the type `Finset Element → ℝ` of arbitrary real-valued functions on every finite\nsubset of `Element`, with no nonnegativity, normalization, or feasibility restriction.\n\n## Sources\n\n- Source `formal_target.lean`, line 7\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n-/\nabbrev Weight := Finset Element → ℝ\n",
+        "kind": "abbrev",
+        "lean_full_name": "Weight",
+        "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight",
+        "name": "Weight",
+        "node_path": "Main.Foundations",
+        "proof_available": false,
+        "proof_dependencies": [],
+        "revision": 2,
+        "source_origins": [
+          "formal_target.lean:7-7"
+        ],
+        "state": "declared",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.Element"
+        ],
+        "status": "committed",
+        "summary": "Arbitrary real-valued weights on all finite element subsets."
+      },
+      "exported_scope_paths": [
+        "Main"
+      ],
+      "main_export": true
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage`\n\nDefine `coverage (s : Finset Element) : ℝ` as the real-valued cardinality `((s.biUnion\nelementFeatures).card : ℝ)` of the union of the feature sets assigned to the elements of `s`, with\nno normalization or alternative representation.\n\n## Sources\n\n- Source `formal_target.lean`, lines 17–19\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::elementFeatures` → `elementFeatures` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures`\n-/\ndef coverage (s : Finset Element) : ℝ :=\n  ((s.biUnion elementFeatures).card : ℝ)\n",
+        "kind": "definition",
+        "lean_full_name": "coverage",
+        "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage",
+        "name": "coverage",
+        "node_path": "Main.Foundations",
+        "proof_available": false,
+        "proof_dependencies": [],
+        "revision": 2,
+        "source_origins": [
+          "formal_target.lean:17-19"
+        ],
+        "state": "declared",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.Element",
+          "current repo:Main.Foundations.elementFeatures"
+        ],
+        "status": "committed",
+        "summary": "Real-valued cardinality of the union of selected feature sets."
+      },
+      "exported_scope_paths": [
+        "Main"
+      ],
+      "main_export": true
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures\nimport Mathlib.Data.Finset.Card\nimport Mathlib.Data.Finset.Union\nimport Mathlib.Data.Nat.Cast.Order.Basic\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_monotone`\n\nFor arbitrary `S T : Finset Element`, if `S ⊆ T`, then `coverage S ≤ coverage T`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n\n## Proof outline\n\nUnfold `coverage`, so the goal is the real coercion of the cardinalities of `S.biUnion\nelementFeatures` and `T.biUnion elementFeatures`. Apply\n`Finset.biUnion_subset_biUnion_of_subset_left elementFeatures h` to obtain the covered-feature\ninclusion from the hypothesis `h : S ⊆ T`. Apply `Finset.card_mono` to this inclusion. Finally use\n`Nat.cast_le` (or `exact_mod_cast`) to transfer the natural-cardinality inequality to `ℝ`, matching\nthe accepted real-valued definition of `coverage`. The use of `elementFeatures : Element → Finset\nFeature` preserves the declared coverage object and needs no case analysis on the five elements.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Proof dependencies\n\n- `Finset.card_mono` from `Mathlib.Data.Finset.Card`\n- `Finset.biUnion_subset_biUnion_of_subset_left` from `Mathlib.Data.Finset.Union`\n- `Nat.cast_le` from `Mathlib.Data.Nat.Cast.Order.Basic`\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Feature` → `Feature` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n- `Main.Foundations::elementFeatures` → `elementFeatures` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures`\n-/\ntheorem coverage_monotone (S T : Finset Element) (h : S ⊆ T) :\n    coverage S ≤ coverage T := by\n  unfold coverage\n  exact_mod_cast Finset.card_mono\n    (Finset.biUnion_subset_biUnion_of_subset_left elementFeatures h)\n",
+        "kind": "theorem",
+        "lean_full_name": "coverage_monotone",
+        "module": "FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_monotone",
+        "name": "coverage_monotone",
+        "node_path": "Main.Foundations",
+        "proof_available": true,
+        "proof_dependencies": [
+          "Mathlib:Mathlib.Data.Finset.Card.Finset.card_mono",
+          "Mathlib:Mathlib.Data.Finset.Union.Finset.biUnion_subset_biUnion_of_subset_left",
+          "Mathlib:Mathlib.Data.Nat.Cast.Order.Basic.Nat.cast_le",
+          "current repo:Main.Foundations.Element",
+          "current repo:Main.Foundations.Feature",
+          "current repo:Main.Foundations.coverage",
+          "current repo:Main.Foundations.elementFeatures"
+        ],
+        "revision": 1,
+        "source_origins": [
+          "article/sections/02_counterexample.tex:11-16"
+        ],
+        "state": "proved",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.Element",
+          "current repo:Main.Foundations.coverage"
+        ],
+        "status": "committed",
+        "summary": "Monotonicity of explicit feature-union coverage under Finset inclusion."
+      },
+      "exported_scope_paths": [],
+      "main_export": false
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures\nimport Mathlib.Data.Finset.Card\nimport Mathlib.Data.Finset.Union\nimport Mathlib.Data.Nat.Cast.Order.Basic\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_submodular`\n\nFor arbitrary `S T : Finset Element`, `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage\nT`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n\n## Proof outline\n\nUnfold `coverage` and put `A = S.biUnion elementFeatures`, `B = T.biUnion elementFeatures`, and `C =\n(S ∩ T).biUnion elementFeatures`. Rewrite the covered features of `S ∪ T` with\n`Finset.union_biUnion`, obtaining `A ∪ B`. Use `Finset.biUnion_subset_biUnion_of_subset_left\nelementFeatures Finset.inter_subset_left` and the analogous lift of `Finset.inter_subset_right` to\nshow `C ⊆ A` and `C ⊆ B`; combine them into `C ⊆ A ∩ B`. By `Finset.card_mono`, `C.card ≤ (A ∩\nB).card`. Add `(A ∪ B).card` to both sides, then rewrite the right-hand side using\n`Finset.card_inter_add_card_union A B` to get `(A ∪ B).card + C.card ≤ A.card + B.card` (commuting\naddends if required). Cast this natural inequality to `ℝ` using `Nat.cast_le` and normalize cast\naddition, yielding exactly `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T`. This\nuses `elementFeatures : Element → Finset Feature` throughout and adds no hypotheses.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Proof dependencies\n\n- `Finset.card_inter_add_card_union` from `Mathlib.Data.Finset.Card`\n- `Finset.card_mono` from `Mathlib.Data.Finset.Card`\n- `Finset.biUnion_subset_biUnion_of_subset_left` from `Mathlib.Data.Finset.Union`\n- `Finset.union_biUnion` from `Mathlib.Data.Finset.Union`\n- `Nat.cast_le` from `Mathlib.Data.Nat.Cast.Order.Basic`\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Feature` → `Feature` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n- `Main.Foundations::elementFeatures` → `elementFeatures` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures`\n-/\ntheorem coverage_submodular (S T : Finset Element) :\n    coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T := by\n  unfold coverage\n  rw [Finset.union_biUnion]\n  have hsub : (S ∩ T).biUnion elementFeatures ⊆\n      S.biUnion elementFeatures ∩ T.biUnion elementFeatures := by\n    intro x hx\n    exact Finset.mem_inter.mpr\n      ⟨Finset.biUnion_subset_biUnion_of_subset_left elementFeatures\n          Finset.inter_subset_left hx,\n        Finset.biUnion_subset_biUnion_of_subset_left elementFeatures\n          Finset.inter_subset_right hx⟩\n  have hcard := Finset.card_mono hsub\n  have hsum := Nat.add_le_add_left hcard\n    ((S.biUnion elementFeatures ∪ T.biUnion elementFeatures).card)\n  have hrewrite : (S.biUnion elementFeatures ∪ T.biUnion elementFeatures).card +\n      (S.biUnion elementFeatures ∩ T.biUnion elementFeatures).card =\n      (S.biUnion elementFeatures).card + (T.biUnion elementFeatures).card := by\n    simpa [Nat.add_comm] using Finset.card_inter_add_card_union\n      (S.biUnion elementFeatures) (T.biUnion elementFeatures)\n  have hnat : (S.biUnion elementFeatures ∪ T.biUnion elementFeatures).card +\n      ((S ∩ T).biUnion elementFeatures).card ≤\n      (S.biUnion elementFeatures).card + (T.biUnion elementFeatures).card := by\n    exact hsum.trans_eq hrewrite\n  exact_mod_cast hnat\n",
+        "kind": "theorem",
+        "lean_full_name": "coverage_submodular",
+        "module": "FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_submodular",
+        "name": "coverage_submodular",
+        "node_path": "Main.Foundations",
+        "proof_available": true,
+        "proof_dependencies": [
+          "Mathlib:Mathlib.Data.Finset.Card.Finset.card_inter_add_card_union",
+          "Mathlib:Mathlib.Data.Finset.Card.Finset.card_mono",
+          "Mathlib:Mathlib.Data.Finset.Union.Finset.biUnion_subset_biUnion_of_subset_left",
+          "Mathlib:Mathlib.Data.Finset.Union.Finset.union_biUnion",
+          "Mathlib:Mathlib.Data.Nat.Cast.Order.Basic.Nat.cast_le",
+          "current repo:Main.Foundations.Element",
+          "current repo:Main.Foundations.Feature",
+          "current repo:Main.Foundations.coverage",
+          "current repo:Main.Foundations.elementFeatures"
+        ],
+        "revision": 1,
+        "source_origins": [
+          "article/sections/02_counterexample.tex:11-16"
+        ],
+        "state": "proved",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.Element",
+          "current repo:Main.Foundations.coverage"
+        ],
+        "status": "committed",
+        "summary": "Union/intersection submodularity of explicit feature-union coverage."
+      },
+      "exported_scope_paths": [],
+      "main_export": false
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `elementFeatures`\n\nDefine `elementFeatures : Element → Finset Feature` by zero-based cases: element `0` maps to `{0,\n1}`, `1` maps to `{0, 1, 2, 3}`, `2` maps to `{2, 3}`, `3` maps to `{0, 2}`, and `4` maps to `{1,\n3}`.\n\n## Sources\n\n- Source `formal_target.lean`, lines 9–15\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Feature` → `Feature` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature`\n-/\ndef elementFeatures : Element → Finset Feature\n  | 0 => {0, 1}\n  | 1 => {0, 1, 2, 3}\n  | 2 => {2, 3}\n  | 3 => {0, 2}\n  | 4 => {1, 3}\n",
+        "kind": "definition",
+        "lean_full_name": "elementFeatures",
+        "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures",
+        "name": "elementFeatures",
+        "node_path": "Main.Foundations",
+        "proof_available": false,
+        "proof_dependencies": [],
+        "revision": 2,
+        "source_origins": [
+          "formal_target.lean:9-15"
+        ],
+        "state": "declared",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.Element",
+          "current repo:Main.Foundations.Feature"
+        ],
+        "status": "committed",
+        "summary": "Exact feature set assigned to each of the five elements."
+      },
+      "exported_scope_paths": [
+        "Main"
+      ],
+      "main_export": true
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `expectedCoverage`\n\nDefine `expectedCoverage (θ : Weight) : ℝ` as `∑ s : Finset Element, θ s * coverage s`, the finite\nweighted sum over every finite subset of `Element`; `θ` remains an arbitrary real-valued weight\nfunction and is neither restricted nor renormalized.\n\n## Sources\n\n- Source `formal_target.lean`, lines 28–30\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n-/\ndef expectedCoverage (θ : Weight) : ℝ :=\n  ∑ s : Finset Element, θ s * coverage s\n",
+        "kind": "definition",
+        "lean_full_name": "expectedCoverage",
+        "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage",
+        "name": "expectedCoverage",
+        "node_path": "Main.Foundations",
+        "proof_available": false,
+        "proof_dependencies": [],
+        "revision": 1,
+        "source_origins": [
+          "formal_target.lean:28-30"
+        ],
+        "state": "declared",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.Element",
+          "current repo:Main.Foundations.Weight",
+          "current repo:Main.Foundations.coverage"
+        ],
+        "status": "committed",
+        "summary": "Expected coverage under arbitrary real weights over all element subsets."
+      },
+      "exported_scope_paths": [
+        "Main"
+      ],
+      "main_export": true
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `marginal`\n\nDefine `marginal : Element → ℝ` by zero-based cases, with values `(3/10, 7/20, 3/10, 7/20, 7/20)` at\nelements `0, 1, 2, 3, 4`, respectively.\n\n## Sources\n\n- Source `formal_target.lean`, lines 21–26\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n-/\nnoncomputable def marginal : Element → ℝ\n  | 0 => 3 / 10\n  | 1 => 7 / 20\n  | 2 => 3 / 10\n  | 3 => 7 / 20\n  | 4 => 7 / 20\n",
+        "kind": "definition",
+        "lean_full_name": "marginal",
+        "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal",
+        "name": "marginal",
+        "node_path": "Main.Foundations",
+        "proof_available": false,
+        "proof_dependencies": [],
+        "revision": 2,
+        "source_origins": [
+          "formal_target.lean:21-26"
+        ],
+        "state": "declared",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.Element"
+        ],
+        "status": "committed",
+        "summary": "Prescribed rational singleton marginal vector."
+      },
+      "exported_scope_paths": [
+        "Main"
+      ],
+      "main_export": true
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.GapTheorem.Prelude\nimport FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.strict_ratio_comparison\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\nnamespace FinitePairwiseCoverageGap\n\n/--\n# lean-constellation target: `finite_pairwise_coverage_gap`\n\nThe explicit finite coverage instance violates the proposed `4/3` upper bound. Precisely, the\nfollowing five conjuncts hold:\n\n1. For all implicit `s t : Finset Element`, if `s ⊆ t`, then `coverage s ≤ coverage t`.\n2. For all `s t : Finset Element`, `coverage (s ∪ t) + coverage (s ∩ t) ≤ coverage s + coverage t`.\n3. `IsUnrestrictedOptimum 4`.\n4. `IsPairwiseUpperBound (479 / 160)`.\n5. In the real numbers, `(4 : ℝ) / (479 / 160) > 4 / 3`.\n\nThese are conjoined in exactly the displayed order, with no additional hypotheses.\n\n## Sources\n\n- Source `formal_target.lean`, lines 55–64\n- Source `article/sections/02_counterexample.tex`, lines 126–131\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::IsPairwiseUpperBound` → `IsPairwiseUpperBound` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound`\n- `Main.Foundations::IsUnrestrictedOptimum` → `IsUnrestrictedOptimum` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n\n## Proof outline\n\nConstruct the five-fold conjunction in the protected statement order. For the first conjunct,\nintroduce the implicit finsets `s` and `t` and the inclusion hypothesis, then apply\n`coverage_monotone`. For the second conjunct, apply `coverage_submodular` directly. The third and\nfourth conjuncts are exactly the proved public theorems `unrestricted_optimum_four` and\n`pairwise_upper_bound_479_160`, respectively. For the final strict real-number inequality, apply the\nalready proved local helper `strict_ratio_comparison`.\n\nThis is a pure assembly proof: no unfolding, arithmetic normalization, new assumptions, case split,\nor auxiliary declaration is required. In Proof Formal, the route should be implemented by a nested\n`refine ⟨?_, ?_, ?_, ?_, ?_⟩` (or equivalent conjunction construction) followed by the five named\ntheorems, preserving the current accepted source-exact theorem command unchanged.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 110–131\n\n## Proof dependencies\n\n- `Main.Foundations::coverage_monotone` → `coverage_monotone` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_monotone`\n- `Main.Foundations::coverage_submodular` → `coverage_submodular` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_submodular`\n- `Main.GapTheorem::strict_ratio_comparison` → `strict_ratio_comparison` from\n  `FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.strict_ratio_comparison`\n- `Main.PairwiseBound::pairwise_upper_bound_479_160` → `pairwise_upper_bound_479_160` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.pairwise_upper_bound_479_160`\n- `Main.UnrestrictedOptimum::unrestricted_optimum_four` → `unrestricted_optimum_four` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestricted_optimum_four`\n-/\ntheorem finite_pairwise_coverage_gap :\n    (∀ ⦃s t : Finset Element⦄, s ⊆ t → coverage s ≤ coverage t) ∧\n    (∀ s t : Finset Element, coverage (s ∪ t) + coverage (s ∩ t) ≤ coverage s + coverage t) ∧\n    IsUnrestrictedOptimum 4 ∧\n    IsPairwiseUpperBound (479 / 160) ∧\n    (4 : ℝ) / (479 / 160) > 4 / 3 := by\n  refine ⟨?_, ?_, ?_, ?_, ?_⟩\n  · intro s t hst\n    exact coverage_monotone s t hst\n  · exact coverage_submodular\n  · exact unrestricted_optimum_four\n  · exact pairwise_upper_bound_479_160\n  · exact strict_ratio_comparison\n\nend FinitePairwiseCoverageGap\n",
+        "kind": "theorem",
+        "lean_full_name": "FinitePairwiseCoverageGap.finite_pairwise_coverage_gap",
+        "module": "FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.finite_pairwise_coverage_gap",
+        "name": "finite_pairwise_coverage_gap",
+        "node_path": "Main.GapTheorem",
+        "proof_available": true,
+        "proof_dependencies": [
+          "current repo:Main.Foundations.coverage_monotone",
+          "current repo:Main.Foundations.coverage_submodular",
+          "current repo:Main.GapTheorem.strict_ratio_comparison",
+          "current repo:Main.PairwiseBound.pairwise_upper_bound_479_160",
+          "current repo:Main.UnrestrictedOptimum.unrestricted_optimum_four"
+        ],
+        "revision": 3,
+        "source_origins": [
+          "formal_target.lean:55-64",
+          "article/sections/02_counterexample.tex:126-131"
+        ],
+        "state": "proved",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.Element",
+          "current repo:Main.Foundations.IsPairwiseUpperBound",
+          "current repo:Main.Foundations.IsUnrestrictedOptimum",
+          "current repo:Main.Foundations.coverage"
+        ],
+        "status": "committed",
+        "summary": "Exact protected five-conjunct theorem witnessing the finite pairwise coverage gap."
+      },
+      "exported_scope_paths": [
+        "Main"
+      ],
+      "main_export": true
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.independentWeight\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.expectedCoverage_le_weightedDual\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.independentWeight_pairwiseFeasible\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.weightedDual_eq_479_160\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `pairwise_upper_bound_479_160`\n\n`pairwise_upper_bound_479_160` states exactly `IsPairwiseUpperBound (479 / 160)`: there exists a\n`Weight` that is `PairwiseFeasible`, and every `θ : Weight` satisfying `PairwiseFeasible θ` has\n`expectedCoverage θ ≤ 479 / 160`.  It asserts this for the full feasible domain, with the exact\nrational bound and no additional assumptions or conclusions.\n\n## Sources\n\n- Source `formal_target.lean`, lines 50–53\n- Source `article/sections/02_counterexample.tex`, lines 110–125\n\n## Statement dependencies\n\n- `Main.Foundations::IsPairwiseUpperBound` → `IsPairwiseUpperBound` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound`\n\n## Proof outline\n\nUnfold `IsPairwiseUpperBound (479 / 160)` into its two required conjuncts and prove exactly those\nconjuncts.\n\nFor feasible-domain nonemptiness, choose the accepted `independentWeight : Weight` as the witness\nand close `PairwiseFeasible independentWeight` with the already proved theorem\n`independentWeight_pairwiseFeasible`.\n\nFor the universal conjunct, fix an arbitrary `θ : Weight` and `hθ : PairwiseFeasible θ`.  Chain the\ntwo proved full-domain weak-duality facts:\n```lean\n  calc\n    expectedCoverage θ ≤ ∑ S : Finset Element, θ S * dualValue S :=\n      expectedCoverage_le_weightedDual θ hθ\n    _ = 479 / 160 := weightedDual_eq_479_160 θ hθ\n```\nThe first theorem uses the unrestricted pointwise dual majorization and feasibility nonnegativity;\nthe second evaluates the same full-domain weighted dual using the prescribed feasibility moments.\nHence the result applies to every arbitrary-real pairwise-feasible weight with the exact rational\n`479 / 160`.  No support restriction, extra assumption, unrestricted-optimum claim, or final\nconjunction is introduced.\n\n## Proof sources\n\n- Source `formal_target.lean`, lines 50–53\n- Source `article/sections/02_counterexample.tex`, lines 110–125\n\n## Proof dependencies\n\n- `Main.Foundations::IsPairwiseUpperBound` → `IsPairwiseUpperBound` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound`\n- `Main.PairwiseBound::expectedCoverage_le_weightedDual` → `expectedCoverage_le_weightedDual` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.expectedCoverage_le_weightedDual`\n- `Main.PairwiseBound::independentWeight` → `independentWeight` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.independentWeight`\n- `Main.PairwiseBound::independentWeight_pairwiseFeasible` → `independentWeight_pairwiseFeasible`\n  from `FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.independentWeight_pairwiseFeasible`\n- `Main.PairwiseBound::weightedDual_eq_479_160` → `weightedDual_eq_479_160` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.weightedDual_eq_479_160`\n-/\ntheorem pairwise_upper_bound_479_160 : IsPairwiseUpperBound (479 / 160) := by\n  refine ⟨⟨independentWeight, independentWeight_pairwiseFeasible⟩, ?_⟩\n  intro θ hθ\n  calc\n    expectedCoverage θ ≤ ∑ S : Finset Element, θ S * dualValue S :=\n      expectedCoverage_le_weightedDual θ hθ\n    _ = 479 / 160 := weightedDual_eq_479_160 θ hθ\n",
+        "kind": "theorem",
+        "lean_full_name": "pairwise_upper_bound_479_160",
+        "module": "FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.pairwise_upper_bound_479_160",
+        "name": "pairwise_upper_bound_479_160",
+        "node_path": "Main.PairwiseBound",
+        "proof_available": true,
+        "proof_dependencies": [
+          "current repo:Main.Foundations.IsPairwiseUpperBound",
+          "current repo:Main.PairwiseBound.expectedCoverage_le_weightedDual",
+          "current repo:Main.PairwiseBound.independentWeight",
+          "current repo:Main.PairwiseBound.independentWeight_pairwiseFeasible",
+          "current repo:Main.PairwiseBound.weightedDual_eq_479_160"
+        ],
+        "revision": 1,
+        "source_origins": [
+          "formal_target.lean:50-53",
+          "article/sections/02_counterexample.tex:110-125"
+        ],
+        "state": "proved",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.IsPairwiseUpperBound"
+        ],
+        "status": "committed",
+        "summary": "The pairwise-feasible domain is nonempty and all feasible weights have expected coverage at most 479/160."
+      },
+      "exported_scope_paths": [],
+      "main_export": false
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\nimport Mathlib.Data.Finset.Card\nimport Mathlib.Data.Fintype.Card\nimport Mathlib.Data.Fintype.Defs\nimport Mathlib.Data.Nat.Cast.Order.Basic\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_le_four`\n\nTheorem `coverage_le_four` states the universal real inequality `∀ s : Finset Element, coverage s ≤\n4`.  It has no feasibility or distribution assumption: every finite subset of the five-element\nground type has coverage at most `4`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 38–41\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n\n## Proof outline\n\nIntroduce an arbitrary `s : Finset Element`; no feasibility or distribution hypothesis is\nintroduced.  Unfold `coverage`, so the goal is a real-cardinality bound for `s.biUnion\nelementFeatures`.\n\nApply `Finset.card_mono` to the universal inclusion `Finset.subset_univ (s.biUnion\nelementFeatures)`.  This bounds the feature union by `(Finset.univ : Finset Feature)`.  Coerce the\nresulting natural-number inequality to `ℝ` using `Nat.cast_le`.  Finally use `Finset.card_univ` and\nthe accepted definition `Feature = Fin 4` to normalize the cardinality of the feature universe to\n`4`.\n\nThus `coverage s ≤ 4` holds for the original arbitrary finite subset.  The proof is a direct\nuniversal cardinality argument (rather than a feasibility argument), matching the source claim that\nno coverage value can exceed four.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 38–41\n\n## Proof dependencies\n\n- `Finset.card_mono` from `Mathlib.Data.Finset.Card`\n- `Finset.card_univ` from `Mathlib.Data.Fintype.Card`\n- `Finset.subset_univ` from `Mathlib.Data.Fintype.Defs`\n- `Nat.cast_le` from `Mathlib.Data.Nat.Cast.Order.Basic`\n- `Main.Foundations::Feature` → `Feature` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n-/\ntheorem coverage_le_four : ∀ s : Finset Element, coverage s ≤ 4 := by\n  intro s\n  unfold coverage\n  have h := Finset.card_mono (Finset.subset_univ (s.biUnion elementFeatures))\n  norm_num [Finset.card_univ] at h ⊢\n  exact_mod_cast h\n",
+        "kind": "theorem",
+        "lean_full_name": "coverage_le_four",
+        "module": "FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four",
+        "name": "coverage_le_four",
+        "node_path": "Main.UnrestrictedOptimum",
+        "proof_available": true,
+        "proof_dependencies": [
+          "Mathlib:Mathlib.Data.Finset.Card.Finset.card_mono",
+          "Mathlib:Mathlib.Data.Fintype.Card.Finset.card_univ",
+          "Mathlib:Mathlib.Data.Fintype.Defs.Finset.subset_univ",
+          "Mathlib:Mathlib.Data.Nat.Cast.Order.Basic.Nat.cast_le",
+          "current repo:Main.Foundations.Feature",
+          "current repo:Main.Foundations.coverage"
+        ],
+        "revision": 1,
+        "source_origins": [
+          "article/sections/02_counterexample.tex:38-41"
+        ],
+        "state": "proved",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.Element",
+          "current repo:Main.Foundations.coverage"
+        ],
+        "status": "committed",
+        "summary": "Coverage of every subset of the five-element ground set is at most four."
+      },
+      "exported_scope_paths": [],
+      "main_export": false
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `unrestrictedWitness`\n\nDefine `unrestrictedWitness : Weight` as the complete-domain weight function on every `S : Finset\nElement` by assigning `3 / 10` to the zero-based support set `{0, 2}`, `7 / 20` to `{1}`, and `7 /\n20` to `{3, 4}`; assign `0` to every other finite subset.  The three displayed values are rational\nreal weights.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 24–39\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n-/\nnoncomputable def unrestrictedWitness : Weight := fun S ↦\n  if S = {0, 2} then 3 / 10\n  else if S = {1} then 7 / 20\n  else if S = {3, 4} then 7 / 20\n  else 0\n",
+        "kind": "definition",
+        "lean_full_name": "unrestrictedWitness",
+        "module": "FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness",
+        "name": "unrestrictedWitness",
+        "node_path": "Main.UnrestrictedOptimum",
+        "proof_available": false,
+        "proof_dependencies": [],
+        "revision": 1,
+        "source_origins": [
+          "article/sections/02_counterexample.tex:24-39"
+        ],
+        "state": "declared",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.Element",
+          "current repo:Main.Foundations.Weight"
+        ],
+        "status": "committed",
+        "summary": "The exact complete-domain three-support weight witnessing unrestricted value four."
+      },
+      "exported_scope_paths": [],
+      "main_export": false
+    },
+    {
+      "declaration": {
+        "formal_code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_feasible\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_value\nimport Mathlib.Algebra.BigOperators.Ring.Finset\nimport Mathlib.Algebra.Order.BigOperators.Group.Finset\nimport Mathlib.Algebra.Order.GroupWithZero.Defs\nimport Mathlib.Tactic.NormNum.Core\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `unrestricted_optimum_four`\n\nTheorem `unrestricted_optimum_four` states exactly `IsUnrestrictedOptimum 4`.  It asserts both that\nsome `θ : Weight` is marginal-feasible and has `expectedCoverage θ = 4`, and that every `θ : Weight`\nsatisfying `MarginalFeasible θ` has `expectedCoverage θ ≤ 4`; no additional assumptions are imposed.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 37–42\n\n## Statement dependencies\n\n- `Main.Foundations::IsUnrestrictedOptimum` → `IsUnrestrictedOptimum` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\n\n## Proof outline\n\nUnfold `IsUnrestrictedOptimum` and construct its two required conjuncts without adding assumptions.\n\nFor attainment, choose `unrestrictedWitness`.  The already proved theorem\n`unrestrictedWitness_feasible` supplies `MarginalFeasible unrestrictedWitness`, and the already\nproved theorem `unrestrictedWitness_value` supplies `expectedCoverage unrestrictedWitness = 4`.\n\nFor the universal conjunct, introduce arbitrary `θ : Weight` and `hθ : MarginalFeasible θ`.  Unpack\n`hθ` into the all-set nonnegativity fact `h_nonneg : ∀ s, 0 ≤ θ s`, the total-mass equation `h_mass\n: (∑ s, θ s) = 1`, and the remaining marginal component (which is not needed for this upper bound).\nUnfold `expectedCoverage`.  For every `s : Finset Element`, apply the proved universal bound\n`coverage_le_four s : coverage s ≤ 4` and multiply it on the left by the nonnegative factor `θ s`\nvia `mul_le_mul_of_nonneg_left`.  Lift these termwise inequalities with `Finset.sum_le_sum`.\n\nThe resulting right-hand finite sum is `∑ s, θ s * 4`.  Rewrite it as `(∑ s, θ s) * 4` using\n`Finset.sum_mul`, substitute `h_mass`, and normalize to `4`.  This proves `expectedCoverage θ ≤ 4`\nfor the original arbitrary marginal-feasible weight, preserving the exact quantifier and conclusion\ndirection.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 37–42\n\n## Proof dependencies\n\n- `Finset.sum_mul` from `Mathlib.Algebra.BigOperators.Ring.Finset`\n- `Finset.sum_le_sum` from `Mathlib.Algebra.Order.BigOperators.Group.Finset`\n- `mul_le_mul_of_nonneg_left` from `Mathlib.Algebra.Order.GroupWithZero.Defs`\n- `Mathlib.Tactic.normNum` from `Mathlib.Tactic.NormNum.Core`\n- `Main.Foundations::IsUnrestrictedOptimum` → `IsUnrestrictedOptimum` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\n- `Main.Foundations::MarginalFeasible` → `MarginalFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible`\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n- `Main.UnrestrictedOptimum::coverage_le_four` → `coverage_le_four` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four`\n- `Main.UnrestrictedOptimum::unrestrictedWitness` → `unrestrictedWitness` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness`\n- `Main.UnrestrictedOptimum::unrestrictedWitness_feasible` → `unrestrictedWitness_feasible` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_feasible`\n- `Main.UnrestrictedOptimum::unrestrictedWitness_value` → `unrestrictedWitness_value` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_value`\n-/\ntheorem unrestricted_optimum_four : IsUnrestrictedOptimum 4 := by\n  unfold IsUnrestrictedOptimum\n  constructor\n  · exact ⟨unrestrictedWitness, unrestrictedWitness_feasible, unrestrictedWitness_value⟩\n  · intro θ hθ\n    rcases hθ with ⟨h_nonneg, h_mass, _⟩\n    unfold expectedCoverage\n    calc\n      ∑ s : Finset Element, θ s * coverage s ≤ ∑ s : Finset Element, θ s * 4 :=\n        Finset.sum_le_sum fun s _ ↦\n          mul_le_mul_of_nonneg_left (coverage_le_four s) (h_nonneg s)\n      _ = (∑ s : Finset Element, θ s) * 4 := by rw [Finset.sum_mul]\n      _ = 4 := by rw [h_mass]; norm_num\n",
+        "kind": "theorem",
+        "lean_full_name": "unrestricted_optimum_four",
+        "module": "FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestricted_optimum_four",
+        "name": "unrestricted_optimum_four",
+        "node_path": "Main.UnrestrictedOptimum",
+        "proof_available": true,
+        "proof_dependencies": [
+          "Mathlib:Mathlib.Algebra.BigOperators.Ring.Finset.Finset.sum_mul",
+          "Mathlib:Mathlib.Algebra.Order.BigOperators.Group.Finset.Finset.sum_le_sum",
+          "Mathlib:Mathlib.Algebra.Order.GroupWithZero.Defs.mul_le_mul_of_nonneg_left",
+          "Mathlib:Mathlib.Tactic.NormNum.Core.Mathlib.Tactic.normNum",
+          "current repo:Main.Foundations.IsUnrestrictedOptimum",
+          "current repo:Main.Foundations.MarginalFeasible",
+          "current repo:Main.Foundations.expectedCoverage",
+          "current repo:Main.UnrestrictedOptimum.coverage_le_four",
+          "current repo:Main.UnrestrictedOptimum.unrestrictedWitness",
+          "current repo:Main.UnrestrictedOptimum.unrestrictedWitness_feasible",
+          "current repo:Main.UnrestrictedOptimum.unrestrictedWitness_value"
+        ],
+        "revision": 2,
+        "source_origins": [
+          "article/sections/02_counterexample.tex:37-42"
+        ],
+        "state": "proved",
+        "statement_dependencies": [
+          "current repo:Main.Foundations.IsUnrestrictedOptimum"
+        ],
+        "status": "committed",
+        "summary": "The unrestricted optimum for the prescribed marginal vector is exactly four."
+      },
+      "exported_scope_paths": [],
+      "main_export": false
+    }
+  ],
+  "dependencies": [],
+  "proof_availability": "proved",
+  "release_id": "release_a10eaec4358641bea524acdf0c33717e",
+  "repo_key": "FinitePairwiseCoverageGap",
+  "schema_version": 1,
+  "summary": "Catalogued 18 Content public declarations; 12 are exported through Main."
+}
