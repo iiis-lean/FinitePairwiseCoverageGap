@@ -12,25 +12,25 @@
         {
           "kind": "source",
           "ref": {
-            "end_line": null,
+            "end_line": 66,
             "path": "formal_target.lean",
-            "start_line": null
+            "start_line": 1
           }
         },
         {
           "kind": "source",
           "ref": {
-            "end_line": null,
+            "end_line": 57,
             "path": "article/sections/01_definitions_and_conjecture.tex",
-            "start_line": null
+            "start_line": 1
           }
         },
         {
           "kind": "source",
           "ref": {
-            "end_line": null,
+            "end_line": 131,
             "path": "article/sections/02_counterexample.tex",
-            "start_line": null
+            "start_line": 1
           }
         }
       ],

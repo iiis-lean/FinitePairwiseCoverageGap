@@ -1,20 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [
-      "Element",
-      "Feature",
-      "coverage",
-      "elementFeatures"
-    ],
-    "anticipated_statement_dep_names": [
-      "Element",
-      "coverage"
-    ],
     "base_revision": null,
     "kind": "create",
-    "objective": "From contract interface coverage_monotone and SourceIndex b_0013 / article lines 11–16, state and prove the consumer-facing result for arbitrary S T : Finset Element: `S ⊆ T → coverage S ≤ coverage T`. Consume accepted Element and coverage in the statement; in the proof use accepted elementFeatures/Feature together with verified `Finset.biUnion_subset_biUnion_of_subset_left`, `Finset.card_mono`, and `Nat.cast_le`. Do not specialize the sets, add assumptions, or change the real-valued coverage object.",
+    "objective": "`coverage_monotone` is the consumer-facing result in contract interface coverage_monotone and SourceIndex b_0013 / article lines 11–16: for arbitrary S T : Finset Element, `S ⊆ T → coverage S ≤ coverage T`. Its statement uses Element and coverage, and its proof follows from elementFeatures/Feature together with `Finset.biUnion_subset_biUnion_of_subset_left`, `Finset.card_mono`, and `Nat.cast_le`; the sets remain arbitrary, with no added assumptions and the real-valued coverage object unchanged.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "Completed successfully through all four stages. Public theorem coverage_monotone with Lean name coverage_monotone proves for arbitrary Finset Element sets that inclusion implies the real-valued coverage inequality. Its statement and proof were accepted, it reached proved state, and its accepted Element/coverage statement closure plus Element/Feature/elementFeatures/coverage proof closure satisfy graph_proved.",
     "target_state": "proved"
   },
@@ -99,6 +88,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 0 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "c70d5e14b45b0dfd61c05c27d47e04bd31bf6276e6df07d253d1d3cd5d7e4130",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "proof_formal",
         "scan": {
@@ -116,7 +110,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_monotone",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Theorems/coverage_monotone.lean",
+          "repo_kind": "native",
+          "stage": "proof"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures\nimport Mathlib.Data.Finset.Card\nimport Mathlib.Data.Finset.Union\nimport Mathlib.Data.Nat.Cast.Order.Basic\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_monotone`\n\nFor arbitrary `S T : Finset Element`, if `S ⊆ T`, then `coverage S ≤ coverage T`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n\n## Proof outline\n\nUnfold `coverage`, so the goal is the real coercion of the cardinalities of `S.biUnion\nelementFeatures` and `T.biUnion elementFeatures`. Apply\n`Finset.biUnion_subset_biUnion_of_subset_left elementFeatures h` to obtain the covered-feature\ninclusion from the hypothesis `h : S ⊆ T`. Apply `Finset.card_mono` to this inclusion. Finally use\n`Nat.cast_le` (or `exact_mod_cast`) to transfer the natural-cardinality inequality to `ℝ`, matching\nthe accepted real-valued definition of `coverage`. The use of `elementFeatures : Element → Finset\nFeature` preserves the declared coverage object and needs no case analysis on the five elements.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Proof dependencies\n\n- `Finset.card_mono` from `Mathlib.Data.Finset.Card`\n- `Finset.biUnion_subset_biUnion_of_subset_left` from `Mathlib.Data.Finset.Union`\n- `Nat.cast_le` from `Mathlib.Data.Nat.Cast.Order.Basic`\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Feature` → `Feature` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n- `Main.Foundations::elementFeatures` → `elementFeatures` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures`\n-/\ntheorem coverage_monotone (S T : Finset Element) (h : S ⊆ T) :\n    coverage S ≤ coverage T := by\n  unfold coverage\n  exact_mod_cast Finset.card_mono\n    (Finset.biUnion_subset_biUnion_of_subset_left elementFeatures h)\n"
     },
@@ -182,6 +184,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 1 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "9dd7045600e8b4a2ab08aac324589fa8c298a84a45a711b5cffb3255484e9ceb",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -206,7 +213,15 @@
           "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_monotone",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Theorems/coverage_monotone.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_monotone`\n\nFor arbitrary `S T : Finset Element`, if `S ⊆ T`, then `coverage S ≤ coverage T`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n-/\ntheorem coverage_monotone (S T : Finset Element) (h : S ⊆ T) :\n    coverage S ≤ coverage T := by\n  sorry\n"
     },

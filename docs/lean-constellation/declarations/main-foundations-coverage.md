@@ -1,4 +1,4 @@
-[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md) · [Complete graph](../DECLARATION_GRAPH.md)
 
 # `coverage`
 
@@ -10,9 +10,13 @@ Real-valued cardinality of the union of selected feature sets.
 - State: `declared`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
-- Formal code: final statement projection
+- Compatibility `formal_code`: final statement projection
 
-## Lean code
+## Statement NL
+
+Define `coverage (s : Finset Element) : ℝ` as the real-valued cardinality `((s.biUnion elementFeatures).card : ℝ)` of the union of the feature sets assigned to the elements of `s`, with no normalization or alternative representation.
+
+## Statement Formal
 
 ```lean
 -- lean-constellation: managed-imports-begin
@@ -44,6 +48,14 @@ no normalization or alternative representation.
 def coverage (s : Finset Element) : ℝ :=
   ((s.biUnion elementFeatures).card : ℝ)
 ```
+
+## Proof NL
+
+Not recorded.
+
+## Proof Formal
+
+Not recorded.
 
 ## Statement dependencies
 

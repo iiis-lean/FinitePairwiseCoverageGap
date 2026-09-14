@@ -6,8 +6,8 @@
     "round_338811fc016c4d1cb5de662808df0e67"
   ],
   "node_path": "Main.GapTheorem",
-  "objective": "Repair the existing finite_pairwise_coverage_gap declaration in place so its next compiler-confirmed Lean identity is exactly `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap`, while preserving the already accepted five-conjunct statement, proof route, flat Decl.name, public visibility, and proved dependency closure.",
-  "rationale": "Contract version 2 identifies a single formal-identity mismatch. Revision 1 is already proved and has no missing dependencies, so a targeted update from the specified boundary through Statement Formal and both proof stages is sufficient; no new theorem, alias, helper, dependency, or preparation flow is needed.",
+  "objective": "The existing finite_pairwise_coverage_gap declaration has compiler-confirmed Lean identity exactly `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap`, with the accepted five-conjunct statement, proof route, flat Decl.name, public visibility, and proved dependency closure preserved.",
+  "rationale": "Contract version 2 identifies a single formal-identity mismatch. Revision 1 is already proved and has no missing dependencies; the mathematical repair changes only the declaration identity/representation, with no new theorem, alias, helper, dependency, or preparation flow.",
   "status": "closed",
   "strategy_id": "strategy_5a06b4a2743c4954aa94a8db4d08dbe0",
   "summary": "Completed the single-round in-place identity repair without aliases or duplicate declarations; the exact protected theorem remains graph_proved and its current interface binding points to revision 2."

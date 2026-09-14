@@ -1,12 +1,11 @@
 {
-  "change_summaries": {},
   "committed_at": "2026-07-29T14:56:34Z",
   "created_at": "2026-07-29T14:46:15Z",
   "execution_completed_at": "2026-07-29T14:53:48Z",
   "execution_reason": null,
   "execution_result_kind": "success",
   "node_path": "Main.UnrestrictedOptimum",
-  "objective": "Create the stable public witness definition for the exact SourceIndex b_0012 distribution as the bottom foundation for later feasibility, value, universal-bound, and optimum proofs.",
+  "objective": "The stable public witness definition for the exact SourceIndex b_0012 distribution is the bottom foundation for later feasibility, value, universal-bound, and optimum proofs.",
   "plan_closeout_acknowledged_at": "2026-07-29T14:56:34Z",
   "plan_closeout_acknowledged_by": "a_a2d50c8badaf485395c6fd44278811c5",
   "result_kind": "success",

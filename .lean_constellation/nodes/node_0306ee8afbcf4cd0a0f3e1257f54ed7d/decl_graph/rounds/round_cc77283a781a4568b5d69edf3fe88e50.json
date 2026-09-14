@@ -1,12 +1,11 @@
 {
-  "change_summaries": {},
   "committed_at": "2026-07-26T13:17:35Z",
   "created_at": "2026-07-26T13:12:54Z",
   "execution_completed_at": "2026-07-26T13:17:35Z",
   "execution_reason": "DeclGraphRoundFlow finished with completed.",
   "execution_result_kind": "success",
   "node_path": "Main.Foundations",
-  "objective": "Complete b_0017 by declaring IsPairwiseUpperBound exactly as nonemptiness of the pairwise-feasible domain together with a universal expected-coverage upper bound, using accepted PairwiseFeasible and expectedCoverage. After this round, only the two proved b_0013 structural interfaces remain.",
+  "objective": "The b_0017 definition layer includes IsPairwiseUpperBound exactly as nonemptiness of the pairwise-feasible domain together with a universal expected-coverage upper bound, using PairwiseFeasible and expectedCoverage. After this layer, only the two proved b_0013 structural interfaces remain.",
   "plan_closeout_acknowledged_at": "2026-07-26T13:17:35Z",
   "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
   "result_kind": "success",

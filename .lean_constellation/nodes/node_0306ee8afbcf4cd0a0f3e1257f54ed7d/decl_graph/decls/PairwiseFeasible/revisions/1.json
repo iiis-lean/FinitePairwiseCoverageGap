@@ -1,17 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [
-      "Element",
-      "MarginalFeasible",
-      "Weight",
-      "marginal"
-    ],
     "base_revision": null,
     "kind": "create",
-    "objective": "From SourceIndex b_0017 and formal_target.lean lines 38–43, preserve exactly `MarginalFeasible θ ∧ ∀ i j, i < j → ... = marginal i * marginal j`, where the left side sums θ s over every Finset Element satisfying both memberships. Consume accepted unrestricted Weight, MarginalFeasible, Element, and marginal with verified finite-sum support. Keep the ordered binders and i < j guard, exact equality, and arbitrary-real θ domain. This definition supplies IsPairwiseUpperBound.",
+    "objective": "`PairwiseFeasible` is the conjunction from SourceIndex b_0017 and formal_target.lean lines 38–43: `MarginalFeasible θ ∧ ∀ i j, i < j → ... = marginal i * marginal j`, where the left side sums θ s over every Finset Element satisfying both memberships. It uses unrestricted Weight, MarginalFeasible, Element, and marginal with finite-sum support; the ordered binders and i < j guard, exact equality, and arbitrary-real θ domain are preserved, and the definition supplies IsPairwiseUpperBound.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "Completed successfully through Statement NL and Statement Formal. Public definition PairwiseFeasible with Lean name PairwiseFeasible now exactly combines MarginalFeasible with ordered i < j pair-moment equalities over every Finset Element, preserving arbitrary real Weight and marginal products. It reached declared state and is proof-policy satisfied; it is ready for IsPairwiseUpperBound.",
     "target_state": "declared"
   },
@@ -75,6 +67,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 0 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "9d28e5ae84afebdf2e0471af2b446d8f2b9ff4c7a6722218b4be0fb3cb9415f8",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -92,7 +89,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/PairwiseFeasible.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `PairwiseFeasible`\n\nDefine `PairwiseFeasible (θ : Weight)` as `MarginalFeasible θ` together with the condition that for\nevery ordered pair `i j : Element` with `i < j`, the finite sum of `θ s` over every `s : Finset\nElement` containing both `i` and `j` equals `marginal i * marginal j`. The domain of `θ` remains\narbitrary real-valued `Weight`.\n\n## Sources\n\n- Source `formal_target.lean`, lines 38–43\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::MarginalFeasible` → `MarginalFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::marginal` → `marginal` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal`\n-/\ndef PairwiseFeasible (θ : Weight) : Prop :=\n  MarginalFeasible θ ∧\n    ∀ i j : Element, i < j →\n      (∑ s : Finset Element with i ∈ s ∧ j ∈ s, θ s) =\n        marginal i * marginal j\n"
     },

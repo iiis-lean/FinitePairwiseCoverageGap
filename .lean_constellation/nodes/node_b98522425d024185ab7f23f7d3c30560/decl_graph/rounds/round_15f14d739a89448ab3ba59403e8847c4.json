@@ -1,12 +1,11 @@
 {
-  "change_summaries": {},
   "committed_at": "2026-07-29T15:26:52Z",
   "created_at": "2026-07-29T14:57:13Z",
   "execution_completed_at": "2026-07-29T15:23:44Z",
   "execution_reason": "Decl-owned Lean file was modified after the latest capture.",
   "execution_result_kind": "failed",
   "node_path": "Main.UnrestrictedOptimum",
-  "objective": "Prove the accepted unrestrictedWitness has the complete prescribed marginal feasibility and expected coverage value 4, supplying the attaining half of the later IsUnrestrictedOptimum 4 theorem.",
+  "objective": "The accepted `unrestrictedWitness` has the complete prescribed marginal feasibility and expected coverage value 4, supplying the attaining half of the later `IsUnrestrictedOptimum 4` theorem.",
   "plan_closeout_acknowledged_at": "2026-07-29T15:26:52Z",
   "plan_closeout_acknowledged_by": "a_a2d50c8badaf485395c6fd44278811c5",
   "result_kind": "failed",

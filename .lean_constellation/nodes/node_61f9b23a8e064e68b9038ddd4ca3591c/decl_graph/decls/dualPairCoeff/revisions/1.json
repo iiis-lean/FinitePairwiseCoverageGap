@@ -1,12 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [],
     "base_revision": null,
     "kind": "create",
-    "objective": "Define λᵢⱼ : Element → Element → ℝ for i < j with the ten exact rational values listed in SourceIndex b_0014 / source lines 64–67; behavior outside ordered pairs may be chosen canonically but must not change ordered-pair values. It feeds the ordered pair sum in dualValue and the later second-moment calculation.",
+    "objective": "The ordered-pair coefficient `λᵢⱼ : Element → Element → ℝ` has the ten exact rational values for `i < j` listed in SourceIndex b_0014 / source lines 64–67; values outside ordered pairs do not affect the ordered-pair sum. It supplies the ordered-pair sum in `dualValue` and the later second-moment calculation.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "DeclGraphRoundFlow failed for change dualPairCoeff@rev:1.",
     "target_state": "declared"
   },

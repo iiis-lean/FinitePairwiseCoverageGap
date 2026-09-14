@@ -11,6 +11,7 @@ A Lean 4 formalization of an explicit finite coverage-function counterexample: t
 | --- | --- |
 | Completion | `graph_proved` |
 | Proof availability | `proved` |
+| Repository format | `native` |
 
 ## Build
 

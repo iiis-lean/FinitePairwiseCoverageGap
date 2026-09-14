@@ -1,15 +1,10 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [
-      "Element",
-      "Feature"
-    ],
     "base_revision": 1,
     "kind": "update",
-    "objective": "Rebuild the previously unexecuted b_0018/b_0013 declaration from formal_target.lean lines 9–15 using accepted Element and Feature. Preserve exactly the zero-based mapping 0↦{0,1}, 1↦{0,1,2,3}, 2↦{2,3}, 3↦{0,2}, 4↦{1,3}; it is consumed by coverage and both public structural proofs.",
+    "objective": "`elementFeatures` is the b_0018/b_0013 declaration from formal_target.lean lines 9–15: the zero-based mapping 0↦{0,1}, 1↦{0,1,2,3}, 2↦{2,3}, 3↦{0,2}, 4↦{1,3}. It depends on Element and Feature and is consumed by coverage and both public structural proofs.",
     "require_target_state_satisfied": true,
-    "reset_to_state": "planned",
+    "start_stage": "statement_nl",
     "summary": "Completed successfully through Statement NL and Statement Formal. Public definition elementFeatures with Lean name elementFeatures now preserves the exact five zero-based feature sets from b_0018/b_0013; it reached declared state and is proof-policy satisfied. Accepted Element and Feature dependencies are closed, so coverage can now be declared.",
     "target_state": "declared"
   },
@@ -53,6 +48,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 0 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "d3b19aed97d3e6e2efdd4efabe08e8f37983d37fea366d0ae0c00a043ac0ab02",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -70,7 +70,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/elementFeatures.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `elementFeatures`\n\nDefine `elementFeatures : Element → Finset Feature` by zero-based cases: element `0` maps to `{0,\n1}`, `1` maps to `{0, 1, 2, 3}`, `2` maps to `{2, 3}`, `3` maps to `{0, 2}`, and `4` maps to `{1,\n3}`.\n\n## Sources\n\n- Source `formal_target.lean`, lines 9–15\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Feature` → `Feature` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature`\n-/\ndef elementFeatures : Element → Finset Feature\n  | 0 => {0, 1}\n  | 1 => {0, 1, 2, 3}\n  | 2 => {2, 3}\n  | 3 => {0, 2}\n  | 4 => {1, 3}\n"
     },

@@ -1,4 +1,4 @@
-[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md) · [Complete graph](../DECLARATION_GRAPH.md)
 
 # `marginal`
 
@@ -10,9 +10,13 @@ Prescribed rational singleton marginal vector.
 - State: `declared`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
-- Formal code: final statement projection
+- Compatibility `formal_code`: final statement projection
 
-## Lean code
+## Statement NL
+
+Define `marginal : Element → ℝ` by zero-based cases, with values `(3/10, 7/20, 3/10, 7/20, 7/20)` at elements `0, 1, 2, 3, 4`, respectively.
+
+## Statement Formal
 
 ```lean
 -- lean-constellation: managed-imports-begin
@@ -44,6 +48,14 @@ noncomputable def marginal : Element → ℝ
   | 3 => 7 / 20
   | 4 => 7 / 20
 ```
+
+## Proof NL
+
+Not recorded.
+
+## Proof Formal
+
+Not recorded.
 
 ## Statement dependencies
 

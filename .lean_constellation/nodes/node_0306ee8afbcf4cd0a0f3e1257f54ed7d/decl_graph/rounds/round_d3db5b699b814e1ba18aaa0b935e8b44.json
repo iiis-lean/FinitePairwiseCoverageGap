@@ -1,12 +1,11 @@
 {
-  "change_summaries": {},
   "committed_at": "2026-07-26T12:41:43Z",
   "created_at": "2026-07-26T12:33:12Z",
   "execution_completed_at": "2026-07-26T12:41:43Z",
   "execution_reason": "DeclGraphRoundFlow finished with completed.",
   "execution_result_kind": "success",
   "node_path": "Main.Foundations",
-  "objective": "Declare only the independent base abbreviations Element := Fin 5 and Feature := Fin 4 from SourceIndex b_0018, establishing providers for later dependency-ready rounds.",
+  "objective": "The independent base abbreviations are Element := Fin 5 and Feature := Fin 4 from SourceIndex b_0018; they establish providers for later dependency-ready rounds.",
   "plan_closeout_acknowledged_at": "2026-07-26T12:41:43Z",
   "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
   "result_kind": "success",

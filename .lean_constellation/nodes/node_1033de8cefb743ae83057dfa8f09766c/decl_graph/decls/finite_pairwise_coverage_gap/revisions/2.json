@@ -1,14 +1,10 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [
-      "strict_ratio_comparison"
-    ],
-    "anticipated_statement_dep_names": [],
     "base_revision": 1,
     "kind": "update",
-    "objective": "Repair only the captured Lean declaration identity required by contract version 2. Preserve verbatim the accepted mathematical target from SourceIndex b_0019 and formal_target.lean:55–64: the same five conjuncts, implicit and explicit binders, `Finset Element` objects, `coverage` expressions, `IsUnrestrictedOptimum 4`, `IsPairwiseUpperBound (479 / 160)`, and strict real comparison `(4 : ℝ) / (479 / 160) > 4 / 3`, with the same existing statement and proof dependencies. During Statement Formal, place the declaration in namespace `FinitePairwiseCoverageGap` so compiler capture confirms exactly `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap`; keep the flat Constellation key `finite_pairwise_coverage_gap`, do not leave a root-level declaration, and do not create an alias or duplicate theorem. Then revalidate the existing proof route through proved, using strict_ratio_comparison locally and the accepted lower public provider theorems.",
+    "objective": "`finite_pairwise_coverage_gap` revision 2 has captured Lean identity exactly `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap` while preserving the SourceIndex b_0019 and formal_target.lean:55–64 mathematical target: the same five conjuncts, implicit and explicit binders, `Finset Element` objects, `coverage` expressions, `IsUnrestrictedOptimum 4`, `IsPairwiseUpperBound (479 / 160)`, and strict real comparison `(4 : ℝ) / (479 / 160) > 4 / 3`, with the same statement and proof dependencies. The declaration is in namespace `FinitePairwiseCoverageGap`, retains flat Constellation key `finite_pairwise_coverage_gap`, has no root-level replacement, alias, or duplicate, and its proof uses strict_ratio_comparison and the lower public provider theorems.",
     "require_target_state_satisfied": true,
-    "reset_to_state": "specified",
+    "start_stage": "statement_formal",
     "summary": "Updated finite_pairwise_coverage_gap from committed revision 1 to revision 2 solely to repair its captured Lean identity for contract version 2. Statement NL was intentionally retained; Statement Formal compiler-confirmed the exact full name `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap` while preserving the accepted five-conjunct statement, flat Decl.name, public visibility, source origins, and dependencies. Proof NL and Proof Formal then passed using the existing route, so revision 2 reached proved state and is graph_proved proof-policy satisfied. No alias, duplicate theorem, root-level replacement, blocker, semantic drift, or cleanup target was introduced.",
     "target_state": "proved"
   },
@@ -79,6 +75,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 0 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "79374eab7948f116eeabc128f66ae99f4760704b329c7354d6c1523af4770e8d",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "proof_formal",
         "scan": {
@@ -96,7 +97,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.finite_pairwise_coverage_gap",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/GapTheorem/Theorems/finite_pairwise_coverage_gap.lean",
+          "repo_kind": "native",
+          "stage": "proof"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.GapTheorem.Prelude\nimport FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.strict_ratio_comparison\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `finite_pairwise_coverage_gap`\n\nThe explicit finite coverage instance violates the proposed `4/3` upper bound. Precisely, the\nfollowing five conjuncts hold:\n\n1. For all implicit `s t : Finset Element`, if `s ⊆ t`, then `coverage s ≤ coverage t`.\n2. For all `s t : Finset Element`, `coverage (s ∪ t) + coverage (s ∩ t) ≤ coverage s + coverage t`.\n3. `IsUnrestrictedOptimum 4`.\n4. `IsPairwiseUpperBound (479 / 160)`.\n5. In the real numbers, `(4 : ℝ) / (479 / 160) > 4 / 3`.\n\nThese are conjoined in exactly the displayed order, with no additional hypotheses.\n\n## Sources\n\n- Source `formal_target.lean`, lines 55–64\n- Source `article/sections/02_counterexample.tex`, lines 126–131\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::IsPairwiseUpperBound` → `IsPairwiseUpperBound` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound`\n- `Main.Foundations::IsUnrestrictedOptimum` → `IsUnrestrictedOptimum` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n\n## Proof outline\n\nProve the exact five-conjunct statement by nested conjunction introduction, without changing its\nbinders, constants, or predicates.\n\n1. For the first conjunct, introduce the implicit finsets `s` and `t` and the inclusion hypothesis,\nthen apply the accepted provider theorem `coverage_monotone s t`.\n2. For the second conjunct, introduce `s` and `t`, then apply the accepted provider theorem\n`coverage_submodular s t`.\n3. Close the third conjunct directly with the accepted provider theorem `unrestricted_optimum_four :\nIsUnrestrictedOptimum 4`.\n4. Close the fourth conjunct directly with the accepted provider theorem\n`pairwise_upper_bound_479_160 : IsPairwiseUpperBound (479 / 160)`.\n5. Close the final strict real inequality directly with the accepted, proved local helper\n`strict_ratio_comparison`.\n\nThis route uses only the existing accepted lower interfaces and the local arithmetic helper. No\nadditional case split, induction, or new helper declaration is required.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 110–131\n\n## Proof dependencies\n\n- `Main.Foundations::coverage_monotone` → `coverage_monotone` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_monotone`\n- `Main.Foundations::coverage_submodular` → `coverage_submodular` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_submodular`\n- `Main.GapTheorem::strict_ratio_comparison` → `strict_ratio_comparison` from\n  `FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.strict_ratio_comparison`\n- `Main.PairwiseBound::pairwise_upper_bound_479_160` → `pairwise_upper_bound_479_160` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.pairwise_upper_bound_479_160`\n- `Main.UnrestrictedOptimum::unrestricted_optimum_four` → `unrestricted_optimum_four` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestricted_optimum_four`\n-/\ntheorem FinitePairwiseCoverageGap.finite_pairwise_coverage_gap :\n    (∀ {s t : Finset Element}, s ⊆ t → coverage s ≤ coverage t) ∧\n      (∀ s t : Finset Element,\n        coverage (s ∪ t) + coverage (s ∩ t) ≤ coverage s + coverage t) ∧\n        IsUnrestrictedOptimum 4 ∧\n          IsPairwiseUpperBound (479 / 160) ∧\n            (4 : ℝ) / (479 / 160) > 4 / 3 := by\n  refine ⟨?_, ?_, unrestricted_optimum_four, pairwise_upper_bound_479_160,\n    strict_ratio_comparison⟩\n  · intro s t hst\n    exact coverage_monotone s t hst\n  · intro s t\n    exact coverage_submodular s t\n"
     },
@@ -182,6 +191,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 1 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "8fa12109bf0c691151ab90a9df7e8d30ea5a3fbf1c2d73261294562262a58a50",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -206,7 +220,15 @@
           "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.finite_pairwise_coverage_gap",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/GapTheorem/Theorems/finite_pairwise_coverage_gap.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.GapTheorem.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `finite_pairwise_coverage_gap`\n\nThe explicit finite coverage instance violates the proposed `4/3` upper bound. Precisely, the\nfollowing five conjuncts hold:\n\n1. For all implicit `s t : Finset Element`, if `s ⊆ t`, then `coverage s ≤ coverage t`.\n2. For all `s t : Finset Element`, `coverage (s ∪ t) + coverage (s ∩ t) ≤ coverage s + coverage t`.\n3. `IsUnrestrictedOptimum 4`.\n4. `IsPairwiseUpperBound (479 / 160)`.\n5. In the real numbers, `(4 : ℝ) / (479 / 160) > 4 / 3`.\n\nThese are conjoined in exactly the displayed order, with no additional hypotheses.\n\n## Sources\n\n- Source `formal_target.lean`, lines 55–64\n- Source `article/sections/02_counterexample.tex`, lines 126–131\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::IsPairwiseUpperBound` → `IsPairwiseUpperBound` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound`\n- `Main.Foundations::IsUnrestrictedOptimum` → `IsUnrestrictedOptimum` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n-/\ntheorem FinitePairwiseCoverageGap.finite_pairwise_coverage_gap :\n    (∀ {s t : Finset Element}, s ⊆ t → coverage s ≤ coverage t) ∧\n      (∀ s t : Finset Element,\n        coverage (s ∪ t) + coverage (s ∩ t) ≤ coverage s + coverage t) ∧\n        IsUnrestrictedOptimum 4 ∧\n          IsPairwiseUpperBound (479 / 160) ∧\n            (4 : ℝ) / (479 / 160) > 4 / 3 := by\n  sorry\n"
     },

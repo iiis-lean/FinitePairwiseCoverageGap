@@ -1,4 +1,4 @@
-[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md) · [Complete graph](../DECLARATION_GRAPH.md)
 
 # `Feature`
 
@@ -10,9 +10,13 @@ Four-feature universe type.
 - State: `declared`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
-- Formal code: final statement projection
+- Compatibility `formal_code`: final statement projection
 
-## Lean code
+## Statement NL
+
+Define `Feature` as the four-element finite type `Fin 4`.
+
+## Statement Formal
 
 ```lean
 -- lean-constellation: managed-imports-begin
@@ -32,6 +36,14 @@ Define `Feature` as the four-element finite type `Fin 4`.
 -/
 abbrev Feature := Fin 4
 ```
+
+## Proof NL
+
+Not recorded.
+
+## Proof Formal
+
+Not recorded.
 
 ## Sources
 

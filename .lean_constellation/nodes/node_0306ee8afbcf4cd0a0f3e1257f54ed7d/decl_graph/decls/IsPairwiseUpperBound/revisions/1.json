@@ -1,16 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [
-      "PairwiseFeasible",
-      "Weight",
-      "expectedCoverage"
-    ],
     "base_revision": null,
     "kind": "create",
     "objective": "From SourceIndex b_0017 and formal_target.lean lines 50–53, preserve exactly the conjunction `(∃ θ, PairwiseFeasible θ) ∧ ∀ θ, PairwiseFeasible θ → expectedCoverage θ ≤ q`. Consume accepted unrestricted Weight, PairwiseFeasible, and expectedCoverage. Preserve the explicit nonemptiness requirement, universal arbitrary-real weight quantifier, and upper-bound conclusion direction; do not add attainment at q or weaken the domain.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "Completed successfully through Statement NL and Statement Formal. Public definition IsPairwiseUpperBound with Lean name IsPairwiseUpperBound now preserves explicit pairwise-feasible nonemptiness and the universal expectedCoverage upper bound over arbitrary-real weights. It reached declared state and is proof-policy satisfied with accepted Weight, PairwiseFeasible, and expectedCoverage dependencies.",
     "target_state": "declared"
   },
@@ -64,6 +57,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 0 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "119bd1c6bc7dc5bda4624571333de04beda3994321b7b711af69f430fc784816",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -81,7 +79,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/IsPairwiseUpperBound.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `IsPairwiseUpperBound`\n\nDefine `IsPairwiseUpperBound (q : ℝ)` as the conjunction that there exists `θ : Weight` satisfying\n`PairwiseFeasible θ`, and that every arbitrary-real `θ : Weight` satisfying `PairwiseFeasible θ`\nobeys `expectedCoverage θ ≤ q`. This requires nonemptiness of the pairwise-feasible domain and a\nuniversal upper bound, but does not require attainment at `q`.\n\n## Sources\n\n- Source `formal_target.lean`, lines 50–53\n\n## Statement dependencies\n\n- `Main.Foundations::PairwiseFeasible` → `PairwiseFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n-/\ndef IsPairwiseUpperBound (q : ℝ) : Prop :=\n  (∃ θ : Weight, PairwiseFeasible θ) ∧\n    ∀ θ : Weight, PairwiseFeasible θ → expectedCoverage θ ≤ q\n"
     },

@@ -4,15 +4,15 @@
       "disposition": "include",
       "path": ".gitignore",
       "reason": "portable_project_or_business_truth",
-      "sha256": "06f7c71341a353f2a99d5914d3b2324aa371988613ce9d65fdb01b37dda645af",
-      "size_bytes": 392
+      "sha256": "636b433981ff45f03c79feafc4227eecabd361e0c2a4444487244e495732fcff",
+      "size_bytes": 277
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/index/nodes.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "5873fac686efa00d38672a7f974c6558ffb4e8992ce30142abeb0b2f3f9545ea",
-      "size_bytes": 1750
+      "sha256": "41b616b4b859f070d720e0404e23450779707cefbc2de3fe8120ab1179f81b04",
+      "size_bytes": 1661
     },
     {
       "disposition": "include",
@@ -23,24 +23,17 @@
     },
     {
       "disposition": "include",
-      "path": ".lean_constellation/indexes/mathlib_candidates.json",
-      "reason": "portable_project_or_business_truth",
-      "sha256": "7645e51bd5cb44cb24e153e58f96fc73c76bb2cb7d486894e9e93c63cef6ceb0",
-      "size_bytes": 431372
-    },
-    {
-      "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/contracts/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "0759186b40171d52f9df17d34574b222d27d6b57b599d5a48d1392d874f3400a",
-      "size_bytes": 12288
+      "sha256": "0a79573987586843c3552e8181e979819fb9efdc27a031e15a2fc8ec1d751bbd",
+      "size_bytes": 12343
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/contracts/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "582c2aa2a1afe2dfc07e4ce91feb00355bf94ed69f0e97f4a6b6b8460c27f633",
-      "size_bytes": 11744
+      "sha256": "da5bfce13f0e18c8713be7feab0a162dee7da9dd1d69713d91e6e5a4feca8959",
+      "size_bytes": 11786
     },
     {
       "disposition": "include",
@@ -53,15 +46,15 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/Element/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "f7e50c40f38fd48c5951a0fe52c1a6d543a4da668e2d51cdefd3388564cd4b36",
-      "size_bytes": 818
+      "sha256": "033284be78a0da51aa478ad7f3d866ed2e0e43c160e6c7d37859f0732efe2561",
+      "size_bytes": 711
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/Element/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "a669f34b0913c8a781c007dbfcc504f34c9bea44511d0837b04f122c1159af25",
-      "size_bytes": 3226
+      "sha256": "e947f034437649610541d86bb22a7b30d69a743f0085dbed05a3a4a9f38504c7",
+      "size_bytes": 3615
     },
     {
       "disposition": "include",
@@ -74,15 +67,15 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/Feature/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "483d9b9291249dc869d2a05a53e124857d55f30274c92fde2a828c7663f4bb7b",
-      "size_bytes": 776
+      "sha256": "2690a8387d44ca43fe420351b0fe9cfe8cb90d6d5443e8f69ba44e78796f5350",
+      "size_bytes": 669
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/Feature/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "62d7dc5505997acd2cb4e4bd98d25f361e23bc285ff440432b6efb7ff560c484",
-      "size_bytes": 3173
+      "sha256": "933853aacc248ff825c68f509695898f8371f9db76b84f8e627660c42d934bf8",
+      "size_bytes": 3562
     },
     {
       "disposition": "include",
@@ -95,8 +88,8 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/IsPairwiseUpperBound/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "c44501a65bfc89e80375853912b51f59788acb1ac5679dc02645e1aadde73187",
-      "size_bytes": 5773
+      "sha256": "cf8342253ea3f856163c12118b036a476030d1c08f59243c8cac2bf891cae641",
+      "size_bytes": 6154
     },
     {
       "disposition": "include",
@@ -109,8 +102,8 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/IsUnrestrictedOptimum/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "bafbd19e2539ccf691d3601b88ee8cc2f949cb79160a7743d29bfac25921bc31",
-      "size_bytes": 5724
+      "sha256": "367c00ea840eb9b17777940f8d1e1e0176f7726c75f83a58c6f9bfa60601a834",
+      "size_bytes": 6107
     },
     {
       "disposition": "include",
@@ -123,8 +116,8 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/MarginalFeasible/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "18e2d02d0b2981f5c45814b2db2dc15ef9b26d070e00793774326fb2fb7a9c99",
-      "size_bytes": 5912
+      "sha256": "b85224cf1a3214916d04ff94718c55e385c4adb594919c9fc1ea881a6a62faff",
+      "size_bytes": 6269
     },
     {
       "disposition": "include",
@@ -137,8 +130,8 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/PairwiseFeasible/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "2fdca72454ee750989277ab6ed1d4d226e3c08a27725e79057563b735a9b9f5f",
-      "size_bytes": 6073
+      "sha256": "362f62c83f249ef150e0cceb5d4dfca52b26acee0e89efdfb4a246f97e147371",
+      "size_bytes": 6452
     },
     {
       "disposition": "include",
@@ -151,15 +144,15 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/Weight/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "777ad438921ad5f93c2bb85ff040989c51fe347ef4203a3921122df72f09fe9b",
-      "size_bytes": 902
+      "sha256": "cfe4087d6152edddf49d6cea3a2bb12eb210e7f05a6d150148f0b78796a6f205",
+      "size_bytes": 778
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/Weight/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "5d679b74b941968e358fce6479cf66985a489b8a852ab0292b3c9a77b755a12f",
-      "size_bytes": 3894
+      "sha256": "03e4c7e31d5618ea1a675af375f2a245264493a42a522b93eecf5e3542b15bf1",
+      "size_bytes": 4296
     },
     {
       "disposition": "include",
@@ -172,15 +165,15 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/coverage/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "5ca16c5a6786a1bf06c32cba24eaeeb773b03e9ac413cdc7cfd1a1b4447442ed",
-      "size_bytes": 905
+      "sha256": "0dcfc18d198e01f10dd5f7ffe035a93696d745bdac1e1e3495f5f42960f43f8c",
+      "size_bytes": 740
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/coverage/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "0b60139afb4bc0d141c723f8021f3e382b4b710f44d6f28addfa0fe09f71b5a2",
-      "size_bytes": 4935
+      "sha256": "0621f050e44a33d208702d2753f867a70bb2fb0dddd09d7df58bbe7d00dd05bd",
+      "size_bytes": 5286
     },
     {
       "disposition": "include",
@@ -193,8 +186,8 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/coverage_monotone/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "9b1973abe886a4956cc65f45e64563ed0a5becc46150c7b6951d4d3d12b3c629",
-      "size_bytes": 12315
+      "sha256": "b78624dde2e5415720d5dd6634b18fa5bdde3e392784bfa9ad8f8d965def0acc",
+      "size_bytes": 13205
     },
     {
       "disposition": "include",
@@ -207,8 +200,8 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/coverage_submodular/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "852900675affd97726442a22e2143e22f7bf6d9b6e96c90f716ae3587325a77a",
-      "size_bytes": 14811
+      "sha256": "cd1aa8bae4d7e4c2ee0d61de0f3eb0c5aae084dd2167218e5f55d0b7de4e6ecd",
+      "size_bytes": 15680
     },
     {
       "disposition": "include",
@@ -221,15 +214,15 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/elementFeatures/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "0c763b3a6267843b577d55433ec7561bb242b00eed37ed3dfbf57a2d593ffca2",
-      "size_bytes": 913
+      "sha256": "25fd7c3e0b7fd9088cc493372b67a225d7ccff4c6050e5fd3012610bd536d94d",
+      "size_bytes": 765
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/elementFeatures/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "01ce6fb92ad57d943a72f4bde2034f8940bdfdc36dbfa404bdc322c719b9cd45",
-      "size_bytes": 4640
+      "sha256": "93830af7893d88743d84653060970c8f6af7b54a3cbdef925033ded1a569ab0d",
+      "size_bytes": 5049
     },
     {
       "disposition": "include",
@@ -242,8 +235,8 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/expectedCoverage/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "32942fe0668c89f2ea9bb39ef43797135216384a626d59bf91b026543db653e8",
-      "size_bytes": 5224
+      "sha256": "39454a4b0c78e77a7f8451e332322e5fc1d6a6387a08ca7e06e4a0ac3ccff3e2",
+      "size_bytes": 5609
     },
     {
       "disposition": "include",
@@ -256,85 +249,85 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/marginal/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "a80407a2e28326332dab476cdb0824760d65022010d1db9120ef85a7ceb1c4e0",
-      "size_bytes": 874
+      "sha256": "1318a4d73b94d711cadf09532bea44daf889678603eec700c3afbf525c95a3f0",
+      "size_bytes": 761
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/decls/marginal/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "a0fc749b84b7641c7232a2191bc25c2b39839ea439cea2416be4d1a99bf4c85f",
-      "size_bytes": 3884
+      "sha256": "a6af992e6ea261c1dde5d7921639245e6ce614927ede0b8fa591215c0ba9421b",
+      "size_bytes": 4301
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/index.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "a8e7dca7bd44da4fa2f345260502d5eb4a757b6583b5243218af4a124c2a5d60",
-      "size_bytes": 1015
+      "sha256": "f71362de3770e719444eebb96746ced49c7e9c5adf7fb82aa6e82b0e7aa3962e",
+      "size_bytes": 879
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/rounds/round_0fc80f51e95f4c1a84583564600b66c6.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "bbb4d879527ed3ee48c25b91030dd0f3f2432edf730da6ba2e0651ff47a52aac",
-      "size_bytes": 1851
+      "sha256": "83f7798ae94564d8f9a8d0062886a6424eb69555069f65d3ac9fbb6b44cd0a2e",
+      "size_bytes": 1825
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/rounds/round_4c27d2d9b872485ba4dbf498c3b25094.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "4f732555c83985122ba10cc3e7bc108447f82d8156c8adebcccbe5ec950c18c6",
-      "size_bytes": 1689
+      "sha256": "5d15fd262005baf936c38dc356245aa16c2c0af1ef619621c5ec11db9baad025",
+      "size_bytes": 1663
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/rounds/round_66c57263cc454f4992121f0bc517d9fe.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "d77862f20062fe25f606a5a3faac17b84be0a3bc80701c26ebadf6cc0e390ac2",
-      "size_bytes": 2042
+      "sha256": "7b5b26f9712db12d0e44d5598f1062cce6c01c98e7b67e018cf8ad20de5a3e54",
+      "size_bytes": 1976
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/rounds/round_9d1c1ae1994a4cc3bb7dfe364048269c.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "55d4c62873be6671b1be55e2b9b678b29fad7661cbd04be0c07300a067493406",
-      "size_bytes": 1939
+      "sha256": "1ee2c7360de081beb59dbf3d8e3fb1c2da76a92eb37e15b7f1090d9488c405a9",
+      "size_bytes": 1909
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/rounds/round_cc77283a781a4568b5d69edf3fe88e50.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "cf94d6f5b44899041a8db2201b41d9baedc7a100e4c8dae0380d3dd4d6b745e6",
-      "size_bytes": 1722
+      "sha256": "0a15a1448a9bee904b855ed807abcaacd0a232df7f35e10b51c873f58c7d5560",
+      "size_bytes": 1695
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/rounds/round_ce23b4d93f554ad6a047bb1a3171eb50.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "a0f025a8a7baa7ad5260f8174d44ae584fb7e85ebada530b2fc563db443f84bf",
-      "size_bytes": 1908
+      "sha256": "9e321212e4bfbe00b440e14fbc70374450d7176f8383798c17d7a12d0d984f56",
+      "size_bytes": 1882
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/rounds/round_d3db5b699b814e1ba18aaa0b935e8b44.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "c5b53b9080c241785a6e47ac058e216ba7f3610177761cf4645720393fb61a05",
-      "size_bytes": 1681
+      "sha256": "30730005c07a2cc46d2eb9a5690658645a8c155b18b15c85d561e68d75feeb3c",
+      "size_bytes": 1648
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/rounds/round_d823d9a4859347089f5be99ff2bd14a6.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "dd3b76f209929a1a295d07d1e78013fd8002f7fdf525446514b72766f765b8d2",
-      "size_bytes": 2347
+      "sha256": "6d62e900413b9d62dc486e5b5294dd83e7a28edebc1585d6060bb386f5ef06db",
+      "size_bytes": 2321
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_0306ee8afbcf4cd0a0f3e1257f54ed7d/decl_graph/strategies/strategy_eeee9e64e4b940b7b1cc4bb6ae4e7056.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "d570d948d06600166a1f7bc7904abdc5779f8bb3c0c0ef1e332eb3e2734f80f1",
-      "size_bytes": 2205
+      "sha256": "a0f46ac49c37c398cb8ae2cf433b16f39fd8b68c36115ea4778d7b1b04442ed0",
+      "size_bytes": 2264
     },
     {
       "disposition": "include",
@@ -347,22 +340,22 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/contracts/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "17d2cbbfcd9201658fb54aae1d9bf1cfdb1ada1e685526b62a9513706d0c764d",
-      "size_bytes": 5820
+      "sha256": "db90590e6bd92067aac6b0fa22a48c5f8f5e4974b372f053b112c6dd500a8eb5",
+      "size_bytes": 5888
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/contracts/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "5c436fe2f3d5bd5b024e502bcf9f2ede61b6c94ea98c6c76351352328e09f224",
-      "size_bytes": 6587
+      "sha256": "07909f06257b14cca6a44df11dfe27db94184f3307b3a4b29f843147cd87c661",
+      "size_bytes": 6526
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/contracts/3.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "1acd554d8c14d17f1634f023ee94b10beea891c4b8ea92e42f36851d62ba4d81",
-      "size_bytes": 6690
+      "sha256": "e843eb997cefe81c8b64c62296627ae21be2afb0a5f196c2714055ad76263ecd",
+      "size_bytes": 6639
     },
     {
       "disposition": "include",
@@ -375,22 +368,22 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/decl_graph/decls/finite_pairwise_coverage_gap/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "1c92d5082c2bdfd9cbd36b9a2187b86f8be1c40e3d61f2f4f3b079c7533c638d",
-      "size_bytes": 17366
+      "sha256": "ad3c3abf4ba7ee80b531f16c2ec3a52f8b458f1a1853c3457cbdbe46de04a4e2",
+      "size_bytes": 17840
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/decl_graph/decls/finite_pairwise_coverage_gap/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "d0bcf96b579b20300e894d426631b92e48a9b8c3ad79f0db28ab951f57e19284",
-      "size_bytes": 17506
+      "sha256": "f140172bf11f4d241655bfa5fa45fa2652b5f2b02cf4d64642d6c75d34c807c0",
+      "size_bytes": 18364
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/decl_graph/decls/finite_pairwise_coverage_gap/revisions/3.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "32d654eee7faba8d71fec833ed0402179052d025b8a1171a104240ef192eb428",
-      "size_bytes": 17874
+      "sha256": "dcf7bfb246f5a8d029ac98488ad4af082c7842cf9079a557e5d817094a7307c9",
+      "size_bytes": 18416
     },
     {
       "disposition": "include",
@@ -403,71 +396,71 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/decl_graph/decls/strict_ratio_comparison/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "c66b71fe2ce9c481862640a4cc001176a4a735a6e172f60cbf2cbd395461fe8f",
-      "size_bytes": 8921
+      "sha256": "ded56c3b9bbe5412b99638122c701c10c3de6ac841435597758a81aea93b1d8d",
+      "size_bytes": 9798
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/decl_graph/index.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "3d5c713fae11dd4787c95dcd7732e141df6fc439690d92550cee25bd505b46d4",
-      "size_bytes": 759
+      "sha256": "bd6538c1d5463bbc841a6f3c5fa038791bed1dc5860fd186a09c0b985253208a",
+      "size_bytes": 625
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/decl_graph/rounds/round_338811fc016c4d1cb5de662808df0e67.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "605a8842b6571b6cd0a0cbdbad3909fe276a533c607223858ae2b425142f79f3",
-      "size_bytes": 2130
+      "sha256": "b2a9d9fc983597a1f8fa692825a2469fbb3b7213083fb850772a2c40c53bde70",
+      "size_bytes": 1951
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/decl_graph/rounds/round_39b5a09b3b2146b79f326ec8dbdaf8a7.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "2a08325277ec3b486f438f8d17a3113946f7e69ce92630ecf92f188f3a19d4d3",
-      "size_bytes": 1702
+      "sha256": "d8485826e3f9d87e6e7675ab9b1053e173dbb810a86b4f2d0cc0c18f19b1cee2",
+      "size_bytes": 899
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/decl_graph/rounds/round_9f9ca6ae74724fbeb1f204b37c47fca4.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "05c2daf53277ffd3341d81c71e04b4cc3f667b40b798c1080f4a92b505d5f411",
-      "size_bytes": 1947
+      "sha256": "fa0c1766e4cd3853feedfe849c6c02ee559254ef3be8700ffdbaecbe8ae16444",
+      "size_bytes": 1796
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/decl_graph/rounds/round_ae05295245794ed9a7b240ac45dc6cc1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "64519a4541a73502c75403f9092895cf7cd9bd6a70f2ae09db02954420fc41bd",
-      "size_bytes": 2063
+      "sha256": "8d26699c04d78f7ab2926d9c92926678d462102906b16e8327ae23354c4bdec3",
+      "size_bytes": 1880
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/decl_graph/rounds/round_f80280d85ff84e7c8eebddfe1189d7fe.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "7838d319c1f3f765b22047ba2b99c9124443042c6734c550d1402549f85bee9e",
-      "size_bytes": 2167
+      "sha256": "5c0e5e2e522fbdda3c647ec29e034f2318fe5ed8b8573f1deccdc03a9300e080",
+      "size_bytes": 1999
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/decl_graph/strategies/strategy_1cf3c175ea9942bf8c1f7644ec976941.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "2d462aced0fe645514ed0619f66fb92dc82579bf21539a7f198a203337f9d641",
-      "size_bytes": 1614
+      "sha256": "910ff5d826a46f11bea33d26e62d640babf1096731b231deff04a542da1b29df",
+      "size_bytes": 1571
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/decl_graph/strategies/strategy_2636bb4023a14dd789404674cf0b570f.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "c8a3889e3ae3dbc474ee23a8580cbbad37756b8d2e50262380c111991920c1aa",
-      "size_bytes": 1629
+      "sha256": "e0db8ba13f053470f4f0e542fd06fd33f06b882c57764eb56a476972da61d887",
+      "size_bytes": 1611
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_1033de8cefb743ae83057dfa8f09766c/decl_graph/strategies/strategy_5a06b4a2743c4954aa94a8db4d08dbe0.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "86fc0be8ec5a7b1ea05dddcf313a613021c9d94c77d2aaeabae8616670d9e7cc",
-      "size_bytes": 1439
+      "sha256": "a1507f3849675f4931f696eebe03eef57d44c704b0fe3a825fab17338db53c09",
+      "size_bytes": 1364
     },
     {
       "disposition": "include",
@@ -480,8 +473,8 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/contracts/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "e3f92fe55e28dea3a09e5a8abdb4f5eaba9b69bbd88bf0701d9e41e46ff0e952",
-      "size_bytes": 14052
+      "sha256": "34b06eb4c89162e34c4317d7c7dfd15021d641a0c29de269a6bbafe883c446a3",
+      "size_bytes": 14108
     },
     {
       "disposition": "include",
@@ -494,15 +487,15 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/coverage_le_dualValue/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "e26a9a57a06eec6a2451a2a42a3c1efe3140f9e46a3616a3e7eeab26c67cf2cb",
-      "size_bytes": 1245
+      "sha256": "c208538bdf0e6d46871d9bf1b090a4df6954657559c4ac459f3cdc7b69103615",
+      "size_bytes": 937
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/coverage_le_dualValue/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "e2b78df483018ac3566a294490f4bd3b6e219658ec47e667b7ea2f617a962c37",
-      "size_bytes": 19067
+      "sha256": "22431f69d698a22899ea6219a564f422ecad9eb07644bdabf1732c1b2443184d",
+      "size_bytes": 18760
     },
     {
       "disposition": "include",
@@ -515,15 +508,15 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/dualConstant/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "0c797dee864bd0bd0638018bf63c1c7cd10fd97c53b69b7cd9ad8dd57bd26c54",
-      "size_bytes": 813
+      "sha256": "03eab7cb35c514e11c6881032d104a87d4485fc9ad11570d45ba07135f62e394",
+      "size_bytes": 703
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/dualConstant/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "fdfa4c42364b5efe1670c19925247e2a9dccf9b0252635b4f141362deb77233c",
-      "size_bytes": 3357
+      "sha256": "7595e2cfb870fd33c1bcbc322cca3502c74bce4cbcc7dd92167e587f15ea807e",
+      "size_bytes": 3801
     },
     {
       "disposition": "include",
@@ -536,15 +529,15 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/dualPairCoeff/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "beaf3d08f50d398039639f645acfa8255949be5c66aaa5ed6f4a59e720912342",
-      "size_bytes": 898
+      "sha256": "09c6f7bd4805a2bd6aaef5aacb345b62022cbbc5d6569d8fa307f1dadc6c8c4e",
+      "size_bytes": 785
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/dualPairCoeff/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "c4771095ebcdc4044de261eb7ffd662b800bb113963b56022c3e2b640e403f84",
-      "size_bytes": 4956
+      "sha256": "a3308dbf3b4a23d3015d80c99b0c74688a00f49bc05068df235a9ec0f54037fd",
+      "size_bytes": 5430
     },
     {
       "disposition": "include",
@@ -557,15 +550,15 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/dualSingletonCoeff/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "a1d6f02c91ccb35243851015ba25fd8e2c30f84418eb6ba24c587742213b55b8",
-      "size_bytes": 815
+      "sha256": "abdb150185b6e89c911a30cb2c5d1c998ea3ce75d30dc70f2cbd2faba8e9958c",
+      "size_bytes": 734
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/dualSingletonCoeff/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "6ab7e3f67df483672f02391d91882e1839d12c189861dd2392505b9870126a9d",
-      "size_bytes": 4278
+      "sha256": "a04b42b8311ec2196f956ede45bf0911b224dce658a5505f1eede9226effd58a",
+      "size_bytes": 4761
     },
     {
       "disposition": "include",
@@ -578,15 +571,15 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/dualValue/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "d9a2dcbd1123df08aa81398f09aeadb95b6ae9978dafbbec6a77cb9a01a4b15b",
-      "size_bytes": 1039
+      "sha256": "9d20194f7c47ff71369628201ac00d15ac60157325eda1e3f44e8bf088a9ca75",
+      "size_bytes": 852
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/dualValue/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "a8c4140a65b22c751aa5d686898a06029083a5eb0a2552d84fa357d83d84c6e2",
-      "size_bytes": 6156
+      "sha256": "61d63ec67cedf6a8d2d1483dfe4d82026130a484ea8c2caa7bc3378eddc36c17",
+      "size_bytes": 6518
     },
     {
       "disposition": "include",
@@ -599,8 +592,8 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/expectedCoverage_le_weightedDual/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "27f2030709d3026be88ec74ce70efa95c05f82c8e32b7edb764eb970af0f1d95",
-      "size_bytes": 14820
+      "sha256": "4376263364f388bd3f458c19b6d0efc250d326fe44a55adf0b87718e6a14a9dc",
+      "size_bytes": 15830
     },
     {
       "disposition": "include",
@@ -613,8 +606,8 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/independentWeight/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "e578a42f34d01156f9b3b8a8d785bc88aeea068ad79ea94d19c8219c8dffa061",
-      "size_bytes": 4897
+      "sha256": "499babc1f46f41e7a8c9bb66dbb9bb543b5696a3613fe242340a83a6e00248fa",
+      "size_bytes": 5226
     },
     {
       "disposition": "include",
@@ -627,15 +620,15 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/independentWeight_pairwiseFeasible/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "886fff8c4eb1137e5297473329f32c4aeaf1ab49a382096a87a88df26d456d8e",
-      "size_bytes": 24193
+      "sha256": "bf292ae6d50b583c4791cf3b45d9751cc2196d41c22f6f9a24cc98f59f6ef724",
+      "size_bytes": 24603
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/independentWeight_pairwiseFeasible/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "b343e712069928c2bd1a436835282bb6d65cd191cd764a27920c8f254d2fbf1c",
-      "size_bytes": 25292
+      "sha256": "c7cf8d79c52ee7ae6dd03c3c3f44cbca12be43e9eb05b6961776c77d3bba07ca",
+      "size_bytes": 26276
     },
     {
       "disposition": "include",
@@ -648,8 +641,8 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/pairwise_upper_bound_479_160/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "e18817e4346ae455b4b8c563293d279f2b40af3db6cff0f4f496f30cecf304e8",
-      "size_bytes": 14655
+      "sha256": "e1594f664ba9a433b14abe066d0caf6ed30c298f4739ecb3af885a5159e515b9",
+      "size_bytes": 15017
     },
     {
       "disposition": "include",
@@ -662,85 +655,85 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/decls/weightedDual_eq_479_160/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "cb604e1c5d549f8bc739db3e5172e071448b650f91cd1899cab2a5400bcbf09f",
-      "size_bytes": 25388
+      "sha256": "15208d9be7a04f58ed01c90e993d8897ed80bda2ed19c8a48a0c5008f61b7e82",
+      "size_bytes": 26260
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/index.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "24a57b074ee720f150ff7fa4bb20e35e0ec8d1027172f9855f347992573a236b",
-      "size_bytes": 1072
+      "sha256": "e50226345cf880c39528ebed7f634cef16faba10d4720a3800f5af418838565d",
+      "size_bytes": 934
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/rounds/round_1d7945004ef44a34b5c391fb417042fe.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "50aaf82ba017666997429980d8b141daad65c113a6f7890d14b8c2eaf571718a",
-      "size_bytes": 2018
+      "sha256": "f0779c81327d4f5af58134108ed7fbfc07f184e7f1b9ad226b274910b2c7c1ea",
+      "size_bytes": 1988
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/rounds/round_46adb7547b714952ab498fb611f43544.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "a316066706cecd0d1dd39c506a8bd8c0856e9ac50f928937fcabd039189dc750",
-      "size_bytes": 1666
+      "sha256": "20029f8ca5a36f4699289ca444a65d91b79dacc63f87f7345fcf73473c5e033f",
+      "size_bytes": 1604
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/rounds/round_470256ec849e4ca1954ec33977dc75a0.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "ce0bb6f9df142371b88a3255da1da5ee0e91e5175eb51e61da5ba0e8547bc34d",
-      "size_bytes": 1927
+      "sha256": "09964d682254bedaebd7c4afc3f3bc9101a6098741f44f4327ddaa3e6cfeb75e",
+      "size_bytes": 1876
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/rounds/round_654e9b030e5c4fe1aab33f397cb69115.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "38108d790fd14362184d21ff17cc0aa7a79ef7766dc0d7915c9d7613b426494b",
-      "size_bytes": 1615
+      "sha256": "9fbdd97de2b0d878d591f2892c337109a1778a2beded1d61d89a554d91ff6627",
+      "size_bytes": 1512
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/rounds/round_66dd7394b36b43a283b346190fa83f1a.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "8197428790448a08742631b41ea24fc2d1f519b8462a216c1b9d45ae34d81a15",
-      "size_bytes": 1752
+      "sha256": "0cebc018b5048fdc5496c582dd73f2d080b40c2ca3c1cfe54a4c2668769a95ff",
+      "size_bytes": 1642
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/rounds/round_89382fc73e724416912c2f7107375b83.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "092f06dfa2f9408772148c350318b81d34b769d1dae605939d149e792247af33",
-      "size_bytes": 1862
+      "sha256": "22968c25346c639498e2c923dd6e391b35adcf0c3c375d80879d15e0faa4cee4",
+      "size_bytes": 1840
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/rounds/round_b6947c9da0e94cbfa6eb4c0c1d69ec57.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "c77969e3513a52e9df68c7834699e47f03efd539369b3af7eeeeccc46becc52a",
-      "size_bytes": 1836
+      "sha256": "8e0a120aa4195b14712cb1f06d593692cbf18384749bb9b2f82d0dc0cd08bbe5",
+      "size_bytes": 1810
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/rounds/round_d1923e8e2a144cfc985070b8fc28d6b9.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "3c33ae03b17c38e7888375df4d0dd05f11c175113c7072cf4421ad76bd5c1422",
-      "size_bytes": 1654
+      "sha256": "4577324755287b14907b52383bbd61e8833ebea3d0f9f786cd2d3290aa569327",
+      "size_bytes": 1607
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/rounds/round_e32304b6306b4fc9b88ee9a268c419cd.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "5d2c032c982981e3810824b46d045d4b6a642ce951917943f14f4c8bdeea658c",
-      "size_bytes": 1778
+      "sha256": "65279e1660b94e310a1f8710186fe621b13ca3f358537d281f354c3dc444f0bd",
+      "size_bytes": 1752
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_61f9b23a8e064e68b9038ddd4ca3591c/decl_graph/strategies/strategy_fddb4422361e4cd698dba5e52c62472e.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "39f5d0d3c05647d8bd87b37e0992eb2371803f827a39f938448b3d657650a06a",
-      "size_bytes": 2254
+      "sha256": "6645a0b81e7ee78f0002dfac6e47db12215f0ff48c75bab382b19d712e165c3a",
+      "size_bytes": 2151
     },
     {
       "disposition": "include",
@@ -753,15 +746,15 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_a537c514b7314f238396ee95f1031914/contracts/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "69d83727ca7dd3cfcdeb7ed9b4b1964b2c796a6d4930552778276eac8075d4a4",
-      "size_bytes": 4754
+      "sha256": "0d0055a83a84987e87d2e3c88cc54b5d1b282cfdeb366bc4bcf01fabfb949d30",
+      "size_bytes": 4745
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_a537c514b7314f238396ee95f1031914/contracts/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "fa1a899e8bd6eb4673adfbdc54b3d4bc10de629eb39b09d41e22aa190ddb99f7",
-      "size_bytes": 4718
+      "sha256": "d4fc85ddd110c09ea7f2ceffeecbae8468bc569061722ba2515816d9ab544abf",
+      "size_bytes": 4709
     },
     {
       "disposition": "include",
@@ -774,8 +767,8 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/contracts/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "6cd2ad196b096780d829702393e13785b2dea4a73f19fdc5a464ceaeb36e36dd",
-      "size_bytes": 6510
+      "sha256": "589822ec41cc861df2dee51eeeb64d369fa8a4709d31548038df2a4679024728",
+      "size_bytes": 6577
     },
     {
       "disposition": "include",
@@ -788,8 +781,8 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/decls/coverage_le_four/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "e5792981a0fec8707626984fabf0b692e6d3fd2542e38a73f67ca0b354d0e26f",
-      "size_bytes": 12930
+      "sha256": "bf4be05f4aba666ff43afca0e5ea8dfd716fc62ea0ac6a3fd928c9202c8fb688",
+      "size_bytes": 13865
     },
     {
       "disposition": "include",
@@ -802,8 +795,8 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/decls/unrestrictedWitness/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "ac2b4f9f10dcba7f298cfb42bcc4491361c305607954313786c1d0b6a1c97061",
-      "size_bytes": 5377
+      "sha256": "43deca87388624b5b55031a9d57c01c7c285bb649cc845d716b3a6b17d444fca",
+      "size_bytes": 5803
     },
     {
       "disposition": "include",
@@ -816,15 +809,15 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/decls/unrestrictedWitness_feasible/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "814e8642ba8c38552eeee55886d5260675a2231ab4ee1e88c5feaa1b5052a88f",
-      "size_bytes": 18672
+      "sha256": "faa005e70530cc38a53d64d5c4f855edd3da17ff0cd15d123d7c472fe66eefe1",
+      "size_bytes": 19745
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/decls/unrestrictedWitness_feasible/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "6f1d601c7c0d6de08e2c654205c0de40f4d0a7e6a3930e85a7497f352510e620",
-      "size_bytes": 18189
+      "sha256": "bd663fbe13c15ef7cfbc6a1a9f1ffcb47c2da70924e9159fa31ff4f2b367b56f",
+      "size_bytes": 19101
     },
     {
       "disposition": "include",
@@ -837,15 +830,15 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/decls/unrestrictedWitness_value/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "688633d726f331dc884e5e2a7d4e9635278e22ac10febae48652dd40ec70eefd",
-      "size_bytes": 16892
+      "sha256": "dc4f1cd09dbb15d970398e66ecd7d11594023fdaad7ff7c9a2f067d6fb5d6585",
+      "size_bytes": 17962
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/decls/unrestrictedWitness_value/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "e9f9badee8a3d364490cd19ec99ed8c1ec2ea08e47e8ead8554d55a6e33011de",
-      "size_bytes": 16625
+      "sha256": "f17a36a1c070921a6a4242550e67f4915ded8c5d776a7dad299cfd69d7c9255b",
+      "size_bytes": 17550
     },
     {
       "disposition": "include",
@@ -858,71 +851,71 @@
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/decls/unrestricted_optimum_four/revisions/1.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "ba2cc56cfa2cec7ebd55e282246fbc86f34535e7529de362c54c1674ad3a62c9",
-      "size_bytes": 18139
+      "sha256": "ceefcb208ba020f580e9d7a36392e45437a2f3b5c2bc5ae6bf8889e680ff70f7",
+      "size_bytes": 19164
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/decls/unrestricted_optimum_four/revisions/2.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "61abf840455af6be7682468e0c09bdc15f5e1404dcd376d03f19a6eac93d28de",
-      "size_bytes": 17474
+      "sha256": "e22b90413a58ba58140edabdc5206d9554bc5e57af3f2aba139f55a2dadf4e07",
+      "size_bytes": 18338
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/index.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "15a4751f77d16df4682010c6e51a3eba995e6c14db6e403354a4894d9683c048",
-      "size_bytes": 811
+      "sha256": "03f9492e9a5c2277c2d5ff3ef35146928b036c19bf576f70bfcb4d560ea21c24",
+      "size_bytes": 668
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/rounds/round_15f14d739a89448ab3ba59403e8847c4.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "512c7c22437ab3670a416d29ae0415b5d4d796ce2a5e4855995e29f29cc427b8",
-      "size_bytes": 2362
+      "sha256": "b69640829dc71acb956d546776e22b86e3672308a7ee15fa4a61bde07ca54172",
+      "size_bytes": 2334
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/rounds/round_1c6721d767c34b6fb82ff2c34eb95121.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "0518cb1f365b879ff54bfc35db6545348577ed3ffb5a6a36011b3eb0b16047b9",
-      "size_bytes": 2145
+      "sha256": "f29f31df77ee77b7fcbe58ae2e575c1a4e18c9295fbd6599223742dd437e0f54",
+      "size_bytes": 2121
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/rounds/round_5013cbd4ca7443b9b35b0f103464dcbd.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "3435596206c684dea870854ded2457c28c91169cad2d9bb6eb52b79b91be232b",
-      "size_bytes": 2019
+      "sha256": "9bea7d82f3cc6971f504237e4a995f0e8ecf7a31efc442e108f66a1b71efd572",
+      "size_bytes": 1959
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/rounds/round_b60ca0da24684ecbb09d4e07ad022c0b.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "97eca926f0e7bf0143f71fddd1b9b3034b94c1206c520a83669ceb3a75b14252",
-      "size_bytes": 1884
+      "sha256": "17c9b471d9c843f81910eb5515a5f0d8a91019d4565b0f08646cb3dc02a24dec",
+      "size_bytes": 1837
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/rounds/round_ca02c7bb44734e22998e022fc9934093.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "c630501914efda73f367fdd0b0e905f419609c6fa6b161e15eb73c089fead3bb",
-      "size_bytes": 1706
+      "sha256": "fa49c0e12b53d9dabe4d914af01eddd5d8d6a9a9cfa7ee7f384549b3a1e6e76a",
+      "size_bytes": 1673
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/rounds/round_f0e49cae9f8247b7bd97a762ab4770de.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "0724076c3bc454ea8a55e86b610aac90b7b5ba7283775f70ab9b62c5dae84f5a",
-      "size_bytes": 1749
+      "sha256": "47b29e2eac9f0d24bd99b03c195991f2509a3f042432ebe76fd7087ce23f92ce",
+      "size_bytes": 1699
     },
     {
       "disposition": "include",
       "path": ".lean_constellation/nodes/node_b98522425d024185ab7f23f7d3c30560/decl_graph/strategies/strategy_279b788bd56a42eb8181f2bf2c760a52.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "cddc58d9e01167c2b2b305c84c3377ba1047df47848046c99261599bf9984a40",
-      "size_bytes": 2000
+      "sha256": "618cca953b966e3f80979e5bfa306341785fcf0852419058479ad3c8244090da",
+      "size_bytes": 2028
     },
     {
       "disposition": "include",
@@ -935,8 +928,8 @@
       "disposition": "include",
       "path": ".lean_constellation/preparation_input.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "7621cb4e0861fba4b325804fde40f8dc9cd7ff709cedc7c0b5d7bdd39925cb22",
-      "size_bytes": 2544
+      "sha256": "892d1adf385e7d313586611569578a4c655e63bf10212c248a6cdf43684e47ad",
+      "size_bytes": 2530
     },
     {
       "disposition": "exclude",
@@ -963,8 +956,8 @@
       "disposition": "include",
       "path": ".lean_constellation/repo.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "59ba7af6c85768a12713e4f858c0c34d66c0354a8665cb59c1746a32da41f5bc",
-      "size_bytes": 494
+      "sha256": "7379e94c61f5c1c8e1b0ca9b81b7585c3ebeccc0cb4fdc4673d7e21d4db88ae0",
+      "size_bytes": 487
     },
     {
       "disposition": "include",
@@ -1040,8 +1033,8 @@
       "disposition": "include",
       "path": ".lean_constellation/source_corpus/manifest.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "627038438fec48576cf347ce3a1a71d53c36c518bf2ad4afcfa15e6be336378a",
-      "size_bytes": 1786
+      "sha256": "0a496ef5cd78e1767b4223705959090d553e30251fed3c2ad3852870e7a16e26",
+      "size_bytes": 1744
     },
     {
       "disposition": "include",
@@ -1376,15 +1369,36 @@
       "disposition": "include",
       "path": "README.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "6ba9bbc5f973cd5974522e88608769e642a06a4f09be27e91bf7efcbae28ab32",
-      "size_bytes": 4305
+      "sha256": "1158526a0577bf61930bb6b0a43ecc8fd076fd038c8b435859925a84da35f41a",
+      "size_bytes": 4338
+    },
+    {
+      "disposition": "include",
+      "path": "RELEASE_CANDIDATE.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "f26ede545b85d485b67b5c648b553fad1b404227bd869b54755df482644edeff",
+      "size_bytes": 1580
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/DECLARATION_GRAPH.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "5fed032955129f16689cfc38a1064228853dd2ccbb1ce8f0814971284ca86d42",
+      "size_bytes": 4853
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/EXTERNAL_DEPENDENCIES.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "e0c34f291b9f4efcb0d5109f5ff408910bb668edf80c166271319166a54400e2",
+      "size_bytes": 274
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/PUBLIC_API.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "3d17b91b410b009579e8b4fbf80673a30b8a4be30909f72e49d2cc677283b15d",
-      "size_bytes": 2078
+      "sha256": "cdb9e3aea4f0ea800d6183c5433d66f1ea674a3fd17981eeeef0ca890ddca4b2",
+      "size_bytes": 2108
     },
     {
       "disposition": "include",
@@ -1392,6 +1406,13 @@
       "reason": "portable_project_or_business_truth",
       "sha256": "d291945f091d5b9988d61e625c4343b117d8943effb979a732eca2a304423879",
       "size_bytes": 3228
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/assets/declaration-graph.svg",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "c9971423cf018364c101e9d793e22139d135e54f154e3716a17d52af59846cbf",
+      "size_bytes": 67352
     },
     {
       "disposition": "include",
@@ -1416,150 +1437,248 @@
     },
     {
       "disposition": "include",
+      "path": "docs/lean-constellation/declaration-graph.json",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "67d321ca8d692fc6b20d2f0bca96cf4439635e9bcfb7a16ba99ac03b29e5e13b",
+      "size_bytes": 419560
+    },
+    {
+      "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-foundations-coverage-monotone.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "8f72ef723a0df6b0ef7eaaeb23836b5193a038105eeeec6677d15c90309f18e1",
-      "size_bytes": 3707
+      "sha256": "41f90fcfd2d17c1003a4f792bbf9a54181834fdfe8ae044bee74ac334bc523d9",
+      "size_bytes": 5463
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-foundations-coverage-submodular.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "e4f53beb852021debb41f63c3a1bef313f6bd6613a192d84bfda26f870267997",
-      "size_bytes": 5427
+      "sha256": "7edb6c9ffc0406395d0e1a28dffab9882411a104abf5b70bd99ee1a48530b297",
+      "size_bytes": 7585
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-foundations-coverage.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "e2f42027253a9a07277870c3575ae91eb138e4c915617e6435780b89b73dc0ca",
-      "size_bytes": 1631
+      "sha256": "16fd881db397417a4e229899f53b9df8a374b86621d0f9448901abe93548614d",
+      "size_bytes": 2015
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-foundations-element.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "6e2e1250941d96e138f34587716548b763b84fd0c98f8545f3cd46efc3f7f98d",
-      "size_bytes": 812
+      "sha256": "e6d2255ab311b43f8cfed3801e9c33c0294dc833ae5da55edc0e10ca484e355c",
+      "size_bytes": 1016
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-foundations-elementfeatures.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "881bf365782dac3d1c2f666de8c7ea161a2613dbbc51448435cef3a378ce45d5",
-      "size_bytes": 1618
+      "sha256": "f09c1630db4c76dd96423dee8dfb8f58a7eabc7769dffe5acc0fd63812d072d1",
+      "size_bytes": 1967
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-foundations-expectedcoverage.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "56f87551172e1779101d6183cfccd11f07cadaa2c560ff53585019f110dbf780",
-      "size_bytes": 1858
+      "sha256": "1ae8c798e59ceb6363676cc95a5dee4b5a32f41e3c00f140d435b8f267ba5e1d",
+      "size_bytes": 2259
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-foundations-feature.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "61a714b5e3cf31256dff30a6e44b8d516f3799cdea423aafb144e49f3b760e25",
-      "size_bytes": 814
+      "sha256": "69ea74c2477e7e7b33019a73dcff22f011bbf708319956fd7c5e32a818774d93",
+      "size_bytes": 1018
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-foundations-ispairwiseupperbound.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "3c3a2e7c3e437e814fc59a560f58621fa60dcfb1f5b0c7efd409a5a6be39e46d",
-      "size_bytes": 2147
+      "sha256": "8a0f393ba3b0e467332418828c87eddc80587984f03c7491021aee20cdcf14ca",
+      "size_bytes": 2658
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-foundations-isunrestrictedoptimum.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "4a739b01788f32c96c878c00ed7ae4a1d0b1f5dadd89bc006a7aa21b57546950",
-      "size_bytes": 2143
+      "sha256": "c443e66982eb8ca75ee85bdac0a57bcbc6658f9abd6f9f9c126533715af54e92",
+      "size_bytes": 2632
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-foundations-marginal.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "78371f8a28898c069783317ce833b3c6dce6b996f3ecb5c1a31598710fa98aea",
-      "size_bytes": 1307
+      "sha256": "9855105c7f5132cc8f2529b533df4e8e48a6c53fc2704895a8e238cfd1e37d8f",
+      "size_bytes": 1598
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-foundations-marginalfeasible.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "3bd4756ad69990e73035a57898c717542b306494047b051bcc414bc27a0daf5b",
-      "size_bytes": 2133
+      "sha256": "4440b52047ac6a6d210779e48019df5401b258c98979dc30a48813756c38986a",
+      "size_bytes": 2693
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-foundations-pairwisefeasible.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "e040c47ea9c893865c258a46991bd75c99786f7c71b91ab311b633adfff689f7",
-      "size_bytes": 2287
+      "sha256": "e3b33cc97d7e234fc97a00fa00960d02e0e8e118de1c1b718f6bb02dcf485284",
+      "size_bytes": 2762
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-foundations-weight.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "50fd9bfeb23f1aab13d51e541d60019f686f3e09ddfbe9f408ba79f379bcb07d",
-      "size_bytes": 1263
+      "sha256": "5e7a7154a58efad8b001547f5091ac6474ea7a6ccb6218f0961df0345a53d9fb",
+      "size_bytes": 1600
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-gaptheorem-finite-pairwise-coverage-gap.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "4cba1f7605fbb2fd7f30e0b60d6e11cf7d8e384d9f8796d06b5bf5bc483f85d4",
-      "size_bytes": 5168
+      "sha256": "a3c5fd7a914e57947d5a1c5c25ac346f7b6eaba8bd281512a244cfa5c791d5d8",
+      "size_bytes": 8380
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-gaptheorem-strict-ratio-comparison.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "c3c3f6f85f65940b93f9bc9e210cc2811b387b9d9e560e629ac646b392c2f032",
+      "size_bytes": 3193
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-pairwisebound-coverage-le-dualvalue.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "2c769a475586fc90ec80559d8d4d3ac4e7754d3e359877951c14f94c50f5717a",
+      "size_bytes": 9213
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-pairwisebound-dualconstant.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "5e0240a81d8f7c4e57040638bbb808b070199a3e9fb07c573ae15bf301436b4e",
+      "size_bytes": 1183
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-pairwisebound-dualpaircoeff.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "677fcd8587f9b84f572b50580e09dfdad76fc2804898118b1b050d6663c38407",
+      "size_bytes": 2527
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-pairwisebound-dualsingletoncoeff.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "3fc7a61d92d07c5cbd0ac21d7805a218f6044e29f2df89bcf71f435fd72a0310",
+      "size_bytes": 1846
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-pairwisebound-dualvalue.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "789828933be230aed61e4a019af67fcd30d6b2c9f2685143afbae4edb1acd983",
+      "size_bytes": 2681
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-pairwisebound-expectedcoverage-le-weighteddual.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "11ea3e29df36d727715245e552620af51cf3991d949c7aac9e93001be3cf16e7",
+      "size_bytes": 7682
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-pairwisebound-independentweight-pairwisefeasible.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "180fb48892a98b4a19485e7400ef3bf125480f90c6520280d7dad55bc8157c89",
+      "size_bytes": 16493
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-pairwisebound-independentweight.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "9eb0826c3baf9ba38d334366220b4576146a549a41a8c264069d87231af8d2bb",
+      "size_bytes": 2176
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-pairwisebound-pairwise-upper-bound-479-160.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "0191620beda40a66493608f6b87e57815edfcbb9450d5cf86d63615937d01693",
-      "size_bytes": 4751
+      "sha256": "9dcab59932c37ddd92b7d17ae76fa1b33bf6b2e669285dc78f159ed7a4e7070c",
+      "size_bytes": 6933
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-pairwisebound-weighteddual-eq-479-160.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "71762e999b2ddd0977c432c5d4bcbe4f471f2834a0e2bc69e5b43346f6c1977f",
+      "size_bytes": 16101
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-unrestrictedoptimum-coverage-le-four.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "6721348914f1cd3353e3b934be046800c624eb1188260708e429f71a67dffcac",
-      "size_bytes": 3567
+      "sha256": "cbc2c182c417f4e4b0af08dbf69c9705612bcd3d5f1181b2c9782a97755fc166",
+      "size_bytes": 5654
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-unrestrictedoptimum-unrestricted-optimum-four.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "edc61ac2428b820cc360dffa9066fe754bc10f13831ce345b31f2e89534d1ef9",
-      "size_bytes": 6170
+      "sha256": "945b1190d2b68f9f62589c776675863ee441f127911728e6985068660534d951",
+      "size_bytes": 8799
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-unrestrictedoptimum-unrestrictedwitness-feasible.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "f876b27d029b3fcc37fe0313a209dbb6db81cf06dece394835dc4287d18fad57",
+      "size_bytes": 9498
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/declarations/main-unrestrictedoptimum-unrestrictedwitness-value.md",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "5744b22098620fafec6e83bc7f000f3a2837a05c82f2a66c436779a80c772c37",
+      "size_bytes": 8098
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/declarations/main-unrestrictedoptimum-unrestrictedwitness.md",
       "reason": "portable_project_or_business_truth",
-      "sha256": "936348436766867da56721d37a1b99b6bc1631811596092ca21342157bc276ca",
-      "size_bytes": 1724
+      "sha256": "d92ee53fc643a62247af3c984ee5977344519de95ae062caed47944a263e0b51",
+      "size_bytes": 2165
+    },
+    {
+      "disposition": "include",
+      "path": "docs/lean-constellation/external-dependencies.json",
+      "reason": "portable_project_or_business_truth",
+      "sha256": "ecd4c08a2cb48b8beb16d7d380cd3db6f6425f4ec94ea9022c98858c2252b688",
+      "size_bytes": 89
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/provenance.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "5dce5145db3d850745a590e5bf3052af5ae0f6cd8aa0096d386fa13ad400d398",
-      "size_bytes": 1246
+      "sha256": "616cc8dfdaf1c8e7ab0fad4e7519f8992b944dcd8e99b5c552d5752792e35a4f",
+      "size_bytes": 1283
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/public-api.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "0208bd5360f2fa5a93fcc3227879abe61a7bb80d7fa29e3e06fe7ee6d3332a74",
-      "size_bytes": 25051
+      "sha256": "ddc7879f82a314edca115bef63d64524ef7b043c1c24118510c719ba3fdde83c",
+      "size_bytes": 92422
     },
     {
       "disposition": "include",
       "path": "docs/lean-constellation/public-boundaries.json",
       "reason": "portable_project_or_business_truth",
-      "sha256": "2be8f0c488132bc9ad20e0ae66fc4e31a63d9b3d5e641522ff99246df383ebb2",
-      "size_bytes": 54314
+      "sha256": "e60fdb6cd9c78bfe396bddd2bf88ae265b07e28dda960bb0583ced316c29749d",
+      "size_bytes": 207314
     },
     {
       "disposition": "include",
@@ -1590,11 +1709,11 @@
       "recursive": true
     }
   ],
-  "generated_at": "2026-07-29T19:49:22Z",
-  "included_file_count": 225,
-  "included_size_bytes": 1415038,
-  "manifest_digest": "adc0a16c6a218ac8fe56c3c5a43d452cec930b26cd11f78b8345da0dcd875ec9",
+  "generated_at": null,
+  "included_file_count": 242,
+  "included_size_bytes": 1813773,
+  "manifest_digest": "1c18744b1e093c0406bcbeff365c928949e0b95c0216acd96f391fcab343dc48",
   "repo_key": "FinitePairwiseCoverageGap",
   "schema_version": 2,
-  "summary": "Publication manifest includes 225 files (1415038 bytes)."
+  "summary": "Publication manifest includes 242 files (1813773 bytes)."
 }

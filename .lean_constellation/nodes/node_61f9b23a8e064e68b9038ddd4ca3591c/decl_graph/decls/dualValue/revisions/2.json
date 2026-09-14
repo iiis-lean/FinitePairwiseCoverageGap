@@ -1,16 +1,10 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [
-      "dualConstant",
-      "dualPairCoeff",
-      "dualSingletonCoeff"
-    ],
     "base_revision": 1,
     "kind": "update",
-    "objective": "Advance the planning-only revision to a declared definition: for every S : Finset Element, dualValue S is dualConstant plus the sum of dualSingletonCoeff on members of S and dualPairCoeff on exactly the contained ordered pairs i < j. Preserve SourceIndex b_0014 and source lines 46–58 exactly. Consume the accepted declared providers dualConstant, dualSingletonCoeff, and dualPairCoeff; feed coverage_le_dualValue and the later universal weighted weak-duality/moment calculation leading to the required IsPairwiseUpperBound (479/160) interface.",
+    "objective": "`dualValue` is the declared definition for every `S : Finset Element`: `dualConstant` plus the sum of `dualSingletonCoeff` on members of `S` and `dualPairCoeff` on exactly the contained ordered pairs `i < j`, as specified by SourceIndex b_0014 / source lines 46–58. It depends on the accepted declared providers `dualConstant`, `dualSingletonCoeff`, and `dualPairCoeff`, and supplies `coverage_le_dualValue` plus the later universal weighted weak-duality/moment calculation leading to `IsPairwiseUpperBound (479/160)`.",
     "require_target_state_satisfied": true,
-    "reset_to_state": "planned",
+    "start_stage": "statement_nl",
     "summary": "Completed: dualValue reached declared state with accepted natural-language specification and compiler-passed formal definition. It faithfully evaluates the b_0014 certificate on every Finset Element using the already declared constant, singleton, and ordered-pair coefficient providers. As a definition it is graph_proved-policy satisfied and now supplies the complete statement dependency for coverage_le_dualValue.",
     "target_state": "declared"
   },
@@ -74,6 +68,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 0 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "733cc3baf7b7fd264612f3c06c8a1a5df80e64fefb24dd40bcdf1c98654b8529",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -91,7 +90,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualValue",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Defs/dualValue.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualConstant\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualPairCoeff\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualSingletonCoeff\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `dualValue`\n\nFor every `S : Finset Element`, `dualValue S` is the left-hand side λ(S) of the pairwise dual\nconstraint: `dualConstant` plus the sum of `dualSingletonCoeff i` over `i ∈ S`, plus the sum of\n`dualPairCoeff i j` over exactly those ordered pairs `i, j ∈ S` with `i < j`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 46–58\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.PairwiseBound::dualConstant` → `dualConstant` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualConstant`\n- `Main.PairwiseBound::dualPairCoeff` → `dualPairCoeff` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualPairCoeff`\n- `Main.PairwiseBound::dualSingletonCoeff` → `dualSingletonCoeff` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualSingletonCoeff`\n-/\nnoncomputable def dualValue (S : Finset Element) : ℝ :=\n  dualConstant +\n    (∑ i ∈ S, dualSingletonCoeff i) +\n      ∑ i ∈ S, ∑ j ∈ S, if i < j then dualPairCoeff i j else 0\n"
     },

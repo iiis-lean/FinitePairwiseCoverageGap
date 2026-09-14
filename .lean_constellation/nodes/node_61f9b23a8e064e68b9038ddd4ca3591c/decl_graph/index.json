@@ -24,10 +24,8 @@
     "round_d1923e8e2a144cfc985070b8fc28d6b9",
     "round_e32304b6306b4fc9b88ee9a268c419cd"
   ],
-  "schema_version": 1,
+  "schema_version": 2,
   "strategy_ids": [
     "strategy_fddb4422361e4cd698dba5e52c62472e"
-  ],
-  "summary": "DeclGraph index rebuilt for Main.PairwiseBound: 10 decls, 9 rounds, 1 strategies.",
-  "updated_at": "2026-07-27T10:43:11Z"
+  ]
 }

@@ -1,12 +1,11 @@
 {
-  "change_summaries": {},
   "committed_at": "2026-07-29T16:01:53Z",
   "created_at": "2026-07-29T15:48:17Z",
   "execution_completed_at": "2026-07-29T15:59:54Z",
   "execution_reason": "Decl-owned Lean file was modified after the latest capture.",
   "execution_result_kind": "failed",
   "node_path": "Main.UnrestrictedOptimum",
-  "objective": "Prove the contract interface theorem unrestricted_optimum_four with exact conclusion IsUnrestrictedOptimum 4 from the accepted attaining witness package and universal coverage bound.",
+  "objective": "The contract interface theorem `unrestricted_optimum_four` has exact conclusion `IsUnrestrictedOptimum 4`, based on the accepted attaining witness package and universal coverage bound.",
   "plan_closeout_acknowledged_at": "2026-07-29T16:01:53Z",
   "plan_closeout_acknowledged_by": "a_a2d50c8badaf485395c6fd44278811c5",
   "result_kind": "failed",

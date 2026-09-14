@@ -6,8 +6,8 @@
     "round_f80280d85ff84e7c8eebddfe1189d7fe"
   ],
   "node_path": "Main.GapTheorem",
-  "objective": "Repair finite_pairwise_coverage_gap revision 2 in place so revision 3 uses the source-exact local declaration command `theorem finite_pairwise_coverage_gap : ...` with the verbatim formal_target.lean:57–63 header inside `namespace FinitePairwiseCoverageGap` / `end FinitePairwiseCoverageGap`, while retaining the compiler-confirmed full identity, proof, flat key, visibility, and graph-proved closure.",
-  "rationale": "Contract version 3 and the current managed Lean file show one representation mismatch: revision 2 uses a qualified theorem command and normalized binder syntax. The theorem is otherwise proved with complete dependencies, so one targeted Statement Formal plus proof revalidation round is sufficient; no preparation, new declaration, alias, duplicate, or dependency change is needed.",
+  "objective": "`finite_pairwise_coverage_gap` revision 3 uses the source-exact local declaration command `theorem finite_pairwise_coverage_gap : ...` with the verbatim formal_target.lean:57–63 header inside `namespace FinitePairwiseCoverageGap` / `end FinitePairwiseCoverageGap`, while retaining the compiler-confirmed full identity, proof, flat key, visibility, and graph-proved closure.",
+  "rationale": "Contract version 3 and the current managed Lean file identify one representation mismatch: revision 2 uses a qualified theorem command and normalized binder syntax. The theorem otherwise has proved status and complete dependencies; the source-exact local declaration route changes representation only, with no new declaration, alias, duplicate, or dependency change.",
   "status": "closed",
   "strategy_id": "strategy_1cf3c175ea9942bf8c1f7644ec976941",
   "summary": "Completed the single-round source-exact header repair without changing semantics, dependencies, visibility, or graph shape; the physical projection and interface binding now satisfy contract version 3."

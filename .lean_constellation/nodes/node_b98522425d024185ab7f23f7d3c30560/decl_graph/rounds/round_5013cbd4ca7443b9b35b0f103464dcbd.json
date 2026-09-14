@@ -1,12 +1,11 @@
 {
-  "change_summaries": {},
   "committed_at": "2026-07-29T15:34:07Z",
   "created_at": "2026-07-29T15:27:24Z",
   "execution_completed_at": "2026-07-29T15:32:13Z",
   "execution_reason": null,
   "execution_result_kind": "success",
   "node_path": "Main.UnrestrictedOptimum",
-  "objective": "Retry only Proof Formal capture for unrestrictedWitness_feasible and unrestrictedWitness_value from their accepted proof_planned revisions, preserving both formal statements and proof plans unchanged.",
+  "objective": "The Proof Formal capture for `unrestrictedWitness_feasible` and `unrestrictedWitness_value` preserves both formal statements and proof plans and reaches proved state.",
   "plan_closeout_acknowledged_at": "2026-07-29T15:34:07Z",
   "plan_closeout_acknowledged_by": "a_a2d50c8badaf485395c6fd44278811c5",
   "result_kind": "success",

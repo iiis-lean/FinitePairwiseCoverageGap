@@ -1,4 +1,4 @@
-[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md) · [Complete graph](../DECLARATION_GRAPH.md)
 
 # `coverage_submodular`
 
@@ -10,9 +10,50 @@ Union/intersection submodularity of explicit feature-union coverage.
 - State: `proved`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
-- Formal code: final proof projection
+- Compatibility `formal_code`: final proof projection
 
-## Lean code
+## Statement NL
+
+For arbitrary `S T : Finset Element`, `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T`.
+
+## Statement Formal
+
+```lean
+-- lean-constellation: managed-imports-begin
+import FinitePairwiseCoverageGap.Main.Foundations.Prelude
+import FinitePairwiseCoverageGap.Main.Foundations.Defs.Element
+import FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage
+-- lean-constellation: managed-imports-end
+
+-- lean-constellation: declaration-source-begin
+
+/--
+# lean-constellation target: `coverage_submodular`
+
+For arbitrary `S T : Finset Element`, `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage
+T`.
+
+## Sources
+
+- Source `article/sections/02_counterexample.tex`, lines 11–16
+
+## Statement dependencies
+
+- `Main.Foundations::Element` → `Element` from
+  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`
+- `Main.Foundations::coverage` → `coverage` from
+  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`
+-/
+theorem coverage_submodular (S T : Finset Element) :
+    coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T := by
+  sorry
+```
+
+## Proof NL
+
+Unfold `coverage` and put `A = S.biUnion elementFeatures`, `B = T.biUnion elementFeatures`, and `C = (S ∩ T).biUnion elementFeatures`. Rewrite the covered features of `S ∪ T` with `Finset.union_biUnion`, obtaining `A ∪ B`. Use `Finset.biUnion_subset_biUnion_of_subset_left elementFeatures Finset.inter_subset_left` and the analogous lift of `Finset.inter_subset_right` to show `C ⊆ A` and `C ⊆ B`; combine them into `C ⊆ A ∩ B`. By `Finset.card_mono`, `C.card ≤ (A ∩ B).card`. Add `(A ∪ B).card` to both sides, then rewrite the right-hand side using `Finset.card_inter_add_card_union A B` to get `(A ∪ B).card + C.card ≤ A.card + B.card` (commuting addends if required). Cast this natural inequality to `ℝ` using `Nat.cast_le` and normalize cast addition, yielding exactly `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T`. This uses `elementFeatures : Element → Finset Feature` throughout and adds no hypotheses.
+
+## Proof Formal
 
 ```lean
 -- lean-constellation: managed-imports-begin

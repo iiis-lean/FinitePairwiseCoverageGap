@@ -16,10 +16,8 @@
     "round_ca02c7bb44734e22998e022fc9934093",
     "round_f0e49cae9f8247b7bd97a762ab4770de"
   ],
-  "schema_version": 1,
+  "schema_version": 2,
   "strategy_ids": [
     "strategy_279b788bd56a42eb8181f2bf2c760a52"
-  ],
-  "summary": "DeclGraph index rebuilt for Main.UnrestrictedOptimum: 5 decls, 6 rounds, 1 strategies.",
-  "updated_at": "2026-07-29T16:07:49Z"
+  ]
 }

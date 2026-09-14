@@ -1,15 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [
-      "Element",
-      "Feature"
-    ],
     "base_revision": null,
     "kind": "create",
-    "objective": "From SourceIndex b_0018 / b_0013 and formal_target.lean lines 9–15, preserve the exact zero-based assignment 0↦{0,1}, 1↦{0,1,2,3}, 2↦{2,3}, 3↦{0,2}, and the remaining Fin 5 element 4↦{1,3}. It consumes Element and Feature and is the sole data input to coverage and both structural proofs.",
+    "objective": "`elementFeatures` is the exact zero-based assignment from SourceIndex b_0018 / b_0013 and formal_target.lean lines 9–15: 0↦{0,1}, 1↦{0,1,2,3}, 2↦{2,3}, 3↦{0,2}, and Fin 5 element 4↦{1,3}. It depends on Element and Feature and is the sole data input to coverage and both structural proofs.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "DeclGraphRoundFlow failed for change elementFeatures@rev:1.",
     "target_state": "declared"
   },

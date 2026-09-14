@@ -53,7 +53,5 @@
       "path": "Main.UnrestrictedOptimum"
     }
   ],
-  "rebuilt_at": "2026-07-29T19:41:20Z",
-  "schema_version": 1,
-  "summary": "Indexed 5 nodes; 5 active paths."
+  "schema_version": 2
 }

@@ -1,10 +1,12 @@
 {
+  "adapter_upstream": null,
   "build_command": "lake build",
-  "generated_at": "2026-07-29T19:49:22Z",
+  "generated_at": null,
   "lean_toolchain": "leanprover/lean4:v4.32.0",
   "release_id": "release_a10eaec4358641bea524acdf0c33717e",
+  "repo_format": "native",
   "repo_key": "FinitePairwiseCoverageGap",
-  "schema_version": 1,
+  "schema_version": 2,
   "semantic_manifest_digest": "b66f33c411ca6cc9c2da0fac4c7a52e9b74520721b2031d85489baff57a28d9b",
   "source_files": {
     "README.md": "3d93250b877683a40a450706b0d5b1f72488935e0a9dffdd517c9fa12da84390",

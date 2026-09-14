@@ -1,4 +1,4 @@
-[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md) · [Complete graph](../DECLARATION_GRAPH.md)
 
 # `unrestricted_optimum_four`
 
@@ -10,9 +10,52 @@ The unrestricted optimum for the prescribed marginal vector is exactly four.
 - State: `proved`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
-- Formal code: final proof projection
+- Compatibility `formal_code`: final proof projection
 
-## Lean code
+## Statement NL
+
+Theorem `unrestricted_optimum_four` states exactly `IsUnrestrictedOptimum 4`.  It asserts both that some `θ : Weight` is marginal-feasible and has `expectedCoverage θ = 4`, and that every `θ : Weight` satisfying `MarginalFeasible θ` has `expectedCoverage θ ≤ 4`; no additional assumptions are imposed.
+
+## Statement Formal
+
+```lean
+-- lean-constellation: managed-imports-begin
+import FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude
+-- lean-constellation: managed-imports-end
+
+-- lean-constellation: declaration-source-begin
+
+/--
+# lean-constellation target: `unrestricted_optimum_four`
+
+Theorem `unrestricted_optimum_four` states exactly `IsUnrestrictedOptimum 4`.  It asserts both that
+some `θ : Weight` is marginal-feasible and has `expectedCoverage θ = 4`, and that every `θ : Weight`
+satisfying `MarginalFeasible θ` has `expectedCoverage θ ≤ 4`; no additional assumptions are imposed.
+
+## Sources
+
+- Source `article/sections/02_counterexample.tex`, lines 37–42
+
+## Statement dependencies
+
+- `Main.Foundations::IsUnrestrictedOptimum` → `IsUnrestrictedOptimum` from
+  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`
+-/
+theorem unrestricted_optimum_four : IsUnrestrictedOptimum 4 := by
+  sorry
+```
+
+## Proof NL
+
+Unfold `IsUnrestrictedOptimum` and construct its two required conjuncts without adding assumptions.
+
+For attainment, choose `unrestrictedWitness`.  The already proved theorem `unrestrictedWitness_feasible` supplies `MarginalFeasible unrestrictedWitness`, and the already proved theorem `unrestrictedWitness_value` supplies `expectedCoverage unrestrictedWitness = 4`.
+
+For the universal conjunct, introduce arbitrary `θ : Weight` and `hθ : MarginalFeasible θ`.  Unpack `hθ` into the all-set nonnegativity fact `h_nonneg : ∀ s, 0 ≤ θ s`, the total-mass equation `h_mass : (∑ s, θ s) = 1`, and the remaining marginal component (which is not needed for this upper bound).  Unfold `expectedCoverage`.  For every `s : Finset Element`, apply the proved universal bound `coverage_le_four s : coverage s ≤ 4` and multiply it on the left by the nonnegative factor `θ s` via `mul_le_mul_of_nonneg_left`.  Lift these termwise inequalities with `Finset.sum_le_sum`.
+
+The resulting right-hand finite sum is `∑ s, θ s * 4`.  Rewrite it as `(∑ s, θ s) * 4` using `Finset.sum_mul`, substitute `h_mass`, and normalize to `4`.  This proves `expectedCoverage θ ≤ 4` for the original arbitrary marginal-feasible weight, preserving the exact quantifier and conclusion direction.
+
+## Proof Formal
 
 ```lean
 -- lean-constellation: managed-imports-begin

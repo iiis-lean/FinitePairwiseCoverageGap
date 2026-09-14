@@ -1,12 +1,11 @@
 {
-  "change_summaries": {},
   "committed_at": "2026-07-26T12:52:01Z",
   "created_at": "2026-07-26T12:43:45Z",
   "execution_completed_at": "2026-07-26T12:52:01Z",
   "execution_reason": "DeclGraphRoundFlow finished with completed.",
   "execution_result_kind": "success",
   "node_path": "Main.Foundations",
-  "objective": "Advance the second dependency-ready b_0018 layer now that Element and Feature are accepted: declare unrestricted real Weight, the exact elementFeatures assignment, and the prescribed rational marginal vector. These three declarations depend only on already declared base types and independently feed the later coverage and b_0017 predicate layers.",
+  "objective": "The second dependency-ready b_0018 layer consists of unrestricted real Weight, the exact elementFeatures assignment, and the prescribed rational marginal vector. These three declarations depend only on the Element and Feature base types and independently feed the later coverage and b_0017 predicate layers.",
   "plan_closeout_acknowledged_at": "2026-07-26T12:52:01Z",
   "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
   "result_kind": "success",

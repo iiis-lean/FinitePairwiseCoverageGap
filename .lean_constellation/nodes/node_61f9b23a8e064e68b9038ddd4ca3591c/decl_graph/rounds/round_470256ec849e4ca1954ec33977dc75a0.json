@@ -1,12 +1,11 @@
 {
-  "change_summaries": {},
   "committed_at": "2026-07-26T14:39:48Z",
   "created_at": "2026-07-26T14:30:42Z",
   "execution_completed_at": "2026-07-26T14:39:48Z",
   "execution_reason": "DeclGraphRoundFlow finished with completed.",
   "execution_result_kind": "success",
   "node_path": "Main.PairwiseBound",
-  "objective": "Create the three independent exact rational coefficient definitions from SourceIndex b_0014: λ₀, singleton coefficients, and ordered-pair coefficients. Later rounds will define subset evaluation and prove b_0016 pointwise majorization after these providers are accepted.",
+  "objective": "The three independent exact rational coefficient definitions from SourceIndex b_0014 are λ₀, the singleton coefficients, and the ordered-pair coefficients; they provide the accepted inputs for subset evaluation and b_0016 pointwise majorization.",
   "plan_closeout_acknowledged_at": "2026-07-26T14:39:48Z",
   "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
   "result_kind": "success",

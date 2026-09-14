@@ -1,16 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [
-      "Element",
-      "Weight",
-      "coverage"
-    ],
     "base_revision": null,
     "kind": "create",
-    "objective": "From SourceIndex b_0017 and formal_target.lean lines 28–30, preserve exactly `expectedCoverage (θ : Weight) : ℝ := ∑ s : Finset Element, θ s * coverage s`. Consume accepted Element, unrestricted Weight, and coverage plus the verified Fintype/BigOperators support; do not restrict or renormalize θ. This definition serves IsUnrestrictedOptimum and IsPairwiseUpperBound.",
+    "objective": "`expectedCoverage` is the definition from SourceIndex b_0017 and formal_target.lean lines 28–30: `expectedCoverage (θ : Weight) : ℝ := ∑ s : Finset Element, θ s * coverage s`. Its finite Fintype/BigOperators support uses Element, unrestricted Weight, and coverage; θ remains unrestricted and unnormalized. It serves IsUnrestrictedOptimum and IsPairwiseUpperBound.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "Completed successfully through Statement NL and Statement Formal. Public definition expectedCoverage with Lean name expectedCoverage now exactly sums θ s * coverage s over every Finset Element for arbitrary real Weight. It reached declared state and is proof-policy satisfied with accepted Element, Weight, and coverage dependencies; it is ready for both optimization predicates.",
     "target_state": "declared"
   },
@@ -64,6 +57,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 0 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "d968ff7da66e963328b38af0261081675b1cae3c73ffc7617e554d7c28ae04e7",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -81,7 +79,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/expectedCoverage.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `expectedCoverage`\n\nDefine `expectedCoverage (θ : Weight) : ℝ` as `∑ s : Finset Element, θ s * coverage s`, the finite\nweighted sum over every finite subset of `Element`; `θ` remains an arbitrary real-valued weight\nfunction and is neither restricted nor renormalized.\n\n## Sources\n\n- Source `formal_target.lean`, lines 28–30\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n-/\ndef expectedCoverage (θ : Weight) : ℝ :=\n  ∑ s : Finset Element, θ s * coverage s\n"
     },

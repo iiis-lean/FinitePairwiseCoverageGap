@@ -1,17 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [
-      "coverage_le_dualValue",
-      "dualValue"
-    ],
-    "anticipated_statement_dep_names": [
-      "dualValue"
-    ],
     "base_revision": null,
     "kind": "create",
-    "objective": "Prove that for every θ : Weight, PairwiseFeasible θ implies expectedCoverage θ ≤ ∑ S : Finset Element, θ S * dualValue S. This is the first step of SourceIndex b_0015 / source lines 110–112: multiply the unrestricted pointwise theorem coverage_le_dualValue by each nonnegative θ S and sum over the full Finset Element domain. Consume dualValue and the proved coverage_le_dualValue plus only the nonnegativity field of PairwiseFeasible; do not assume restricted support, nonnegative subsets only, or any equality shortcut. Feed the universal 479/160 upper-bound theorem.",
+    "objective": "`expectedCoverage_le_weightedDual` states that for every `θ : Weight`, `PairwiseFeasible θ` implies `expectedCoverage θ ≤ ∑ S : Finset Element, θ S * dualValue S`, the first step of SourceIndex b_0015 / source lines 110–112. It multiplies the unrestricted pointwise theorem `coverage_le_dualValue` by each nonnegative `θ S` and sums over the full `Finset Element` domain, using only the nonnegativity field of `PairwiseFeasible`; no restricted support, nonnegative-subset restriction, or equality shortcut is assumed. It supplies the universal 479/160 upper-bound theorem.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "Completed: expectedCoverage_le_weightedDual reached proved state with accepted statement and Lean proof. For every PairwiseFeasible θ it sums the unrestricted coverage_le_dualValue inequality using θ's pointwise nonnegativity over the full subset domain. It is graph_proved-policy satisfied and preserves the universal real-valued feasible domain.",
     "target_state": "proved"
   },
@@ -88,6 +80,11 @@
           "schema_version": 2,
           "summary": "Command completed successfully"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "bb3ebd087315fd67388d74affcd39f3c6c9f2b230b6410e82d2c36454e23d290",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "proof_formal",
         "scan": {
@@ -105,7 +102,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.expectedCoverage_le_weightedDual",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Theorems/expectedCoverage_le_weightedDual.lean",
+          "repo_kind": "native",
+          "stage": "proof"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualValue\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.coverage_le_dualValue\nimport Mathlib.Algebra.Order.BigOperators.Group.Finset\nimport Mathlib.Algebra.Order.GroupWithZero.Defs\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `expectedCoverage_le_weightedDual`\n\nFor every `θ : Weight`, if `PairwiseFeasible θ`, then `expectedCoverage θ ≤ ∑ S : Finset Element, θ\nS * dualValue S`.  The sum ranges over the full `Finset Element` domain; the statement imposes no\nsupport restriction and does not replace the inequality with an equality.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 110–112\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::PairwiseFeasible` → `PairwiseFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n- `Main.PairwiseBound::dualValue` → `dualValue` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualValue`\n\n## Proof outline\n\nFix an arbitrary `θ : Weight` and `hθ : PairwiseFeasible θ`.  Unfold `expectedCoverage`, so the left\nside is the full finite sum `∑ S : Finset Element, θ S * coverage S`.  Use only the nonnegativity\ncomponent of feasibility, namely `hθ.1.1 S : 0 ≤ θ S`; no mass or moment equality is used here.\n\nFor each `S` in the full `Finset Element` domain, apply the already proved unrestricted theorem\n`coverage_le_dualValue S` and multiply it on the left by the nonnegative real `θ S` using\n`mul_le_mul_of_nonneg_left`.  This gives `θ S * coverage S ≤ θ S * dualValue S` for every subset,\nincluding the empty subset and every subset outside any prospective support.  Apply\n`Finset.sum_le_sum` to these termwise inequalities and fold the left sum back to `expectedCoverage\nθ`.  The resulting right sum is exactly `∑ S : Finset Element, θ S * dualValue S`, establishing the\nrequested inequality without an equality shortcut or a restriction on `θ`.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 110–112\n\n## Proof dependencies\n\n- `Finset.sum_le_sum` from `Mathlib.Algebra.Order.BigOperators.Group.Finset`\n- `mul_le_mul_of_nonneg_left` from `Mathlib.Algebra.Order.GroupWithZero.Defs`\n- `Main.Foundations::PairwiseFeasible` → `PairwiseFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible`\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n- `Main.PairwiseBound::coverage_le_dualValue` → `coverage_le_dualValue` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.coverage_le_dualValue`\n- `Main.PairwiseBound::dualValue` → `dualValue` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualValue`\n-/\ntheorem expectedCoverage_le_weightedDual (θ : Weight) (hθ : PairwiseFeasible θ) :\n    expectedCoverage θ ≤ ∑ S : Finset Element, θ S * dualValue S := by\n  unfold expectedCoverage\n  apply Finset.sum_le_sum\n  intro S _\n  exact mul_le_mul_of_nonneg_left (coverage_le_dualValue S) (hθ.1.1 S)\n"
     },
@@ -201,6 +206,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 1 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "77ede7f7a6a267408626f536f3a25764ae2844e918bdb5416bc97ba578a853a7",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -225,7 +235,15 @@
           "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.expectedCoverage_le_weightedDual",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Theorems/expectedCoverage_le_weightedDual.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualValue\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `expectedCoverage_le_weightedDual`\n\nFor every `θ : Weight`, if `PairwiseFeasible θ`, then `expectedCoverage θ ≤ ∑ S : Finset Element, θ\nS * dualValue S`.  The sum ranges over the full `Finset Element` domain; the statement imposes no\nsupport restriction and does not replace the inequality with an equality.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 110–112\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::PairwiseFeasible` → `PairwiseFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n- `Main.PairwiseBound::dualValue` → `dualValue` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualValue`\n-/\ntheorem expectedCoverage_le_weightedDual (θ : Weight) (hθ : PairwiseFeasible θ) :\n    expectedCoverage θ ≤ ∑ S : Finset Element, θ S * dualValue S := by\n  sorry\n"
     },

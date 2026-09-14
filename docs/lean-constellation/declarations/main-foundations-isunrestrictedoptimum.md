@@ -1,4 +1,4 @@
-[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md) · [Complete graph](../DECLARATION_GRAPH.md)
 
 # `IsUnrestrictedOptimum`
 
@@ -10,9 +10,13 @@ Attainment and universal optimality over marginal-feasible weights.
 - State: `declared`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
-- Formal code: final statement projection
+- Compatibility `formal_code`: final statement projection
 
-## Lean code
+## Statement NL
+
+Define `IsUnrestrictedOptimum (q : ℝ)` as the conjunction that there exists `θ : Weight` with `MarginalFeasible θ` and `expectedCoverage θ = q`, and that every arbitrary-real `θ : Weight` satisfying `MarginalFeasible θ` obeys `expectedCoverage θ ≤ q`. Thus the predicate requires attainment and the universal upper-bound conclusion.
+
+## Statement Formal
 
 ```lean
 -- lean-constellation: managed-imports-begin
@@ -49,6 +53,14 @@ def IsUnrestrictedOptimum (q : ℝ) : Prop :=
   (∃ θ : Weight, MarginalFeasible θ ∧ expectedCoverage θ = q) ∧
     ∀ θ : Weight, MarginalFeasible θ → expectedCoverage θ ≤ q
 ```
+
+## Proof NL
+
+Not recorded.
+
+## Proof Formal
+
+Not recorded.
 
 ## Statement dependencies
 

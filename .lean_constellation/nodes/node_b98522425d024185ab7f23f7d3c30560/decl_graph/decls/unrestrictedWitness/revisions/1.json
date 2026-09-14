@@ -1,12 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [],
     "base_revision": null,
     "kind": "create",
-    "objective": "Implement the exact three-point distribution from committed SourceIndex b_0012 and article/sections/02_counterexample.tex lines 24–39 as a complete-domain Weight (a function on every Finset Element): assign 3/10 to the zero-based support {0,2}, 7/20 to {1}, 7/20 to {3,4}, and 0 to every other set. Consume the public Main.Foundations types Element and Weight. Preserve these exact supports and rational real weights; this stable construction is the lower input for later normalization, marginal-feasibility, expectedCoverage = 4, and public IsUnrestrictedOptimum 4 declarations.",
+    "objective": "`unrestrictedWitness : Weight` is the exact complete-domain three-point distribution from committed SourceIndex b_0012 and article/sections/02_counterexample.tex lines 24–39: it assigns `3/10` to the zero-based support `{0,2}`, `7/20` to `{1}`, `7/20` to `{3,4}`, and `0` to every other set. It depends on the public Main.Foundations types `Element` and `Weight`; these exact supports and rational real weights supply the lower input for normalization, marginal-feasibility, `expectedCoverage = 4`, and the public `IsUnrestrictedOptimum 4` declarations.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "Created the public definition unrestrictedWitness and accepted revision 1 at declared state. Its formal statement passed and implements the complete-domain Weight prescribed by SourceIndex b_0012, with nonzero weights only on {0,2}, {1}, and {3,4}; definition proof stages are inapplicable. The declaration is declared-level proof-policy satisfied and is ready to serve subsequent feasibility and value theorems.",
     "target_state": "declared"
   },
@@ -50,6 +47,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 0 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "4ce64f5f760791b4f6a00989315732de8cb46b8da458ec994addd5dce5ee9dc5",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -67,7 +69,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Defs/unrestrictedWitness.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `unrestrictedWitness`\n\nDefine `unrestrictedWitness : Weight` as the complete-domain weight function on every `S : Finset\nElement` by assigning `3 / 10` to the zero-based support set `{0, 2}`, `7 / 20` to `{1}`, and `7 /\n20` to `{3, 4}`; assign `0` to every other finite subset.  The three displayed values are rational\nreal weights.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 24–39\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n-/\nnoncomputable def unrestrictedWitness : Weight := fun S ↦\n  if S = {0, 2} then 3 / 10\n  else if S = {1} then 7 / 20\n  else if S = {3, 4} then 7 / 20\n  else 0\n"
     },
@@ -85,7 +95,7 @@
           "start_locator": null
         }
       ],
-      "text": "Define `unrestrictedWitness : Weight` as the complete-domain weight function on every `S : Finset Element` by assigning `3 / 10` to the zero-based support set `{0, 2}`, `7 / 20` to `{1}`, and `7 / 20` to `{3, 4}`; assign `0` to every other finite subset.  The three displayed values are rational real weights."
+      "text": "`unrestrictedWitness : Weight` is the complete-domain weight function on every `S : Finset Element`, with value `3 / 10` on the zero-based support set `{0, 2}`, value `7 / 20` on `{1}` and `{3, 4}`, and value `0` on every other finite subset. The three nonzero values are rational real weights."
     }
   },
   "status": "committed",

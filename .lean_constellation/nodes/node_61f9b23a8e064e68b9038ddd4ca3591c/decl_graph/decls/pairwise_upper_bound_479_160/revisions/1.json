@@ -1,17 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [
-      "expectedCoverage_le_weightedDual",
-      "independentWeight",
-      "independentWeight_pairwiseFeasible",
-      "weightedDual_eq_479_160"
-    ],
-    "anticipated_statement_dep_names": [],
     "base_revision": null,
     "kind": "create",
-    "objective": "Prove exactly `IsPairwiseUpperBound (479 / 160)` as required by the current node interface and contract. Preserve the Foundations consumer shape: first exhibit some θ : Weight with PairwiseFeasible θ using independentWeight and independentWeight_pairwiseFeasible; then prove for every θ : Weight, PairwiseFeasible θ → expectedCoverage θ ≤ 479/160 by composing expectedCoverage_le_weightedDual with weightedDual_eq_479_160. This is the node-owned upper-bound conclusion of SourceIndex b_0015 / source lines 110–125. Do not add assumptions, restrict feasible weights or supports, replace the exact rational, or include the out-of-scope unrestricted-optimum/final-conjunction result.",
+    "objective": "`pairwise_upper_bound_479_160` states exactly `IsPairwiseUpperBound (479 / 160)`: its first conjunct is witnessed by `independentWeight` and `independentWeight_pairwiseFeasible`, and its universal conjunct follows by composing `expectedCoverage_le_weightedDual` with `weightedDual_eq_479_160`. This is the node-owned upper-bound conclusion of SourceIndex b_0015 / source lines 110–125, with the full feasible domain, exact rational bound, no additional assumptions or conclusions, and no unrestricted-optimum/final-conjunction result.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "Completed: the public theorem pairwise_upper_bound_479_160 reached proved state with accepted statement and Lean proof of exactly IsPairwiseUpperBound (479/160). It supplies nonemptiness via independentWeight_pairwiseFeasible and the universal bound for every PairwiseFeasible θ via expectedCoverage_le_weightedDual and weightedDual_eq_479_160. It is graph_proved-policy satisfied and matches the required interface without extra assumptions or out-of-scope conclusions.",
     "target_state": "proved"
   },
@@ -82,6 +74,11 @@
           "schema_version": 2,
           "summary": "Command completed successfully"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "939a2ce282a5e5fad2d397bc1dd1fa57fffa10c33357a674c9950940f543302a",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "proof_formal",
         "scan": {
@@ -99,7 +96,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.pairwise_upper_bound_479_160",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Theorems/pairwise_upper_bound_479_160.lean",
+          "repo_kind": "native",
+          "stage": "proof"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.independentWeight\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.expectedCoverage_le_weightedDual\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.independentWeight_pairwiseFeasible\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.weightedDual_eq_479_160\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `pairwise_upper_bound_479_160`\n\n`pairwise_upper_bound_479_160` states exactly `IsPairwiseUpperBound (479 / 160)`: there exists a\n`Weight` that is `PairwiseFeasible`, and every `θ : Weight` satisfying `PairwiseFeasible θ` has\n`expectedCoverage θ ≤ 479 / 160`.  It asserts this for the full feasible domain, with the exact\nrational bound and no additional assumptions or conclusions.\n\n## Sources\n\n- Source `formal_target.lean`, lines 50–53\n- Source `article/sections/02_counterexample.tex`, lines 110–125\n\n## Statement dependencies\n\n- `Main.Foundations::IsPairwiseUpperBound` → `IsPairwiseUpperBound` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound`\n\n## Proof outline\n\nUnfold `IsPairwiseUpperBound (479 / 160)` into its two required conjuncts and prove exactly those\nconjuncts.\n\nFor feasible-domain nonemptiness, choose the accepted `independentWeight : Weight` as the witness\nand close `PairwiseFeasible independentWeight` with the already proved theorem\n`independentWeight_pairwiseFeasible`.\n\nFor the universal conjunct, fix an arbitrary `θ : Weight` and `hθ : PairwiseFeasible θ`.  Chain the\ntwo proved full-domain weak-duality facts:\n```lean\n  calc\n    expectedCoverage θ ≤ ∑ S : Finset Element, θ S * dualValue S :=\n      expectedCoverage_le_weightedDual θ hθ\n    _ = 479 / 160 := weightedDual_eq_479_160 θ hθ\n```\nThe first theorem uses the unrestricted pointwise dual majorization and feasibility nonnegativity;\nthe second evaluates the same full-domain weighted dual using the prescribed feasibility moments.\nHence the result applies to every arbitrary-real pairwise-feasible weight with the exact rational\n`479 / 160`.  No support restriction, extra assumption, unrestricted-optimum claim, or final\nconjunction is introduced.\n\n## Proof sources\n\n- Source `formal_target.lean`, lines 50–53\n- Source `article/sections/02_counterexample.tex`, lines 110–125\n\n## Proof dependencies\n\n- `Main.Foundations::IsPairwiseUpperBound` → `IsPairwiseUpperBound` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound`\n- `Main.PairwiseBound::expectedCoverage_le_weightedDual` → `expectedCoverage_le_weightedDual` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.expectedCoverage_le_weightedDual`\n- `Main.PairwiseBound::independentWeight` → `independentWeight` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.independentWeight`\n- `Main.PairwiseBound::independentWeight_pairwiseFeasible` → `independentWeight_pairwiseFeasible`\n  from `FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.independentWeight_pairwiseFeasible`\n- `Main.PairwiseBound::weightedDual_eq_479_160` → `weightedDual_eq_479_160` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.weightedDual_eq_479_160`\n-/\ntheorem pairwise_upper_bound_479_160 : IsPairwiseUpperBound (479 / 160) := by\n  refine ⟨⟨independentWeight, independentWeight_pairwiseFeasible⟩, ?_⟩\n  intro θ hθ\n  calc\n    expectedCoverage θ ≤ ∑ S : Finset Element, θ S * dualValue S :=\n      expectedCoverage_le_weightedDual θ hθ\n    _ = 479 / 160 := weightedDual_eq_479_160 θ hθ\n"
     },
@@ -128,7 +133,7 @@
           "start_locator": null
         }
       ],
-      "text": "Unfold `IsPairwiseUpperBound (479 / 160)` into its two required conjuncts and prove exactly those conjuncts.\n\nFor feasible-domain nonemptiness, choose the accepted `independentWeight : Weight` as the witness and close `PairwiseFeasible independentWeight` with the already proved theorem `independentWeight_pairwiseFeasible`.\n\nFor the universal conjunct, fix an arbitrary `θ : Weight` and `hθ : PairwiseFeasible θ`.  Chain the two proved full-domain weak-duality facts:\n```lean\n  calc\n    expectedCoverage θ ≤ ∑ S : Finset Element, θ S * dualValue S :=\n      expectedCoverage_le_weightedDual θ hθ\n    _ = 479 / 160 := weightedDual_eq_479_160 θ hθ\n```\nThe first theorem uses the unrestricted pointwise dual majorization and feasibility nonnegativity; the second evaluates the same full-domain weighted dual using the prescribed feasibility moments.  Hence the result applies to every arbitrary-real pairwise-feasible weight with the exact rational `479 / 160`.  No support restriction, extra assumption, unrestricted-optimum claim, or final conjunction is introduced."
+      "text": "`IsPairwiseUpperBound (479 / 160)` has two conjuncts. The feasible-domain nonemptiness conjunct is witnessed by `independentWeight : Weight`, whose `PairwiseFeasible` property is `independentWeight_pairwiseFeasible`. For arbitrary `θ : Weight` with `hθ : PairwiseFeasible θ`, `expectedCoverage_le_weightedDual θ hθ` gives `expectedCoverage θ ≤ ∑ S : Finset Element, θ S * dualValue S`, and `weightedDual_eq_479_160 θ hθ` identifies that sum with `479 / 160`. Thus the universal conjunct holds for every arbitrary-real pairwise-feasible weight with the exact rational bound, without support restrictions, extra assumptions, unrestricted-optimum claims, or a final conjunction."
     }
   },
   "revision": 1,
@@ -166,6 +171,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 1 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "023fc13dfa2deabe6ac2a38a23af1b19f721130766885a04ecbafe668c61f4dc",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -190,7 +200,15 @@
           "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.pairwise_upper_bound_479_160",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Theorems/pairwise_upper_bound_479_160.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `pairwise_upper_bound_479_160`\n\n`pairwise_upper_bound_479_160` states exactly `IsPairwiseUpperBound (479 / 160)`: there exists a\n`Weight` that is `PairwiseFeasible`, and every `θ : Weight` satisfying `PairwiseFeasible θ` has\n`expectedCoverage θ ≤ 479 / 160`.  It asserts this for the full feasible domain, with the exact\nrational bound and no additional assumptions or conclusions.\n\n## Sources\n\n- Source `formal_target.lean`, lines 50–53\n- Source `article/sections/02_counterexample.tex`, lines 110–125\n\n## Statement dependencies\n\n- `Main.Foundations::IsPairwiseUpperBound` → `IsPairwiseUpperBound` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound`\n-/\ntheorem pairwise_upper_bound_479_160 : IsPairwiseUpperBound (479 / 160) := by\n  sorry\n"
     },

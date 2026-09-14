@@ -112,7 +112,7 @@
   ],
   "mathlib_decls": [],
   "mathlib_modules": [],
-  "objective": "Prove the exact protected theorem statement without semantic drift by composing lower results and closing the rational comparison.",
+  "objective": "The contract targets the exact protected theorem statement without semantic drift, composed from lower results together with the strict rational comparison.",
   "owned_refs": [
     {
       "added_by": "coordinator",
@@ -144,5 +144,6 @@
   "status": "committed",
   "success_criteria": "The protected theorem is compiler-confirmed with the exact prepared header and a proof whose dependency closure is proved.",
   "summary": "Accepted ready contract v1. The private arithmetic helper and public theorem are proved with complete graph-proved dependency closure. Direct Lean inspection confirms the public theorem exactly preserves all five protected conjuncts, universal binders, constants, inequality directions, and strict ratio comparison; no unresolved prerequisite remains before Main scope export and root-interface binding.",
+  "task_completion_mode": "graph_proved",
   "version": 1
 }

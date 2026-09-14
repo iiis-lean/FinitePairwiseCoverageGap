@@ -1,4 +1,4 @@
-[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md) · [Complete graph](../DECLARATION_GRAPH.md)
 
 # `elementFeatures`
 
@@ -10,9 +10,13 @@ Exact feature set assigned to each of the five elements.
 - State: `declared`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
-- Formal code: final statement projection
+- Compatibility `formal_code`: final statement projection
 
-## Lean code
+## Statement NL
+
+Define `elementFeatures : Element → Finset Feature` by zero-based cases: element `0` maps to `{0, 1}`, `1` maps to `{0, 1, 2, 3}`, `2` maps to `{2, 3}`, `3` maps to `{0, 2}`, and `4` maps to `{1, 3}`.
+
+## Statement Formal
 
 ```lean
 -- lean-constellation: managed-imports-begin
@@ -48,6 +52,14 @@ def elementFeatures : Element → Finset Feature
   | 3 => {0, 2}
   | 4 => {1, 3}
 ```
+
+## Proof NL
+
+Not recorded.
+
+## Proof Formal
+
+Not recorded.
 
 ## Statement dependencies
 

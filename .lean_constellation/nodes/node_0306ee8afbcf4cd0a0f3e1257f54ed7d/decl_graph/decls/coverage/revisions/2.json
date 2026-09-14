@@ -1,16 +1,10 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [
-      "Element",
-      "Feature",
-      "elementFeatures"
-    ],
     "base_revision": 1,
     "kind": "update",
-    "objective": "Rebuild the previously unexecuted public b_0018/b_0013 definition from formal_target.lean lines 17–19 using accepted Element, Feature, and elementFeatures. Preserve exactly `coverage (s : Finset Element) : ℝ := ((s.biUnion elementFeatures).card : ℝ)` with no normalization or alternative representation. It supplies expectedCoverage and fixes the consumer object for coverage_monotone and coverage_submodular.",
+    "objective": "`coverage` is the b_0018/b_0013 definition from formal_target.lean lines 17–19: `coverage (s : Finset Element) : ℝ := ((s.biUnion elementFeatures).card : ℝ)` with no normalization or alternative representation. It depends on Element, Feature, and elementFeatures, supplies expectedCoverage, and is the consumer object for coverage_monotone and coverage_submodular.",
     "require_target_state_satisfied": true,
-    "reset_to_state": "planned",
+    "start_stage": "statement_nl",
     "summary": "Completed successfully through Statement NL and Statement Formal. Public definition coverage with Lean name coverage now exactly preserves the real coercion of `(s.biUnion elementFeatures).card` from b_0018/b_0013. It reached declared state and is proof-policy satisfied as a non-theorem with accepted Element, Feature, and elementFeatures closure. It is ready for expectedCoverage and both structural theorem statements/proofs.",
     "target_state": "declared"
   },
@@ -54,6 +48,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 0 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "cb95a5d3b55ce82b6b38d1fc7953986e6ec8fd834364498ccf73f9dc5738b763",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -71,7 +70,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/coverage.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage`\n\nDefine `coverage (s : Finset Element) : ℝ` as the real-valued cardinality `((s.biUnion\nelementFeatures).card : ℝ)` of the union of the feature sets assigned to the elements of `s`, with\nno normalization or alternative representation.\n\n## Sources\n\n- Source `formal_target.lean`, lines 17–19\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::elementFeatures` → `elementFeatures` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures`\n-/\ndef coverage (s : Finset Element) : ℝ :=\n  ((s.biUnion elementFeatures).card : ℝ)\n"
     },

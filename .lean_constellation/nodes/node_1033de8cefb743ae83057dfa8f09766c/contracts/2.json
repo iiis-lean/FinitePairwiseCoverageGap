@@ -112,7 +112,7 @@
   ],
   "mathlib_decls": [],
   "mathlib_modules": [],
-  "objective": "Repair only the final theorem's captured Lean identity while preserving its already accepted exact five-conjunct statement and proof: create the next revision so `Decl.name` remains flat `finite_pairwise_coverage_gap` but `lean_decl_name` compiler-confirms exactly `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap`, then prove and bind the existing interface under graph_proved.",
+  "objective": "The contract covers the final theorem's captured Lean identity exactly `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap`, with the accepted exact five-conjunct statement and proof, flat `Decl.name` `finite_pairwise_coverage_gap`, and graph_proved interface binding preserved.",
   "owned_refs": [
     {
       "added_by": "coordinator",
@@ -144,5 +144,6 @@
   "status": "committed",
   "success_criteria": "The protected theorem is compiler-confirmed with the exact prepared header and a proof whose dependency closure is proved.",
   "summary": "Accepted ready contract v2. Revision 2 preserves the exact proved five-conjunct theorem and compiler-confirms the required full Lean identity `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap`; it remains the flat Constellation declaration `finite_pairwise_coverage_gap`, introduces no alias or duplicate, and has complete graph-proved and public Statement closures. The root interface can now bind exactly.",
+  "task_completion_mode": "graph_proved",
   "version": 2
 }

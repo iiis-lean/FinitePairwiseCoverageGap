@@ -1,4 +1,4 @@
-[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md) · [Complete graph](../DECLARATION_GRAPH.md)
 
 # `coverage_monotone`
 
@@ -10,9 +10,49 @@ Monotonicity of explicit feature-union coverage under Finset inclusion.
 - State: `proved`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
-- Formal code: final proof projection
+- Compatibility `formal_code`: final proof projection
 
-## Lean code
+## Statement NL
+
+For arbitrary `S T : Finset Element`, if `S ⊆ T`, then `coverage S ≤ coverage T`.
+
+## Statement Formal
+
+```lean
+-- lean-constellation: managed-imports-begin
+import FinitePairwiseCoverageGap.Main.Foundations.Prelude
+import FinitePairwiseCoverageGap.Main.Foundations.Defs.Element
+import FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage
+-- lean-constellation: managed-imports-end
+
+-- lean-constellation: declaration-source-begin
+
+/--
+# lean-constellation target: `coverage_monotone`
+
+For arbitrary `S T : Finset Element`, if `S ⊆ T`, then `coverage S ≤ coverage T`.
+
+## Sources
+
+- Source `article/sections/02_counterexample.tex`, lines 11–16
+
+## Statement dependencies
+
+- `Main.Foundations::Element` → `Element` from
+  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`
+- `Main.Foundations::coverage` → `coverage` from
+  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`
+-/
+theorem coverage_monotone (S T : Finset Element) (h : S ⊆ T) :
+    coverage S ≤ coverage T := by
+  sorry
+```
+
+## Proof NL
+
+Unfold `coverage`, so the goal is the real coercion of the cardinalities of `S.biUnion elementFeatures` and `T.biUnion elementFeatures`. Apply `Finset.biUnion_subset_biUnion_of_subset_left elementFeatures h` to obtain the covered-feature inclusion from the hypothesis `h : S ⊆ T`. Apply `Finset.card_mono` to this inclusion. Finally use `Nat.cast_le` (or `exact_mod_cast`) to transfer the natural-cardinality inequality to `ℝ`, matching the accepted real-valued definition of `coverage`. The use of `elementFeatures : Element → Finset Feature` preserves the declared coverage object and needs no case analysis on the five elements.
+
+## Proof Formal
 
 ```lean
 -- lean-constellation: managed-imports-begin

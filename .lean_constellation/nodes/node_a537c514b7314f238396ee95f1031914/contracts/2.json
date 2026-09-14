@@ -98,25 +98,25 @@
         {
           "kind": "source",
           "ref": {
-            "end_line": null,
+            "end_line": 66,
             "path": "formal_target.lean",
-            "start_line": null
+            "start_line": 1
           }
         },
         {
           "kind": "source",
           "ref": {
-            "end_line": null,
+            "end_line": 57,
             "path": "article/sections/01_definitions_and_conjecture.tex",
-            "start_line": null
+            "start_line": 1
           }
         },
         {
           "kind": "source",
           "ref": {
-            "end_line": null,
+            "end_line": 131,
             "path": "article/sections/02_counterexample.tex",
-            "start_line": null
+            "start_line": 1
           }
         }
       ],
@@ -125,10 +125,11 @@
   ],
   "mathlib_decls": [],
   "mathlib_modules": [],
-  "objective": "Maintain the root scope for the repository Coordinator: organize child scopes/content nodes, track the public boundary, and eventually expose all required repository interfaces.",
+  "objective": "The repository Coordinator's root scope encompasses the child scopes/content nodes, public boundary, and all required repository interfaces.",
   "owned_refs": [],
   "status": "committed",
   "success_criteria": "All required repository interfaces are bound and the Main scope can be committed as the repo public boundary.",
   "summary": "Recommitted the graph-proved Main boundary with final theorem revision 3. The protected interface binds to the source-verbatim local header and compiler-qualified Lean identity `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap`; all 11 formal Statement prerequisites remain exported and proof-only helpers remain internal.",
+  "task_completion_mode": "graph_proved",
   "version": 2
 }

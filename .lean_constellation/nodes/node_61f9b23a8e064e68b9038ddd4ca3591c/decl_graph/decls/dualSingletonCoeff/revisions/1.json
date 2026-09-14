@@ -1,12 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [],
     "base_revision": null,
     "kind": "create",
-    "objective": "Define λᵢ : Element → ℝ with coefficients (3/2, 7/2, 3/2, 3/2, 3/2), faithfully matching SourceIndex b_0014 / source lines 61–63 under the Foundations Element = Fin 5 indexing. It feeds dualValue and the later moment evaluation.",
+    "objective": "The singleton coefficient `λᵢ : Element → ℝ` has coefficients `(3/2, 7/2, 3/2, 3/2, 3/2)`, faithfully matching SourceIndex b_0014 / source lines 61–63 under the Foundations `Element = Fin 5` indexing. It supplies `dualValue` and the later moment evaluation.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "DeclGraphRoundFlow failed for change dualSingletonCoeff@rev:1.",
     "target_state": "declared"
   },

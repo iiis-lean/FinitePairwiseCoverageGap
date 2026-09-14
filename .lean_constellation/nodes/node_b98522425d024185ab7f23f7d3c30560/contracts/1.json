@@ -182,7 +182,7 @@
       "reason": null
     }
   ],
-  "objective": "Using the foundational public API, prove the exact unrestricted optimum conjunct required by the protected theorem.",
+  "objective": "The exact unrestricted optimum conjunct `IsUnrestrictedOptimum 4` required by the protected theorem is based on the foundational public API.",
   "owned_refs": [
     {
       "added_by": "coordinator",
@@ -201,5 +201,6 @@
   "status": "committed",
   "success_criteria": "Expose a proved theorem with conclusion IsUnrestrictedOptimum 4, based on the exact three-point witness and a proved universal coverage upper bound.",
   "summary": "Accepted ready contract v1. The exact three-support witness, feasibility/value helpers, and universal coverage upper bound form a complete graph-proved boundary. Direct Lean inspection confirms the proved public theorem has exact signature `IsUnrestrictedOptimum 4`, matching the final protected theorem’s third conjunct without added assumptions or a restricted feasible domain.",
+  "task_completion_mode": "graph_proved",
   "version": 1
 }

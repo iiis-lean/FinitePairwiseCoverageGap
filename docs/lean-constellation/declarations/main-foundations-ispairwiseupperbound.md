@@ -1,4 +1,4 @@
-[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md) · [Complete graph](../DECLARATION_GRAPH.md)
 
 # `IsPairwiseUpperBound`
 
@@ -10,9 +10,13 @@ Nonempty pairwise-feasible domain with a universal expected-coverage upper bound
 - State: `declared`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
-- Formal code: final statement projection
+- Compatibility `formal_code`: final statement projection
 
-## Lean code
+## Statement NL
+
+Define `IsPairwiseUpperBound (q : ℝ)` as the conjunction that there exists `θ : Weight` satisfying `PairwiseFeasible θ`, and that every arbitrary-real `θ : Weight` satisfying `PairwiseFeasible θ` obeys `expectedCoverage θ ≤ q`. This requires nonemptiness of the pairwise-feasible domain and a universal upper bound, but does not require attainment at `q`.
+
+## Statement Formal
 
 ```lean
 -- lean-constellation: managed-imports-begin
@@ -49,6 +53,14 @@ def IsPairwiseUpperBound (q : ℝ) : Prop :=
   (∃ θ : Weight, PairwiseFeasible θ) ∧
     ∀ θ : Weight, PairwiseFeasible θ → expectedCoverage θ ≤ q
 ```
+
+## Proof NL
+
+Not recorded.
+
+## Proof Formal
+
+Not recorded.
 
 ## Statement dependencies
 

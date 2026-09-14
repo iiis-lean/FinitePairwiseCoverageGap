@@ -253,7 +253,7 @@
       "reason": "Provides `ℝ` and field division used directly by the current Weight and marginal statements."
     }
   ],
-  "objective": "Finalize the already implemented graph-proved foundational boundary under the repaired interface route: retain all 13 source-faithful public declarations and complete against the ten bindable public interfaces, with the three exact abbreviations remaining public declaration prerequisites.",
+  "objective": "The contract covers the already implemented graph-proved foundational boundary under the repaired interface route: all 13 source-faithful public declarations and the ten bindable public interfaces are included, with the three exact abbreviations remaining public declaration prerequisites.",
   "owned_refs": [
     {
       "added_by": "coordinator",
@@ -285,5 +285,6 @@
   "status": "committed",
   "success_criteria": "All source-specified data and predicates compile; coverage monotonicity and submodularity are proved and exposed; no feasibility quantifier is restricted beyond arbitrary real weights on all finite subsets.",
   "summary": "Accepted ready contract v2. All 13 source-faithful public declarations are ready; ten supported interfaces are bound; coverage_monotone and coverage_submodular are proved. Direct signature inspection confirms that IsUnrestrictedOptimum preserves attainment and the universal arbitrary-real marginal-feasible bound, while IsPairwiseUpperBound preserves nonemptiness and the universal arbitrary-real pairwise-feasible bound, so the foundations boundary is suitable for both downstream certificate nodes with no unresolved prerequisite.",
+  "task_completion_mode": "graph_proved",
   "version": 2
 }

@@ -1,16 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [
-      "MarginalFeasible",
-      "Weight",
-      "expectedCoverage"
-    ],
     "base_revision": null,
     "kind": "create",
     "objective": "From SourceIndex b_0017 and formal_target.lean lines 45–48, preserve exactly the conjunction: some θ attains q under MarginalFeasible, and every arbitrary-real θ satisfying MarginalFeasible has expectedCoverage θ ≤ q. Consume accepted unrestricted Weight, MarginalFeasible, and expectedCoverage. Do not replace attainment, restrict the quantifier, or reverse/weaken the universal upper-bound conclusion.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "Completed successfully through Statement NL and Statement Formal. Public definition IsUnrestrictedOptimum with Lean name IsUnrestrictedOptimum now preserves attainment plus the universal expectedCoverage upper bound over all MarginalFeasible arbitrary-real weights. It reached declared state and is proof-policy satisfied with accepted Weight, MarginalFeasible, and expectedCoverage dependencies.",
     "target_state": "declared"
   },
@@ -64,6 +57,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 0 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "cf5332bbe0f7175b2e4ce1e7f7da166023f770f78bae005ec73431cc6823c79b",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -81,7 +79,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/IsUnrestrictedOptimum.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `IsUnrestrictedOptimum`\n\nDefine `IsUnrestrictedOptimum (q : ℝ)` as the conjunction that there exists `θ : Weight` with\n`MarginalFeasible θ` and `expectedCoverage θ = q`, and that every arbitrary-real `θ : Weight`\nsatisfying `MarginalFeasible θ` obeys `expectedCoverage θ ≤ q`. Thus the predicate requires\nattainment and the universal upper-bound conclusion.\n\n## Sources\n\n- Source `formal_target.lean`, lines 45–48\n\n## Statement dependencies\n\n- `Main.Foundations::MarginalFeasible` → `MarginalFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n-/\ndef IsUnrestrictedOptimum (q : ℝ) : Prop :=\n  (∃ θ : Weight, MarginalFeasible θ ∧ expectedCoverage θ = q) ∧\n    ∀ θ : Weight, MarginalFeasible θ → expectedCoverage θ ≤ q\n"
     },

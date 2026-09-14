@@ -9,6 +9,7 @@
         "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.Element",
         "name": "Element",
         "node_path": "Main.Foundations",
+        "proof": null,
         "proof_available": false,
         "proof_dependencies": [],
         "revision": 2,
@@ -16,6 +17,75 @@
           "formal_target.lean:5-5"
         ],
         "state": "declared",
+        "statement": {
+          "deps": [],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/Element.lean",
+                "schema_version": 2,
+                "summary": "Command completed successfully"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "a6e4049310eff560850f0ceb7513e7aa4a63cfe0808ad6bed69d52dce3240dff",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.Element",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/Element.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `Element`\n\nDefine `Element` as the five-element finite type `Fin 5`.\n\n## Sources\n\n- Source `formal_target.lean`, line 5\n-/\nabbrev Element := Fin 5\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 5,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Exact source definition `Element := Fin 5`.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "formal_target.lean",
+                "start_line": 5,
+                "start_locator": null
+              }
+            ],
+            "text": "Define `Element` as the five-element finite type `Fin 5`."
+          }
+        },
         "statement_dependencies": [],
         "status": "committed",
         "summary": "Five-element ground type."
@@ -33,6 +103,7 @@
         "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature",
         "name": "Feature",
         "node_path": "Main.Foundations",
+        "proof": null,
         "proof_available": false,
         "proof_dependencies": [],
         "revision": 2,
@@ -40,6 +111,75 @@
           "formal_target.lean:6-6"
         ],
         "state": "declared",
+        "statement": {
+          "deps": [],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/Feature.lean",
+                "schema_version": 2,
+                "summary": "Command completed successfully"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "4948b4794ce7e174728cc2db3a6f0510c947ea4ef01e25868caed41e909446d3",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/Feature.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `Feature`\n\nDefine `Feature` as the four-element finite type `Fin 4`.\n\n## Sources\n\n- Source `formal_target.lean`, line 6\n-/\nabbrev Feature := Fin 4\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 6,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Exact source definition `Feature := Fin 4`.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "formal_target.lean",
+                "start_line": 6,
+                "start_locator": null
+              }
+            ],
+            "text": "Define `Feature` as the four-element finite type `Fin 4`."
+          }
+        },
         "statement_dependencies": [],
         "status": "committed",
         "summary": "Four-feature universe type."
@@ -57,6 +197,7 @@
         "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound",
         "name": "IsPairwiseUpperBound",
         "node_path": "Main.Foundations",
+        "proof": null,
         "proof_available": false,
         "proof_dependencies": [],
         "revision": 1,
@@ -64,6 +205,106 @@
           "formal_target.lean:50-53"
         ],
         "state": "declared",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "PairwiseFeasible",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Weight",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "expectedCoverage",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/IsPairwiseUpperBound.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 0 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "119bd1c6bc7dc5bda4624571333de04beda3994321b7b711af69f430fc784816",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/IsPairwiseUpperBound.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `IsPairwiseUpperBound`\n\nDefine `IsPairwiseUpperBound (q : ℝ)` as the conjunction that there exists `θ : Weight` satisfying\n`PairwiseFeasible θ`, and that every arbitrary-real `θ : Weight` satisfying `PairwiseFeasible θ`\nobeys `expectedCoverage θ ≤ q`. This requires nonemptiness of the pairwise-feasible domain and a\nuniversal upper bound, but does not require attainment at `q`.\n\n## Sources\n\n- Source `formal_target.lean`, lines 50–53\n\n## Statement dependencies\n\n- `Main.Foundations::PairwiseFeasible` → `PairwiseFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n-/\ndef IsPairwiseUpperBound (q : ℝ) : Prop :=\n  (∃ θ : Weight, PairwiseFeasible θ) ∧\n    ∀ θ : Weight, PairwiseFeasible θ → expectedCoverage θ ≤ q\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 53,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Exact conjunction of pairwise-feasible-domain nonemptiness and universal expected-coverage upper bound.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "formal_target.lean",
+                "start_line": 50,
+                "start_locator": null
+              }
+            ],
+            "text": "Define `IsPairwiseUpperBound (q : ℝ)` as the conjunction that there exists `θ : Weight` satisfying `PairwiseFeasible θ`, and that every arbitrary-real `θ : Weight` satisfying `PairwiseFeasible θ` obeys `expectedCoverage θ ≤ q`. This requires nonemptiness of the pairwise-feasible domain and a universal upper bound, but does not require attainment at `q`."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.PairwiseFeasible",
           "current repo:Main.Foundations.Weight",
@@ -85,6 +326,7 @@
         "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum",
         "name": "IsUnrestrictedOptimum",
         "node_path": "Main.Foundations",
+        "proof": null,
         "proof_available": false,
         "proof_dependencies": [],
         "revision": 1,
@@ -92,6 +334,106 @@
           "formal_target.lean:45-48"
         ],
         "state": "declared",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "MarginalFeasible",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Weight",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "expectedCoverage",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/IsUnrestrictedOptimum.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 0 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "cf5332bbe0f7175b2e4ce1e7f7da166023f770f78bae005ec73431cc6823c79b",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/IsUnrestrictedOptimum.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `IsUnrestrictedOptimum`\n\nDefine `IsUnrestrictedOptimum (q : ℝ)` as the conjunction that there exists `θ : Weight` with\n`MarginalFeasible θ` and `expectedCoverage θ = q`, and that every arbitrary-real `θ : Weight`\nsatisfying `MarginalFeasible θ` obeys `expectedCoverage θ ≤ q`. Thus the predicate requires\nattainment and the universal upper-bound conclusion.\n\n## Sources\n\n- Source `formal_target.lean`, lines 45–48\n\n## Statement dependencies\n\n- `Main.Foundations::MarginalFeasible` → `MarginalFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n-/\ndef IsUnrestrictedOptimum (q : ℝ) : Prop :=\n  (∃ θ : Weight, MarginalFeasible θ ∧ expectedCoverage θ = q) ∧\n    ∀ θ : Weight, MarginalFeasible θ → expectedCoverage θ ≤ q\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 48,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Exact conjunction of a marginal-feasible attaining weight and the universal expected-coverage upper bound.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "formal_target.lean",
+                "start_line": 45,
+                "start_locator": null
+              }
+            ],
+            "text": "Define `IsUnrestrictedOptimum (q : ℝ)` as the conjunction that there exists `θ : Weight` with `MarginalFeasible θ` and `expectedCoverage θ = q`, and that every arbitrary-real `θ : Weight` satisfying `MarginalFeasible θ` obeys `expectedCoverage θ ≤ q`. Thus the predicate requires attainment and the universal upper-bound conclusion."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.MarginalFeasible",
           "current repo:Main.Foundations.Weight",
@@ -113,6 +455,7 @@
         "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible",
         "name": "MarginalFeasible",
         "node_path": "Main.Foundations",
+        "proof": null,
         "proof_available": false,
         "proof_dependencies": [],
         "revision": 1,
@@ -120,6 +463,106 @@
           "formal_target.lean:32-36"
         ],
         "state": "declared",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Element",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Weight",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "marginal",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/MarginalFeasible.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 0 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "4474d7dac3af8df37fc55bc1379150f761b5eeb99248723892187d063c0539a6",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/MarginalFeasible.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `MarginalFeasible`\n\nDefine `MarginalFeasible (θ : Weight)` as the conjunction that, for every `s : Finset Element`, `0 ≤\nθ s`; the total finite sum `∑ s : Finset Element, θ s` equals `1`; and, for every `i : Element`, the\nmembership-filtered finite sum of `θ s` over subsets `s` containing `i` equals `marginal i`. The\ndefinition adds no support, positivity beyond pointwise nonnegativity, or probability-measure\nassumptions.\n\n## Sources\n\n- Source `formal_target.lean`, lines 32–36\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::marginal` → `marginal` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal`\n-/\ndef MarginalFeasible (θ : Weight) : Prop :=\n  (∀ s : Finset Element, 0 ≤ θ s) ∧\n    (∑ s : Finset Element, θ s) = 1 ∧\n      ∀ i : Element, ∑ s : Finset Element with i ∈ s, θ s = marginal i\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 36,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Exact conjunction of pointwise nonnegativity, normalization, and prescribed membership-filtered singleton marginals.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "formal_target.lean",
+                "start_line": 32,
+                "start_locator": null
+              }
+            ],
+            "text": "Define `MarginalFeasible (θ : Weight)` as the conjunction that, for every `s : Finset Element`, `0 ≤ θ s`; the total finite sum `∑ s : Finset Element, θ s` equals `1`; and, for every `i : Element`, the membership-filtered finite sum of `θ s` over subsets `s` containing `i` equals `marginal i`. The definition adds no support, positivity beyond pointwise nonnegativity, or probability-measure assumptions."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.Element",
           "current repo:Main.Foundations.Weight",
@@ -141,6 +584,7 @@
         "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible",
         "name": "PairwiseFeasible",
         "node_path": "Main.Foundations",
+        "proof": null,
         "proof_available": false,
         "proof_dependencies": [],
         "revision": 1,
@@ -148,6 +592,116 @@
           "formal_target.lean:38-43"
         ],
         "state": "declared",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Element",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "MarginalFeasible",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Weight",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "marginal",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/PairwiseFeasible.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 0 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "9d28e5ae84afebdf2e0471af2b446d8f2b9ff4c7a6722218b4be0fb3cb9415f8",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.PairwiseFeasible",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/PairwiseFeasible.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `PairwiseFeasible`\n\nDefine `PairwiseFeasible (θ : Weight)` as `MarginalFeasible θ` together with the condition that for\nevery ordered pair `i j : Element` with `i < j`, the finite sum of `θ s` over every `s : Finset\nElement` containing both `i` and `j` equals `marginal i * marginal j`. The domain of `θ` remains\narbitrary real-valued `Weight`.\n\n## Sources\n\n- Source `formal_target.lean`, lines 38–43\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::MarginalFeasible` → `MarginalFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::marginal` → `marginal` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal`\n-/\ndef PairwiseFeasible (θ : Weight) : Prop :=\n  MarginalFeasible θ ∧\n    ∀ i j : Element, i < j →\n      (∑ s : Finset Element with i ∈ s ∧ j ∈ s, θ s) =\n        marginal i * marginal j\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 43,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Exact ordered-pair moment constraints extending MarginalFeasible.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "formal_target.lean",
+                "start_line": 38,
+                "start_locator": null
+              }
+            ],
+            "text": "Define `PairwiseFeasible (θ : Weight)` as `MarginalFeasible θ` together with the condition that for every ordered pair `i j : Element` with `i < j`, the finite sum of `θ s` over every `s : Finset Element` containing both `i` and `j` equals `marginal i * marginal j`. The domain of `θ` remains arbitrary real-valued `Weight`."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.Element",
           "current repo:Main.Foundations.MarginalFeasible",
@@ -170,6 +724,7 @@
         "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight",
         "name": "Weight",
         "node_path": "Main.Foundations",
+        "proof": null,
         "proof_available": false,
         "proof_dependencies": [],
         "revision": 2,
@@ -177,6 +732,86 @@
           "formal_target.lean:7-7"
         ],
         "state": "declared",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Element",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/Weight.lean",
+                "schema_version": 2,
+                "summary": "Command completed successfully"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "76447459b5b1d431e0f52f11f108298cfd71e39cf522e5649d77a9e9628bbbaf",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/Weight.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `Weight`\n\nDefine `Weight` as the type `Finset Element → ℝ` of arbitrary real-valued functions on every finite\nsubset of `Element`, with no nonnegativity, normalization, or feasibility restriction.\n\n## Sources\n\n- Source `formal_target.lean`, line 7\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n-/\nabbrev Weight := Finset Element → ℝ\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 7,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Exact source definition of unrestricted real-valued subset weights.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "formal_target.lean",
+                "start_line": 7,
+                "start_locator": null
+              }
+            ],
+            "text": "Define `Weight` as the type `Finset Element → ℝ` of arbitrary real-valued functions on every finite subset of `Element`, with no nonnegativity, normalization, or feasibility restriction."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.Element"
         ],
@@ -196,6 +831,7 @@
         "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage",
         "name": "coverage",
         "node_path": "Main.Foundations",
+        "proof": null,
         "proof_available": false,
         "proof_dependencies": [],
         "revision": 2,
@@ -203,6 +839,96 @@
           "formal_target.lean:17-19"
         ],
         "state": "declared",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Element",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "elementFeatures",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/coverage.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 0 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "cb95a5d3b55ce82b6b38d1fc7953986e6ec8fd834364498ccf73f9dc5738b763",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/coverage.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage`\n\nDefine `coverage (s : Finset Element) : ℝ` as the real-valued cardinality `((s.biUnion\nelementFeatures).card : ℝ)` of the union of the feature sets assigned to the elements of `s`, with\nno normalization or alternative representation.\n\n## Sources\n\n- Source `formal_target.lean`, lines 17–19\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::elementFeatures` → `elementFeatures` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures`\n-/\ndef coverage (s : Finset Element) : ℝ :=\n  ((s.biUnion elementFeatures).card : ℝ)\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 19,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Exact definition as the real coercion of the cardinality of the selected feature union.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "formal_target.lean",
+                "start_line": 17,
+                "start_locator": null
+              }
+            ],
+            "text": "Define `coverage (s : Finset Element) : ℝ` as the real-valued cardinality `((s.biUnion elementFeatures).card : ℝ)` of the union of the feature sets assigned to the elements of `s`, with no normalization or alternative representation."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.Element",
           "current repo:Main.Foundations.elementFeatures"
@@ -223,6 +949,140 @@
         "module": "FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_monotone",
         "name": "coverage_monotone",
         "node_path": "Main.Foundations",
+        "proof": {
+          "deps": [
+            {
+              "kind": "mathlib_decl",
+              "reason": null,
+              "ref": {
+                "module": "Mathlib.Data.Finset.Card",
+                "name": "Finset.card_mono"
+              }
+            },
+            {
+              "kind": "mathlib_decl",
+              "reason": null,
+              "ref": {
+                "module": "Mathlib.Data.Finset.Union",
+                "name": "Finset.biUnion_subset_biUnion_of_subset_left"
+              }
+            },
+            {
+              "kind": "mathlib_decl",
+              "reason": null,
+              "ref": {
+                "module": "Mathlib.Data.Nat.Cast.Order.Basic",
+                "name": "Nat.cast_le"
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Element",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Feature",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "coverage",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "elementFeatures",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_monotone', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Theorems/coverage_monotone.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 0 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "c70d5e14b45b0dfd61c05c27d47e04bd31bf6276e6df07d253d1d3cd5d7e4130",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "proof_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_monotone",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Theorems/coverage_monotone.lean",
+                "repo_kind": "native",
+                "stage": "proof"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures\nimport Mathlib.Data.Finset.Card\nimport Mathlib.Data.Finset.Union\nimport Mathlib.Data.Nat.Cast.Order.Basic\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_monotone`\n\nFor arbitrary `S T : Finset Element`, if `S ⊆ T`, then `coverage S ≤ coverage T`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n\n## Proof outline\n\nUnfold `coverage`, so the goal is the real coercion of the cardinalities of `S.biUnion\nelementFeatures` and `T.biUnion elementFeatures`. Apply\n`Finset.biUnion_subset_biUnion_of_subset_left elementFeatures h` to obtain the covered-feature\ninclusion from the hypothesis `h : S ⊆ T`. Apply `Finset.card_mono` to this inclusion. Finally use\n`Nat.cast_le` (or `exact_mod_cast`) to transfer the natural-cardinality inequality to `ℝ`, matching\nthe accepted real-valued definition of `coverage`. The use of `elementFeatures : Element → Finset\nFeature` preserves the declared coverage object and needs no case analysis on the five elements.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Proof dependencies\n\n- `Finset.card_mono` from `Mathlib.Data.Finset.Card`\n- `Finset.biUnion_subset_biUnion_of_subset_left` from `Mathlib.Data.Finset.Union`\n- `Nat.cast_le` from `Mathlib.Data.Nat.Cast.Order.Basic`\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Feature` → `Feature` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n- `Main.Foundations::elementFeatures` → `elementFeatures` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures`\n-/\ntheorem coverage_monotone (S T : Finset Element) (h : S ⊆ T) :\n    coverage S ≤ coverage T := by\n  unfold coverage\n  exact_mod_cast Finset.card_mono\n    (Finset.biUnion_subset_biUnion_of_subset_left elementFeatures h)\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 16,
+                "end_locator": null,
+                "kind": "source",
+                "note": "The source identifies the explicit coverage function as monotone; the route realizes that claim via feature-union inclusion and cardinality.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "article/sections/02_counterexample.tex",
+                "start_line": 11,
+                "start_locator": null
+              }
+            ],
+            "text": "Unfold `coverage`, so the goal is the real coercion of the cardinalities of `S.biUnion elementFeatures` and `T.biUnion elementFeatures`. Apply `Finset.biUnion_subset_biUnion_of_subset_left elementFeatures h` to obtain the covered-feature inclusion from the hypothesis `h : S ⊆ T`. Apply `Finset.card_mono` to this inclusion. Finally use `Nat.cast_le` (or `exact_mod_cast`) to transfer the natural-cardinality inequality to `ℝ`, matching the accepted real-valued definition of `coverage`. The use of `elementFeatures : Element → Finset Feature` preserves the declared coverage object and needs no case analysis on the five elements."
+          }
+        },
         "proof_available": true,
         "proof_dependencies": [
           "Mathlib:Mathlib.Data.Finset.Card.Finset.card_mono",
@@ -238,6 +1098,110 @@
           "article/sections/02_counterexample.tex:11-16"
         ],
         "state": "proved",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Element",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "coverage",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": true,
+              "contains_axiom": false,
+              "contains_sorry": true,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [
+                  {
+                    "column": 9,
+                    "line": 25,
+                    "message": "declaration uses `sorry`",
+                    "severity": "warning"
+                  }
+                ],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_monotone', 'items': [{'severity': 'warning', 'pos': {'line': 25, 'column': 9}, 'endPos': {'line': 25, 'column': 26}, 'kind': None, 'data': 'declaration uses `sorry`', 'fileName': 'FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_monotone', 'content': '  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\\n-/\\ntheorem coverage_monotone (S T : Finset Element) (h : S ⊆ T) :\\n    coverage S ≤ coverage T := by\\n  sorry'}], 'total_items': 1, 'error_count': 0, 'warning_count': 1, 'info_count': 0, 'sorry_count': 1}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Theorems/coverage_monotone.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 1 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "9dd7045600e8b4a2ab08aac324589fa8c298a84a45a711b5cffb3255484e9ceb",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": true,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [
+                  {
+                    "column": 3,
+                    "excerpt": "sorry",
+                    "kind": "sorry",
+                    "line": 27
+                  }
+                ],
+                "opaque_count": 0,
+                "sorry_count": 1,
+                "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_monotone",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Theorems/coverage_monotone.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_monotone`\n\nFor arbitrary `S T : Finset Element`, if `S ⊆ T`, then `coverage S ≤ coverage T`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n-/\ntheorem coverage_monotone (S T : Finset Element) (h : S ⊆ T) :\n    coverage S ≤ coverage T := by\n  sorry\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 16,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Source support for the coverage function's monotonicity property.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "article/sections/02_counterexample.tex",
+                "start_line": 11,
+                "start_locator": null
+              }
+            ],
+            "text": "For arbitrary `S T : Finset Element`, if `S ⊆ T`, then `coverage S ≤ coverage T`."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.Element",
           "current repo:Main.Foundations.coverage"
@@ -256,6 +1220,156 @@
         "module": "FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_submodular",
         "name": "coverage_submodular",
         "node_path": "Main.Foundations",
+        "proof": {
+          "deps": [
+            {
+              "kind": "mathlib_decl",
+              "reason": null,
+              "ref": {
+                "module": "Mathlib.Data.Finset.Card",
+                "name": "Finset.card_inter_add_card_union"
+              }
+            },
+            {
+              "kind": "mathlib_decl",
+              "reason": null,
+              "ref": {
+                "module": "Mathlib.Data.Finset.Card",
+                "name": "Finset.card_mono"
+              }
+            },
+            {
+              "kind": "mathlib_decl",
+              "reason": null,
+              "ref": {
+                "module": "Mathlib.Data.Finset.Union",
+                "name": "Finset.biUnion_subset_biUnion_of_subset_left"
+              }
+            },
+            {
+              "kind": "mathlib_decl",
+              "reason": null,
+              "ref": {
+                "module": "Mathlib.Data.Finset.Union",
+                "name": "Finset.union_biUnion"
+              }
+            },
+            {
+              "kind": "mathlib_decl",
+              "reason": null,
+              "ref": {
+                "module": "Mathlib.Data.Nat.Cast.Order.Basic",
+                "name": "Nat.cast_le"
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Element",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Feature",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "coverage",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "elementFeatures",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_submodular', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Theorems/coverage_submodular.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 0 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "91ad047bb266d846970ecd7648ddf9dcfec6a552cec374fa6e250cbe979716e1",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "proof_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_submodular",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Theorems/coverage_submodular.lean",
+                "repo_kind": "native",
+                "stage": "proof"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures\nimport Mathlib.Data.Finset.Card\nimport Mathlib.Data.Finset.Union\nimport Mathlib.Data.Nat.Cast.Order.Basic\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_submodular`\n\nFor arbitrary `S T : Finset Element`, `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage\nT`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n\n## Proof outline\n\nUnfold `coverage` and put `A = S.biUnion elementFeatures`, `B = T.biUnion elementFeatures`, and `C =\n(S ∩ T).biUnion elementFeatures`. Rewrite the covered features of `S ∪ T` with\n`Finset.union_biUnion`, obtaining `A ∪ B`. Use `Finset.biUnion_subset_biUnion_of_subset_left\nelementFeatures Finset.inter_subset_left` and the analogous lift of `Finset.inter_subset_right` to\nshow `C ⊆ A` and `C ⊆ B`; combine them into `C ⊆ A ∩ B`. By `Finset.card_mono`, `C.card ≤ (A ∩\nB).card`. Add `(A ∪ B).card` to both sides, then rewrite the right-hand side using\n`Finset.card_inter_add_card_union A B` to get `(A ∪ B).card + C.card ≤ A.card + B.card` (commuting\naddends if required). Cast this natural inequality to `ℝ` using `Nat.cast_le` and normalize cast\naddition, yielding exactly `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T`. This\nuses `elementFeatures : Element → Finset Feature` throughout and adds no hypotheses.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Proof dependencies\n\n- `Finset.card_inter_add_card_union` from `Mathlib.Data.Finset.Card`\n- `Finset.card_mono` from `Mathlib.Data.Finset.Card`\n- `Finset.biUnion_subset_biUnion_of_subset_left` from `Mathlib.Data.Finset.Union`\n- `Finset.union_biUnion` from `Mathlib.Data.Finset.Union`\n- `Nat.cast_le` from `Mathlib.Data.Nat.Cast.Order.Basic`\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Feature` → `Feature` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n- `Main.Foundations::elementFeatures` → `elementFeatures` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures`\n-/\ntheorem coverage_submodular (S T : Finset Element) :\n    coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T := by\n  unfold coverage\n  rw [Finset.union_biUnion]\n  have hsub : (S ∩ T).biUnion elementFeatures ⊆\n      S.biUnion elementFeatures ∩ T.biUnion elementFeatures := by\n    intro x hx\n    exact Finset.mem_inter.mpr\n      ⟨Finset.biUnion_subset_biUnion_of_subset_left elementFeatures\n          Finset.inter_subset_left hx,\n        Finset.biUnion_subset_biUnion_of_subset_left elementFeatures\n          Finset.inter_subset_right hx⟩\n  have hcard := Finset.card_mono hsub\n  have hsum := Nat.add_le_add_left hcard\n    ((S.biUnion elementFeatures ∪ T.biUnion elementFeatures).card)\n  have hrewrite : (S.biUnion elementFeatures ∪ T.biUnion elementFeatures).card +\n      (S.biUnion elementFeatures ∩ T.biUnion elementFeatures).card =\n      (S.biUnion elementFeatures).card + (T.biUnion elementFeatures).card := by\n    simpa [Nat.add_comm] using Finset.card_inter_add_card_union\n      (S.biUnion elementFeatures) (T.biUnion elementFeatures)\n  have hnat : (S.biUnion elementFeatures ∪ T.biUnion elementFeatures).card +\n      ((S ∩ T).biUnion elementFeatures).card ≤\n      (S.biUnion elementFeatures).card + (T.biUnion elementFeatures).card := by\n    exact hsum.trans_eq hrewrite\n  exact_mod_cast hnat\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 16,
+                "end_locator": null,
+                "kind": "source",
+                "note": "The source identifies the explicit coverage function as submodular; the route realizes it with finite union/intersection cardinalities.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "article/sections/02_counterexample.tex",
+                "start_line": 11,
+                "start_locator": null
+              }
+            ],
+            "text": "Unfold `coverage` and put `A = S.biUnion elementFeatures`, `B = T.biUnion elementFeatures`, and `C = (S ∩ T).biUnion elementFeatures`. Rewrite the covered features of `S ∪ T` with `Finset.union_biUnion`, obtaining `A ∪ B`. Use `Finset.biUnion_subset_biUnion_of_subset_left elementFeatures Finset.inter_subset_left` and the analogous lift of `Finset.inter_subset_right` to show `C ⊆ A` and `C ⊆ B`; combine them into `C ⊆ A ∩ B`. By `Finset.card_mono`, `C.card ≤ (A ∩ B).card`. Add `(A ∪ B).card` to both sides, then rewrite the right-hand side using `Finset.card_inter_add_card_union A B` to get `(A ∪ B).card + C.card ≤ A.card + B.card` (commuting addends if required). Cast this natural inequality to `ℝ` using `Nat.cast_le` and normalize cast addition, yielding exactly `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T`. This uses `elementFeatures : Element → Finset Feature` throughout and adds no hypotheses."
+          }
+        },
         "proof_available": true,
         "proof_dependencies": [
           "Mathlib:Mathlib.Data.Finset.Card.Finset.card_inter_add_card_union",
@@ -273,6 +1387,110 @@
           "article/sections/02_counterexample.tex:11-16"
         ],
         "state": "proved",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Element",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "coverage",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": true,
+              "contains_axiom": false,
+              "contains_sorry": true,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [
+                  {
+                    "column": 9,
+                    "line": 26,
+                    "message": "declaration uses `sorry`",
+                    "severity": "warning"
+                  }
+                ],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_submodular', 'items': [{'severity': 'warning', 'pos': {'line': 26, 'column': 9}, 'endPos': {'line': 26, 'column': 28}, 'kind': None, 'data': 'declaration uses `sorry`', 'fileName': 'FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_submodular', 'content': '  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\\n-/\\ntheorem coverage_submodular (S T : Finset Element) :\\n    coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T := by\\n  sorry'}], 'total_items': 1, 'error_count': 0, 'warning_count': 1, 'info_count': 0, 'sorry_count': 1}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Theorems/coverage_submodular.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 1 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "d49973f676c948b2899beffcdcc0b816ddda6b5746a346ce5b14d532c70f6c1a",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": true,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [
+                  {
+                    "column": 3,
+                    "excerpt": "sorry",
+                    "kind": "sorry",
+                    "line": 28
+                  }
+                ],
+                "opaque_count": 0,
+                "sorry_count": 1,
+                "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_submodular",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Theorems/coverage_submodular.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_submodular`\n\nFor arbitrary `S T : Finset Element`, `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage\nT`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 11–16\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n-/\ntheorem coverage_submodular (S T : Finset Element) :\n    coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T := by\n  sorry\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 16,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Source support for the coverage function's submodularity property.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "article/sections/02_counterexample.tex",
+                "start_line": 11,
+                "start_locator": null
+              }
+            ],
+            "text": "For arbitrary `S T : Finset Element`, `coverage (S ∪ T) + coverage (S ∩ T) ≤ coverage S + coverage T`."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.Element",
           "current repo:Main.Foundations.coverage"
@@ -291,6 +1509,7 @@
         "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures",
         "name": "elementFeatures",
         "node_path": "Main.Foundations",
+        "proof": null,
         "proof_available": false,
         "proof_dependencies": [],
         "revision": 2,
@@ -298,6 +1517,96 @@
           "formal_target.lean:9-15"
         ],
         "state": "declared",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Element",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Feature",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/elementFeatures.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 0 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "d3b19aed97d3e6e2efdd4efabe08e8f37983d37fea366d0ae0c00a043ac0ab02",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.elementFeatures",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/elementFeatures.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `elementFeatures`\n\nDefine `elementFeatures : Element → Finset Feature` by zero-based cases: element `0` maps to `{0,\n1}`, `1` maps to `{0, 1, 2, 3}`, `2` maps to `{2, 3}`, `3` maps to `{0, 2}`, and `4` maps to `{1,\n3}`.\n\n## Sources\n\n- Source `formal_target.lean`, lines 9–15\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Feature` → `Feature` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature`\n-/\ndef elementFeatures : Element → Finset Feature\n  | 0 => {0, 1}\n  | 1 => {0, 1, 2, 3}\n  | 2 => {2, 3}\n  | 3 => {0, 2}\n  | 4 => {1, 3}\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 15,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Exact zero-based element-to-feature-set assignment.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "formal_target.lean",
+                "start_line": 9,
+                "start_locator": null
+              }
+            ],
+            "text": "Define `elementFeatures : Element → Finset Feature` by zero-based cases: element `0` maps to `{0, 1}`, `1` maps to `{0, 1, 2, 3}`, `2` maps to `{2, 3}`, `3` maps to `{0, 2}`, and `4` maps to `{1, 3}`."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.Element",
           "current repo:Main.Foundations.Feature"
@@ -318,6 +1627,7 @@
         "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage",
         "name": "expectedCoverage",
         "node_path": "Main.Foundations",
+        "proof": null,
         "proof_available": false,
         "proof_dependencies": [],
         "revision": 1,
@@ -325,6 +1635,106 @@
           "formal_target.lean:28-30"
         ],
         "state": "declared",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Element",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Weight",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "coverage",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/expectedCoverage.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 0 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "d968ff7da66e963328b38af0261081675b1cae3c73ffc7617e554d7c28ae04e7",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/expectedCoverage.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `expectedCoverage`\n\nDefine `expectedCoverage (θ : Weight) : ℝ` as `∑ s : Finset Element, θ s * coverage s`, the finite\nweighted sum over every finite subset of `Element`; `θ` remains an arbitrary real-valued weight\nfunction and is neither restricted nor renormalized.\n\n## Sources\n\n- Source `formal_target.lean`, lines 28–30\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n-/\ndef expectedCoverage (θ : Weight) : ℝ :=\n  ∑ s : Finset Element, θ s * coverage s\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 30,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Exact finite weighted sum over all Finset Element values.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "formal_target.lean",
+                "start_line": 28,
+                "start_locator": null
+              }
+            ],
+            "text": "Define `expectedCoverage (θ : Weight) : ℝ` as `∑ s : Finset Element, θ s * coverage s`, the finite weighted sum over every finite subset of `Element`; `θ` remains an arbitrary real-valued weight function and is neither restricted nor renormalized."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.Element",
           "current repo:Main.Foundations.Weight",
@@ -346,6 +1756,7 @@
         "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal",
         "name": "marginal",
         "node_path": "Main.Foundations",
+        "proof": null,
         "proof_available": false,
         "proof_dependencies": [],
         "revision": 2,
@@ -353,6 +1764,86 @@
           "formal_target.lean:21-26"
         ],
         "state": "declared",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "Element",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/marginal.lean",
+                "schema_version": 2,
+                "summary": "Command completed successfully"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "6550c362cca15ea8811687f224be0776678556621579d9c551739d2459200855",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/marginal.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `marginal`\n\nDefine `marginal : Element → ℝ` by zero-based cases, with values `(3/10, 7/20, 3/10, 7/20, 7/20)` at\nelements `0, 1, 2, 3, 4`, respectively.\n\n## Sources\n\n- Source `formal_target.lean`, lines 21–26\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n-/\nnoncomputable def marginal : Element → ℝ\n  | 0 => 3 / 10\n  | 1 => 7 / 20\n  | 2 => 3 / 10\n  | 3 => 7 / 20\n  | 4 => 7 / 20\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 26,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Exact zero-based prescribed real-valued marginal vector.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "formal_target.lean",
+                "start_line": 21,
+                "start_locator": null
+              }
+            ],
+            "text": "Define `marginal : Element → ℝ` by zero-based cases, with values `(3/10, 7/20, 3/10, 7/20, 7/20)` at elements `0, 1, 2, 3, 4`, respectively."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.Element"
         ],
@@ -372,6 +1863,126 @@
         "module": "FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.finite_pairwise_coverage_gap",
         "name": "finite_pairwise_coverage_gap",
         "node_path": "Main.GapTheorem",
+        "proof": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": "Discharges the first, inclusion-to-coverage monotonicity conjunct.",
+              "ref": {
+                "name": "coverage_monotone",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "Discharges the second, union/intersection submodularity conjunct.",
+              "ref": {
+                "name": "coverage_submodular",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "Discharges the final strict real-ratio conjunct without changing its constants or direction.",
+              "ref": {
+                "name": "strict_ratio_comparison",
+                "node": "Main.GapTheorem",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "Discharges the fourth conjunct `IsPairwiseUpperBound (479 / 160)`.",
+              "ref": {
+                "name": "pairwise_upper_bound_479_160",
+                "node": "Main.PairwiseBound",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "Discharges the third conjunct `IsUnrestrictedOptimum 4`.",
+              "ref": {
+                "name": "unrestricted_optimum_four",
+                "node": "Main.UnrestrictedOptimum",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.finite_pairwise_coverage_gap', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/GapTheorem/Theorems/finite_pairwise_coverage_gap.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 0 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "c81baef11ecfe728ecb7df514b8bff5697eb155c075cfddfa7455383f32371fe",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "proof_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.finite_pairwise_coverage_gap",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/GapTheorem/Theorems/finite_pairwise_coverage_gap.lean",
+                "repo_kind": "native",
+                "stage": "proof"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.GapTheorem.Prelude\nimport FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.strict_ratio_comparison\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\nnamespace FinitePairwiseCoverageGap\n\n/--\n# lean-constellation target: `finite_pairwise_coverage_gap`\n\nThe explicit finite coverage instance violates the proposed `4/3` upper bound. Precisely, the\nfollowing five conjuncts hold:\n\n1. For all implicit `s t : Finset Element`, if `s ⊆ t`, then `coverage s ≤ coverage t`.\n2. For all `s t : Finset Element`, `coverage (s ∪ t) + coverage (s ∩ t) ≤ coverage s + coverage t`.\n3. `IsUnrestrictedOptimum 4`.\n4. `IsPairwiseUpperBound (479 / 160)`.\n5. In the real numbers, `(4 : ℝ) / (479 / 160) > 4 / 3`.\n\nThese are conjoined in exactly the displayed order, with no additional hypotheses.\n\n## Sources\n\n- Source `formal_target.lean`, lines 55–64\n- Source `article/sections/02_counterexample.tex`, lines 126–131\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::IsPairwiseUpperBound` → `IsPairwiseUpperBound` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound`\n- `Main.Foundations::IsUnrestrictedOptimum` → `IsUnrestrictedOptimum` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n\n## Proof outline\n\nConstruct the five-fold conjunction in the protected statement order. For the first conjunct,\nintroduce the implicit finsets `s` and `t` and the inclusion hypothesis, then apply\n`coverage_monotone`. For the second conjunct, apply `coverage_submodular` directly. The third and\nfourth conjuncts are exactly the proved public theorems `unrestricted_optimum_four` and\n`pairwise_upper_bound_479_160`, respectively. For the final strict real-number inequality, apply the\nalready proved local helper `strict_ratio_comparison`.\n\nThis is a pure assembly proof: no unfolding, arithmetic normalization, new assumptions, case split,\nor auxiliary declaration is required. In Proof Formal, the route should be implemented by a nested\n`refine ⟨?_, ?_, ?_, ?_, ?_⟩` (or equivalent conjunction construction) followed by the five named\ntheorems, preserving the current accepted source-exact theorem command unchanged.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 110–131\n\n## Proof dependencies\n\n- `Main.Foundations::coverage_monotone` → `coverage_monotone` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_monotone`\n- `Main.Foundations::coverage_submodular` → `coverage_submodular` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Theorems.coverage_submodular`\n- `Main.GapTheorem::strict_ratio_comparison` → `strict_ratio_comparison` from\n  `FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.strict_ratio_comparison`\n- `Main.PairwiseBound::pairwise_upper_bound_479_160` → `pairwise_upper_bound_479_160` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.pairwise_upper_bound_479_160`\n- `Main.UnrestrictedOptimum::unrestricted_optimum_four` → `unrestricted_optimum_four` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestricted_optimum_four`\n-/\ntheorem finite_pairwise_coverage_gap :\n    (∀ ⦃s t : Finset Element⦄, s ⊆ t → coverage s ≤ coverage t) ∧\n    (∀ s t : Finset Element, coverage (s ∪ t) + coverage (s ∩ t) ≤ coverage s + coverage t) ∧\n    IsUnrestrictedOptimum 4 ∧\n    IsPairwiseUpperBound (479 / 160) ∧\n    (4 : ℝ) / (479 / 160) > 4 / 3 := by\n  refine ⟨?_, ?_, ?_, ?_, ?_⟩\n  · intro s t hst\n    exact coverage_monotone s t hst\n  · exact coverage_submodular\n  · exact unrestricted_optimum_four\n  · exact pairwise_upper_bound_479_160\n  · exact strict_ratio_comparison\n\nend FinitePairwiseCoverageGap\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 131,
+                "end_locator": null,
+                "kind": "source",
+                "note": "These lines derive the pairwise upper bound 479/160 and combine it with the unrestricted value 4 to establish the strict gap; the proof route assembles their tracked formal consequences.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "article/sections/02_counterexample.tex",
+                "start_line": 110,
+                "start_locator": null
+              }
+            ],
+            "text": "Construct the five-fold conjunction in the protected statement order. For the first conjunct, introduce the implicit finsets `s` and `t` and the inclusion hypothesis, then apply `coverage_monotone`. For the second conjunct, apply `coverage_submodular` directly. The third and fourth conjuncts are exactly the proved public theorems `unrestricted_optimum_four` and `pairwise_upper_bound_479_160`, respectively. For the final strict real-number inequality, apply the already proved local helper `strict_ratio_comparison`.\n\nThis is a pure assembly proof: no unfolding, arithmetic normalization, new assumptions, case split, or auxiliary declaration is required."
+          }
+        },
         "proof_available": true,
         "proof_dependencies": [
           "current repo:Main.Foundations.coverage_monotone",
@@ -386,6 +1997,141 @@
           "article/sections/02_counterexample.tex:126-131"
         ],
         "state": "proved",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": "The two universal predicates quantify over `Finset Element`.",
+              "ref": {
+                "name": "Element",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "The fourth conjunct is the predicate `IsPairwiseUpperBound (479 / 160)`.",
+              "ref": {
+                "name": "IsPairwiseUpperBound",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "The third conjunct is the predicate `IsUnrestrictedOptimum 4`.",
+              "ref": {
+                "name": "IsUnrestrictedOptimum",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "The monotonicity and submodularity conjuncts are stated using `coverage`.",
+              "ref": {
+                "name": "coverage",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": true,
+              "contains_axiom": false,
+              "contains_sorry": true,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [
+                  {
+                    "column": 9,
+                    "line": 40,
+                    "message": "declaration uses `sorry`",
+                    "severity": "warning"
+                  }
+                ],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.finite_pairwise_coverage_gap', 'items': [{'severity': 'warning', 'pos': {'line': 40, 'column': 9}, 'endPos': {'line': 40, 'column': 37}, 'kind': None, 'data': 'declaration uses `sorry`', 'fileName': 'FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.finite_pairwise_coverage_gap', 'content': '-/\\n\\ntheorem finite_pairwise_coverage_gap :\\n    (∀ ⦃s t : Finset Element⦄, s ⊆ t → coverage s ≤ coverage t) ∧\\n    (∀ s t : Finset Element, coverage (s ∪ t) + coverage (s ∩ t) ≤ coverage s + coverage t) ∧'}], 'total_items': 1, 'error_count': 0, 'warning_count': 1, 'info_count': 0, 'sorry_count': 1}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/GapTheorem/Theorems/finite_pairwise_coverage_gap.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 1 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "f3065cb459e3f57b546cde6185ec9636e6e13966829182c872bd8f95f333e07a",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": true,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [
+                  {
+                    "column": 3,
+                    "excerpt": "sorry",
+                    "kind": "sorry",
+                    "line": 46
+                  }
+                ],
+                "opaque_count": 0,
+                "sorry_count": 1,
+                "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.finite_pairwise_coverage_gap",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/GapTheorem/Theorems/finite_pairwise_coverage_gap.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.GapTheorem.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\nnamespace FinitePairwiseCoverageGap\n\n/--\n# lean-constellation target: `finite_pairwise_coverage_gap`\n\nThe explicit finite coverage instance violates the proposed `4/3` upper bound. Precisely, the\nfollowing five conjuncts hold:\n\n1. For all implicit `s t : Finset Element`, if `s ⊆ t`, then `coverage s ≤ coverage t`.\n2. For all `s t : Finset Element`, `coverage (s ∪ t) + coverage (s ∩ t) ≤ coverage s + coverage t`.\n3. `IsUnrestrictedOptimum 4`.\n4. `IsPairwiseUpperBound (479 / 160)`.\n5. In the real numbers, `(4 : ℝ) / (479 / 160) > 4 / 3`.\n\nThese are conjoined in exactly the displayed order, with no additional hypotheses.\n\n## Sources\n\n- Source `formal_target.lean`, lines 55–64\n- Source `article/sections/02_counterexample.tex`, lines 126–131\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::IsPairwiseUpperBound` → `IsPairwiseUpperBound` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound`\n- `Main.Foundations::IsUnrestrictedOptimum` → `IsUnrestrictedOptimum` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n-/\n\ntheorem finite_pairwise_coverage_gap :\n    (∀ ⦃s t : Finset Element⦄, s ⊆ t → coverage s ≤ coverage t) ∧\n    (∀ s t : Finset Element, coverage (s ∪ t) + coverage (s ∩ t) ≤ coverage s + coverage t) ∧\n    IsUnrestrictedOptimum 4 ∧\n    IsPairwiseUpperBound (479 / 160) ∧\n    (4 : ℝ) / (479 / 160) > 4 / 3 := by\n  sorry\n\nend FinitePairwiseCoverageGap\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 64,
+                "end_locator": null,
+                "kind": "source",
+                "note": "This is the protected target theorem statement, including all five conjuncts, their order, binders, predicates, constants, and strict comparison.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "formal_target.lean",
+                "start_line": 55,
+                "start_locator": null
+              },
+              {
+                "end_line": 131,
+                "end_locator": null,
+                "kind": "source",
+                "note": "This passage supports the final strict ratio conjunct 4/(479/160) > 4/3 in the combined theorem.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "article/sections/02_counterexample.tex",
+                "start_line": 126,
+                "start_locator": null
+              }
+            ],
+            "text": "The explicit finite coverage instance violates the proposed `4/3` upper bound. Precisely, the following five conjuncts hold:\n\n1. For all implicit `s t : Finset Element`, if `s ⊆ t`, then `coverage s ≤ coverage t`.\n2. For all `s t : Finset Element`, `coverage (s ∪ t) + coverage (s ∩ t) ≤ coverage s + coverage t`.\n3. `IsUnrestrictedOptimum 4`.\n4. `IsPairwiseUpperBound (479 / 160)`.\n5. In the real numbers, `(4 : ℝ) / (479 / 160) > 4 / 3`.\n\nThese are conjoined in exactly the displayed order, with no additional hypotheses."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.Element",
           "current repo:Main.Foundations.IsPairwiseUpperBound",
@@ -408,6 +2154,137 @@
         "module": "FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.pairwise_upper_bound_479_160",
         "name": "pairwise_upper_bound_479_160",
         "node_path": "Main.PairwiseBound",
+        "proof": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "IsPairwiseUpperBound",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "expectedCoverage_le_weightedDual",
+                "node": "Main.PairwiseBound",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "independentWeight",
+                "node": "Main.PairwiseBound",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "independentWeight_pairwiseFeasible",
+                "node": "Main.PairwiseBound",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "weightedDual_eq_479_160",
+                "node": "Main.PairwiseBound",
+                "repo": null,
+                "revision": 1
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Theorems/pairwise_upper_bound_479_160.lean",
+                "schema_version": 2,
+                "summary": "Command completed successfully"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "939a2ce282a5e5fad2d397bc1dd1fa57fffa10c33357a674c9950940f543302a",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "proof_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.pairwise_upper_bound_479_160",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Theorems/pairwise_upper_bound_479_160.lean",
+                "repo_kind": "native",
+                "stage": "proof"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.independentWeight\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.expectedCoverage_le_weightedDual\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.independentWeight_pairwiseFeasible\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.weightedDual_eq_479_160\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `pairwise_upper_bound_479_160`\n\n`pairwise_upper_bound_479_160` states exactly `IsPairwiseUpperBound (479 / 160)`: there exists a\n`Weight` that is `PairwiseFeasible`, and every `θ : Weight` satisfying `PairwiseFeasible θ` has\n`expectedCoverage θ ≤ 479 / 160`.  It asserts this for the full feasible domain, with the exact\nrational bound and no additional assumptions or conclusions.\n\n## Sources\n\n- Source `formal_target.lean`, lines 50–53\n- Source `article/sections/02_counterexample.tex`, lines 110–125\n\n## Statement dependencies\n\n- `Main.Foundations::IsPairwiseUpperBound` → `IsPairwiseUpperBound` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound`\n\n## Proof outline\n\nUnfold `IsPairwiseUpperBound (479 / 160)` into its two required conjuncts and prove exactly those\nconjuncts.\n\nFor feasible-domain nonemptiness, choose the accepted `independentWeight : Weight` as the witness\nand close `PairwiseFeasible independentWeight` with the already proved theorem\n`independentWeight_pairwiseFeasible`.\n\nFor the universal conjunct, fix an arbitrary `θ : Weight` and `hθ : PairwiseFeasible θ`.  Chain the\ntwo proved full-domain weak-duality facts:\n```lean\n  calc\n    expectedCoverage θ ≤ ∑ S : Finset Element, θ S * dualValue S :=\n      expectedCoverage_le_weightedDual θ hθ\n    _ = 479 / 160 := weightedDual_eq_479_160 θ hθ\n```\nThe first theorem uses the unrestricted pointwise dual majorization and feasibility nonnegativity;\nthe second evaluates the same full-domain weighted dual using the prescribed feasibility moments.\nHence the result applies to every arbitrary-real pairwise-feasible weight with the exact rational\n`479 / 160`.  No support restriction, extra assumption, unrestricted-optimum claim, or final\nconjunction is introduced.\n\n## Proof sources\n\n- Source `formal_target.lean`, lines 50–53\n- Source `article/sections/02_counterexample.tex`, lines 110–125\n\n## Proof dependencies\n\n- `Main.Foundations::IsPairwiseUpperBound` → `IsPairwiseUpperBound` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound`\n- `Main.PairwiseBound::expectedCoverage_le_weightedDual` → `expectedCoverage_le_weightedDual` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.expectedCoverage_le_weightedDual`\n- `Main.PairwiseBound::independentWeight` → `independentWeight` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.independentWeight`\n- `Main.PairwiseBound::independentWeight_pairwiseFeasible` → `independentWeight_pairwiseFeasible`\n  from `FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.independentWeight_pairwiseFeasible`\n- `Main.PairwiseBound::weightedDual_eq_479_160` → `weightedDual_eq_479_160` from\n  `FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.weightedDual_eq_479_160`\n-/\ntheorem pairwise_upper_bound_479_160 : IsPairwiseUpperBound (479 / 160) := by\n  refine ⟨⟨independentWeight, independentWeight_pairwiseFeasible⟩, ?_⟩\n  intro θ hθ\n  calc\n    expectedCoverage θ ≤ ∑ S : Finset Element, θ S * dualValue S :=\n      expectedCoverage_le_weightedDual θ hθ\n    _ = 479 / 160 := weightedDual_eq_479_160 θ hθ\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 53,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Defines the exact two-conjunct consumer shape: feasibility witness and universal expected-coverage bound.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "formal_target.lean",
+                "start_line": 50,
+                "start_locator": null
+              },
+              {
+                "end_line": 125,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Derives the exact universal pairwise weak-duality bound 479/160 from the pointwise certificate and prescribed moments.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "article/sections/02_counterexample.tex",
+                "start_line": 110,
+                "start_locator": null
+              }
+            ],
+            "text": "`IsPairwiseUpperBound (479 / 160)` has two conjuncts. The feasible-domain nonemptiness conjunct is witnessed by `independentWeight : Weight`, whose `PairwiseFeasible` property is `independentWeight_pairwiseFeasible`. For arbitrary `θ : Weight` with `hθ : PairwiseFeasible θ`, `expectedCoverage_le_weightedDual θ hθ` gives `expectedCoverage θ ≤ ∑ S : Finset Element, θ S * dualValue S`, and `weightedDual_eq_479_160 θ hθ` identifies that sum with `479 / 160`. Thus the universal conjunct holds for every arbitrary-real pairwise-feasible weight with the exact rational bound, without support restrictions, extra assumptions, unrestricted-optimum claims, or a final conjunction."
+          }
+        },
         "proof_available": true,
         "proof_dependencies": [
           "current repo:Main.Foundations.IsPairwiseUpperBound",
@@ -422,6 +2299,111 @@
           "article/sections/02_counterexample.tex:110-125"
         ],
         "state": "proved",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": null,
+              "ref": {
+                "name": "IsPairwiseUpperBound",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": true,
+              "contains_axiom": false,
+              "contains_sorry": true,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [
+                  {
+                    "column": 9,
+                    "line": 25,
+                    "message": "declaration uses `sorry`",
+                    "severity": "warning"
+                  }
+                ],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.pairwise_upper_bound_479_160', 'items': [{'severity': 'warning', 'pos': {'line': 25, 'column': 9}, 'endPos': {'line': 25, 'column': 37}, 'kind': None, 'data': 'declaration uses `sorry`', 'fileName': 'FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.pairwise_upper_bound_479_160', 'content': '  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound`\\n-/\\ntheorem pairwise_upper_bound_479_160 : IsPairwiseUpperBound (479 / 160) := by\\n  sorry'}], 'total_items': 1, 'error_count': 0, 'warning_count': 1, 'info_count': 0, 'sorry_count': 1}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Theorems/pairwise_upper_bound_479_160.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 1 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "023fc13dfa2deabe6ac2a38a23af1b19f721130766885a04ecbafe668c61f4dc",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": true,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [
+                  {
+                    "column": 3,
+                    "excerpt": "sorry",
+                    "kind": "sorry",
+                    "line": 26
+                  }
+                ],
+                "opaque_count": 0,
+                "sorry_count": 1,
+                "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.PairwiseBound.Theorems.pairwise_upper_bound_479_160",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Theorems/pairwise_upper_bound_479_160.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `pairwise_upper_bound_479_160`\n\n`pairwise_upper_bound_479_160` states exactly `IsPairwiseUpperBound (479 / 160)`: there exists a\n`Weight` that is `PairwiseFeasible`, and every `θ : Weight` satisfying `PairwiseFeasible θ` has\n`expectedCoverage θ ≤ 479 / 160`.  It asserts this for the full feasible domain, with the exact\nrational bound and no additional assumptions or conclusions.\n\n## Sources\n\n- Source `formal_target.lean`, lines 50–53\n- Source `article/sections/02_counterexample.tex`, lines 110–125\n\n## Statement dependencies\n\n- `Main.Foundations::IsPairwiseUpperBound` → `IsPairwiseUpperBound` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsPairwiseUpperBound`\n-/\ntheorem pairwise_upper_bound_479_160 : IsPairwiseUpperBound (479 / 160) := by\n  sorry\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 53,
+                "end_locator": null,
+                "kind": "source",
+                "note": "Defines the exact `IsPairwiseUpperBound` conjunction: feasible-domain nonemptiness and the universal expected-coverage bound.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "formal_target.lean",
+                "start_line": 50,
+                "start_locator": null
+              },
+              {
+                "end_line": 125,
+                "end_locator": null,
+                "kind": "source",
+                "note": "The source derives the exact pairwise weak-duality bound 479/160 from the pointwise certificate and prescribed moments.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "article/sections/02_counterexample.tex",
+                "start_line": 110,
+                "start_locator": null
+              }
+            ],
+            "text": "`pairwise_upper_bound_479_160` states exactly `IsPairwiseUpperBound (479 / 160)`: there exists a `Weight` that is `PairwiseFeasible`, and every `θ : Weight` satisfying `PairwiseFeasible θ` has `expectedCoverage θ ≤ 479 / 160`.  It asserts this for the full feasible domain, with the exact rational bound and no additional assumptions or conclusions."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.IsPairwiseUpperBound"
         ],
@@ -439,6 +2421,128 @@
         "module": "FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four",
         "name": "coverage_le_four",
         "node_path": "Main.UnrestrictedOptimum",
+        "proof": {
+          "deps": [
+            {
+              "kind": "mathlib_decl",
+              "reason": "Converts containment of the feature union into the required natural-cardinality upper bound.",
+              "ref": {
+                "module": "Mathlib.Data.Finset.Card",
+                "name": "Finset.card_mono"
+              }
+            },
+            {
+              "kind": "mathlib_decl",
+              "reason": "Evaluates the cardinality of the finite Feature universe.",
+              "ref": {
+                "module": "Mathlib.Data.Fintype.Card",
+                "name": "Finset.card_univ"
+              }
+            },
+            {
+              "kind": "mathlib_decl",
+              "reason": "Supplies the universal containment of the feature union in the finite feature universe.",
+              "ref": {
+                "module": "Mathlib.Data.Fintype.Defs",
+                "name": "Finset.subset_univ"
+              }
+            },
+            {
+              "kind": "mathlib_decl",
+              "reason": "Transfers the natural-cardinality inequality to the real-valued coverage inequality.",
+              "ref": {
+                "module": "Mathlib.Data.Nat.Cast.Order.Basic",
+                "name": "Nat.cast_le"
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "The route uses the accepted identification Feature = Fin 4 to normalize the universe cardinality to 4.",
+              "ref": {
+                "name": "Feature",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "The route unfolds the public coverage API into the feature-union cardinality to be bounded.",
+              "ref": {
+                "name": "coverage",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/coverage_le_four.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 0 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "3bad9de82f316c3b72c5bf435e09c82b413dd80ebeea3c9b6e7091d4a100e912",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "proof_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/coverage_le_four.lean",
+                "repo_kind": "native",
+                "stage": "proof"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\nimport Mathlib.Data.Finset.Card\nimport Mathlib.Data.Fintype.Card\nimport Mathlib.Data.Fintype.Defs\nimport Mathlib.Data.Nat.Cast.Order.Basic\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_le_four`\n\nTheorem `coverage_le_four` states the universal real inequality `∀ s : Finset Element, coverage s ≤\n4`.  It has no feasibility or distribution assumption: every finite subset of the five-element\nground type has coverage at most `4`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 38–41\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n\n## Proof outline\n\nIntroduce an arbitrary `s : Finset Element`; no feasibility or distribution hypothesis is\nintroduced.  Unfold `coverage`, so the goal is a real-cardinality bound for `s.biUnion\nelementFeatures`.\n\nApply `Finset.card_mono` to the universal inclusion `Finset.subset_univ (s.biUnion\nelementFeatures)`.  This bounds the feature union by `(Finset.univ : Finset Feature)`.  Coerce the\nresulting natural-number inequality to `ℝ` using `Nat.cast_le`.  Finally use `Finset.card_univ` and\nthe accepted definition `Feature = Fin 4` to normalize the cardinality of the feature universe to\n`4`.\n\nThus `coverage s ≤ 4` holds for the original arbitrary finite subset.  The proof is a direct\nuniversal cardinality argument (rather than a feasibility argument), matching the source claim that\nno coverage value can exceed four.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 38–41\n\n## Proof dependencies\n\n- `Finset.card_mono` from `Mathlib.Data.Finset.Card`\n- `Finset.card_univ` from `Mathlib.Data.Fintype.Card`\n- `Finset.subset_univ` from `Mathlib.Data.Fintype.Defs`\n- `Nat.cast_le` from `Mathlib.Data.Nat.Cast.Order.Basic`\n- `Main.Foundations::Feature` → `Feature` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Feature`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n-/\ntheorem coverage_le_four : ∀ s : Finset Element, coverage s ≤ 4 := by\n  intro s\n  unfold coverage\n  have h := Finset.card_mono (Finset.subset_univ (s.biUnion elementFeatures))\n  norm_num [Finset.card_univ] at h ⊢\n  exact_mod_cast h\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 41,
+                "end_locator": null,
+                "kind": "source",
+                "note": "These lines assert the universal bound f(S) ≤ 4 and use it to bound the unrestricted optimum; they support the direct cardinality route.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "article/sections/02_counterexample.tex",
+                "start_line": 38,
+                "start_locator": null
+              }
+            ],
+            "text": "Introduce an arbitrary `s : Finset Element`; no feasibility or distribution hypothesis is introduced.  Unfold `coverage`, so the goal is a real-cardinality bound for `s.biUnion elementFeatures`.\n\nApply `Finset.card_mono` to the universal inclusion `Finset.subset_univ (s.biUnion elementFeatures)`.  This bounds the feature union by `(Finset.univ : Finset Feature)`.  Coerce the resulting natural-number inequality to `ℝ` using `Nat.cast_le`.  Finally use `Finset.card_univ` and the accepted definition `Feature = Fin 4` to normalize the cardinality of the feature universe to `4`.\n\nThus `coverage s ≤ 4` holds for the original arbitrary finite subset.  The proof is a direct universal cardinality argument (rather than a feasibility argument), matching the source claim that no coverage value can exceed four."
+          }
+        },
         "proof_available": true,
         "proof_dependencies": [
           "Mathlib:Mathlib.Data.Finset.Card.Finset.card_mono",
@@ -453,6 +2557,110 @@
           "article/sections/02_counterexample.tex:38-41"
         ],
         "state": "proved",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": "The theorem quantifies over finite subsets of the public ground type Element.",
+              "ref": {
+                "name": "Element",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "The public coverage definition is the left-hand side of the universal inequality.",
+              "ref": {
+                "name": "coverage",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": true,
+              "contains_axiom": false,
+              "contains_sorry": true,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [
+                  {
+                    "column": 9,
+                    "line": 25,
+                    "message": "declaration uses `sorry`",
+                    "severity": "warning"
+                  }
+                ],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four', 'items': [{'severity': 'warning', 'pos': {'line': 25, 'column': 9}, 'endPos': {'line': 25, 'column': 25}, 'kind': None, 'data': 'declaration uses `sorry`', 'fileName': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four', 'content': '  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\\n-/\\ntheorem coverage_le_four : ∀ s : Finset Element, coverage s ≤ 4 := by\\n  sorry'}], 'total_items': 1, 'error_count': 0, 'warning_count': 1, 'info_count': 0, 'sorry_count': 1}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/coverage_le_four.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 1 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "14442ba0ca27d2982f58434e046a23892e1f6d096324017e8758dd4de606da5b",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": true,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [
+                  {
+                    "column": 3,
+                    "excerpt": "sorry",
+                    "kind": "sorry",
+                    "line": 26
+                  }
+                ],
+                "opaque_count": 0,
+                "sorry_count": 1,
+                "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/coverage_le_four.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `coverage_le_four`\n\nTheorem `coverage_le_four` states the universal real inequality `∀ s : Finset Element, coverage s ≤\n4`.  It has no feasibility or distribution assumption: every finite subset of the five-element\nground type has coverage at most `4`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 38–41\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::coverage` → `coverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.coverage`\n-/\ntheorem coverage_le_four : ∀ s : Finset Element, coverage s ≤ 4 := by\n  sorry\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 41,
+                "end_locator": null,
+                "kind": "source",
+                "note": "The source states that f(S) is at most 4 for every S ⊆ N, supplying the universal coverage bound.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "article/sections/02_counterexample.tex",
+                "start_line": 38,
+                "start_locator": null
+              }
+            ],
+            "text": "Theorem `coverage_le_four` states the universal real inequality `∀ s : Finset Element, coverage s ≤ 4`.  It has no feasibility or distribution assumption: every finite subset of the five-element ground type has coverage at most `4`."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.Element",
           "current repo:Main.Foundations.coverage"
@@ -471,6 +2679,7 @@
         "module": "FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness",
         "name": "unrestrictedWitness",
         "node_path": "Main.UnrestrictedOptimum",
+        "proof": null,
         "proof_available": false,
         "proof_dependencies": [],
         "revision": 1,
@@ -478,6 +2687,96 @@
           "article/sections/02_counterexample.tex:24-39"
         ],
         "state": "declared",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": "The statement identifies the zero-based support sets as finite subsets of the public ground type Element.",
+              "ref": {
+                "name": "Element",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "The definition's declared codomain is the public complete-domain weight type Weight.",
+              "ref": {
+                "name": "Weight",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Defs/unrestrictedWitness.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 0 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "4ce64f5f760791b4f6a00989315732de8cb46b8da458ec994addd5dce5ee9dc5",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Defs/unrestrictedWitness.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `unrestrictedWitness`\n\nDefine `unrestrictedWitness : Weight` as the complete-domain weight function on every `S : Finset\nElement` by assigning `3 / 10` to the zero-based support set `{0, 2}`, `7 / 20` to `{1}`, and `7 /\n20` to `{3, 4}`; assign `0` to every other finite subset.  The three displayed values are rational\nreal weights.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 24–39\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n-/\nnoncomputable def unrestrictedWitness : Weight := fun S ↦\n  if S = {0, 2} then 3 / 10\n  else if S = {1} then 7 / 20\n  else if S = {3, 4} then 7 / 20\n  else 0\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 39,
+                "end_locator": null,
+                "kind": "source",
+                "note": "The source table specifies the three support sets, their weights, and zero weight for all other sets.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "article/sections/02_counterexample.tex",
+                "start_line": 24,
+                "start_locator": null
+              }
+            ],
+            "text": "`unrestrictedWitness : Weight` is the complete-domain weight function on every `S : Finset Element`, with value `3 / 10` on the zero-based support set `{0, 2}`, value `7 / 20` on `{1}` and `{3, 4}`, and value `0` on every other finite subset. The three nonzero values are rational real weights."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.Element",
           "current repo:Main.Foundations.Weight"
@@ -496,6 +2795,178 @@
         "module": "FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestricted_optimum_four",
         "name": "unrestricted_optimum_four",
         "node_path": "Main.UnrestrictedOptimum",
+        "proof": {
+          "deps": [
+            {
+              "kind": "mathlib_decl",
+              "reason": "Rewrites the constant-right-factor finite sum using the feasibility mass equation.",
+              "ref": {
+                "module": "Mathlib.Algebra.BigOperators.Ring.Finset",
+                "name": "Finset.sum_mul"
+              }
+            },
+            {
+              "kind": "mathlib_decl",
+              "reason": "Lifts the termwise weighted coverage inequalities to the expected-coverage sum.",
+              "ref": {
+                "module": "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+                "name": "Finset.sum_le_sum"
+              }
+            },
+            {
+              "kind": "mathlib_decl",
+              "reason": "Multiplies the pointwise coverage bound by each nonnegative feasible weight.",
+              "ref": {
+                "module": "Mathlib.Algebra.Order.GroupWithZero.Defs",
+                "name": "mul_le_mul_of_nonneg_left"
+              }
+            },
+            {
+              "kind": "mathlib_decl",
+              "reason": "The formal proof explicitly uses norm_num to normalize the final real identity after substituting the mass-one equation.",
+              "ref": {
+                "module": "Mathlib.Tactic.NormNum.Core",
+                "name": "Mathlib.Tactic.normNum"
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "The route unfolds exactly this public two-conjunct consumer definition.",
+              "ref": {
+                "name": "IsUnrestrictedOptimum",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "The route unpacks its all-set nonnegativity and mass-one conjuncts for an arbitrary feasible weight.",
+              "ref": {
+                "name": "MarginalFeasible",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "The route unfolds the expected-coverage finite sum in the universal inequality.",
+              "ref": {
+                "name": "expectedCoverage",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "This proved universal pointwise bound is multiplied by each feasible weight in the upper-bound conjunct.",
+              "ref": {
+                "name": "coverage_le_four",
+                "node": "Main.UnrestrictedOptimum",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "This accepted witness supplies the attaining distribution in the existential conjunct.",
+              "ref": {
+                "name": "unrestrictedWitness",
+                "node": "Main.UnrestrictedOptimum",
+                "repo": null,
+                "revision": 1
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "This proved theorem establishes marginal feasibility of the chosen attaining witness.",
+              "ref": {
+                "name": "unrestrictedWitness_feasible",
+                "node": "Main.UnrestrictedOptimum",
+                "repo": null,
+                "revision": 2
+              }
+            },
+            {
+              "kind": "repo_decl",
+              "reason": "This proved theorem establishes exact expected coverage 4 for the attaining witness.",
+              "ref": {
+                "name": "unrestrictedWitness_value",
+                "node": "Main.UnrestrictedOptimum",
+                "repo": null,
+                "revision": 2
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": false,
+              "contains_axiom": false,
+              "contains_sorry": false,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestricted_optimum_four', 'items': [], 'total_items': 0, 'error_count': 0, 'warning_count': 0, 'info_count': 0, 'sorry_count': 0}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/unrestricted_optimum_four.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 0 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "26dda55059759a5d2a6a811217cec77d4aac31799c7cf1b81a290b07d11dfa74",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "proof_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": false,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [],
+                "opaque_count": 0,
+                "sorry_count": 0,
+                "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestricted_optimum_four",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/unrestricted_optimum_four.lean",
+                "repo_kind": "native",
+                "stage": "proof"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_feasible\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_value\nimport Mathlib.Algebra.BigOperators.Ring.Finset\nimport Mathlib.Algebra.Order.BigOperators.Group.Finset\nimport Mathlib.Algebra.Order.GroupWithZero.Defs\nimport Mathlib.Tactic.NormNum.Core\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `unrestricted_optimum_four`\n\nTheorem `unrestricted_optimum_four` states exactly `IsUnrestrictedOptimum 4`.  It asserts both that\nsome `θ : Weight` is marginal-feasible and has `expectedCoverage θ = 4`, and that every `θ : Weight`\nsatisfying `MarginalFeasible θ` has `expectedCoverage θ ≤ 4`; no additional assumptions are imposed.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 37–42\n\n## Statement dependencies\n\n- `Main.Foundations::IsUnrestrictedOptimum` → `IsUnrestrictedOptimum` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\n\n## Proof outline\n\nUnfold `IsUnrestrictedOptimum` and construct its two required conjuncts without adding assumptions.\n\nFor attainment, choose `unrestrictedWitness`.  The already proved theorem\n`unrestrictedWitness_feasible` supplies `MarginalFeasible unrestrictedWitness`, and the already\nproved theorem `unrestrictedWitness_value` supplies `expectedCoverage unrestrictedWitness = 4`.\n\nFor the universal conjunct, introduce arbitrary `θ : Weight` and `hθ : MarginalFeasible θ`.  Unpack\n`hθ` into the all-set nonnegativity fact `h_nonneg : ∀ s, 0 ≤ θ s`, the total-mass equation `h_mass\n: (∑ s, θ s) = 1`, and the remaining marginal component (which is not needed for this upper bound).\nUnfold `expectedCoverage`.  For every `s : Finset Element`, apply the proved universal bound\n`coverage_le_four s : coverage s ≤ 4` and multiply it on the left by the nonnegative factor `θ s`\nvia `mul_le_mul_of_nonneg_left`.  Lift these termwise inequalities with `Finset.sum_le_sum`.\n\nThe resulting right-hand finite sum is `∑ s, θ s * 4`.  Rewrite it as `(∑ s, θ s) * 4` using\n`Finset.sum_mul`, substitute `h_mass`, and normalize to `4`.  This proves `expectedCoverage θ ≤ 4`\nfor the original arbitrary marginal-feasible weight, preserving the exact quantifier and conclusion\ndirection.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 37–42\n\n## Proof dependencies\n\n- `Finset.sum_mul` from `Mathlib.Algebra.BigOperators.Ring.Finset`\n- `Finset.sum_le_sum` from `Mathlib.Algebra.Order.BigOperators.Group.Finset`\n- `mul_le_mul_of_nonneg_left` from `Mathlib.Algebra.Order.GroupWithZero.Defs`\n- `Mathlib.Tactic.normNum` from `Mathlib.Tactic.NormNum.Core`\n- `Main.Foundations::IsUnrestrictedOptimum` → `IsUnrestrictedOptimum` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\n- `Main.Foundations::MarginalFeasible` → `MarginalFeasible` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.MarginalFeasible`\n- `Main.Foundations::expectedCoverage` → `expectedCoverage` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.expectedCoverage`\n- `Main.UnrestrictedOptimum::coverage_le_four` → `coverage_le_four` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.coverage_le_four`\n- `Main.UnrestrictedOptimum::unrestrictedWitness` → `unrestrictedWitness` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Defs.unrestrictedWitness`\n- `Main.UnrestrictedOptimum::unrestrictedWitness_feasible` → `unrestrictedWitness_feasible` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_feasible`\n- `Main.UnrestrictedOptimum::unrestrictedWitness_value` → `unrestrictedWitness_value` from\n  `FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestrictedWitness_value`\n-/\ntheorem unrestricted_optimum_four : IsUnrestrictedOptimum 4 := by\n  unfold IsUnrestrictedOptimum\n  constructor\n  · exact ⟨unrestrictedWitness, unrestrictedWitness_feasible, unrestrictedWitness_value⟩\n  · intro θ hθ\n    rcases hθ with ⟨h_nonneg, h_mass, _⟩\n    unfold expectedCoverage\n    calc\n      ∑ s : Finset Element, θ s * coverage s ≤ ∑ s : Finset Element, θ s * 4 :=\n        Finset.sum_le_sum fun s _ ↦\n          mul_le_mul_of_nonneg_left (coverage_le_four s) (h_nonneg s)\n      _ = (∑ s : Finset Element, θ s) * 4 := by rw [Finset.sum_mul]\n      _ = 4 := by rw [h_mass]; norm_num\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 42,
+                "end_locator": null,
+                "kind": "source",
+                "note": "These lines establish the witness value and combine it with the universal coverage bound to conclude the unrestricted optimum is exactly 4.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "article/sections/02_counterexample.tex",
+                "start_line": 37,
+                "start_locator": null
+              }
+            ],
+            "text": "Unfold `IsUnrestrictedOptimum` and construct its two required conjuncts without adding assumptions.\n\nFor attainment, choose `unrestrictedWitness`.  The already proved theorem `unrestrictedWitness_feasible` supplies `MarginalFeasible unrestrictedWitness`, and the already proved theorem `unrestrictedWitness_value` supplies `expectedCoverage unrestrictedWitness = 4`.\n\nFor the universal conjunct, introduce arbitrary `θ : Weight` and `hθ : MarginalFeasible θ`.  Unpack `hθ` into the all-set nonnegativity fact `h_nonneg : ∀ s, 0 ≤ θ s`, the total-mass equation `h_mass : (∑ s, θ s) = 1`, and the remaining marginal component (which is not needed for this upper bound).  Unfold `expectedCoverage`.  For every `s : Finset Element`, apply the proved universal bound `coverage_le_four s : coverage s ≤ 4` and multiply it on the left by the nonnegative factor `θ s` via `mul_le_mul_of_nonneg_left`.  Lift these termwise inequalities with `Finset.sum_le_sum`.\n\nThe resulting right-hand finite sum is `∑ s, θ s * 4`.  Rewrite it as `(∑ s, θ s) * 4` using `Finset.sum_mul`, substitute `h_mass`, and normalize to `4`.  This proves `expectedCoverage θ ≤ 4` for the original arbitrary marginal-feasible weight, preserving the exact quantifier and conclusion direction."
+          }
+        },
         "proof_available": true,
         "proof_dependencies": [
           "Mathlib:Mathlib.Algebra.BigOperators.Ring.Finset.Finset.sum_mul",
@@ -515,6 +2986,100 @@
           "article/sections/02_counterexample.tex:37-42"
         ],
         "state": "proved",
+        "statement": {
+          "deps": [
+            {
+              "kind": "repo_decl",
+              "reason": "This public definition is exactly the theorem's required consumer-facing conclusion.",
+              "ref": {
+                "name": "IsUnrestrictedOptimum",
+                "node": "Main.Foundations",
+                "repo": null,
+                "revision": 1
+              }
+            }
+          ],
+          "formal": {
+            "check": {
+              "allow_sorry": true,
+              "contains_axiom": false,
+              "contains_sorry": true,
+              "declaration_soundness": null,
+              "diagnostics": {
+                "diagnostics": [
+                  {
+                    "column": 9,
+                    "line": 23,
+                    "message": "declaration uses `sorry`",
+                    "severity": "warning"
+                  }
+                ],
+                "passed": true,
+                "raw_excerpt": "{'success': True, 'error_message': None, 'file': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestricted_optimum_four', 'items': [{'severity': 'warning', 'pos': {'line': 23, 'column': 9}, 'endPos': {'line': 23, 'column': 34}, 'kind': None, 'data': 'declaration uses `sorry`', 'fileName': 'FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestricted_optimum_four', 'content': '  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\\n-/\\ntheorem unrestricted_optimum_four : IsUnrestrictedOptimum 4 := by\\n  sorry'}], 'total_items': 1, 'error_count': 0, 'warning_count': 1, 'info_count': 0, 'sorry_count': 1}",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/unrestricted_optimum_four.lean",
+                "schema_version": 2,
+                "summary": "Diagnostics returned 1 items"
+              },
+              "findings": [],
+              "fingerprint": {
+                "environment_sha256": null,
+                "source_sha256": "1a69f2efcaa1e94cb4ed4606f9eba404cb125f486372f7185b8bdf47c6a0ac5c",
+                "upstream_revision": null
+              },
+              "managed_import_check": null,
+              "message": "Lean check passed.",
+              "policy": "statement_formal",
+              "scan": {
+                "admit_count": 0,
+                "axiom_count": 0,
+                "contains_admit": false,
+                "contains_axiom": false,
+                "contains_opaque": false,
+                "contains_sorry": true,
+                "contains_unsafe": false,
+                "limitation": "Text scan ignores Lean comments and string literals with a conservative first-round lexer; it is not a full Lean parser.",
+                "occurrences": [
+                  {
+                    "column": 3,
+                    "excerpt": "sorry",
+                    "kind": "sorry",
+                    "line": 24
+                  }
+                ],
+                "opaque_count": 0,
+                "sorry_count": 1,
+                "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
+                "unsafe_count": 0
+              },
+              "schema_version": 1,
+              "status": "passed",
+              "subject": {
+                "declaration_name": null,
+                "module": "FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Theorems.unrestricted_optimum_four",
+                "repo_file_path": "FinitePairwiseCoverageGap/Main/UnrestrictedOptimum/Theorems/unrestricted_optimum_four.lean",
+                "repo_kind": "native",
+                "stage": "statement"
+              }
+            },
+            "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.UnrestrictedOptimum.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `unrestricted_optimum_four`\n\nTheorem `unrestricted_optimum_four` states exactly `IsUnrestrictedOptimum 4`.  It asserts both that\nsome `θ : Weight` is marginal-feasible and has `expectedCoverage θ = 4`, and that every `θ : Weight`\nsatisfying `MarginalFeasible θ` has `expectedCoverage θ ≤ 4`; no additional assumptions are imposed.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 37–42\n\n## Statement dependencies\n\n- `Main.Foundations::IsUnrestrictedOptimum` → `IsUnrestrictedOptimum` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.IsUnrestrictedOptimum`\n-/\ntheorem unrestricted_optimum_four : IsUnrestrictedOptimum 4 := by\n  sorry\n"
+          },
+          "nl": {
+            "origin": [
+              {
+                "end_line": 42,
+                "end_locator": null,
+                "kind": "source",
+                "note": "The source establishes feasibility and value 4 for the witness, combines this with the universal bound, and concludes the unrestricted optimum is 4.",
+                "ref": null,
+                "resource_key": null,
+                "source_path": "article/sections/02_counterexample.tex",
+                "start_line": 37,
+                "start_locator": null
+              }
+            ],
+            "text": "Theorem `unrestricted_optimum_four` states exactly `IsUnrestrictedOptimum 4`.  It asserts both that some `θ : Weight` is marginal-feasible and has `expectedCoverage θ = 4`, and that every `θ : Weight` satisfying `MarginalFeasible θ` has `expectedCoverage θ ≤ 4`; no additional assumptions are imposed."
+          }
+        },
         "statement_dependencies": [
           "current repo:Main.Foundations.IsUnrestrictedOptimum"
         ],
@@ -528,7 +3093,8 @@
   "dependencies": [],
   "proof_availability": "proved",
   "release_id": "release_a10eaec4358641bea524acdf0c33717e",
+  "repo_format": "native",
   "repo_key": "FinitePairwiseCoverageGap",
-  "schema_version": 1,
-  "summary": "Catalogued 18 Content public declarations; 12 are exported through Main."
+  "schema_version": 3,
+  "summary": "Catalogued 18 public declarations; 12 are exported through Main."
 }

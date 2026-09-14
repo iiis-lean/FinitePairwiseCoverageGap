@@ -1,4 +1,4 @@
-[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md) · [Complete graph](../DECLARATION_GRAPH.md)
 
 # `PairwiseFeasible`
 
@@ -10,9 +10,13 @@ Marginal feasibility plus exact prescribed pair moments.
 - State: `declared`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
-- Formal code: final statement projection
+- Compatibility `formal_code`: final statement projection
 
-## Lean code
+## Statement NL
+
+Define `PairwiseFeasible (θ : Weight)` as `MarginalFeasible θ` together with the condition that for every ordered pair `i j : Element` with `i < j`, the finite sum of `θ s` over every `s : Finset Element` containing both `i` and `j` equals `marginal i * marginal j`. The domain of `θ` remains arbitrary real-valued `Weight`.
+
+## Statement Formal
 
 ```lean
 -- lean-constellation: managed-imports-begin
@@ -54,6 +58,14 @@ def PairwiseFeasible (θ : Weight) : Prop :=
       (∑ s : Finset Element with i ∈ s ∧ j ∈ s, θ s) =
         marginal i * marginal j
 ```
+
+## Proof NL
+
+Not recorded.
+
+## Proof Formal
+
+Not recorded.
 
 ## Statement dependencies
 

@@ -1,12 +1,11 @@
 {
-  "change_summaries": {},
   "committed_at": "2026-07-26T14:31:54Z",
   "created_at": "2026-07-26T14:29:39Z",
   "execution_completed_at": "2026-07-26T14:31:54Z",
   "execution_reason": "Draft validation rejected same-round internal dependencies; superseded by dependency-ordered rounds.",
   "execution_result_kind": "failed",
   "node_path": "Main.PairwiseBound",
-  "objective": "Create and check the exact rational dual-certificate core from SourceIndex b_0014 and b_0016: coefficient functions, their evaluation on a subset, and the complete pointwise inequality coverage S ≤ dualValue S for every subset of the five-element ground set.",
+  "objective": "The exact rational dual-certificate core from SourceIndex b_0014 and b_0016 consists of coefficient functions, their evaluation on a subset, and the complete pointwise inequality `coverage S ≤ dualValue S` for every subset of the five-element ground set.",
   "plan_closeout_acknowledged_at": "2026-07-26T14:31:54Z",
   "plan_closeout_acknowledged_by": "checkpoint_migration:decl_closeout_v1",
   "result_kind": "failed",

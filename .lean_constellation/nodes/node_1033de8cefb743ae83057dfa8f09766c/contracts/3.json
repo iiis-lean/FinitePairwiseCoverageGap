@@ -112,7 +112,7 @@
   ],
   "mathlib_decls": [],
   "mathlib_modules": [],
-  "objective": "Repair only the managed theorem header representation while preserving the already proved mathematics: create revision 3 by placing the source-exact local command `theorem finite_pairwise_coverage_gap : ...` inside `namespace FinitePairwiseCoverageGap`, so formal capture simultaneously records the exact expected unqualified theorem header and the full Lean identity `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap`. Retain the existing proof and graph-proved closure.",
+  "objective": "`finite_pairwise_coverage_gap` revision 3 has the source-exact local command `theorem finite_pairwise_coverage_gap : ...` inside `namespace FinitePairwiseCoverageGap`, with formal capture of both the exact expected unqualified theorem header and the full Lean identity `FinitePairwiseCoverageGap.finite_pairwise_coverage_gap`; the existing proof and graph-proved closure are retained.",
   "owned_refs": [
     {
       "added_by": "coordinator",
@@ -144,5 +144,6 @@
   "status": "committed",
   "success_criteria": "The protected theorem is compiler-confirmed with the exact prepared header and a proof whose dependency closure is proved.",
   "summary": "Accepted ready contract v3. Physical revision 3 uses the source-verbatim local theorem header inside namespace FinitePairwiseCoverageGap, compiler-captures the exact protected full Lean identity, preserves all five conjuncts and the proved dependency closure, and introduces no alias or duplicate. Both exact-header and qualified-identity root requirements are now satisfied.",
+  "task_completion_mode": "graph_proved",
   "version": 3
 }

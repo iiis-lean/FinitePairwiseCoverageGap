@@ -1,14 +1,10 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [
-      "Element"
-    ],
     "base_revision": 1,
     "kind": "update",
-    "objective": "Rebuild the previously unexecuted b_0018/b_0013 declaration from formal_target.lean lines 21–26 using accepted Element. Preserve the exact real-valued vector (3/10, 7/20, 3/10, 7/20, 7/20) under zero-based Fin 5 case analysis; it supplies the exact singleton and pair-moment equalities in the b_0017 predicates.",
+    "objective": "`marginal` is the b_0018/b_0013 definition from formal_target.lean lines 21–26, with the exact real-valued vector (3/10, 7/20, 3/10, 7/20, 7/20) under zero-based Fin 5 case analysis. It depends on Element and supplies the exact singleton and pair-moment equalities in the b_0017 predicates.",
     "require_target_state_satisfied": true,
-    "reset_to_state": "planned",
+    "start_stage": "statement_nl",
     "summary": "Completed successfully through Statement NL and Statement Formal. Public definition marginal with Lean name marginal now preserves the exact real vector (3/10, 7/20, 3/10, 7/20, 7/20); it reached declared state and is proof-policy satisfied. Its Element dependency is closed and it is ready for MarginalFeasible and PairwiseFeasible.",
     "target_state": "declared"
   },
@@ -42,6 +38,11 @@
           "schema_version": 2,
           "summary": "Command completed successfully"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "6550c362cca15ea8811687f224be0776678556621579d9c551739d2459200855",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -59,7 +60,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/Foundations/Defs/marginal.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.Foundations.Prelude\nimport FinitePairwiseCoverageGap.Main.Foundations.Defs.Element\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `marginal`\n\nDefine `marginal : Element → ℝ` by zero-based cases, with values `(3/10, 7/20, 3/10, 7/20, 7/20)` at\nelements `0, 1, 2, 3, 4`, respectively.\n\n## Sources\n\n- Source `formal_target.lean`, lines 21–26\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n-/\nnoncomputable def marginal : Element → ℝ\n  | 0 => 3 / 10\n  | 1 => 7 / 20\n  | 2 => 3 / 10\n  | 3 => 7 / 20\n  | 4 => 7 / 20\n"
     },

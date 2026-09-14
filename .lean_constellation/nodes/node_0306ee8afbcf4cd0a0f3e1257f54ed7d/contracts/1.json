@@ -280,7 +280,7 @@
       "reason": "Provides `ℝ` and field division used directly by the current Weight and marginal statements."
     }
   ],
-  "objective": "Produce proved foundational declarations for the exact formal target domain and reusable proved monotonicity/submodularity interfaces under graph_proved completion.",
+  "objective": "The contract targets proved foundational declarations for the exact formal target domain and reusable proved monotonicity/submodularity interfaces under graph_proved completion.",
   "owned_refs": [
     {
       "added_by": "coordinator",
@@ -312,5 +312,6 @@
   "status": "committed",
   "success_criteria": "All source-specified data and predicates compile; coverage monotonicity and submodularity are proved and exposed; no feasibility quantifier is restricted beyond arbitrary real weights on all finite subsets.",
   "summary": "Reviewed blocked contract v1. The graph-proved mathematical boundary is fully implemented: all 13 source-required public declarations are compiler-accepted and proof-policy satisfied, including proved coverage_monotone and coverage_submodular. Terminal completion remains blocked solely because the three exact source-faithful abbrev declarations Element@2, Feature@2, and Weight@2 cannot bind to interfaces catalogued as definition; this is a Coordinator-owned interface-kind/route mismatch, not missing mathematical work.",
+  "task_completion_mode": "graph_proved",
   "version": 1
 }

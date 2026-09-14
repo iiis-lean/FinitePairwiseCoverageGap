@@ -1,12 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [],
     "base_revision": null,
     "kind": "create",
-    "objective": "From SourceIndex b_0018 and formal_target.lean line 5, preserve the exact abbreviation Element := Fin 5. This is the lower ground type consumed by Weight, elementFeatures, marginal, every feasibility predicate, and both structural coverage interfaces.",
+    "objective": "`Element` is the exact abbreviation `Element := Fin 5` from SourceIndex b_0018 and formal_target.lean line 5. It is the lower ground type consumed by Weight, elementFeatures, marginal, every feasibility predicate, and both structural coverage interfaces.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "DeclGraphRoundFlow failed for change Element@rev:1.",
     "target_state": "declared"
   },

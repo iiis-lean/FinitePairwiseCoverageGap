@@ -1,16 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [
-      "Element",
-      "Feature",
-      "elementFeatures"
-    ],
     "base_revision": null,
     "kind": "create",
-    "objective": "From SourceIndex b_0018 / b_0013 and formal_target.lean lines 17–19, preserve coverage s = ((s.biUnion elementFeatures).card : ℝ). It consumes the exact feature assignment and serves expectedCoverage plus the public coverage_monotone and coverage_submodular conclusions.",
+    "objective": "`coverage` is `coverage s = ((s.biUnion elementFeatures).card : ℝ)` from SourceIndex b_0018 / b_0013 and formal_target.lean lines 17–19. It depends on the exact feature assignment and serves expectedCoverage plus the public coverage_monotone and coverage_submodular conclusions.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "DeclGraphRoundFlow failed for change coverage@rev:1.",
     "target_state": "declared"
   },

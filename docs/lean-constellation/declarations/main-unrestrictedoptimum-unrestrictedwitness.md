@@ -1,4 +1,4 @@
-[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md) · [Complete graph](../DECLARATION_GRAPH.md)
 
 # `unrestrictedWitness`
 
@@ -10,9 +10,13 @@ The exact complete-domain three-support weight witnessing unrestricted value fou
 - State: `declared`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
-- Formal code: final statement projection
+- Compatibility `formal_code`: final statement projection
 
-## Lean code
+## Statement NL
+
+`unrestrictedWitness : Weight` is the complete-domain weight function on every `S : Finset Element`, with value `3 / 10` on the zero-based support set `{0, 2}`, value `7 / 20` on `{1}` and `{3, 4}`, and value `0` on every other finite subset. The three nonzero values are rational real weights.
+
+## Statement Formal
 
 ```lean
 -- lean-constellation: managed-imports-begin
@@ -46,6 +50,14 @@ noncomputable def unrestrictedWitness : Weight := fun S ↦
   else if S = {3, 4} then 7 / 20
   else 0
 ```
+
+## Proof NL
+
+Not recorded.
+
+## Proof Formal
+
+Not recorded.
 
 ## Statement dependencies
 

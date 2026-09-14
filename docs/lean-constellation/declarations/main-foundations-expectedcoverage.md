@@ -1,4 +1,4 @@
-[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md) · [Complete graph](../DECLARATION_GRAPH.md)
 
 # `expectedCoverage`
 
@@ -10,9 +10,13 @@ Expected coverage under arbitrary real weights over all element subsets.
 - State: `declared`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
-- Formal code: final statement projection
+- Compatibility `formal_code`: final statement projection
 
-## Lean code
+## Statement NL
+
+Define `expectedCoverage (θ : Weight) : ℝ` as `∑ s : Finset Element, θ s * coverage s`, the finite weighted sum over every finite subset of `Element`; `θ` remains an arbitrary real-valued weight function and is neither restricted nor renormalized.
+
+## Statement Formal
 
 ```lean
 -- lean-constellation: managed-imports-begin
@@ -47,6 +51,14 @@ function and is neither restricted nor renormalized.
 def expectedCoverage (θ : Weight) : ℝ :=
   ∑ s : Finset Element, θ s * coverage s
 ```
+
+## Proof NL
+
+Not recorded.
+
+## Proof Formal
+
+Not recorded.
 
 ## Statement dependencies
 

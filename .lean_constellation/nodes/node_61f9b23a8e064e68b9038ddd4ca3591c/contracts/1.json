@@ -340,7 +340,7 @@
       "reason": "Imports the verified termwise nonnegative multiplication inequality for expectedCoverage_le_weightedDual."
     }
   ],
-  "objective": "Prove the paper-faithful universal pairwise upper bound over arbitrary real-valued feasible weights using the full exact dual certificate.",
+  "objective": "The contract covers the paper-faithful universal pairwise upper bound over arbitrary real-valued feasible weights using the full exact dual certificate.",
   "owned_refs": [
     {
       "added_by": "coordinator",
@@ -372,5 +372,6 @@
   "status": "committed",
   "success_criteria": "Expose a proved theorem IsPairwiseUpperBound (479/160); verify all 32 pointwise constraints; construct at least one PairwiseFeasible weight; derive the bound for every feasible weight solely from nonnegativity, total mass, and exact first/second moments.",
   "summary": "Accepted ready contract v1. Ten graph-proved declarations implement the exact rational dual certificate, all 32 pointwise constraints, a pairwise-feasible witness, full-domain weak duality, and the 479/160 evaluation. The bound public theorem is proved with exact signature `IsPairwiseUpperBound (479 / 160)`, matching the fourth conjunct required by Main.GapTheorem with no added assumptions or domain restriction.",
+  "task_completion_mode": "graph_proved",
   "version": 1
 }

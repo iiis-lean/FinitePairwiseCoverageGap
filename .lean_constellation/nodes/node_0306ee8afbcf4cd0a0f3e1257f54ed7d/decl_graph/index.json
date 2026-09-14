@@ -26,10 +26,8 @@
     "round_d3db5b699b814e1ba18aaa0b935e8b44",
     "round_d823d9a4859347089f5be99ff2bd14a6"
   ],
-  "schema_version": 1,
+  "schema_version": 2,
   "strategy_ids": [
     "strategy_eeee9e64e4b940b7b1cc4bb6ae4e7056"
-  ],
-  "summary": "DeclGraph index rebuilt for Main.Foundations: 13 decls, 8 rounds, 1 strategies.",
-  "updated_at": "2026-07-27T10:43:11Z"
+  ]
 }

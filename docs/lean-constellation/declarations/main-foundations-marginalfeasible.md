@@ -1,4 +1,4 @@
-[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md) · [Complete graph](../DECLARATION_GRAPH.md)
 
 # `MarginalFeasible`
 
@@ -10,9 +10,13 @@ Nonnegative normalized real weights with exact singleton marginals.
 - State: `declared`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
-- Formal code: final statement projection
+- Compatibility `formal_code`: final statement projection
 
-## Lean code
+## Statement NL
+
+Define `MarginalFeasible (θ : Weight)` as the conjunction that, for every `s : Finset Element`, `0 ≤ θ s`; the total finite sum `∑ s : Finset Element, θ s` equals `1`; and, for every `i : Element`, the membership-filtered finite sum of `θ s` over subsets `s` containing `i` equals `marginal i`. The definition adds no support, positivity beyond pointwise nonnegativity, or probability-measure assumptions.
+
+## Statement Formal
 
 ```lean
 -- lean-constellation: managed-imports-begin
@@ -51,6 +55,14 @@ def MarginalFeasible (θ : Weight) : Prop :=
     (∑ s : Finset Element, θ s) = 1 ∧
       ∀ i : Element, ∑ s : Finset Element with i ∈ s, θ s = marginal i
 ```
+
+## Proof NL
+
+Not recorded.
+
+## Proof Formal
+
+Not recorded.
 
 ## Statement dependencies
 

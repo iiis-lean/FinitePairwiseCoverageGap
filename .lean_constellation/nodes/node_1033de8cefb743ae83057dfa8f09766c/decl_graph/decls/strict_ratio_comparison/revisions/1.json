@@ -1,12 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [],
     "base_revision": null,
     "kind": "create",
-    "objective": "Formalize and prove the strict real-number comparison `(4 : ℝ) / (479 / 160) > 4 / 3` stated in SourceIndex b_0015 and article/sections/02_counterexample.tex:126–131. This declaration consumes only arithmetic available in the repository’s Lean environment and supplies the fifth conjunct of the upper public finite_pairwise_coverage_gap theorem; it must not alter the constants, coercions, inequality direction, or strictness.",
+    "objective": "`strict_ratio_comparison` is the strict real-number comparison `(4 : ℝ) / (479 / 160) > 4 / 3` stated in SourceIndex b_0015 and article/sections/02_counterexample.tex:126–131. It uses repository arithmetic and supplies the fifth conjunct of the public finite_pairwise_coverage_gap theorem; its constants, coercions, inequality direction, and strictness are fixed.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "Created the private theorem strict_ratio_comparison from SourceIndex b_0015 and article/sections/02_counterexample.tex:126–131. The exact strict real inequality `(4 : ℝ) / (479 / 160) > 4 / 3` passed Statement NL, Statement Formal, Proof NL, and Proof Formal, reached state proved, and satisfies the graph_proved proof policy. It is now the tracked proof dependency required before attempting the public finite_pairwise_coverage_gap theorem; there are no blockers, mismatches, or cleanup candidates.",
     "target_state": "proved"
   },
@@ -35,6 +32,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 0 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "a77698e03518a4bdfd531398fb5993a674debf76fa7aa868051290a10be8fc56",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "proof_formal",
         "scan": {
@@ -52,7 +54,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.strict_ratio_comparison",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/GapTheorem/Theorems/strict_ratio_comparison.lean",
+          "repo_kind": "native",
+          "stage": "proof"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.GapTheorem.Prelude\nimport Mathlib.Tactic.NormNum.Core\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `strict_ratio_comparison`\n\nIn the real numbers, the strict rational comparison holds:\n\n\\[\n(4 : \\mathbb{R}) / (479 / 160) > 4 / 3.\n\\]\n\nAll numerals and divisions in this statement are interpreted as real numbers.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 126–131\n\n## Proof outline\n\nUse exact rational normalization over `ℝ`. The `norm_num` tactic evaluates the nonzero denominators\nand reduces the goal\n\n`(4 : ℝ) / (479 / 160) > 4 / 3`\n\nto the corresponding strict comparison of explicit rational numerals (equivalently, `640 / 479 > 4 /\n3`), which it closes by certified numeral arithmetic. Thus the Proof Formal implementation is simply\n`by norm_num`; it introduces no hypotheses, auxiliary cases, or project-level helper lemmas.\n\n## Proof sources\n\n- Source `article/sections/02_counterexample.tex`, lines 126–131\n\n## Proof dependencies\n\n- `Mathlib.Tactic.normNum` from `Mathlib.Tactic.NormNum.Core`\n-/\ntheorem strict_ratio_comparison :\n    (4 : ℝ) / (479 / 160) > 4 / 3 := by\n  norm_num\n"
     },
@@ -70,7 +80,7 @@
           "start_locator": null
         }
       ],
-      "text": "Use exact rational normalization over `ℝ`. The `norm_num` tactic evaluates the nonzero denominators and reduces the goal\n\n`(4 : ℝ) / (479 / 160) > 4 / 3`\n\nto the corresponding strict comparison of explicit rational numerals (equivalently, `640 / 479 > 4 / 3`), which it closes by certified numeral arithmetic. Thus the Proof Formal implementation is simply `by norm_num`; it introduces no hypotheses, auxiliary cases, or project-level helper lemmas."
+      "text": "Exact rational normalization over `ℝ` evaluates the nonzero denominators and reduces `(4 : ℝ) / (479 / 160) > 4 / 3` to the corresponding strict comparison of explicit rational numerals, equivalently `640 / 479 > 4 / 3`, which is closed by certified numeral arithmetic. No hypotheses, auxiliary cases, or project-level helper lemmas are mathematically needed."
     }
   },
   "revision": 1,
@@ -97,6 +107,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 1 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "616572f8e4e244ebc3eaec58a7b153453fcc0978981a00fc9b619711cb10d2d5",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -121,7 +136,15 @@
           "summary": "sorry=1, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.GapTheorem.Theorems.strict_ratio_comparison",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/GapTheorem/Theorems/strict_ratio_comparison.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.GapTheorem.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `strict_ratio_comparison`\n\nIn the real numbers, the strict rational comparison holds:\n\n\\[\n(4 : \\mathbb{R}) / (479 / 160) > 4 / 3.\n\\]\n\nAll numerals and divisions in this statement are interpreted as real numbers.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 126–131\n-/\ntheorem strict_ratio_comparison :\n    (4 : ℝ) / (479 / 160) > 4 / 3 := by\n  sorry\n"
     },

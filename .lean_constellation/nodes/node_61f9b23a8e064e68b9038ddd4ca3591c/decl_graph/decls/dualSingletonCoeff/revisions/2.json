@@ -1,12 +1,10 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [],
     "base_revision": 1,
     "kind": "update",
-    "objective": "Advance the failed planning-only revision to a declared function Element → ℝ with coefficients (3/2, 7/2, 3/2, 3/2, 3/2) from SourceIndex b_0014 / lines 61–63. This independent provider feeds dualValue and first-moment evaluation.",
+    "objective": "`dualSingletonCoeff : Element → ℝ` is the singleton coefficient function with coefficients (3/2, 7/2, 3/2, 3/2, 3/2) from SourceIndex b_0014 / lines 61–63. It is an independent provider for `dualValue` and first-moment evaluation.",
     "require_target_state_satisfied": true,
-    "reset_to_state": "planned",
+    "start_stage": "statement_nl",
     "summary": "Completed: the exact singleton coefficient function on Element = Fin 5 from SourceIndex b_0014 reached declared state with accepted natural-language and compiler-passed formal definition. As a non-theorem definition it is proof-policy satisfied and ready for dualValue and first-moment evaluation.",
     "target_state": "declared"
   },
@@ -40,6 +38,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 0 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "43d3dc3c4f91c171cc6d3ec0bf1a79a319f41905080d45d7cf532d03359544d3",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -57,7 +60,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.dualSingletonCoeff",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Defs/dualSingletonCoeff.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `dualSingletonCoeff`\n\n`dualSingletonCoeff : Element → ℝ` is the singleton part of the dual certificate.  Under `Element =\nFin 5`, its values at elements `0`, `1`, `2`, `3`, and `4` are respectively `3 / 2`, `7 / 2`, `3 /\n2`, `3 / 2`, and `3 / 2`.\n\n## Sources\n\n- Source `article/sections/02_counterexample.tex`, lines 61–63\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n-/\nnoncomputable def dualSingletonCoeff (i : Element) : ℝ :=\n  if i = 0 then 3 / 2\n  else if i = 1 then 7 / 2\n  else if i = 2 then 3 / 2\n  else if i = 3 then 3 / 2\n  else 3 / 2\n"
     },

@@ -1,4 +1,4 @@
-[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md)
+[← Public API](../PUBLIC_API.md) · [Public boundaries](../PUBLIC_BOUNDARIES.md) · [Complete graph](../DECLARATION_GRAPH.md)
 
 # `Weight`
 
@@ -10,9 +10,13 @@ Arbitrary real-valued weights on all finite element subsets.
 - State: `declared`
 - Revision status: `committed`
 - Repository completion: `graph_proved`
-- Formal code: final statement projection
+- Compatibility `formal_code`: final statement projection
 
-## Lean code
+## Statement NL
+
+Define `Weight` as the type `Finset Element → ℝ` of arbitrary real-valued functions on every finite subset of `Element`, with no nonnegativity, normalization, or feasibility restriction.
+
+## Statement Formal
 
 ```lean
 -- lean-constellation: managed-imports-begin
@@ -39,6 +43,14 @@ subset of `Element`, with no nonnegativity, normalization, or feasibility restri
 -/
 abbrev Weight := Finset Element → ℝ
 ```
+
+## Proof NL
+
+Not recorded.
+
+## Proof Formal
+
+Not recorded.
 
 ## Statement dependencies
 

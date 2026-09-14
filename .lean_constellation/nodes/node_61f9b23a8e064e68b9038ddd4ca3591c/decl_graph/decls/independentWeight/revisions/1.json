@@ -1,12 +1,9 @@
 {
   "change": {
-    "anticipated_proof_dep_names": [],
-    "anticipated_statement_dep_names": [],
     "base_revision": null,
     "kind": "create",
-    "objective": "Define a Weight on every S : Finset Element by the full Bernoulli product ∏ i : Element, if i ∈ S then marginal i else 1 - marginal i. This is contract-derived support for the required existence of some PairwiseFeasible weight; it consumes the ready Foundations.Weight, Element, and marginal interfaces, preserves the full 32-subset domain, and will feed a tracked theorem independentWeight_pairwiseFeasible and ultimately the existential conjunct of the required IsPairwiseUpperBound (479/160) interface.",
+    "objective": "`independentWeight : Weight` assigns each `S : Finset Element` the full Bernoulli product `∏ i : Element, if i ∈ S then marginal i else 1 - marginal i`. It is defined on the full 32-subset domain from the `Weight`, `Element`, and `marginal` interfaces and supplies the witness for `independentWeight_pairwiseFeasible` and the existential conjunct of `IsPairwiseUpperBound (479/160)`.",
     "require_target_state_satisfied": true,
-    "reset_to_state": null,
     "summary": "Completed: independentWeight reached declared state with accepted natural-language and compiler-passed formal definition of the full Bernoulli product on all Finset Element subsets. As a non-theorem it is graph_proved-policy satisfied. It is ready to support the tracked PairwiseFeasible proof and the existential conjunct of the required public upper-bound theorem.",
     "target_state": "declared"
   },
@@ -60,6 +57,11 @@
           "schema_version": 2,
           "summary": "Diagnostics returned 0 items"
         },
+        "fingerprint": {
+          "environment_sha256": null,
+          "source_sha256": "4ed9b835354570b1ec82dd6c8204fa250516b24611aa590b80f9c7e4dc2ea2e8",
+          "upstream_revision": null
+        },
         "message": "Lean check passed.",
         "policy": "statement_formal",
         "scan": {
@@ -77,7 +79,15 @@
           "summary": "sorry=0, admit=0, axiom=0, opaque=0, unsafe=0",
           "unsafe_count": 0
         },
-        "status": "passed"
+        "schema_version": 1,
+        "status": "passed",
+        "subject": {
+          "declaration_name": null,
+          "module": "FinitePairwiseCoverageGap.Main.PairwiseBound.Defs.independentWeight",
+          "repo_file_path": "FinitePairwiseCoverageGap/Main/PairwiseBound/Defs/independentWeight.lean",
+          "repo_kind": "native",
+          "stage": "statement"
+        }
       },
       "code": "-- lean-constellation: managed-imports-begin\nimport FinitePairwiseCoverageGap.Main.PairwiseBound.Prelude\n-- lean-constellation: managed-imports-end\n\n-- lean-constellation: declaration-source-begin\n\n/--\n# lean-constellation target: `independentWeight`\n\n`independentWeight : Weight` is the full Bernoulli-product weight determined by `marginal`.  For\nevery `S : Finset Element`, it assigns the real value `∏ i : Element, if i ∈ S then marginal i else\n1 - marginal i`.  Thus it is defined on every subset of `Element`, including the empty subset,\nrather than on a restricted support family.\n\n## Statement dependencies\n\n- `Main.Foundations::Element` → `Element` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Element`\n- `Main.Foundations::Weight` → `Weight` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.Weight`\n- `Main.Foundations::marginal` → `marginal` from\n  `FinitePairwiseCoverageGap.Main.Foundations.Defs.marginal`\n-/\nnoncomputable def independentWeight : Weight := fun S ↦\n  ∏ i : Element, if i ∈ S then marginal i else 1 - marginal i\n"
     },
